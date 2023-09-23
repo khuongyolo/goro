@@ -1,119 +1,154 @@
 body {
-        margin: 0; 
-        overflow: hidden; 
+    margin: 0; 
+    overflow: hidden; 
 }
 
-    #map {
-        width: 100%;
-        height: 100vh;
-        border: none;
-        position:relative;
-        z-index:0;
-    }
-    
+#map {
+    width: 100%;
+    height: 100vh;
+    border: none;
+    position:relative;
+    z-index:0;
+}
 
-    #search-container {
-        width:100%;
-        display:flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        position:absolute;
-        height: 90px;
-        top: 0px;
-        left: 0px;
-        background-color: #131b2e;  
-    }
-    
-    #corner-logo{
-        width:120px;
-        flex-grow:0;
-        margin-left:30px
-    }
+#head-nav-container{
+    width:100%;
+    height:auto;    
+    position:absolute;
+    display:flex;
+    flex-direction: column;
+    top:0;
+    left:0;
+}
 
-    #search-input {
-        flex-grow:0;
-        font-size:15px;
-        width:30%;
-        padding: 13px;
-        border: none;
-        text-align: center;
-        border-radius:30px;
-        box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4);
-    }
+#search-container {
+    width:100%;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    /* position:absolute; */
+    height: 70px;
+    /* top: 0px;
+    left: 0px; */
+    background-color: #131b2e; 
+    font-size:14px; 
+}
 
-    #clear-button {
-        flex-grow:0;
-        width:7%;
-        border-radius: 30px;
-        background-color: #0074cc;
-        color: #fff;
-        border: none;
-        padding: 10px;
-        display:none;
-        box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4);
-    }
-    #cart-image{
-        width:30px;
-    }
-    #account-image{
-        width:30px;
-    }
-    #menu-image{
-        width:30px;
-        margin-right:35px;
-
-    }
-
-    ::placeholder{
-        opacity: 40%;
-    }
+#corner-logo{
+    width:120px;
+    flex-grow:0;
+    margin-left:30px
+}
 
 
-    /* độ phân giải điện thoại */
+#search-input {
+    flex-grow:0;
+    font-size:15px;
+    width:30%;
+    padding: 13px;
+    border: none;
+    text-align: center;
+    border-radius:20px;
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4);
+}
+
+#clear-button {
+    display:none;
+}
+#cart-image{
+    width:30px;
+}
+#account-image{
+    width:30px;
+}
+#menu-image{
+    width:30px;
+    margin-right:35px;
+
+}
+
+#nav-container{
+    display:flex;
+    justify-content: space-between;
+    background-color: #ffb701;
+    height:50px;
+    align-items: center;
+    box-shadow: 4px 4px 8px rgb(0,0,0,.4);
+}
+
+#test-address{
+    margin-left: 30px;
+    font-family: Avenir Next;
+}
+
+#navigate-icon{
+    width:30px;
+    margin-right:30px;
+}
+
+
+::placeholder{
+    opacity: 40%;
+}
+
+
+/* độ phân giải điện thoại */
 @media only screen and (max-width:740px){
-    #search-container {
-        height: 110px;
-        flex-wrap: wrap;
+#search-container {
+    height: 110px;
+    flex-wrap: wrap;
 
-    }    
-    
-    #search-input {
-        width: 85%;
-        padding: 13px;
-        border: none;
-        text-align: center;
-        border-radius:30px;
-        box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4);
-        font-size: 12px;
-        order:5;
-        margin: 0 auto;
+}    
 
-    }
+#search-input {
+    width: 85%;
+    padding: 13px;
+    border: none;
+    text-align: center;
+    border-radius:30px;
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4);
+    font-size: 12px;
+    order:5;
+    margin: 0 auto;
 
-    #clear-button{
-    display:none
-    }
-    #corner-logo{
-        width: 100px;
-        order:1;
-    }
-    #cart-image{
-        order:2;
-        width:30px;
-        transform:translateX(120%);
+}
 
-    }
-    #account-image{
-        order:3;
-        width:25px;
-        transform:translateX(70%);
-    }
-    #menu-image{
-        margin-right:20px;
-        order:4;
-        width:30px;
-    }
+#nav-container{
+    height:70px;
+}
+
+#test-address{
+    margin-left:10px;
+}
+
+#navigate-icon{
+    margin-left:10px;
+}
+
+#clear-button{
+display:none
+}
+#corner-logo{
+    width: 100px;
+    order:1;
+}
+#cart-image{
+    order:2;
+    width:30px;
+    transform:translateX(120%);
+
+}
+#account-image{
+    order:3;
+    width:25px;
+    transform:translateX(70%);
+}
+#menu-image{
+    margin-right:30px;
+    order:4;
+    width:30px;
+}
 }
 
 
