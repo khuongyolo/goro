@@ -26,7 +26,7 @@ nav{
     margin: 0 auto;
 }
 #logo{
-    padding: 5px 20px;
+    padding: 10px 20px;
 }
 #corner-logo{
     width: 120px;
@@ -35,7 +35,7 @@ nav{
 
 #search-input{
     width:700px;
-    padding: 15px;
+    padding: 15px 20px;
     border-radius: 100px;
     border:none;
 }
@@ -46,22 +46,22 @@ nav{
 #main-menu{
     display: flex;
     list-style: none;
-    margin-right:40px;
     padding:0; 
     z-index: 1;
-   
-
 }
 
 #main-menu li{
     position: relative;
+    padding:10px;
 }
 
 #main-menu li a{
+    font-family: Helvetica;
+    font-size: 14px;
     color:#fff;
     text-decoration: none;
     display:block;
-    padding: 18px 20px;
+    padding: 10px 20px;
 }
 
 #main-menu li i{
@@ -76,16 +76,35 @@ nav{
     font-size: 25px;
     color:#eaeef1;
 }
+/* icon của phần sub-menu */
+#main-menu .sub-menu i.fa-building,
+#main-menu .sub-menu i.fa-user,
+#main-menu .sub-menu i.fa-key,
+#main-menu .sub-menu i.fa-cash-register,
+#main-menu .sub-menu i.fa-clock,
+#main-menu .sub-menu i.fa-sun,
+#main-menu .sub-menu i.fa-moon,
+#main-menu .sub-menu i.fa-gear,
+#main-menu .sub-menu i.fa-flag,
+#main-menu .sub-menu i.fa-handshake-angle,
+#main-menu .sub-menu i.fa-right-from-bracket,
+#main-menu .sub-menu i.fa-check{
+    color: black;
+    padding-right: 10px;
+    font-size: 20px;
+}
 
 #main-menu ul.sub-menu{
     position:absolute;
-    background-color: #17233b;
-    padding: 15px 0px;
+    right:0px;
+    background-color: #f0ece5;
     list-style: none;
-    width:170px;
+    width:200px;
     border: 1px solid #3f3e3e;
+    border-radius: 13px;
     display:none;
-
+    padding-left:0px;
+    box-shadow: 4px 4px 6px rgb(0,0,0,0.3);
 }
 
 #main-menu li:hover>ul.sub-menu{
@@ -93,28 +112,14 @@ nav{
 }
 
 #main-menu ul.sub-menu a{
-    padding:8px 15px;
-    border-bottom: 1px solid #3f3e3e;
-    left:0;
+    padding:5px 15px;
+    color:black;
 }
 
-#main-menu ul.sub-menu li:hover>a{
-    border-bottom: 1px solid #5e5b5b;
-
-}
-
-#main-menu ul.sub-menu li:last-child a{
-    border:none;
-}
-
-#main-menu ul.sub-menu ul.sub-menu{
-    left:200px;
-    top: -16px;
-    display:none;
-}
-
-#main-menu ul.sub-menu:hover li ul.sub-menu{
-    display: block;
+#main-menu ul.sub-menu li:hover{
+    background-color: #615d5d25;
+    background-size: cover;
+    border-radius: 5px;
 }
 
 
