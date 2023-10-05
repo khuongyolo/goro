@@ -24,7 +24,7 @@ nav{
 }
 
 .container{
-    max-width: 95%;
+    max-width: 98%;
     margin: 0 auto;
 }
 #logo{
@@ -49,6 +49,7 @@ nav{
     display: flex;
     list-style: none;
     padding:0; 
+    margin:0;
     z-index: 2;
 }
 
@@ -98,7 +99,7 @@ nav{
 
 #main-menu ul.sub-menu{
     position:absolute;
-    right:0px;
+    right:-5px;
     background-color: #f0ece5;
     list-style: none;
     width:200px;
@@ -193,6 +194,60 @@ nav{
     padding-right: 10px;
     font-size: 20px;
 }
+
+#view-btn-container{
+    position:absolute;
+    bottom: 30px;
+    right: 90px;
+    height:auto;
+    padding: 18px 50px;
+    background-color: #eaeef1;
+    list-style: none;
+    border-radius: 19px;
+    box-shadow: 4px 4px 4px rgb(0,0,0,0.5)
+}
+
+#view-btn-container li{
+    display:flex;
+    position:relative;
+}
+
+#view-btn-container:hover{
+    transform: translateY(-4px);
+    box-shadow: 8px 8px 8px rgb(0,0,0,0.3);
+    transition: 0.1s ease-in;
+}
+#view-btn-container:active{
+    transform: translateY(-1px);
+    box-shadow: 4px 4px 4px rgb(0,0,0,0.5)
+}
+
+#view-btn-container .btn-link{
+    text-decoration-line: none;
+    color: black;
+    font-family: Helvetica;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+#view-btn-container #view-map-sub-menu{
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    background-color: #ffb701;
+    display:none;
+    width: 200px;
+}
+
+#view-btn-container #view-map-sub-menu li{
+    padding:15px 20px;
+}
+
+#view-btn-container li:hover>#view-map-sub-menu{
+    display:block;
+}
+
+
 
 
 
