@@ -142,14 +142,14 @@ function searchLocation() {
 
       if (!circle) {
         circle = new google.maps.Circle({
-          strokeColor: "#8FBC8F",
+          strokeColor: "#fff",
           strokeOpacity: 0.8,
           strokeWeight: 2,
           fillColor: "#8FBC8F",
           fillOpacity: 0.1,
           map: map,
           center: locationLatLng,
-          radius: 5000,
+          radius: 3000,
         });
       } else {
         circle.setCenter(locationLatLng);
