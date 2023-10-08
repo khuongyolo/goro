@@ -55,7 +55,11 @@ nav{
 
 #main-menu li{
     position: relative;
-    padding:10px;
+    padding:10px 25px;
+}
+#main-menu li:hover{
+    background-color: #f0ece5;
+    border-radius: 100px;
 }
 
 #main-menu li a{
@@ -64,20 +68,16 @@ nav{
     color:#fff;
     text-decoration: none;
     display:block;
-    padding: 10px 20px;
 }
 
 #main-menu li i{
     font-size: 25px;
     color:#ffb701;
 }
-#main-menu li i:hover{
+
+#main-menu li a:hover>i{
     font-size: 25px;
-    color:#ffb7019c;
-}
-#main-menu li i:active{
-    font-size: 25px;
-    color:#eaeef1;
+    color:#ffb70188;
 }
 /* icon của phần sub-menu */
 #main-menu .sub-menu i.fa-building,
@@ -100,6 +100,7 @@ nav{
 #main-menu ul.sub-menu{
     position:absolute;
     right:-5px;
+    margin-top:10px;
     background-color: #f0ece5;
     list-style: none;
     width:200px;
@@ -108,6 +109,10 @@ nav{
     display:none;
     padding-left:0px;
     box-shadow: 4px 4px 6px rgb(0,0,0,0.3);
+}
+
+#main-menu ul.sub-menu li{
+    padding:10px;
 }
 
 #main-menu li:hover>ul.sub-menu{
@@ -237,11 +242,20 @@ nav{
     background-color: #ffb701;
     display:none;
     width: 200px;
+    padding:0; 
 }
 
 #view-btn-container #view-map-sub-menu li{
-    padding:15px 20px;
+    padding:25px 30px;
+    
 }
+
+#view-btn-container #view-map-sub-menu a{
+    text-align: center;
+    text-decoration: none;
+    color:black;
+}
+
 
 #view-btn-container li:hover>#view-map-sub-menu{
     display:block;
