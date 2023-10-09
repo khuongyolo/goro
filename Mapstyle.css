@@ -55,11 +55,17 @@ nav{
 
 #main-menu li{
     position: relative;
-    padding:10px 25px;
+    padding:10px 20px;
+    cursor:pointer;
 }
 #main-menu li:hover{
     background-color: #f0ece5;
     border-radius: 100px;
+    transition: 0.2s ease-in-out;
+}
+
+#main-menu li:hover>a i{
+    color:#131b2e;
 }
 
 #main-menu li a{
@@ -75,10 +81,10 @@ nav{
     color:#ffb701;
 }
 
-#main-menu li a:hover>i{
+/* #main-menu li a:hover>i{
     font-size: 25px;
     color:#ffb70188;
-}
+} */
 /* icon của phần sub-menu */
 #main-menu .sub-menu i.fa-building,
 #main-menu .sub-menu i.fa-user,
