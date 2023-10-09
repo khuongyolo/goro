@@ -219,21 +219,119 @@ nav{
     padding: 18px 50px;
     background-color: #eaeef1;
     list-style: none;
-    border-radius: 19px;
+    border-radius: 25px;
     box-shadow: 4px 4px 4px rgb(0,0,0,0.5)
 }
 
 #view-btn-container li{
-    display:flex;
+    display:block;
     position:relative;
+    text-align: center;
 }
 
-#view-btn-container:hover{
+#view-btn-container #view-map-sub-menu{
+    position: absolute;
+    bottom: -20px;
+    right:-84px;
+    background-color: #ece6da;
+    display:none;
+    width: 500px;
+    padding:15px 15px; 
+    border: 1px solid #131b2e;
+    border-radius: 25px;
+    box-shadow: 4px 4px 6px rgb(0,0,0,0.3);
+    cursor:pointer;
+}
+
+@keyframes MoveInBottom{
+    0%{
+        transform: translateY(700px);
+    }
+    5%{
+        transform: translateY(680px);
+    }
+    10%{
+        transform: translateY(660px);
+    }
+    15%{
+        transform: translateY(640px);
+    }
+    20%{
+        transform: translateY(620px);
+    }
+    25%{
+        transform: translateY(600px);
+    }
+    30%{
+        transform: translateY(580px);
+    }
+    35%{
+        transform: translateY(560px);
+    }
+    40%{
+        transform: translateY(540px);
+    }
+    45%{
+        transform: translateY(520px);
+    }
+    50%{
+        transform: translateY(500px);
+    }
+    55%{
+        transform: translateY(480px);
+    }
+    60%{
+        transform: translateY(440px);
+    }
+    65%{
+        transform: translateY(420px);
+    }
+    70%{
+        transform: translateY(400px);
+    }
+    75%{
+        transform: translateY(370px);
+    }
+    80%{
+        transform: translateY(250px);
+    }
+    85%{
+        transform: translateY(200px);
+    }
+    90%{
+        transform: translateY(150px);
+    }
+    95%{
+        transform: translateY(100px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+#view-btn-container li:hover>#view-map-sub-menu{
+    display:block;
+    animation: MoveInBottom 0.3s 0.08s;
+    animation-fill-mode: backwards;
+}
+
+#view-btn-container #view-map-sub-menu li{
+    padding:25px 30px;
+    border: 1px solid rgba(0, 0, 0, 0.329);
+    background-image: url("flat-geometric-background_23-2148957201.jpg");
+    background-size: cover;
+    border-radius:20px;
+    margin-bottom: 10px;
+}
+#view-btn-container #view-map-sub-menu li:last-child{
+    margin-bottom: 0;
+}
+
+#view-btn-container #view-map-sub-menu li:hover{
     transform: translateY(-4px);
-    box-shadow: 8px 8px 8px rgb(0,0,0,0.3);
+    box-shadow: 5px 5px 8px rgb(0,0,0,0.3);
     transition: 0.1s ease-in;
 }
-#view-btn-container:active{
+#view-btn-container #view-map-sub-menu li:active{
     transform: translateY(-1px);
     box-shadow: 4px 4px 4px rgb(0,0,0,0.5)
 }
@@ -246,31 +344,22 @@ nav{
     font-size: 14px;
 }
 
-#view-btn-container #view-map-sub-menu{
-    position: absolute;
-    bottom: 0px;
-    right: 0px;
-    background-color: #ffb701;
-    display:none;
-    width: 200px;
-    padding:0; 
-}
-
-#view-btn-container #view-map-sub-menu li{
-    padding:25px 30px;
-    
-}
-
 #view-btn-container #view-map-sub-menu a{
-    text-align: center;
+    /* text-align: center; */
     text-decoration: none;
-    color:black;
+    color:rgb(0, 0, 0);
+    font-weight: 700;
+    outline: none;
+    font-family: Helvetica;
+}
+#view-btn-container #view-map-sub-menu a i{
+    color: black;
+    padding-right: 10px;
+    font-size: 20px;
 }
 
 
-#view-btn-container li:hover>#view-map-sub-menu{
-    display:block;
-}
+
 
 
 
