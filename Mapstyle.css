@@ -36,11 +36,12 @@ nav{
 }
 
 #search-input{
-    min-width:300px;
-    padding: 15px 90px;
+    width:50%;
+    padding: 15px 25px;
     border-radius: 100px;
     border:none;
 }
+
 #clear-button{
     display: none;
 }
@@ -51,6 +52,7 @@ nav{
     padding:0; 
     margin:0;
     z-index: 2;
+    padding-left:30px;
 }
 
 #main-menu li{
@@ -177,13 +179,14 @@ nav{
 .address #address-container li:hover>.sub-menu{
     display:block;
 }
-.address #address-container a{
+.address #address-container #nav-icon{
     margin-right:20px;
+    padding: 0 15px;;
 }
 
 .address #address-container a i{
     font-size: 30px;
-    color:black;
+    color:rgb(0, 0, 0);
 }
 
 .address #address-container .sub-menu li a{
@@ -197,6 +200,7 @@ nav{
 .address #address-container #test-address{
     font-family:Helvetica;
     font-size: 17px;
+    margin:0;
 }
 
 .address #address-container .sub-menu i.fa-truck,
