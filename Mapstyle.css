@@ -154,6 +154,7 @@ nav{
 .address #address-container .sub-menu li:hover{
     background-color:#615d5d25;
     border-radius: 8px;
+    transition: 0.2s ease-in-out;
 }
 .address #address-container{
     display:flex;
