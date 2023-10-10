@@ -1,0 +1,134 @@
+body{
+	background-image: url('fixed big background.jpeg');
+	background-position: top;
+	background-size: cover;
+	background-repeat: none;
+}
+
+img{
+	margin-left: 30px;
+}
+
+.form-container{
+/*	clear:both;*/
+	background-image: url('login pad.jpg');
+	background-size:cover;
+	border-radius: 40px;
+	box-sizing: border-box;
+	padding:10px;
+	width: 400px;
+	height: 430px;
+	margin: 0 auto;
+}
+
+#account-name{
+	position:relative;
+	top:30px;
+	left: 45px;
+	font-family: Avenir Next;
+	font-size: 15px;
+}
+
+#password{
+	position:relative;
+	top:30px;
+	left: 45px;
+	font-family: Avenir Next;
+	font-size: 15px;
+
+}
+
+div input{
+	width:300px;
+	background:#fff7e6;
+	border: none;
+	margin-top: 35px;
+	margin-left: 35px;
+	padding-bottom:15px;
+	padding-top:15px;
+	padding-left:10px;
+	border-radius:9px;
+	box-shadow: 3px 3px 3px #595757;
+	font-family: Avenir Next;
+}
+
+::placeholder{
+	position:relative;
+	opacity: 40%;
+	font-size: 12px;
+	left: 10px;
+}
+
+#newsignin{
+	position:relative;
+	top: 40px;
+	left: 120px;
+	width:150px;
+	background:#fccf38;
+	border: none;
+	padding: 15px 25px;
+	border-radius:15px;
+	box-shadow: 3px 3px 3px #595757;
+	font-family: Avenir Next;
+}
+
+#newsignin:hover{
+	position:relative;
+	background:#fff7e6;
+	color:black;
+	border: none;
+	padding: 15px 25px;
+	border-radius:15px;
+	box-shadow: 3px 3px 3px #595757;
+	font-family: Avenir Next;
+	transition: 0.2s ease-in-out;
+}
+
+a{
+	text-decoration: none;
+	color: black;
+	font-size:16px;
+	font-family: Avenir Next;
+}
+
+a:hover{
+	text-decoration: none;
+	color: white;
+	font-size:16px;
+	font-family: Avenir Next;
+	transition: 0.2s ease-in-out;
+}
+
+#sign-up{
+	position: relative;
+	top: 75px;
+	left: 160px;
+	display:block;
+}
+
+#sign-up:hover{
+	position: relative;
+	top: 75px;
+	left: 160px;
+}
+
+#resign-up{
+	position: relative;
+	top: 80px;
+	left: 135px;
+}
+
+#resign-up:hover{
+	position: relative;
+	top: 80px;
+	left: 135px;
+}
+footer{
+	text-align: center;
+	margin-top: 160px;
+	font-family: courier;
+	color: #444444;
+	font-size:15px;
+	text-transform: right;
+}
+
