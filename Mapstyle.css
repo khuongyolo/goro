@@ -316,7 +316,7 @@ nav{
 #view-btn-container #view-map-sub-menu li{
     padding:25px 30px;
     border: 1px solid rgba(0, 0, 0, 0.329);
-    background-image: url("flat-geometric-background_23-2148957201.jpg");
+    background-image: url("fixed big background 2.jpeg");
     background-size: cover;
     border-radius:20px;
     margin-bottom: 10px;
@@ -340,19 +340,19 @@ nav{
     color: black;
     font-family: Helvetica;
     text-transform: uppercase;
-    font-size: 14px;
 }
 
 #view-btn-container #view-map-sub-menu a{
     /* text-align: center; */
     text-decoration: none;
-    color:rgb(0, 0, 0);
-    font-weight: 700;
+    color:rgb(255, 255, 255);
+    font-weight: 400;
     outline: none;
     font-family: Helvetica;
+    font-size: 14px;
 }
 #view-btn-container #view-map-sub-menu a i{
-    color: black;
+    color: rgb(255, 255, 255);
     padding-right: 10px;
     font-size: 20px;
 }
