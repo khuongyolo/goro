@@ -309,7 +309,7 @@ nav{
 }
 #view-btn-container li:hover>#view-map-sub-menu{
     display:block;
-    animation: MoveInBottom 0.3s 0.08s;
+    animation: MoveInBottom 0.5s 0.06s;
     animation-fill-mode: backwards;
 }
 
