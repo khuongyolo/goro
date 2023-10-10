@@ -172,3 +172,13 @@ function searchLocation() {
 }
 
 window.initMap = initMap;
+
+
+function changetoLightMode(){
+  var styleSheetLink = document.getElementById("styleSheetLink");
+  styleSheetLink.href = "MapGOROlightmode.css";
+}
+function changetoDarkMode(){
+  var styleSheetLink = document.getElementById("styleSheetLink");
+  styleSheetLink.href = "Mapstyle.css";
+}

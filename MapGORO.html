@@ -5,7 +5,7 @@
   <meta name = "viewport" content="width=device-width, initial-scale=1.0">
 	<title> GORO | Trang Chính</title>
   <script src="MapJS.js"></script>
-  <link rel="stylesheet" href="Mapstyle.css">
+  <link rel="stylesheet" href="Mapstyle.css" id="styleSheetLink">
   <link rel="stylesheet" href="fontawesome-free-6.4.2-web/css/all.min.css">
   <link rel="icon" type="small icon" href="Title logo final.png">
 </head>
@@ -41,8 +41,8 @@
           </li>
           <li><a href="#"><i class="fa-solid fa-circle-half-stroke"></i></a>
             <ul class="sub-menu">
-              <li><a href="MapGOROlightmode.html"><i class="fa-solid fa-sun"></i>Giao diện sáng</a></li>
-              <li><a href="MapGORO.html"><i class="fa-solid fa-moon"></i>Giao diện tối</a></li>
+              <li onclick="changetoLightMode()"><i class="fa-solid fa-sun"></i>Giao diện sáng</li>
+              <li onclick="changetoDarkMode()"><i class="fa-solid fa-moon"></i>Giao diện tối</li>
             </ul>
           </li>
           <li><a href="#"><i class="fa-solid fa-bars"></i></a>
