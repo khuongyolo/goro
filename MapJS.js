@@ -50,7 +50,7 @@ function generateRandomLandCoordinates() {
 }
 
 // Thêm 100 điểm ngẫu nhiên trên đất liền của Tokyo, Saitama và Kanagawa vào mảng markerPositions
-for (let i = 0; i < 60; i++) {
+for (let i = 0; i < 40; i++) {
   const randomCoordinate = generateRandomLandCoordinates();
   markerPositions.push(randomCoordinate);
 }
