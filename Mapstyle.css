@@ -340,6 +340,8 @@ nav{
     color: black;
     font-family: Helvetica;
     text-transform: uppercase;
+    font-size: 14px;
+
 }
 
 #view-btn-container #view-map-sub-menu a{
@@ -349,7 +351,6 @@ nav{
     font-weight: 400;
     outline: none;
     font-family: Helvetica;
-    font-size: 14px;
 }
 #view-btn-container #view-map-sub-menu a i{
     color: rgb(255, 255, 255);
