@@ -167,7 +167,7 @@ nav{
     position:absolute;
     right:8px;
     width:200px;
-    background-color:#110a7f;
+    background-color:#f0ece5;
     border: 1px solid #3f3e3e;
     border-radius: 15px;
     padding:0px;
@@ -232,7 +232,7 @@ nav{
     position: absolute;
     bottom: -20px;
     right:-84px;
-    background-color: #fff5e2;
+    background-color: #fcf6ec;
     display:none;
     width: 500px;
     padding:15px 15px; 
@@ -309,7 +309,7 @@ nav{
 }
 #view-btn-container li:hover>#view-map-sub-menu{
     display:block;
-    animation: MoveInBottom 0.3s 0.08s;
+    animation: MoveInBottom 0.5s 0.06s;
     animation-fill-mode: backwards;
 }
 
