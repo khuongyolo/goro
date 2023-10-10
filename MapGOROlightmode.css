@@ -10,7 +10,7 @@ body {
 }
 
 #header{
-    background-color: #10a0b3;
+    background-color: #0381a0;
     z-index: 1;
     position:absolute;
     width: 100%;
@@ -40,6 +40,10 @@ nav{
     padding: 15px 25px;
     border-radius: 100px;
     border:1px solid #131b2e;
+}
+
+::placeholder{
+    font-size: 14px;
 }
 
 #clear-button{

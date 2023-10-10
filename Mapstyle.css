@@ -42,6 +42,10 @@ nav{
     border:none;
 }
 
+::placeholder{
+    font-size: 14px;
+}
+
 #clear-button{
     display: none;
 }
