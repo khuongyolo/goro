@@ -39,7 +39,9 @@ nav{
     width:50%;
     padding: 15px 25px;
     border-radius: 100px;
-    border:1px solid #131b2e;
+    /* border:1px solid #131b2e; */
+    border: none;
+    box-shadow: 4px 3px 3px rgb(0,0,0,0.4);
 }
 
 ::placeholder{
@@ -83,7 +85,7 @@ nav{
 
 #main-menu li i{
     font-size: 25px;
-    color: #ffffff;
+    color:#f7f5ee;
 }
 
 /* #main-menu li a:hover>i{
@@ -139,6 +141,31 @@ nav{
     background-color: #615d5d25;
     background-size: cover;
     border-radius: 5px;
+}
+
+.sub-menu #language-list #language-option{  
+    position:absolute;
+    padding:0;
+    width:160px;
+    right:201px;
+    top:6px;
+    background-color: #f0ece5;
+    border-radius: 15px;
+    list-style: none;
+    border: 1px solid #3f3e3e;
+    /* box-shadow: 4px 4px 6px rgb(0,0,0,0.3); */
+    display: none;
+}
+
+#main-menu .sub-menu #language-list:hover>#language-option{
+    display:block;
+}
+.sub-menu #language-list #language-option li{   
+    padding:15px 20px;
+    text-align: center;
+}
+.sub-menu #language-list #language-option li a{
+    font-family: Helvetica;
 }
 
 .address{   

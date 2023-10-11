@@ -138,7 +138,32 @@ nav{
 #main-menu ul.sub-menu li:hover{
     background-color: #615d5d25;
     background-size: cover;
-    border-radius: 5px;
+    border-radius: 10px;
+}
+
+.sub-menu #language-list #language-option{  
+    position:absolute;
+    padding:0;
+    width:160px;
+    right:201px;
+    top:6px;
+    background-color: #f0ece5;
+    border-radius: 15px;
+    list-style: none;
+    border: 1px solid #3f3e3e;
+    /* box-shadow: 4px 4px 6px rgb(0,0,0,0.3); */
+    display: none;
+}
+
+#main-menu .sub-menu #language-list:hover>#language-option{
+    display:block;
+}
+.sub-menu #language-list #language-option li{   
+    padding:15px 20px;
+    text-align: center;
+}
+.sub-menu #language-list #language-option li a{
+    font-family: Helvetica;
 }
 
 .address{   
@@ -236,7 +261,7 @@ nav{
     position: absolute;
     bottom: -20px;
     right:-84px;
-    background-color: #ffb701;
+    background-color: #e9bc4b;
     display:none;
     width: 500px;
     padding:15px 15px; 
