@@ -25,7 +25,7 @@ img{
 	position:relative;
 	top:30px;
 	left: 45px;
-	font-family: Avenir Next;
+	font-family: Helvetica;
 	font-size: 15px;
 }
 
@@ -33,7 +33,7 @@ img{
 	position:relative;
 	top:30px;
 	left: 45px;
-	font-family: Avenir Next;
+	font-family: Helvetica;
 	font-size: 15px;
 
 }
@@ -49,7 +49,7 @@ div input{
 	padding-left:10px;
 	border-radius:9px;
 	box-shadow: 3px 3px 3px #595757;
-	font-family: Avenir Next;
+	font-family: Helvetica;
 }
 
 ::placeholder{
@@ -69,7 +69,7 @@ div input{
 	padding: 15px 25px;
 	border-radius:15px;
 	box-shadow: 3px 3px 3px #595757;
-	font-family: Avenir Next;
+	font-family: Helvetica;
 }
 
 #newsignin:hover{
@@ -80,7 +80,7 @@ div input{
 	padding: 15px 25px;
 	border-radius:15px;
 	box-shadow: 3px 3px 3px #595757;
-	font-family: Avenir Next;
+	font-family: Helvetica;
 	transition: 0.2s ease-in-out;
 }
 
@@ -88,14 +88,14 @@ a{
 	text-decoration: none;
 	color: black;
 	font-size:16px;
-	font-family: Avenir Next;
+	font-family: Helvetica;
 }
 
 a:hover{
 	text-decoration: none;
 	color: white;
 	font-size:16px;
-	font-family: Avenir Next;
+	font-family: Helvetica;
 	transition: 0.2s ease-in-out;
 }
 
