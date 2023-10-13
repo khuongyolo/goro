@@ -10,7 +10,7 @@ body {
 }
 
 #header{
-    background-color: #0381a0;
+    background-image: linear-gradient(to right,rgb(2, 114, 167), rgb(42, 179, 172));
     z-index: 1;
     position:absolute;
     width: 100%;
