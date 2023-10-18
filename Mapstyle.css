@@ -166,7 +166,6 @@ nav{
 hr{ 
     width:99%;
     margin:0 auto;
-    opacity:30%;
 }
 
 .sub-menu #language-list #language-option li a{
@@ -268,7 +267,7 @@ hr{
     position: absolute;
     bottom: -20px;
     right:-84px;
-    background-color: #f7f3e7;
+    background-color: #ffb701;
     display:none;
     width: 500px;
     padding:15px 15px; 
