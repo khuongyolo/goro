@@ -166,6 +166,7 @@ nav{
 hr{ 
     width:99%;
     margin:0 auto;
+    opacity: 30%;
 }
 
 .sub-menu #language-list #language-option li a{
