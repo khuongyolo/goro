@@ -11,89 +11,90 @@
 </head>
 <body>
   <div id="wrapper">
-    
-    
-    <div id="header">
-      <nav class="container">
-        <a href="introduce.html" id="logo">
-          <img src="Logopng.png" id="corner-logo" alt="GORO">
-        </a>
-        <input type="text" id="search-input" placeholder="Nhập địa điểm bạn muốn tìm kiếm">
-        <button id="clear-button">Xoá</button>
-        <ul id="main-menu">
-          <li><a href="#"><i class="fa-solid fa-shop"></i></a>
-            <!-- <ul class="sub-menu">
-              <li><a href="#"><i class="fa-regular fa-building"></i>Xem cửa hàng</a>
-            </ul> -->
-          </li>
-          <li><a href="#"><i class="fa-solid fa-user"></i></a>
-            <ul class="sub-menu">
-                <li><a id="account-control" href="#"><i class="fa-regular fa-user"></i>Quản lý tài khoản</a></li>
-                <li><a href="#"><i class="fa-solid fa-key"></i>Đổi mật khẩu</a></li>
-                <li><a href="#"><i class="fa-solid fa-cash-register"></i>Thanh toán</a></li>
-                <li><a href="#"><i class="fa-regular fa-clock"></i>Lịch sử mua hàng</a></li>
-            </ul>
-          </li>
-          <li><a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
-            <!-- <ul class="sub-menu">
-              <li><a href="#"><i class="fa-solid fa-check"></i>Xem giỏ hàng</a></li>
-            </ul> -->
-          </li>
-          <li><a href="#"><i class="fa-solid fa-circle-half-stroke"></i></a>
-            <ul class="sub-menu">
-              <li onclick="changetoLightMode()"><a href="#"><i class="fa-regular fa-sun"></i>Giao diện sáng</a></li>
-              <li onclick="changetoDarkMode()"><a href="#"><i class="fa-solid fa-moon"></i>Giao diện tối</a></li>
-            </ul>
-          </li>
-          <li><a href="#"><i class="fa-solid fa-bars"></i></a>
-            <ul class="sub-menu">
-              <li><a href="#"><i class="fa-solid fa-gear"></i>Cài đặt</a></li>
-              <li id="language-list"><a href="#"><i class="fa-solid fa-flag"></i>Ngôn ngữ</a>
-                <ul id="language-option">
-                  <li><a href="#" id="vietnamese">Tiếng Việt</a></li>
-                  <hr>
-                  <li><a href="#" id="english">English</a></li>
-                  <hr>
-                  <li><a href="#" id="japanese">日本語</a></li>
-                </ul>
-              </li>
-              <li><a href="#"><i class="fa-solid fa-handshake-angle"></i>Hỗ trợ</a></li>
-              <li><a href="loginscreen.html"><i class="fa-solid fa-right-from-bracket"></i>Đăng xuất</a></li>
-            </ul>
-          </li>
-        </ul>
-      </nav> 
-      <nav class="address">
-        <ul id="address-container">
-          <li><p id="test-address">Địa chỉ của bạn hiện tại là: 343-0843  埼玉県越谷市蒲生茜町25番地1クラウンハイツ 2A</p></li>
-          <li><a href="#" id="nav-icon"><i class="fa-solid fa-location-dot"></i></a>
-            <ul class="sub-menu">
-              <li><a href="#"><i class="fa-solid fa-truck"></i>Thay đổi địa chỉ</a></li>
-              <li><a href="#"><i class="fa-solid fa-shuffle"></i>Chọn địa chỉ khác</a></li>
-            </ul>
-          </li>
-        </ul>
-      </nav>
-    </div>
-    <div id="content">
-      <div id="map"></div>
-      <ul id="view-btn-container">
-        <li><a href="#" class="btn-link">Xem Cửa Hàng Gần Bạn</a>
-          <ul id="view-map-sub-menu">
-            <li><a href="#" id="sub-menu-cont"><i class="fa-solid fa-store"></i>Cửa Hàng Số 1</a></li>
-            <li><a href="#" id="sub-menu-cont"><i class="fa-solid fa-store"></i>Cửa Hàng Số 2</a></li>
-            <li><a href="#" id="sub-menu-cont"><i class="fa-solid fa-store"></i>Cửa Hàng Số 3</a></li>
-            <li><a href="#" id="sub-menu-cont"><i class="fa-solid fa-store"></i>Cửa Hàng Số 4</a></li>
-            <li><a href="#" id="sub-menu-cont"><i class="fa-solid fa-store"></i>Cửa Hàng Số 5</a></li>
-        </li>
-      </ul>
-    </div>
+    <div id="container">
+      <div class="container-upper">
+        <div id="main-header">
+          <a href="#" id="icon-menu btn-menu"><i class="fa-solid fa-bars"></i></a>
+          <a href="#" id="corner-img"><img id="corner-logo" src="Logopng.png"></a>
+          <a href="#" id="btn-help"><i class="fa-regular fa-circle-question"></i></a>
 
+        </div>
+        <div id="search-container">
+          <input type="text" id="search-input" placeholder="Nhập địa điểm bạn muốn tìm kiếm">
+          <button id="clear-button">Xoá</button>
+        </div>
+        <p id="category">Category</p>
+        <ul class="list-category">
+          <li><a href="#" id="sub-menu-cont"><i class="fa-solid fa-jar"></i>Gia Vị</a></li>
+          <li><a href="#" id="sub-menu-cont"><i class="fa-solid fa-cookie"></i>Đồ Khô</a></li>
+          <li><a href="#" id="sub-menu-cont"><i class="fa-solid fa-bowl-food"></i>Mì</a></li>
+          <li><a href="#" id="sub-menu-cont"><i class="fa-solid fa-martini-glass"></i>Đồ Uống</a></li>
+          <li><a href="#" id="sub-menu-cont"><i class="fa-solid fa-bacon"></i>Thịt</a></li>
+          <li><a href="#" id="sub-menu-cont"><i class="fa-solid fa-candy-cane"></i>Bánh Kẹo</a></li>
+          <li><a href="#" id="sub-menu-cont"><i class="fa-solid fa-carrot"></i>Trái Cây</a></li>
+          <li><a href="#" id="sub-menu-cont"><i class="fa-solid fa-mug-hot"></i>Chè</a></li>
+          <li><a href="#" id="sub-menu-cont"><i class="fa-solid fa-ice-cream"></i>Đồ Đông Lạnh</a></li>
+          <li><a href="#" id="sub-menu-cont"><i class="fa-solid fa-star"></i>Đặc Biệt</a></li>
+        </ul>
+      </div>
+      <div class="container-under">
+        <ul class="list-shop">
+          <li><a href="#" id="sub-menu-cont">Cửa Hàng Số 1</a></li>
+          <li><a href="#" id="sub-menu-cont">Cửa Hàng Số 2</a></li>
+          <li><a href="#" id="sub-menu-cont">Cửa Hàng Số 3</a></li>
+          <li><a href="#" id="sub-menu-cont">Cửa Hàng Số 4</a></li>
+          <li><a href="#" id="sub-menu-cont">Cửa Hàng Số 5</a></li>
+          <li><a href="#" id="sub-menu-cont">Cửa Hàng Số 1</a></li>
+          <li><a href="#" id="sub-menu-cont">Cửa Hàng Số 2</a></li>
+          <li><a href="#" id="sub-menu-cont">Cửa Hàng Số 3</a></li>
+          <li><a href="#" id="sub-menu-cont">Cửa Hàng Số 4</a></li>
+          <li><a href="#" id="sub-menu-cont">Cửa Hàng Số 6</a></li>
+          <li><a href="#" id="sub-menu-cont">Cửa Hàng Số 1</a></li>
+          <li><a href="#" id="sub-menu-cont">Cửa Hàng Số 2</a></li>
+          <li><a href="#" id="sub-menu-cont">Cửa Hàng Số 3</a></li>
+          <li><a href="#" id="sub-menu-cont">Cửa Hàng Số 4</a></li>
+          <li><a href="#" id="sub-menu-cont">Cửa Hàng Số 7</a></li>
+          <li><a href="#" id="sub-menu-cont">Cửa Hàng Số 4</a></li>
+          <li><a href="#" id="sub-menu-cont">Cửa Hàng Số 5</a></li>
+          <li><a href="#" id="sub-menu-cont">Cửa Hàng Số 1</a></li>
+          <li><a href="#" id="sub-menu-cont">Cửa Hàng Số 2</a></li>
+          <li><a href="#" id="sub-menu-cont">Cửa Hàng Số 3</a></li>
+          <li><a href="#" id="sub-menu-cont">Cửa Hàng Số 4</a></li>
+          <li><a href="#" id="sub-menu-cont">Cửa Hàng Số 5</a></li>
+          <li><a href="#" id="sub-menu-cont">Cửa Hàng Số 5</a></li>
+          <li><a href="#" id="sub-menu-cont">Cửa Hàng Số 1</a></li>
+          <li><a href="#" id="sub-menu-cont">Cửa Hàng Số 2</a></li>
+          <li><a href="#" id="sub-menu-cont">Cửa Hàng Số 3</a></li>
+          <li><a href="#" id="sub-menu-cont">Cửa Hàng Số 4</a></li>
+          <li><a href="#" id="sub-menu-cont">Cửa Hàng Số 5</a></li>
+          <li><a href="#" id="sub-menu-cont">Cửa Hàng Số 4</a></li>
+          <li><a href="#" id="sub-menu-cont">Cửa Hàng Số 5</a></li>
+          <li><a href="#" id="sub-menu-cont">Cửa Hàng Số 1</a></li>
+          <li><a href="#" id="sub-menu-cont">Cửa Hàng Số 99</a></li>
+          <li><a href="#" id="sub-menu-cont">Cửa Hàng Số 3</a></li>
+          <li><a href="#" id="sub-menu-cont">Cửa Hàng Số 4</a></li>
+          <li><a href="#" id="sub-menu-cont">Cửa Hàng Số 5</a></li>
+          <li><a href="#" id="sub-menu-cont">Cửa Hàng Số 1</a></li>
+          <li><a href="#" id="sub-menu-cont">Cửa Hàng Số 9875</a></li>
+        </ul>
+      </div>
+      <div class="container-footer">
+        <nav id="control-bar">
+          <ul id="account">
+            <li><a href="#" id="btn-account"><i class="fa-solid fa-user"></i></a></li>
+          </ul>
+          <ul id="cart">
+            <li><a href="#" id="btn-cart"><i class="fa-solid fa-cart-shopping"></i></a></li>
+          </ul>
+          <ul id="home">
+            <li><a href="#" id="btn-home"><i class="fa-solid fa-house"></i></a></li>
+          </ul>
+        </nav>
+      </div>
 
-    <div id="footer"></div>
+    </div>
+    <div id="map"></div>
   </div>
-
-
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBoRe1mjToCbaN5gSuL3FoFu5nqtwRrfn8&callback=initMap" async defer></script>
 
