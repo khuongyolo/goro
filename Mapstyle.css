@@ -31,6 +31,7 @@ body{
     padding-bottom: 10px;
     z-index: 1;
     background-color: rgb(185 211 194);
+    height:100%;
 }
 
 
@@ -162,13 +163,18 @@ body{
     text-decoration:none;
     color:black;
 }
-#container .list-category::-webkit-scrollbar{
+
+#container .container-under{
+    height:100%;
+}
+
+#container .list-shop::-webkit-scrollbar{
     display:none;
 }
 #container .list-shop{
     display:flex;
     flex-direction: column;
-    height:55vh;
+    height:63vh;
     overflow:auto;
     list-style: none;
     text-align: center;
