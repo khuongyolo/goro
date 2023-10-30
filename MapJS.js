@@ -182,3 +182,4 @@ function changetoDarkMode(){
   var styleSheetLink = document.getElementById("styleSheetLink");
   styleSheetLink.href = "Mapstyle.css";
 }
+
