@@ -26,6 +26,10 @@ body{
     /* border-right: 2px solid black; */
 }
 
+#container::-webkit-scrollbar{
+    display: none;
+}
+
 #container .container-upper{
     box-shadow: 3px 3px 6px rgb(0,0,0,.3);
     padding-bottom: 10px;
@@ -118,6 +122,7 @@ body{
     animation:MoveInLeft 1.2s;
     animation-fill-mode: backwards;
     /* border:1px solid black; */
+    font-size: 15px;
 }
 #container #list-category::-webkit-scrollbar{
     /* width:0; */
@@ -125,7 +130,7 @@ body{
 }
 
 #container #list-category li{
-    min-width:170px;
+    min-width:150px;
     text-align: center;
     padding: 20px 0px;
     /* border:1px solid black; */
@@ -189,15 +194,10 @@ body{
     /* border: 1px solid black; */
     background-image: url('flat-geometric-background_23-2148957201.jpg');
     background-size: cover;
-    box-shadow: 2px 2px 4px rgb(0,0,0,.3);
+    box-shadow: 3px 3px 5px rgb(0,0,0,.3);
     border-radius: 20px;
     margin-bottom: 20px;
     cursor:pointer;
-}
-
-#container #container-under .list-shop li:hover>a{
-    transform: translateY(-4px);
-    box-shadow: 3px 3px 7px rgb(0,0,0,.3);
 }
 
 #container .list-shop li:first-child{
