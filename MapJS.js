@@ -183,3 +183,53 @@ function changetoDarkMode(){
   styleSheetLink.href = "Mapstyle.css";
 }
 
+// // kéo thả
+// window.onload = function() {
+//   const list = document.getElementById('list-category');
+//   let isMouseDown = false;
+//   let startX;
+//   let scrollLeft;
+
+//   list.addEventListener('mousedown', function(e) {
+//     isMouseDown = true;
+//     list.style.cursor = 'grabbing';
+//     startX = e.pageX - list.offsetLeft;
+//     scrollLeft = list.scrollLeft;
+//   });
+
+//   list.addEventListener('mouseleave', function() {
+//     isMouseDown = false;
+//     list.style.cursor = 'default';
+//   });
+
+//   list.addEventListener('mouseup', function() {
+//     isMouseDown = false;
+//     list.style.cursor = 'default';
+//   });
+
+//   list.addEventListener('mousemove', function(e) {
+//     if (!isMouseDown) return;
+//     e.preventDefault();
+//     const x = e.pageX - list.offsetLeft;
+//     const walk = (x - startX) * 2; // Tốc độ cuộn
+//     list.scrollLeft = scrollLeft - walk;
+//   });
+// };
+
+
+//scroll
+window.onload = function() {
+  const list = document.getElementById('list-category');
+
+  list.addEventListener('wheel', function(event) {
+    event.preventDefault(); 
+
+    const scrollSpeed = 40; 
+    if (event.deltaY > 0) {
+      list.scrollLeft += scrollSpeed; 
+    } else {
+      list.scrollLeft -= scrollSpeed; 
+    }
+  });
+};
+
