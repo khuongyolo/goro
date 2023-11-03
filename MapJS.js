@@ -9,10 +9,10 @@ window.onload = () => {
     event.preventDefault();
 
     const sensitivity = 0.9;
-    let speed = Math.abs(event.deltaY);
+    let speed = Math.abs(event.deltaX || event.deltaY); // Sử dụng deltaX hoặc deltaY để xác định hướng cuộn
     const scrollSpeed = speed * sensitivity;
 
-    if (event.deltaY > 0) {
+    if (event.deltaX > 0 || event.deltaY > 0) {
       list.scrollLeft += scrollSpeed;
     } else {
       list.scrollLeft -= scrollSpeed;
@@ -31,7 +31,7 @@ window.onload = () => {
     event.preventDefault();
 
     const touchCurrentX = event.touches[0].clientX;
-    const scrollAmount = (lastTouchX - touchCurrentX) * 2;
+    const scrollAmount = lastTouchX - touchCurrentX;
     list.scrollLeft = touchScrollLeft + scrollAmount;
     lastTouchX = touchCurrentX;
   });
