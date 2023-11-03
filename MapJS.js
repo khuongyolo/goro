@@ -3,11 +3,15 @@ window.onload = () => {
   let isDragging = false;
   let touchStartX;
   let touchScrollLeft;
+  let lastTouchX = 0; // Lưu trữ vị trí chạm trước đó
 
   list.addEventListener('wheel', (event) => {
     event.preventDefault();
 
-    const scrollSpeed = 10;
+    const sensitivity = 0.2;
+    let speed = Math.abs(event.deltaY);
+    const scrollSpeed = speed * sensitivity;
+
     if (event.deltaY > 0) {
       list.scrollLeft += scrollSpeed;
     } else {
@@ -15,25 +19,24 @@ window.onload = () => {
     }
   });
 
-  list.addEventListener('mousedown', (event) => {
+  list.addEventListener('touchstart', (event) => {
     isDragging = true;
-    touchStartX = event.clientX;
+    touchStartX = event.touches[0].clientX;
     touchScrollLeft = list.scrollLeft;
-
-    list.addEventListener('mousemove', onMouseMove);
+    lastTouchX = touchStartX;
   });
 
-  list.addEventListener('mouseup', () => {
-    isDragging = false;
-    list.removeEventListener('mousemove', onMouseMove);
-  });
-
-  function onMouseMove(event) {
+  list.addEventListener('touchmove', (event) => {
     if (!isDragging) return;
     event.preventDefault();
 
-    const touchCurrentX = event.clientX;
-    const scrollAmount = (touchStartX - touchCurrentX) * 2;
+    const touchCurrentX = event.touches[0].clientX;
+    const scrollAmount = (lastTouchX - touchCurrentX) * 2;
     list.scrollLeft = touchScrollLeft + scrollAmount;
-  }
+    lastTouchX = touchCurrentX;
+  });
+
+  list.addEventListener('touchend', () => {
+    isDragging = false;
+  });
 };
