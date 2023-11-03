@@ -168,7 +168,7 @@ body{
 }
 #container #list-category li:active{
     transform: translateY(-1px);
-    background-color: rgba(45, 156, 132, 0.89);
+    background-color: rgba(51, 182, 154, 0.486);
     box-shadow: 2px 2px 4px rgb(0,0,0,.3);
 
 }
