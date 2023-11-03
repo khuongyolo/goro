@@ -12,14 +12,9 @@ body{
     display:flex;
     justify-content: space-between;   
 }
-#map{
-    height:100vh;
-    width:250%;
-}
 
 #container{
     max-width:35%;
-    /* height:100vh; */
     display:flex;
     flex-direction: column;
     z-index: 2;
@@ -196,35 +191,85 @@ body{
     border-bottom: 1px solid rgba(91, 91, 91, 0.297);
     margin:0;
     /* background-color: rgb(255 233 173); */
-    background-image: linear-gradient(to right,rgb(50, 121, 103),rgb(1, 94, 71)) ;
+    background-image: linear-gradient(to right,rgba(50, 121, 103, 0.938),rgba(1, 94, 71, 0.788)) ;
 
 }
 
 #container .list-shop li{
     display: flex;
     justify-content:space-between;
-    justify-items: center;
     align-items: center ;
     padding: 40px 30px;
     /* background-image: url('flat-geometric-background_23-2148957201.jpg');
     background-size: cover; */
-    background-color:rgba(255 180 68) ;
-    box-shadow: 3px 3px 5px rgb(0,0,0,.3);
+    background-color:rgb(241, 234, 226);
+    /* background-image: linear-gradient(to right,rgb(255, 230, 147),rgb(255, 175, 1)); */
+    box-shadow: 4px 4px 8px rgb(0,0,0,.4);
     border-radius: 20px;
     margin-bottom: 20px;
 }
 
 #container .list-shop li a img{
-    width: 90px;
+    width: 80px;
+    padding: 10px 10px;
 }
 
 #container .list-shop li .store-info{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    justify-items: left;
+    text-align: left;
 }
 
+#container .list-shop li .store-info .list-shop-store-name{
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+#container .list-shop li .store-info .list-shop-store-address{
+    padding: 5px 0px;
+}
+
+/* #container .list-shop li .store-info .list-shop-store-address #tokyo{
+    font-size: 12px;
+} */
+#container .list-shop li .store-info .list-shop-store-payment{
+    cursor:auto;
+}
+
+#container .list-shop li .store-info .list-shop-store-payment i{
+    font-size: 15px;
+    padding: 10px 5px;
+}
+
+#container .list-shop li .store-info .list-shop-store-ranking{
+    color: rgb(250, 192, 33);
+    cursor:auto;
+}
+#container .list-shop li .store-info li a{
+    padding:0 10px;
+}
+
+#container .list-shop li .store-info li a{
+    align-items: left;
+}
+
+#container .container-under .list-shop li .store-contact a i{
+    font-size: 30px;
+    padding: 0 5px;
+}
+#container .container-under .list-shop li .store-contact a .fa-phone{
+    color: rgb(3, 177, 3);
+}
+#container .container-under .list-shop li .store-contact a .fa-phone:hover{
+    color: rgb(1, 68, 1);
+}
+#container .container-under .list-shop li .store-contact a .fa-facebook{
+    color:rgb(0, 110, 255);
+}
+#container .container-under .list-shop li .store-contact a .fa-facebook:hover{
+    color:rgb(1, 35, 80);
+}
 
 
 #container .list-shop li:first-child{
@@ -272,7 +317,7 @@ body{
     /* transition: .1s ease-in-out; */
 }
 #container .container-footer nav ul li:hover>a i{
-    color:rgb(6, 90, 58);
+    color:rgb(255, 255, 255);
 }
 
 
