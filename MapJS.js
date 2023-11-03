@@ -7,7 +7,7 @@ window.onload = function() {
   list.addEventListener('wheel', function(event) {
     event.preventDefault();
 
-    const scrollSpeed = 20; // 
+    const scrollSpeed = 20; 
     if (event.deltaY > 0) {
       list.scrollLeft += scrollSpeed;
     } else {
@@ -30,7 +30,9 @@ window.onload = function() {
     event.preventDefault();
 
     const touchCurrentX = event.touches[0].clientX;
-    const scrollAmount = (touchStartX - touchCurrentX) * 0.5; // 
+    const scrollAmount = (touchStartX - touchCurrentX) * 0.5; 
     list.scrollLeft = touchScrollLeft + scrollAmount;
   });
 };
+
+
