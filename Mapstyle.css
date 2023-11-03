@@ -256,7 +256,7 @@ body{
 
 #container .container-under .list-shop li .store-contact a i{
     font-size: 20px;
-    padding: 0 5px;
+    padding: 10px 5px;
 }
 #container .container-under .list-shop li .store-contact a .fa-phone{
     color: rgb(3, 177, 3);
