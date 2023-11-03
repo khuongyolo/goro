@@ -212,6 +212,7 @@ body{
 #container .list-shop li a img{
     width: 80px;
     padding: 10px 10px;
+    margin-right:10px;
 }
 
 #container .list-shop li .store-info{
@@ -239,7 +240,7 @@ body{
 
 #container .list-shop li .store-info .list-shop-store-payment i{
     font-size: 15px;
-    padding: 10px 5px;
+    padding: 0px 5px;
 }
 
 #container .list-shop li .store-info .list-shop-store-ranking{
