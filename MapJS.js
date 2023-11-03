@@ -7,7 +7,7 @@ window.onload = function() {
   list.addEventListener('wheel', function(event) {
     event.preventDefault();
 
-    const scrollSpeed = 20; 
+    const scrollSpeed = 10; 
     if (event.deltaY > 0) {
       list.scrollLeft += scrollSpeed;
     } else {
