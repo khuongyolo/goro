@@ -6,7 +6,7 @@ window.onload = () => {
 
   list.addEventListener('wheel', (event) => {
     event.preventDefault();
-    
+
     const scrollSpeed = 10;
     if (event.deltaY > 0) {
       list.scrollLeft += scrollSpeed;
@@ -15,22 +15,25 @@ window.onload = () => {
     }
   });
 
-  list.addEventListener('touchstart', (event) => {
+  list.addEventListener('mousedown', (event) => {
     isDragging = true;
-    touchStartX = event.touches[0].clientX;
+    touchStartX = event.clientX;
     touchScrollLeft = list.scrollLeft;
+
+    list.addEventListener('mousemove', onMouseMove);
   });
 
-  list.addEventListener('touchend', () => {
+  list.addEventListener('mouseup', () => {
     isDragging = false;
+    list.removeEventListener('mousemove', onMouseMove);
   });
 
-  list.addEventListener('touchmove', (event) => {
+  function onMouseMove(event) {
     if (!isDragging) return;
     event.preventDefault();
-    
-    const touchCurrentX = event.touches[0].clientX;
-    const scrollAmount = (touchStartX - touchCurrentX) * 2; 
+
+    const touchCurrentX = event.clientX;
+    const scrollAmount = (touchStartX - touchCurrentX) * 2;
     list.scrollLeft = touchScrollLeft + scrollAmount;
-  });
+  }
 };
