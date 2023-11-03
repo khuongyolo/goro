@@ -201,15 +201,31 @@ body{
 }
 
 #container .list-shop li{
-    padding: 80px 10px;
-    /* border: 1px solid black; */
-    background-image: url('flat-geometric-background_23-2148957201.jpg');
-    background-size: cover;
+    display: flex;
+    justify-content:space-between;
+    justify-items: center;
+    align-items: center ;
+    padding: 40px 30px;
+    /* background-image: url('flat-geometric-background_23-2148957201.jpg');
+    background-size: cover; */
+    background-color:rgba(255 180 68) ;
     box-shadow: 3px 3px 5px rgb(0,0,0,.3);
     border-radius: 20px;
     margin-bottom: 20px;
-    cursor:pointer;
 }
+
+#container .list-shop li a img{
+    width: 90px;
+}
+
+#container .list-shop li .store-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    justify-items: left;
+}
+
+
 
 #container .list-shop li:first-child{
     margin-top: 30px;
