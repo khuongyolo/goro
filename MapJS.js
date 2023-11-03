@@ -8,7 +8,7 @@ window.onload = () => {
   list.addEventListener('wheel', (event) => {
     event.preventDefault();
 
-    const sensitivity = 0.2;
+    const sensitivity = 0.9;
     let speed = Math.abs(event.deltaY);
     const scrollSpeed = speed * sensitivity;
 
