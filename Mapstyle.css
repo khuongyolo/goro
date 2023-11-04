@@ -14,7 +14,7 @@ body{
 }
 
 #container{
-    max-width:35%;
+    max-width:550px;
     display:flex;
     flex-direction: column;
     z-index: 2;
@@ -59,13 +59,12 @@ body{
     font-size: 25px;   
     color:rgb(12, 75, 67);
 }
-#container #main-header a i:hover{
-    transition: 0.1s ease-in-out;
-    color:rgb(255, 196, 0);
-}
+
 #container #main-header a .fa-circle-question:hover{
     transform:scale(150%,150%);
     transition: 0.2s ease-in-out;
+    transition: 0.1s ease-in-out;
+    color:rgb(255, 196, 0);
 
 }
 
