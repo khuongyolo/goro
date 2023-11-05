@@ -1,28 +1,67 @@
 body{
+    height: 100%;
     font-family: Helvetica, sans-serif;
+    border: 4px solid yellow;
 }
 
 #wrapper{
     display: flex;
-    padding: 10px;
-    border:4px solid black;
-    justify-content: space-between;
+    padding:10px;
+    border:4px solid rgb(143, 47, 63);
+    gap:30px;
+    height: 100%;
 }
+
+/* PHAN TOP---------------------------------------------------------------------------------- */
 
 #left-content{
     border:4px solid black;
-    width: 100%;
+    width: 500px;
     height: 100%;
     display: flex;
 }
 
+#left-container{
+    height: 100%;
+    width: 500px;
+    border:4px solid orange;
+}
+
 #left-container-top{
     border:4px solid rgb(243, 0, 0);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+
+#left-container-top-header{
+    display:flex;
+    flex-direction: column;
+}
+#left-container-top-header-logo{
+    display:flex;
+}
+#left-container-top-category-container{
+    display: flex;
+    overflow-x:auto;
+}
+
+/* PHAN MIDDLE ----------------------------------------------------------------------------*/
 
 #left-container-mid{
     border:4px solid green;
+    overflow-y: hidden;
 }
+
+#left-container-mid .left-container-mid-shop{
+    display:flex;
+    justify-items: center;
+    align-items: center;
+    gap:25px;
+    height:64vh;
+}
+
+
 
 #left-container-bot{
     border:4px solid blue;
