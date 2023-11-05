@@ -13,16 +13,16 @@ body, html {
     gap:30px;
     height: 97%; 
     align-items: center;
-    padding: 10px 10px;
+    padding: 0px 10px;
 }
 
 /* PHAN TOP---------------------------------------------------------------------------------- */
 
-#left-content{
+.left-content{
     width: 500px;
     height: 100%;
     display: flex;
-    flex-shrink: 0;
+    padding: 0 10px;
     background-color: rgb(128, 109, 109);
 }
 
@@ -32,18 +32,32 @@ body, html {
 }
 
 #left-container-top{
-    border:4px solid rgb(243, 0, 0);
     display: flex;
     flex-direction: column;
     align-items: center;
+    height:30%;
+    /* border:1px solid yellow; */
 }
 
-#left-container-top-header{
+.left-container-top-header{
     display:flex;
     flex-direction: column;
+    width: 100%;
+    justify-items: center;
+    align-items: center;
 }
+
+.left-container-top-header-liststyle-none ul{
+    list-style: none;
+    padding:0;
+}
+
 #left-container-top-header-logo{
     display:flex;
+    width:100%;
+    justify-items: center;
+    justify-content: space-between;
+    align-items: center;
 }
 #left-container-top-category-container{
     display: flex;
@@ -53,9 +67,16 @@ body, html {
 /* PHAN MIDDLE ----------------------------------------------------------------------------*/
 
 #left-container-mid{
-    border:4px solid green;
-    overflow-y: hidden;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    height:60%
 }
+
+#left-container-mid::-webkit-scrollbar{
+    display:none;
+}
+
 
 #left-container-mid .left-container-mid-shop{
     display:flex;
@@ -64,17 +85,24 @@ body, html {
     gap:25px;
 }
 
-#left-container-bot{
-    border:4px solid blue;
+#left-container-mid .left-container-mid-shop-liststyle-none ul{
+    list-style: none;
 }
 
-#left-container-bot-container{
+
+.left-container-bot{
     display: flex;
+    height:10%;
+    justify-content: space-between;
     align-items: center;
-    justify-content:space-between;
-    justify-items: center;
+    margin:0;
+}
+
+.left-container-bot-liststyle-none ul{
+    list-style: none;
     padding:0;
 }
+
 
 
 
