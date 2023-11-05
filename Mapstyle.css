@@ -22,8 +22,11 @@ body, html {
     width: 500px;
     height: 100%;
     display: flex;
-    padding: 0 10px;
     background-color: rgb(128, 109, 109);
+}
+
+.left-content-min-height{
+    min-height: 800px;
 }
 
 #left-container{
@@ -31,13 +34,19 @@ body, html {
     width: 500px;
 }
 
-#left-container-top{
+.left-container-top{
     display: flex;
     flex-direction: column;
     align-items: center;
     height:30%;
     /* border:1px solid yellow; */
 }
+
+.left-container-top-color{
+    background-color: rgb(13, 78, 78);
+}
+
+
 
 .left-container-top-header{
     display:flex;
@@ -59,6 +68,15 @@ body, html {
     justify-content: space-between;
     align-items: center;
 }
+
+#left-container-top-search-bar{
+    width:50%;
+    padding:15px 20px;
+    border:none;
+    border-radius:13px;
+}
+
+
 #left-container-top-category-container{
     display: flex;
     overflow-x:auto;
@@ -66,26 +84,32 @@ body, html {
 
 /* PHAN MIDDLE ----------------------------------------------------------------------------*/
 
-#left-container-mid{
+.left-container-mid{
     display: flex;
     flex-direction: column;
     overflow-y: auto;
     height:60%
 }
 
-#left-container-mid::-webkit-scrollbar{
+.left-container-mid-color{
+    background-color: beige;
+}
+
+
+.left-container-mid::-webkit-scrollbar{
     display:none;
 }
 
 
-#left-container-mid .left-container-mid-shop{
+.left-container-mid .left-container-mid-shop{
     display:flex;
     justify-items: center;
+    justify-content: space-between;
     align-items: center;
     gap:25px;
 }
 
-#left-container-mid .left-container-mid-shop-liststyle-none ul{
+.left-container-mid .left-container-mid-shop-liststyle-none ul{
     list-style: none;
 }
 
