@@ -22,13 +22,16 @@ body, html {
     width: 500px;
     height: 100%;
     display: flex;
-    background-color: rgb(128, 109, 109);
-    border-radius: 25px;
 }
 
 .left-content-min-height{
-    min-height: 650px;
+    min-height: 700px;
 }
+
+.left-content-min-width{
+    min-width: 500px;
+}
+
 
 #left-container{
     height: 100%;
@@ -41,6 +44,7 @@ body, html {
     display: flex;
     flex-direction: column;
     align-items: center;
+    /* gap: 20px; */
     height:30%;
     border-radius: 25px 25px 0 0;
 
@@ -67,12 +71,21 @@ body, html {
 
 #left-container-top-header-logo{
     display:flex;
-    width:95%;
+    width:90%;
     padding:0 10px;
     justify-items: center;
     justify-content: space-between;
     align-items: center;
 }
+
+#left-container-top-header-logo li a i{
+    font-size: 20px;
+    color:rgb(236, 175, 43)
+}
+#left-container-top-header-logo li a img{
+    width: 100px;
+}
+
 
 #left-container-top-search-bar{
     width:50%;
@@ -82,10 +95,40 @@ body, html {
 }
 
 
+.left-container-top-category{
+    width: 100%;
+}
+
+.left-container-top-category-liststyle-none ul{
+    list-style: none;
+}
+
 #left-container-top-category-container{
     display: flex;
-    overflow-x:auto;
+    overflow-x: auto;
+    align-items: center;
+    justify-items: center;
+    /* padding:0 50px; */
 }
+#left-container-top-category-container::-webkit-scrollbar{
+    display:none;
+}
+
+#left-container-top-category-container li{
+    margin-right: 20px;
+    /* padding:10px 40px; */
+    background-color: white;
+}
+
+#left-container-top-category-container li a{
+    text-decoration: none;
+    color: black;
+}
+
+
+
+
+
 
 /* PHAN MIDDLE ----------------------------------------------------------------------------*/
 
@@ -125,6 +168,9 @@ body, html {
     justify-content: space-between;
     align-items: center;
     margin:0;
+    padding: 0 20px;
+    background-color: rgb(212, 177, 20);
+    border-radius: 0 0 25px 25px;
 }
 
 .left-container-bot-liststyle-none ul{
