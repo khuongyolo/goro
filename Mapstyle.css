@@ -6,6 +6,7 @@ body, html {
     -webkit-font-smoothing: antialiased;
     display:flex;
     align-items: center;
+    padding: 0 10px;
 }
 
 #wrapper{
@@ -13,7 +14,6 @@ body, html {
     gap:30px;
     height: 97%; 
     align-items: center;
-    padding: 0px 10px;
 }
 
 /* PHAN TOP---------------------------------------------------------------------------------- */
@@ -23,15 +23,18 @@ body, html {
     height: 100%;
     display: flex;
     background-color: rgb(128, 109, 109);
+    border-radius: 25px;
 }
 
 .left-content-min-height{
-    min-height: 600px;
+    min-height: 650px;
 }
 
 #left-container{
     height: 100%;
     width: 500px;
+
+
 }
 
 .left-container-top{
@@ -39,7 +42,8 @@ body, html {
     flex-direction: column;
     align-items: center;
     height:30%;
-    /* border:1px solid yellow; */
+    border-radius: 25px 25px 0 0;
+
 }
 
 .left-container-top-color{
@@ -63,7 +67,8 @@ body, html {
 
 #left-container-top-header-logo{
     display:flex;
-    width:100%;
+    width:95%;
+    padding:0 10px;
     justify-items: center;
     justify-content: space-between;
     align-items: center;
@@ -71,9 +76,9 @@ body, html {
 
 #left-container-top-search-bar{
     width:50%;
-    padding:15px 20px;
+    padding:10px 20px;
     border:none;
-    border-radius:13px;
+    border-radius:16px;
 }
 
 
