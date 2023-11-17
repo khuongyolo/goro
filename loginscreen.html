@@ -2,36 +2,33 @@
 <html lang = "en">
 <head>
 	<meta charset = "UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>GORO | Đăng nhập </title>
-	<link rel="stylesheet" href="loginscreencss.css">
-	<link rel="icon" href="Title logo final.png" type="image/icon type">
+  <meta name = "viewport" content="width=device-width, initial-scale=1.0">
+  <title> GORO | Đăng Nhập</title>
+  <link rel="stylesheet" href="loginscreencss.css">
+  <link rel="stylesheet" href="fontawesome-free-6.4.2-web/css/all.min.css">
+  <link rel="icon" type="small icon" href="Title logo final.png">
 </head>
 <body>
-	<a href="introduce.html"><img width="200" src="Logopng.png"></a>
-<div>
-	<form class="form-container">
-		
-		<label id="account-name" for="account">Tên Đăng Nhập</label><br>
-			<input type = "text" placeholder="Nhập địa chỉ mail của bạn"><br>
-		
-		<label id="password" for="password">Mật Khẩu</label><br>
-			<input type = "password" maxlength="16" placeholder="Nhập tối đa 16 kí tự"><br>
-		
-		<a id="newsignin" href ="MapGORO.html">Đăng nhập</a>
-			
-		
-		<a id="sign-up" href ="signupscreen.html" target ="blank">Đăng kí</a>
-		
-		
-		<a id="resign-up" href ="resignuppassword.html" target ="blank">Quên mật khẩu ?</a>
-
-	</form>
-
-</div>
-
-
-
-
+	<a href="#" id="corner-img-link"><img src="Logopng.png" alt="cornerlogo" id="corner-logo" width="120"></a>
+	
+	
+	<div class="signin">
+		<h1 class="signin-heading">Đăng nhập</h1>
+		<label for="account" class="signin-label">Tài Khoản</label>
+		<input type="text" id="user-account" name="user-account" class="signin-input account-input" placeholder="VD goro@gmail.com">
+		<label for="account" class="signin-label">Mật Khẩu</label>
+		<input type="password" id="user-password" name="user-password" class="signin-input password-input" placeholder="goro123ABC">
+		<button class="signin-btn">Xác Nhận</button>
+		<div class="signin-link-or"><span>Hoặc</span></div>
+		<div class="social-icon">
+			<a href="#" class="signin-social-icon-link"><i class="fa-brands fa-facebook signin-social-icon"><span> Facebook </span></i></a>
+			<a href="#" class="signin-social-icon-link"><i class="fa-brands fa-apple signin-social-icon"><span> Apple </span></i></a>
+		</div>
+		<div class="signup"><span>Bạn chưa có tài khoản ? </span><a href="#" class="signup-link">Đăng kí</a></div>	
+	</div>
+	
+	
+	<div class="footer">&copy GORO Cooporate. Designed by GORO Team</div>
+	<script src="script.js"></script>
 </body>
 </html>

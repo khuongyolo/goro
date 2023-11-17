@@ -1,127 +1,155 @@
-body{
-	background-image: url('fixed big background.jpeg');
-	background-position: top;
-	background-size: cover;
-	background-repeat: none;
-}
-
-img{
-	margin-left: 30px;
-}
-
-.form-container{
-/*	clear:both;*/
-	background-image: url('login pad.jpg');
-	background-size:cover;
-	border-radius: 40px;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+*{
 	box-sizing: border-box;
-	padding:10px;
-	width: 400px;
-	height: 430px;
-	margin: 0 auto;
+	margin: 0;
+	padding: 0;
 }
 
-#account-name{
-	position:relative;
-	top:30px;
-	left: 45px;
-	font-family: Helvetica;
-	font-size: 15px;
+body{
+	width: 100%;
+	height: 100vh;
+	background-color: #ececec;
+	font-family: 'Montserrat', sans-serif;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
-#password{
-	position:relative;
-	top:30px;
-	left: 45px;
-	font-family: Helvetica;
-	font-size: 15px;
-
+#corner-logo{
+	position: absolute;
+	top:20px;
+	left:20px;
 }
 
-div input{
-	width:300px;
-	background:#fff7e6;
-	border: none;
-	margin-top: 35px;
-	margin-left: 35px;
-	padding-bottom:15px;
-	padding-top:15px;
-	padding-left:10px;
-	border-radius:9px;
-	box-shadow: 3px 3px 3px #595757;
-	font-family: Helvetica;
+.signin{
+	padding: 90px 75px;
+	background-color: #fff;
+	width: 100%;
+	max-width: 500px;
+	border-radius: 20px;
 }
 
-::placeholder{
-	position:relative;
-	opacity: 40%;
-	font-size: 12px;
-	left: 10px;
+.signin-heading{
+	font-size: 30px;
+	font-weight: 600;
+	color: #373941;
+	margin-bottom: 35px;
+	text-align: center;
 }
 
-#newsignin{
-	position:relative;
-	top: 40px;
-	left: 120px;
-	width:150px;
-	background:#fccf38;
-	border: none;
+.signin-label{
+	display: block;
+	margin-bottom: 10px;
+}
+
+.signin-input{
+	display: block;
+	width: 100%;
+	padding:15px 10px;
+	border-radius: 10px;
+	border: 1px solid black;
+}
+
+.account-input{
+	margin-bottom: 25px;
+}
+
+.signin-btn{
+	display: block;
+	margin: 25px auto;
 	padding: 15px 25px;
-	border-radius:15px;
-	box-shadow: 3px 3px 3px #595757;
-	font-family: Helvetica;
-}
-
-#newsignin:hover{
-	position:relative;
-	background:#fff7e6;
-	color:black;
+	border-radius: 10px;
 	border: none;
-	padding: 15px 25px;
-	border-radius:15px;
-	box-shadow: 3px 3px 3px #595757;
-	font-family: Helvetica;
-	transition: 0.2s ease-in-out;
+	background-color: #512da8;
+	cursor: pointer;
+	color: white;
 }
 
-a{
+.signin-btn:hover{
+	background-color: #5f36bd;
+}
+
+
+.signin-link-or{
+	text-align: center;
+	position: relative;
+}
+
+.signin-link-or span{
+	padding: 2px 20px;
+	background-color: #fff;
+	position: relative;
+	z-index: 2;
+}
+
+.signin-link-or:after{
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 1px;
+	background-color: #9e9e9e;
+	top:50%;
+	left:0;
+}
+
+.signin-social-icon-link{
 	text-decoration: none;
 	color: black;
-	font-size:16px;
-	font-family: Helvetica;
 }
 
-a:hover{
+.social-icon{
+	text-align: center;
+	margin: 20px auto;
+}
+
+.social-icon a i span{
+	font-family: Helvetica, sans-serif;
+}
+
+.social-icon .signin-social-icon{
+	border: 1px solid black;
+	border-radius: 10px;
+	margin: 0 5px;
+}
+
+.social-icon .signin-social-icon:hover{
+	background-color: #eeecec;
+}
+
+.social-icon .fa-facebook{
+	padding: 10px 15px;
+	color: #0766FF;
+}
+
+.social-icon .fa-facebook span{
+	color:black;
+}
+
+.social-icon .fa-apple{
+	padding: 10px 30px;
+}
+
+.signup{
+	font-family: Helvetica, sans-serif;
+	text-align: center;
+	padding-top: 20px;
+}
+
+.signup a{
 	text-decoration: none;
-	color: white;
-	font-size:16px;
-	font-family: Helvetica;
-	transition: 0.2s ease-in-out;
-}
-
-#sign-up{
-	position: relative;
-	top: 75px;
-	left: 160px;
-	display:block;
-}
-
-#sign-up:hover{
-	position: relative;
-	top: 75px;
-	left: 160px;
-}
-
-#resign-up{
-	position: relative;
-	top: 80px;
-	left: 135px;
-}
-
-#resign-up:hover{
-	position: relative;
-	top: 80px;
-	left: 135px;
 }
 
 
+
+
+
+
+
+
+
+
+
+.footer{
+	position: absolute;
+	bottom: 0;
+}
