@@ -8,93 +8,122 @@
 body{
 	width: 100%;
 	height: 100vh;
-	background-color: rgb(2, 2, 26);
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	/* background-color: rgb(6, 6, 34); */
+	background: url('fixed big background.jpeg');
+	background-size: cover;
+	background-position: top;
+	overflow-y: scroll;
 	font-family: 'Montserrat', sans-serif;
+	min-width: 50%;
+	/* margin-top: 20px; */
+}
+
+.upper-container{
 	display: flex;
 	align-items: center;
-	justify-content: center;
+	justify-items: center;
+	gap: 20%;
+	margin: auto;
+}
+
+.logo-and-pic{
+	display: block;
 }
 
 #corner-logo{
-	position: absolute;
-	top:20px;
-	left:20px;
+	width: 160px;
+	margin-bottom: 30px;
+	margin-left: 30px;
 }
 
-.signin{
-	padding: 90px 75px;
-	background-color: #fff;
-	width: 100%;
-	max-width: 500px;
-	border-radius: 20px;
+#left-img{
+	display: block;
+	width: 400px;
+}
+.signin-container{
+	margin: 25px;
+}
+.signin-container form{
+	min-width: 450px;
+	background-color: #F1F2F5;
+	border-radius: 15px;
+	padding: 50px 70px;
+}
+
+.signin-label{
+	font-size: 14px;
 }
 
 .signin-heading{
-	font-size: 30px;
+	margin-bottom: 30px;
 	font-weight: 600;
-	color: #373941;
-	margin-bottom: 35px;
 	text-align: center;
 }
 
 .signin-label{
 	display: block;
-	margin-bottom: 10px;
+	margin-bottom: 5px;
+	margin-left: 10px;
 }
 
 .signin-input{
-	display: block;
+ 	display: block;
 	width: 100%;
-	padding:15px 10px;
+	padding: 15px 15px;
 	border-radius: 10px;
-	border: 1px solid black;
+	border: 1px solid rgba(209, 209, 209, 0.518);
+	background-color: #f5f5f5;
+	box-shadow: 2px 2px 4px rgb(0,0,0,.4);
+	margin-bottom: 10px;
+	font-size: 14px;
 }
 
-.account-input{
-	margin-bottom: 25px;
+::placeholder{
+	opacity: 50%;
 }
 
 .signin-btn{
 	display: block;
-	margin: 25px auto;
-	padding: 15px 25px;
+	margin: 30px auto;
+	padding: 15px 20px;
+	text-align: center;
 	border-radius: 10px;
 	border: none;
 	background-color: #512da8;
-	cursor: pointer;
 	color: white;
+	font-size: 16px;
+	cursor: pointer;
 }
 
 .signin-btn:hover{
-	background-color: #5f36bd;
+	background-color: #6235cb;
 }
 
 
 .signin-link-or{
 	text-align: center;
+	width: 100%;
 	position: relative;
 }
 
 .signin-link-or span{
-	padding: 2px 20px;
-	background-color: #fff;
-	position: relative;
+ 	position: relative;
+	padding: 2px 10px;
+	background-color: white;
 	z-index: 2;
 }
 
-.signin-link-or:after{
+.signin-link-or::after{
 	content: "";
-	position: absolute;
 	width: 100%;
 	height: 1px;
-	background-color: #9e9e9e;
+	background-color: #acacac;
+	position: absolute;
 	top:50%;
-	left:0;
-}
-
-.signin-social-icon-link{
-	text-decoration: none;
-	color: black;
+	left: 0;
 }
 
 .social-icon{
@@ -102,40 +131,64 @@ body{
 	margin: 20px auto;
 }
 
-.social-icon a i span{
-	font-family: Helvetica, sans-serif;
-}
-
-.social-icon .signin-social-icon{
-	border: 1px solid black;
-	border-radius: 10px;
-	margin: 0 5px;
-}
-
-.social-icon .signin-social-icon:hover{
-	background-color: #eeecec;
-}
-
-.social-icon .fa-facebook{
-	padding: 10px 15px;
-	color: #0766FF;
-}
-
-.social-icon .fa-facebook span{
+.social-icon a span{
 	color:black;
+	font-family: 'Montserrat', sans-serif;
 }
 
-.social-icon .fa-apple{
-	padding: 10px 30px;
+.social-icon a .signin-social-icon{
+	border: 1px solid rgba(209, 209, 209, 0.518);
+	border-radius: 10px;
+	background-color: #f5f5f5;
+	box-shadow: 2px 2px 4px rgb(0,0,0,.4);
+}
+.social-icon a .signin-social-icon:hover{
+	background-color: #f0efef;
+	transform: translateY(-4px);
+	box-shadow: 3px 3px 8px rgb(0,0,0,.4);
+	transition: 0.1s ease-in-out;
+}
+.social-icon a .signin-social-icon:active{
+	background-color: #f0efef;
+	transform: translateY(-1px);
+	box-shadow: 2px 2px 4px rgb(0,0,0,.4);
+	transition: 0.1s ease-in-out;
+
+}
+
+
+.social-icon a .fa-facebook{
+	padding: 15px 15px;
+	color: #0766FF;
+	margin-right: 5px;
+}
+
+.social-icon a .fa-apple{
+	padding: 15px 30px;
+	color: black;
+	margin-left: 5px;
 }
 
 .signup{
-	font-family: Helvetica, sans-serif;
+	margin-top: 30px;
 	text-align: center;
-	padding-top: 20px;
+	font-size: 14px;
 }
 
 .signup a{
+	color: #512da8;
+	text-decoration: none;
+}
+
+
+.forgot-password{
+	font-size: 14px;
+	margin-top: 10px;
+	text-align: center;
+}
+
+.forgot-password a{
+	color: #512da8;
 	text-decoration: none;
 }
 
@@ -145,12 +198,88 @@ body{
 
 
 
-
-
-
-
-.footer{
-	color: #fff;
-	position: absolute;
-	bottom: 0;
+.footer {
+	width: 100%;
+	height: 10vh;
+	background-color: #FFB700;
+	margin-top: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 20px 30px;
 }
+.footer p{
+	padding:0;
+	margin:0;
+	font-size: 12px;
+	opacity: 60%;
+	/* padding: 20px 30px; */
+	text-align: center;
+}
+
+/* danh cho mobile */
+@media only screen and (max-width: 740px ){
+
+	body{
+		overflow: hidden;
+	}
+	
+	#left-img{
+		display: none;
+	}
+
+	#corner-img{
+		width: 170px;
+	}
+
+	#corner-img{
+		width: 170px;
+	}
+
+	.upper-container{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+}
+
+
+/* danh cho tablet va PC */
+@media only screen and (min-width: 740px) and (max-width: 1024px){
+
+	body{
+		overflow: hidden;
+	}
+
+	#left-img{
+		display: none;
+	}
+
+	#corner-img{
+		width: 170px;
+	}
+
+	#corner-img{
+		width: 170px;
+	}
+
+	.upper-container{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+
+	
+
+
+
+	
+
+
+
+
+
+}
+	
