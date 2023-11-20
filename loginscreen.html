@@ -17,25 +17,30 @@
 		
 		<div class="signin-container">
 			<form> 
-				<h1 class="signin-heading">Đăng nhập</h1>
-				<label for="account" class="signin-label">Tài Khoản</label>
-				<input type="text" id="user-account" name="user-account" class="signin-input account-input" placeholder="VD goro@gmail.com">
-				<label for="account" class="signin-label">Mật Khẩu</label>
+				<h1 class="signin-heading" id="signin-heading">Đăng nhập</h1>
+				<label for="account" class="signin-label" id="signin-label">Tài Khoản</label>
+				<input type="text" id="user-account" name="user-account" class="signin-input account-input" placeholder="goro@gmail.com">
+				<label for="account" class="signin-label" id="password-label">Mật Khẩu</label>
 				<input type="password" id="user-password" name="user-password" class="signin-input password-input" placeholder="goro123ABC">
-				<button class="signin-btn">Xác Nhận</button>
-				<div class="signin-link-or"><span>Hoặc</span></div>
+				<button class="signin-btn" id="signin-btn">Xác Nhận</button>
+				<div class="signin-link-or"><span id="signin-link-or">Hoặc</span></div>
 				<div class="social-icon">
 					<a href="#" class="signin-social-icon-link"><i class="fa-brands fa-facebook signin-social-icon"><span> Facebook </span></i></a>
 					<a href="#" class="signin-social-icon-link"><i class="fa-brands fa-apple signin-social-icon"><span> Apple </span></i></a>
 				</div>
-				<div class="signup"><span>Bạn chưa có tài khoản ?</span><a href="#" class="signup-link"> Đăng kí</a></div>
-				<div class="forgot-password"><a href="#">Quên mật khẩu ?</a></div>
+				<div class="signup" ><span id="sign-up">Bạn chưa có tài khoản ?</span><a href="#" class="signup-link" id="signup-link"> Đăng kí</a></div>
+				<div class="forgot-password"><a href="#" id="forgot-password">Quên mật khẩu ?</a></div>
 			</form>
 		</div>
 	</div>
 	
 	<div class="footer">
-		<p>&copy GORO Cooporate. | Designed by GORO Team | All rights reserved | &copy GORO Cooporate. | Designed by GORO Team | All rights reserved | &copy GORO Cooporate. </p>
+		<div class="footer-option-container">
+			<a href="#" class="footer-option" onclick="VietnameseChange()">Vietnamese</a>
+			<a href="#" class="footer-option" onclick="EnglishChange()">English (US)</a>
+			<a href="#" class="footer-option" onclick="JapaneseChange()">Japanese</a>
+		</div>
+		<p>&copy GORO Cooporate. | Designed by GORO Team | All rights reserved</p>
 	</div>
 	<script src="script.js"></script>
 </body>
