@@ -53,7 +53,6 @@ body{
 }
 .signin-container{
 	margin: 25px;
-	/* margin-left: 50px; */
 }
 .signin-container form{
 	min-width: 450px;
@@ -361,7 +360,7 @@ body{
 @media only screen and (min-width: 740px) and (max-width: 1024px){
 
 	body{
-		overflow: hidden;
+		overflow: scroll;
 	}
 
 	#left-img{
