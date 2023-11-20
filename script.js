@@ -29,4 +29,7 @@ function JapaneseChange(){
     document.getElementById("sign-up").innerHTML = "アカウントまだありません?";
     document.getElementById("signup-link").innerHTML = " 登録";
     document.getElementById("forgot-password").innerHTML = "パスワードを忘れた方?";
+    document.getElementById("signin-heading").style.fontSize = "30px";
+    document.getElementById("signin-heading").style.marginBottom="20px";
+
 }
