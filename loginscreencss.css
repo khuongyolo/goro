@@ -234,6 +234,12 @@ body{
 		min-width: 100%;
 	}
 
+	.signin-btn{
+		margin: 15px auto;
+		padding: 10px 15px;
+		font-size: 12px;
+	}
+
 	.social-icon{
 		text-align: center;
 		margin: 10px auto;
@@ -264,6 +270,17 @@ body{
 
 	#corner-img{
 		width: 170px;
+	}
+
+	.signup{
+		margin-top: 15px;
+		text-align: center;
+		font-size: 10px;
+	}
+
+	.forgot-password{
+		font-size: 10px;
+		margin-top: 8px;
 	}
 
 	.upper-container{
