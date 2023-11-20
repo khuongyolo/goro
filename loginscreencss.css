@@ -11,10 +11,10 @@ body{
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-	/* background-color: rgb(6, 6, 34); */
-	background: url('fixed big background.jpeg');
+	background-color: rgb(18, 18, 43);
+	/* background: url('fixed big background.jpeg');
 	background-size: cover;
-	background-position: top;
+	background-position: top; */
 	overflow-y: scroll;
 	font-family: 'Montserrat', sans-serif;
 	min-width: 50%;
@@ -242,6 +242,17 @@ body{
 		align-items: center;
 		justify-content: center;
 	}
+	
+	.footer {
+		display: none;
+		padding:0;
+		margin:0;
+		font-size: 12px;
+		opacity: 60%;
+		padding: 20px 30px;
+		text-align: center;
+	}
+
 }
 
 
