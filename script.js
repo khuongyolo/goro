@@ -26,7 +26,7 @@ function JapaneseChange(){
     document.getElementById("password-label").innerHTML = "パスワード";
     document.getElementById("signin-btn").innerHTML = "確認";
     document.getElementById("signin-link-or").innerHTML = "または";
-    document.getElementById("sign-up").innerHTML = "アカウントまだありいません?";
+    document.getElementById("sign-up").innerHTML = "アカウントまだありません?";
     document.getElementById("signup-link").innerHTML = " 登録";
     document.getElementById("forgot-password").innerHTML = "パスワードを忘れた方?";
 }
