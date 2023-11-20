@@ -232,6 +232,7 @@ body{
 
 	.signin-container form{
 		min-width: 100%;
+		padding: 30px 70px;
 	}
 
 	.signin-btn{
@@ -294,7 +295,7 @@ body{
 	
 	.footer {
 		padding:0;
-		margin-bottom:150px;
+		margin-bottom:200px;
 		font-size: 12px;
 		opacity: 60%;
 		padding: 20px 30px;
