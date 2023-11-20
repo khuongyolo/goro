@@ -31,6 +31,7 @@ body{
 
 .logo-and-pic{
 	display: block;
+	margin-right: 50px;
 }
 
 #corner-logo{
@@ -45,6 +46,7 @@ body{
 }
 .signin-container{
 	margin: 25px;
+	/* margin-left: 50px; */
 }
 .signin-container form{
 	min-width: 450px;
@@ -226,10 +228,11 @@ body{
 	}
 
 	#corner-logo{
-		width: 100px;
+		width: 130px;
 		margin-bottom: 0;
-		margin-left: 0;
+		margin-left: 30px;
 	}
+
 
 	.signin-container form{
 		min-width: 360px;
@@ -237,9 +240,9 @@ body{
 	}
 
 	.signin-btn{
-		margin: 15px auto;
-		padding: 10px 15px;
-		font-size: 12px;
+		margin: 16px auto;
+		padding: 15px 25px;
+		font-size: 14px;
 	}
 
 	.social-icon{
@@ -248,18 +251,18 @@ body{
 	}
 	
 	.social-icon a span{
-		font-size: 10px;
+		font-size: 12px;
 	}
 	
 	
 	.social-icon a .fa-facebook{
 		padding: 10px 20px;
-		margin-right: 5px;
+		margin-right: 3px;
 	}
 	
 	.social-icon a .fa-apple{
 		padding: 10px 30px;
-		margin-left: 5px;
+		margin-left: 3px;
 	}
 
 	#left-img{
@@ -291,7 +294,7 @@ body{
 		align-items: center;
 		justify-content: center;
 		margin: 0;
-		margin-top: 100px;
+		margin-top: 70px;
 	}
 	
 	.footer {
