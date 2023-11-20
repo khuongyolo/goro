@@ -340,7 +340,7 @@ body{
 @media only screen and (min-width: 740px) and (max-width: 1024px){
 
 	body{
-		overflow: scroll;
+		overflow: hidden;
 	}
 
 	#left-img{
@@ -361,6 +361,13 @@ body{
 		flex-direction: column;
 		align-items: center;
 		justify-content: center;
+	}
+
+	.footer {
+		width: 100%;
+		height: 12vh;
+		margin-top: 0px;
+		
 	}
 
 	
