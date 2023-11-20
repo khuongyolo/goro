@@ -235,12 +235,12 @@ body{
 
 
 	.signin-container form{
-		min-width: 360px;
-		padding: 30px 35px;
+		min-width: 345px;
+		padding: 25px 30px;
 	}
 
 	.signin-btn{
-		margin: 16px auto;
+		margin: 19px auto;
 		padding: 15px 25px;
 		font-size: 14px;
 	}
