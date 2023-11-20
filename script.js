@@ -7,6 +7,8 @@ function EnglishChange(){
     document.getElementById("sign-up").innerHTML = "You don't have account ?";
     document.getElementById("signup-link").innerHTML = " Sign Up";
     document.getElementById("forgot-password").innerHTML = " Forgot Password ?";
+    document.getElementById("logo-text").innerHTML = "Click the logo to see more about us";
+
 }
 
 function VietnameseChange(){
@@ -17,6 +19,7 @@ function VietnameseChange(){
     document.getElementById("signin-link-or").innerHTML = "Hoặc";
     document.getElementById("sign-up").innerHTML = "Bạn chưa có tài khoản ?";
     document.getElementById("signup-link").innerHTML = " Đăng kí";
+    document.getElementById("logo-text").innerHTML = "Bấm vào logo để xem thêm về chúng tôi";
     document.getElementById("forgot-password").innerHTML = "Quên mật khẩu ?";
 }
 
@@ -29,6 +32,7 @@ function JapaneseChange(){
     document.getElementById("sign-up").innerHTML = "アカウントまだありません?";
     document.getElementById("signup-link").innerHTML = " 登録";
     document.getElementById("forgot-password").innerHTML = "パスワードを忘れた方?";
+    document.getElementById("logo-text").innerHTML = "私たちについて知りたければ、ロゴをクリック";
     document.getElementById("signin-heading").style.fontSize = "30px";
     document.getElementById("signin-heading").style.marginBottom="20px";
 

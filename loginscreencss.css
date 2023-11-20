@@ -36,8 +36,15 @@ body{
 
 #corner-logo{
 	width: 160px;
-	margin-bottom: 30px;
+	margin-bottom: 5px;
 	margin-left: 30px;
+}
+
+.logo-text{
+	margin-bottom: 25px;
+	margin-left: 30px;
+	color: rgba(211, 211, 211, 0.815);
+	font-size: 13px;
 }
 
 #left-img{
@@ -228,7 +235,7 @@ body{
 .footer-long-line:after{
 	content: "";
 	width: 100%;
-	background-color: rgba(241, 242, 245, 0.247);
+	background-color: rgba(241, 242, 245, 0.233);
 	height: 1px;
 	z-index: 2;
 	position: absolute;
@@ -257,6 +264,10 @@ body{
 		width: 130px;
 		margin-bottom: 0;
 		margin-left: 30px;
+	}
+
+	.logo-text{
+		display: none;
 	}
 
 
@@ -364,6 +375,10 @@ body{
 
 	#corner-img{
 		width: 170px;
+	}
+
+	.logo-text{
+		display: none;
 	}
 
 	.upper-container{
