@@ -257,6 +257,7 @@ body{
 
 	body{
 		overflow:scroll;
+		height:98vh;
 	}
 
 	#corner-logo{
@@ -362,7 +363,7 @@ body{
 	
 	.footer {
 		padding:0;
-		/* margin-bottom:10px; */
+		height: 10vh;
 		padding: 0px 30px;
 	}
 	.footer p{
