@@ -388,6 +388,7 @@ body{
 
 	body{
 		overflow: scroll;
+		height: 98vh;
 	}
 
 	#left-img{
@@ -396,7 +397,6 @@ body{
 
 	#corner-img{
 		width: 170px;
-		margin-top: 30px;
 	}
 
 	#corner-img{
@@ -416,12 +416,10 @@ body{
 
 	.footer {
 		width: 100%;
-		height: 12vh;
+		height: 9vh;
 		margin-top: 0px;
 		
 	}
-
-	
 
 
 
