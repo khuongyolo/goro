@@ -260,7 +260,7 @@ body{
 	}
 
 	#corner-logo{
-		width: 130px;
+		width: 150px;
 		margin-bottom: 0;
 		margin-left: 30px;
 	}
@@ -268,16 +268,43 @@ body{
 	.logo-text{
 		display: none;
 	}
-
+	
+	.signin-heading{
+		margin-bottom: 20px;
+		font-weight: 600;
+		text-align: center;
+		font-size: 25px;
+	}
 
 	.signin-container form{
-		min-width: 345px;
+		min-width: 320px;
 		padding: 25px 30px;
 	}
 
+	.signin-input{
+		display: block;
+	   width: 100%;
+	   padding: 10px 15px;
+	   border-radius: 10px;
+	   border: 1px solid rgba(209, 209, 209, 0.518);
+	   background-color: #f5f5f5;
+	   box-shadow: 2px 2px 4px rgb(0,0,0,.4);
+	   margin-bottom: 10px;
+	   font-size: 14px;
+    }
+
+	.signin-link-or span{
+		position: relative;
+	   padding: 2px 10px;
+	   background-color:#F1F2F5;
+	   z-index: 2;
+	   font-size: 12px;
+   }
+
 	.signin-btn{
 		margin: 19px auto;
-		padding: 15px 25px;
+		padding: 10px 15px;
+		width: 100px;
 		font-size: 14px;
 	}
 
@@ -292,12 +319,12 @@ body{
 	
 	
 	.social-icon a .fa-facebook{
-		padding: 10px 20px;
+		padding: 10px 10px;
 		margin-right: 3px;
 	}
 	
 	.social-icon a .fa-apple{
-		padding: 10px 30px;
+		padding: 10px 25px;
 		margin-left: 3px;
 	}
 
