@@ -172,6 +172,25 @@ body{
 	font-size: 14px;
 }
 
+
+
+.input-password-icon i{
+	position: absolute;
+	margin-top: 5px;
+	right: 5px;
+}
+
+.input-password-icon{
+	width: 100%;
+	position: relative;
+	margin-bottom: 10px;
+}
+
+.fa-eye {
+	padding: 10px;
+	min-width: 40px;
+}
+
 .signup a{
 	color: #512da8;
 	text-decoration: none;
@@ -293,6 +312,14 @@ body{
 	   margin-bottom: 10px;
 	   font-size: 14px;
     }
+
+	.input-password-icon i{
+		position: absolute;
+		margin-top: 0px;
+		right: 5px;
+	}
+
+	
 
 	.signin-link-or span{
 		position: relative;
