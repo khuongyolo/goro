@@ -8,6 +8,8 @@ function EnglishChange(){
     document.getElementById("signup-link").innerHTML = " Sign Up";
     document.getElementById("forgot-password").innerHTML = " Forgot Password ?";
     document.getElementById("logo-text").innerHTML = "Click the logo to see more about us";
+    document.getElementById("tab-title").innerHTML = "GORO | Sign-in";
+
 
 }
 
@@ -21,6 +23,8 @@ function VietnameseChange(){
     document.getElementById("signup-link").innerHTML = " Đăng kí";
     document.getElementById("logo-text").innerHTML = "Bấm vào logo để xem thêm về chúng tôi";
     document.getElementById("forgot-password").innerHTML = "Quên mật khẩu ?";
+    document.getElementById("tab-title").innerHTML = "GORO | Đăng Nhập";
+
 }
 
 function JapaneseChange(){
@@ -33,6 +37,8 @@ function JapaneseChange(){
     document.getElementById("signup-link").innerHTML = " 登録";
     document.getElementById("forgot-password").innerHTML = "パスワードを忘れた方?";
     document.getElementById("logo-text").innerHTML = "私たちについて知りたければ、ロゴをクリック";
+    document.getElementById("tab-title").innerHTML = "GORO | サイン";
+
     document.getElementById("signin-heading").style.fontSize = "30px";
     document.getElementById("signin-heading").style.marginBottom="20px";
 
