@@ -90,6 +90,8 @@ body{
 	position: absolute;
 	right: 5px;
 	margin-top: 5px;
+	min-width:30px;
+
 }
 
 .input-password-icon{
@@ -101,7 +103,6 @@ body{
 	padding: 13px;
 	background-color: #e2e1e1;
 	border-radius: 8px;
-	min-width: 40px;
 	color: rgb(99, 99, 99);
 	z-index: 3;
 }
@@ -110,7 +111,6 @@ body{
 	padding: 13px;
 	background-color: #e2e1e1;
 	border-radius: 8px;
-	min-width: 40px;
 	color: rgb(99, 99, 99);
 	z-index: 2;
 }
