@@ -323,14 +323,14 @@ body{
 
 	.input-password-icon i{
 		position: absolute;
-		right: 5px;
-		margin-top: 5px;
+		right: 4px;
+		margin-top: 4px;
 		min-width:20px;
 
 	}
 	
 	.fa-eye-slash {
-		padding: 6px;
+		padding: 7.5px;
 		background-color: #e2e1e1;
 		border-radius: 8px;
 		color: rgb(99, 99, 99);
@@ -338,7 +338,7 @@ body{
 	}
 	
 	.fa-eye{
-		padding: 6px;
+		padding: 7.5px;
 		background-color: #e2e1e1;
 		border-radius: 8px;
 		color: rgb(99, 99, 99);
