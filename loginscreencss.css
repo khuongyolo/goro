@@ -85,11 +85,14 @@ body{
 	font-size: 14px;
 }
 
+.password-input{
+	padding-left: 55px;
+}
+
 
 .input-password-icon i{
 	position: absolute;
-	margin-top: 5px;
-	right: 4px;
+	margin: 5px;
 	text-align: center ;
 }
 
