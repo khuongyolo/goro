@@ -12,13 +12,9 @@ body{
 	flex-direction: column;
 	justify-content: space-between;
 	background-color: rgb(14, 18, 37);
-	/* background: url('fixed big background.jpeg');
-	background-size: cover;
-	background-position: top; */
 	overflow-y: scroll;
 	font-family: 'Montserrat', sans-serif;
 	min-width: 50%;
-	/* margin-top: 20px; */
 }
 
 .upper-container{
@@ -93,7 +89,7 @@ body{
 .input-password-icon i{
 	position: absolute;
 	margin-top: 4px;
-	right: 5px;
+	right: 4px;
 }
 
 .input-password-icon{
@@ -102,14 +98,14 @@ body{
 	margin-bottom: 10px;
 }
 
-.input-password-icon .show-passowrd-text{
+.input-password-icon .show-password-text{
 	display: none;
 }
 
 
 .fa-eye {
 	padding: 12px;
-	background-color: #e0e0e0;
+	background-color: #e2e1e1;
 	border-radius: 10px;
 	min-width: 40px;
 	color: rgb(99, 99, 99);
@@ -325,11 +321,10 @@ body{
 		display: none;
 	}
 	
-	.input-password-icon .show-passowrd-text{
+	.input-password-icon .show-password-text{
 		text-decoration: none;
 		color:rgba(150, 106, 150, 0.993);
-		font-size: 13px;
-		letter-spacing: 0;
+		font-size: 12px;
 		margin-left: 10px;
 		display: block;
 	}
