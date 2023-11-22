@@ -97,10 +97,6 @@ body{
 	position: relative;
 }
 
-.input-password-icon .show-password-text{
-	display: none;
-}
-
 .fa-eye-slash {
 	padding: 13px;
 	background-color: #e2e1e1;
@@ -326,16 +322,29 @@ body{
     }
 
 	.input-password-icon i{
-		display: none;
+		position: absolute;
+		right: 5px;
+		margin-top: 5px;
+		min-width:20px;
+
 	}
 	
-	.input-password-icon .show-password-text{
-		text-decoration: none;
-		color:rgba(150, 106, 150, 0.993);
-		font-size: 12px;
-		margin-left: 10px;
-		display: block;
+	.fa-eye-slash {
+		padding: 6px;
+		background-color: #e2e1e1;
+		border-radius: 8px;
+		color: rgb(99, 99, 99);
+		z-index: 3;
 	}
+	
+	.fa-eye{
+		padding: 6px;
+		background-color: #e2e1e1;
+		border-radius: 8px;
+		color: rgb(99, 99, 99);
+		z-index: 2;
+	}
+
 
 	.signin-link-or span{
 		position: relative;
