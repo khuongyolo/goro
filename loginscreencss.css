@@ -89,6 +89,32 @@ body{
 	font-size: 14px;
 }
 
+
+.input-password-icon i{
+	position: absolute;
+	margin-top: 4px;
+	right: 5px;
+}
+
+.input-password-icon{
+	width: 100%;
+	position: relative;
+	margin-bottom: 10px;
+}
+
+.input-password-icon .show-passowrd-text{
+	display: none;
+}
+
+
+.fa-eye {
+	padding: 12px;
+	background-color: #e0e0e0;
+	border-radius: 10px;
+	min-width: 40px;
+	color: rgb(99, 99, 99);
+}
+
 ::placeholder{
 	opacity: 50%;
 }
@@ -172,24 +198,6 @@ body{
 	font-size: 14px;
 }
 
-
-
-.input-password-icon i{
-	position: absolute;
-	margin-top: 5px;
-	right: 5px;
-}
-
-.input-password-icon{
-	width: 100%;
-	position: relative;
-	margin-bottom: 10px;
-}
-
-.fa-eye {
-	padding: 10px;
-	min-width: 40px;
-}
 
 .signup a{
 	color: #512da8;
@@ -314,11 +322,17 @@ body{
     }
 
 	.input-password-icon i{
-		position: absolute;
-		margin-top: 0px;
-		right: 5px;
+		display: none;
 	}
-
+	
+	.input-password-icon .show-passowrd-text{
+		text-decoration: none;
+		color:rgba(150, 106, 150, 0.993);
+		font-size: 13px;
+		letter-spacing: 0;
+		margin-left: 10px;
+		display: block;
+	}
 	
 
 	.signin-link-or span{
