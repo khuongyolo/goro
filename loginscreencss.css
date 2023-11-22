@@ -102,13 +102,22 @@ body{
 	display: none;
 }
 
-
-.fa-eye {
+.fa-eye-slash {
 	padding: 12px;
 	background-color: #e2e1e1;
-	border-radius: 10px;
+	border-radius: 8px;
 	min-width: 40px;
 	color: rgb(99, 99, 99);
+	z-index: 3;
+}
+
+.fa-eye{
+	padding: 12px;
+	background-color: #e2e1e1;
+	border-radius: 8px;
+	min-width: 40px;
+	color: rgb(99, 99, 99);
+	z-index: 2;
 }
 
 ::placeholder{
@@ -328,7 +337,6 @@ body{
 		margin-left: 10px;
 		display: block;
 	}
-	
 
 	.signin-link-or span{
 		position: relative;

@@ -49,7 +49,13 @@ function JapaneseChange(){
     document.getElementById("signin-heading").style.marginBottom="20px";
 
 }
+ function ShowPassword(){
+    document.getElementById("hidden-icon").style.zIndex = "1";
+    document.getElementById("user-password").type = "text";
+}
 
-// function ShowPassword(){
-//     document.getElementById("user-password").type = "text";
-// }
+ function HidePassword(){
+    document.getElementById("hidden-icon").style.zIndex = "3";
+    document.getElementById("user-password").type = "password";
+}
+
