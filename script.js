@@ -4,7 +4,7 @@ function EnglishChange(){
     document.getElementById("password-label").innerHTML = "User password";
     document.getElementById("signin-btn").innerHTML = "Confirm";
     document.getElementById("signin-link-or").innerHTML = "Or";
-    document.getElementById("sign-up").innerHTML = "You don't have account ?";
+    document.getElementById("sign-up").innerHTML = "You don't have an account ?";
     document.getElementById("signup-link").innerHTML = " Sign Up";
     document.getElementById("forgot-password").innerHTML = " Forgot Password ?";
     document.getElementById("logo-text").innerHTML = "Click the logo to see more about us";
