@@ -101,7 +101,7 @@ body{
 
 .fa-eye-slash {
 	padding: 13px;
-	background-color: #e2e1e1;
+	background-color: #f5f5f5;
 	border-radius: 8px;
 	color: rgb(99, 99, 99);
 	z-index: 3;
@@ -109,7 +109,7 @@ body{
 
 .fa-eye{
 	padding: 13px;
-	background-color: #e2e1e1;
+	background-color: #f5f5f5;
 	border-radius: 8px;
 	color: rgb(99, 99, 99);
 	z-index: 2;
@@ -333,7 +333,7 @@ body{
 	
 	.fa-eye-slash {
 		padding: 7.5px;
-		background-color: #e2e1e1;
+		background-color: #f5f5f5;
 		border-radius: 8px;
 		color: rgb(99, 99, 99);
 		z-index: 3;
@@ -341,7 +341,7 @@ body{
 	
 	.fa-eye{
 		padding: 7.5px;
-		background-color: #e2e1e1;
+		background-color: #f5f5f5;
 		border-radius: 8px;
 		color: rgb(99, 99, 99);
 		z-index: 2;
@@ -497,7 +497,7 @@ body{
 	
 	.fa-eye-slash {
 		padding: 4px;
-		background-color: #e2e1e1;
+		background-color: #f5f5f5;
 		border-radius: 8px;
 		color: rgb(99, 99, 99);
 		z-index: 3;
@@ -505,7 +505,7 @@ body{
 	
 	.fa-eye{
 		padding: 4px;
-		background-color: #e2e1e1;
+		background-color: #f5f5f5;
 		border-radius: 8px;
 		color: rgb(99, 99, 99);
 		z-index: 2;
