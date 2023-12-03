@@ -78,9 +78,9 @@ body{
 	width: 100%;
 	padding: 17px 15px;
 	border-radius: 10px;
-	border: 1px solid rgba(209, 209, 209, 0.518);
+	border: 1px solid rgb(204, 203, 203);
 	background-color: #f5f5f5;
-	box-shadow: 2px 2px 4px rgb(0,0,0,.4);
+	/* box-shadow: 2px 2px 4px rgb(0,0,0,.4); */
 	margin-bottom: 10px;
 	font-size: 14px;
 }
@@ -175,7 +175,7 @@ body{
 	border: 1px solid rgba(209, 209, 209, 0.518);
 	border-radius: 10px;
 	background-color: #f5f5f5;
-	box-shadow: 2px 2px 4px rgb(0,0,0,.4);
+	box-shadow:1px 1px 3px rgb(0,0,0,.5);
 }
 
 .social-icon a .signin-social-icon:active{
@@ -319,9 +319,9 @@ body{
 	   width: 100%;
 	   padding: 10px 15px;
 	   border-radius: 10px;
-	   border: 1px solid rgba(209, 209, 209, 0.518);
+	   border: 1px solid rgba(204, 204, 204, 0.986);
 	   background-color: #f5f5f5;
-	   box-shadow: 2px 2px 4px rgb(0,0,0,.4);
+	   /* box-shadow: 2px 2px 4px rgb(0,0,0,.4); */
 	   margin-bottom: 10px;
 	   font-size: 14px;
     }
@@ -484,9 +484,9 @@ body{
 	   width: 100%;
 	   padding: 7px 15px;
 	   border-radius: 10px;
-	   border: 1px solid rgba(209, 209, 209, 0.518);
+	   border: 1px solid rgba(204, 204, 204, 0.518);
 	   background-color: #f5f5f5;
-	   box-shadow: 2px 2px 4px rgb(0,0,0,.4);
+	   /* box-shadow: 2px 2px 4px rgb(0,0,0,.4); */
 	   margin-bottom: 10px;
 	   font-size: 14px;
     }
@@ -539,19 +539,21 @@ body{
 	}
 	
 	.social-icon a span{
-		font-size: 12px;
+		font-size: 10px;
 	}
 	
 	
 	.social-icon a .fa-facebook{
-		padding: 10px 10px;
-		margin-right: 3px;
+		padding: 8px 9px;
+		margin-top: 10px;
+		margin-bottom: 10px;
 	}
 	
 	.social-icon a .fa-apple{
-		padding: 10px 25px;
-		margin-left: 3px;
+		padding: 8px 20px;
 		margin-top: 10px;
+		margin-bottom: 10px;
+
 	}
 
 	#left-img{
@@ -569,7 +571,7 @@ body{
 	.signup{
 		margin-top: 15px;
 		text-align: center;
-		font-size: 14px;
+		font-size: 12px;
 	}
 
 	.forgot-password{
