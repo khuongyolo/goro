@@ -178,6 +178,9 @@ body{
 	box-shadow: 2px 2px 4px rgb(0,0,0,.4);
 }
 
+.social-icon a .signin-social-icon:active{
+	background-color: #e9e9e9;
+}
 
 
 .social-icon a .fa-facebook{
@@ -367,6 +370,7 @@ body{
 		text-align: center;
 		margin: 10px auto;
 	}
+
 	
 	.social-icon a span{
 		font-size: 12px;
