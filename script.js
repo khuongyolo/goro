@@ -32,7 +32,7 @@ function VietnameseChange(){
 }
 
 function JapaneseChange(){
-    document.getElementById("signin-heading").innerHTML = "サイン";
+    document.getElementById("signin-heading").innerHTML = "ログイン";
     document.getElementById("signin-label").innerHTML = "アカウント";
     document.getElementById("password-label").innerHTML = "パスワード";
     document.getElementById("signin-btn").innerHTML = "確認";
