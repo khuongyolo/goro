@@ -41,7 +41,7 @@ function JapaneseChange(){
     document.getElementById("signup-link").innerHTML = " 登録";
     document.getElementById("forgot-password").innerHTML = "パスワードを忘れた方?";
     document.getElementById("logo-text").innerHTML = "私たちについて知りたければ、ロゴをクリック";
-    document.getElementById("tab-title").innerHTML = "GORO | サイン";
+    document.getElementById("tab-title").innerHTML = "GORO | ログイン";
     document.getElementById("show-password-text").innerHTML = "パスワードを表示";
     document.getElementById("signin-heading").style.fontSize = "30px";
     document.getElementById("signin-heading").style.marginBottom="20px";
