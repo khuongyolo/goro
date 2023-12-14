@@ -11,8 +11,6 @@ function EnglishChange(){
     document.getElementById("tab-title").innerHTML = "GORO | Sign-in";
     document.getElementById("show-password-text").innerHTML = "Show password";
 
-
-
 }
 
 function VietnameseChange(){

@@ -679,9 +679,13 @@ body{
 	background-color: #f5f5f5;
 	padding:17px 15px;
 	margin:15px 0;
-	text-align: center;
+	text-align: left;
 	border-radius: 10px;
 	cursor:pointer;
+}
+
+.signup-container form .link-container i{
+	margin-left: 25px;
 }
 
 .signup-container form .link-container:active{
@@ -709,7 +713,7 @@ body{
 
 .signup-container form .link-container .fa-apple{
 	color: black;
-	font-size: 20px;
+	font-size: 21px;
 }
 
 .signup-container form .link-container .fa-facebook{
