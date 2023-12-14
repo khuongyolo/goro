@@ -693,11 +693,11 @@ body{
 }
 
 
-.signup-container form .link-container a{
+.signup-container form a{
 	text-decoration: none;
 }
 
-.signup-container form .link-container a span{
+.signup-container form .link-container span{
 	color:black;
 	margin-left: 10px;
 }
