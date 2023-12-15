@@ -772,6 +772,113 @@ body{
 }
 
 
+/* danh cho mobile */
+@media only screen and (max-width: 740px ){
+	#corner-logo{
+		width: 120px;
+		margin-bottom: 30px;
+		margin-left: 30px;
+	}
+	
+	.signup-container{
+		min-width: 240px;
+		background-color: #F1F2F5;
+		border-radius: 15px;
+		padding: 40px 40px;
+	}
+
+	.signup-container form .link-container{
+		width: 100%;
+		border: 1px solid rgba(204, 204, 204, 0.986);
+		background-color: #f5f5f5;
+		padding:12px 12px;
+		margin:15px 0;
+		text-align: left;
+		border-radius: 10px;
+		cursor:pointer;
+	}
+
+	.signup-container form .link-container span{
+		color:black;
+		margin-left: 10px;
+		font-size: 14px;
+	}
+
+	.signup-container form .have-account{
+		margin-top: 30px;
+		font-size: 14px;
+	}
+	
+
+	.signup-container form .signup-login-btn{
+		display: block;
+		margin: 0 auto;
+		margin-top: 10px;
+		width: 100%;
+		padding: 15px 15px;
+		text-align: center;
+		border-radius: 10px;
+		border: none;
+		background-color: #512da8;
+		color: white;
+		font-size: 16px;
+		cursor: pointer;
+	}
+}
+
+
+/* danh cho tablet va PC */
+@media only screen and (min-width: 740px) and (max-width: 1024px){
+	#corner-logo{
+		width: 150px;
+		margin-bottom: 30px;
+		margin-left: 30px;
+	}
+
+	.signup-container{
+		min-width: 450px;
+		background-color: #F1F2F5;
+		border-radius: 15px;
+		padding: 50px 50px;
+	}
+	.signup-container form .link-container{
+		width: 100%;
+		border: 1px solid rgba(204, 204, 204, 0.986);
+		background-color: #f5f5f5;
+		padding:17px 15px;
+		margin:15px 0;
+		text-align: left;
+		border-radius: 10px;
+		cursor:pointer;
+	}
+
+	.signup-container form .link-container span{
+		color:black;
+		margin-left: 10px;
+		font-size: 14px;
+	}
+
+	.signup-container form .have-account{
+		margin-top: 30px;
+		font-size: 14px;
+	}
+	
+
+	.signup-container form .signup-login-btn{
+		display: block;
+		margin: 0 auto;
+		margin-top: 10px;
+		width: 100%;
+		padding: 20px 20px;
+		text-align: center;
+		border-radius: 10px;
+		border: none;
+		background-color: #512da8;
+		color: white;
+		font-size: 16px;
+		cursor: pointer;
+	}
+}
 
 
 
