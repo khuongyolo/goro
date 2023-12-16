@@ -10,7 +10,6 @@ function EnglishChange(){
     document.getElementById("forgot-password").innerHTML = " Forgot Password ?";
     document.getElementById("tab-title").innerHTML = "GORO | Sign-in";
     document.getElementById("show-password-text").innerHTML = "Show password";
-
 }
 
 function VietnameseChange(){
@@ -25,8 +24,6 @@ function VietnameseChange(){
     document.getElementById("forgot-password").innerHTML = "Quên mật khẩu ?";
     document.getElementById("tab-title").innerHTML = "GORO | Đăng Nhập";
     document.getElementById("show-password-text").innerHTML = "Hiển thị mật khẩu";
-
-
 }
 
 function JapaneseChange(){
