@@ -3,7 +3,7 @@
 <head>
 <meta charset = "UTF-8">
 <meta name = "viewport" content="width=device-width, initial-scale=1.0">
-<title id="tab-title"> GORO | Đăng Nhập</title>
+<title id="tab-title"> GORO | Đăng kí mail</title>
 <link rel="stylesheet" href="loginscreen.css">
 <link rel="stylesheet" href="fontawesome-free-6.4.2-web/css/all.min.css">
 <link rel="icon" type="small icon" href="Title logo final.png">
@@ -21,20 +21,20 @@
                 <h1 class="signup-mail-heading" id="signup-mail-heading">Đăng kí bằng Email</h1>
 				<label for="account" class="signup-mail-label" id="signup-mail-label">Địa chỉ mail</label>
 				<input type="text" id="user-mail" name="user-mail" class="signup-mail-input account-mail-input" placeholder="goro123@gmail.com">
-				<label for="account" class="signin-label" id="password-label">Mật Khẩu</label>
+				<label for="password" class="signup-mail-label" id="password-mail-label">Mật Khẩu</label>
 				<div class="input-password-icon">
-					<a href="#" id="show-passowrd-icon"><i class="fa-solid fa-eye-slash" onclick="ShowPassword()" id="hidden-icon"></i></a>
-					<a href="#" id="hidden-passowrd-icon"><i class="fa-solid fa-eye" onclick="HidePassword()"></i></a>
-					<input type="password" id="user-password" name="user-password" class="signin-input password-input" placeholder="goro123ABC">
+					<input type="password" id="user-password" name="user-password" class="signup-mail-input password-input" placeholder="goro123ABC">
 				</div>
-				<button class="signin-btn" id="signin-btn">Xác Nhận</button>
-				<div class="signin-link-or"><span id="signin-link-or">Hoặc</span></div>
-				<div class="social-icon">
-					<a href="#" class="signin-social-icon-link"><i class="fa-brands fa-facebook signin-social-icon"><span> Facebook </span></i></a>
-					<a href="#" class="signin-social-icon-link"><i class="fa-brands fa-apple signin-social-icon"><span> Apple </span></i></a>
+                <label for="password" class="signup-mail-label" id="password-mail-label">Nhập lại mật khẩu</label>
+				<div class="input-password-icon">
+					<input type="password" id="user-password" name="user-password" class="signup-mail-input password-input" placeholder="goro123ABC">
 				</div>
-				<div class="signup" ><span id="sign-up">Bạn chưa có tài khoản ?</span><a href="signupscreen.html" target="blank" class="signup-link" id="signup-link"> Đăng kí</a></div>
-				<div class="forgot-password"><a href="#" id="forgot-password">Quên mật khẩu ?</a></div>
+                <div class="check-box">
+                    <p class="term-accept-error">Bạn hãy xác nhận điều khoản sử dụng</p>
+                    <input type="checkbox">
+                    <p class="term-accept">Tôi đồng ý với <a href="#">các điều khoản sử dụng</a></p>
+                </div>
+				<button class="signup-mail-btn" id="signup-mail-btn">Xác Nhận</button>
     		</form>
 		</div>
 	</div>

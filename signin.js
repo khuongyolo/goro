@@ -1,4 +1,5 @@
 function EnglishChange(){
+    
     document.getElementById("logo-text").innerHTML = "Click the logo to see more about us";
     document.getElementById("signin-heading").innerHTML = "Sign-In";
     document.getElementById("signin-label").innerHTML = "User account";
@@ -42,13 +43,13 @@ function JapaneseChange(){
     document.getElementById("signin-heading").style.marginBottom="20px";
 
 }
- function ShowPassword(){
+
+function ShowPassword(){
     document.getElementById("hidden-icon").style.zIndex = "1";
     document.getElementById("user-password").type = "text";
 }
 
- function HidePassword(){
+function HidePassword(){
     document.getElementById("hidden-icon").style.zIndex = "3";
     document.getElementById("user-password").type = "password";
 }
-

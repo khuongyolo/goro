@@ -83,7 +83,7 @@ body{
 	border: 1px solid rgb(204, 203, 203);
 	background-color: #f5f5f5;
 	/* box-shadow: 2px 2px 4px rgb(0,0,0,.4); */
-	margin-bottom: 10px;
+	margin-bottom: 20px;
 	font-size: 14px;
 }
 
@@ -881,6 +881,77 @@ body{
 	}
 }
 
+/* MAN HINH SIGN UP BANG MAIL ----------------------------------------------------------------------------------------------------------------------------------------- */
 
+.signup-mail-container{
+	min-width: 450px;
+	background-color: #F1F2F5;
+	border-radius: 15px;
+	padding: 50px 50px;
+}
+
+
+.signup-mail-heading{
+	margin-bottom: 30px;
+	font-weight: 600;
+	text-align: center;
+}
+
+.signup-mail-input{
+	display: block;
+	width: 100%;
+	padding: 15px 15px;
+	border-radius: 10px;
+	border: 1px solid rgb(204, 203, 203);
+	background-color: #f5f5f5;
+	/* box-shadow: 2px 2px 4px rgb(0,0,0,.4); */
+	margin-bottom: 20px;
+	font-size: 14px;
+}
+
+.signup-mail-label{
+	display: block;
+	margin-bottom: 5px;
+	margin-left: 10px;
+}
+
+.signup-mail-btn{
+	display: block;
+	margin:50px auto;
+	width: 150px;
+	padding: 15px 20px;
+	text-align: center;
+	border-radius: 10px;
+	border: none;
+	background-color: #512da8;
+	color: white;
+	font-size: 16px;
+	cursor: pointer;
+}
+
+.signup-mail-btn:hover{
+	background-color: #6235cb;
+}
+
+.term-accept-error{
+	color: red;
+	font-size: 12px;
+	margin-bottom: 10px;
+	display:none;
+}
+
+.term-accept{
+	font-size: 14px;
+	display: inline-block;
+	margin-left: 3px;
+}
+
+.term-accept a{
+	text-decoration: none;
+}
+
+.term-accept a:active{
+	color: black ;
+}
 
 
