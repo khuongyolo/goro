@@ -954,4 +954,73 @@ body{
 	color: black ;
 }
 
+/* danh cho tablet va PC */
+@media only screen and (min-width: 740px) and (max-width: 1024px){
+	#corner-logo{
+		width: 150px;
+		margin-bottom: 30px;
+		margin-left: 30px;
+	}
 
+	.signup-mail-container{
+		min-width: 450px;
+		background-color: #F1F2F5;
+		border-radius: 15px;
+		padding: 50px 50px;
+	}
+}
+
+
+/* danh cho mobile */
+@media only screen and (max-width: 740px ){
+	#corner-logo{
+		width: 120px;
+		margin-bottom: 30px;
+		margin-left: 30px;
+	}
+	
+	.signup-mail-container{
+		min-width: 220px;
+		background-color: #F1F2F5;
+		border-radius: 15px;
+		padding: 40px 40px;
+	}
+
+	.signup-mail-heading{
+		margin-bottom: 20px;
+		font-weight: 600;
+		text-align: center;
+		font-size: 25px;
+	}
+
+	.signup-mail-input{
+		display: block;
+		width: 100%;
+		padding: 15px 15px;
+		border-radius: 10px;
+		border: 1px solid rgb(204, 203, 203);
+		background-color: #f5f5f5;
+		margin-bottom: 20px;
+		font-size: 14px;
+	}
+
+	.signup-mail-btn{
+		display: block;
+		margin:25px auto;
+		width: 150px;
+		padding: 15px 20px;
+		text-align: center;
+		border-radius: 10px;
+		border: none;
+		background-color: #512da8;
+		color: white;
+		font-size: 16px;
+		cursor: pointer;
+	}
+
+	.term-accept{
+		font-size: 12px;
+		display: inline-block;
+		margin-left: 1px;
+	}
+}
