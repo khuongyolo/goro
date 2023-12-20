@@ -124,8 +124,8 @@ body{
 .signin-btn{
 	display: block;
 	margin: 30px auto;
-	width: 150px;
-	padding: 15px 20px;
+	width: 100%;
+	padding: 17px 20px;
 	text-align: center;
 	border-radius: 10px;
 	border: none;
@@ -318,7 +318,7 @@ body{
 	.signin-input{
 		display: block;
 	   width: 100%;
-	   padding: 10px 15px;
+	   padding: 15px 15px;
 	   border-radius: 10px;
 	   border: 1px solid rgba(204, 204, 204, 0.986);
 	   background-color: #f5f5f5;
@@ -330,13 +330,13 @@ body{
 	.input-password-icon i{
 		position: absolute;
 		right: 4px;
-		margin-top: 4px;
+		margin-top: 7px;
 		min-width:20px;
 
 	}
 	
 	.fa-eye-slash {
-		padding: 7.5px;
+		padding: 8px;
 		background-color: #f5f5f5;
 		border-radius: 8px;
 		color: rgb(99, 99, 99);
@@ -344,7 +344,7 @@ body{
 	}
 	
 	.fa-eye{
-		padding: 7.5px;
+		padding: 8px;
 		background-color: #f5f5f5;
 		border-radius: 8px;
 		color: rgb(99, 99, 99);
@@ -362,9 +362,10 @@ body{
 
 	.signin-btn{
 		margin: 15px auto;
-		padding: 10px 15px;
-		width: 100px;
+		padding: 15px 20px;
+		width: 100%;
 		font-size: 14px;
+		margin-top: 30px;
 	}
 
 	.social-icon{
@@ -918,8 +919,8 @@ body{
 .signup-mail-btn{
 	display: block;
 	margin:50px auto;
-	width: 150px;
-	padding: 15px 20px;
+	width: 100%;
+	padding: 17px 20px;
 	text-align: center;
 	border-radius: 10px;
 	border: none;
