@@ -1007,7 +1007,7 @@ body{
 	.signup-mail-btn{
 		display: block;
 		margin:25px auto;
-		width: 150px;
+		width: 100%;
 		padding: 15px 20px;
 		text-align: center;
 		border-radius: 10px;
