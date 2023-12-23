@@ -1125,21 +1125,21 @@ body{
 		margin-left: 30px;
 	}
 	
-	.signup-mail-container{
+	.forgot-password-container{
 		min-width: 220px;
 		background-color: #F1F2F5;
 		border-radius: 15px;
-		padding: 40px 40px;
+		padding: 25px 30px;
 	}
 
-	.signup-mail-heading{
-		margin-bottom: 20px;
+	.forgot-password-heading{
+		margin-bottom: 40px;
 		font-weight: 600;
 		text-align: center;
 		font-size: 25px;
 	}
 
-	.signup-mail-input{
+	.forgot-password-user-input{
 		display: block;
 		width: 100%;
 		padding: 15px 15px;
@@ -1165,8 +1165,16 @@ body{
 	}
 
 	.term-accept{
-		font-size: 12px;
+		font-size: 14px;
 		display: inline-block;
-		margin-left: 1px;
+		margin-left: 3px;
+	}
+	
+	.term-accept a{
+		text-decoration: none;
+	}
+	
+	.term-accept a:active{
+		color: black ;
 	}
 }
