@@ -7,6 +7,7 @@ function EnglishChange(){
     document.getElementById("signup-email").innerHTML = "Sign up with Email";
     document.getElementById("have-account").innerHTML = "You already have an account ?";
     document.getElementById("signup-login-btn").innerHTML = "Sign-In";
+    
 }
 
 function VietnameseChange(){
