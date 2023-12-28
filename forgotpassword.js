@@ -13,7 +13,7 @@ function EnglishChange(){
 }
 
 function VietnameseChange(){
-    document.getElementById("logo-text").innerHTML = "Click để xem thêm về chúng tôi";
+    document.getElementById("logo-text").innerHTML = "Bấm vào logo để xem thêm về chúng tôi";
     document.getElementById("tab-title").innerHTML = " GORO | Đăng kí lại ";
     document.getElementById("forgot-password-heading").innerHTML = " Đặt lại mật khẩu";
     document.getElementById("forgot-password-mail-label").innerHTML = "Địa chỉ mail";

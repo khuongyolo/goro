@@ -11,7 +11,7 @@ function EnglishChange(){
 }
 
 function VietnameseChange(){
-    document.getElementById("logo-text").innerHTML = "Click để xem thêm về chúng tôi";
+    document.getElementById("logo-text").innerHTML = "Bấm vào logo để xem thêm về chúng tôi";
     document.getElementById("signup-mail-heading").innerHTML = "Đăng kí bằng Email";
     document.getElementById("signup-mail-label").innerHTML = "Địa chỉ email";
     document.getElementById("password-mail-label").innerHTML = "Mật khẩu";
