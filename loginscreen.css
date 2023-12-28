@@ -48,6 +48,7 @@ body{
 #left-img{
 	display: block;
 	width: 400px;
+	margin-top: 60px;
 }
 .signin-container{
 	margin: 25px;
