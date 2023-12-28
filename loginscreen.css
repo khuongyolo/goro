@@ -1062,7 +1062,7 @@ body{
 	margin-left: 10px;
 }
 
-.signup-mail-btn{
+.forgot-password-btn{
 	display: block;
 	margin:50px auto;
 	width: 100%;
@@ -1151,7 +1151,7 @@ body{
 		font-size: 14px;
 	}
 
-	.signup-mail-btn{
+	.forgot-password-btn{
 		display: block;
 		margin:25px auto;
 		width: 100%;
