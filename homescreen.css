@@ -56,11 +56,9 @@ body{
 
 
 .search-bar-icon{
-    top: 0px;
-    right:10px;
     color:black;
     font-size: 20px;
-    padding: 10px;
+    padding: 11px;
     border-radius: 0 8px 8px 0;
     background-color:#eca900;
 
