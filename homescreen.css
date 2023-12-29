@@ -48,7 +48,7 @@ body{
     left: 0;
     padding: 11.5px 0;
     border: none;
-    background-color: rgb(214, 213, 213);
+    background-color: rgb(233, 233, 233);
     border-radius: 8px 0 0 8px;
     text-align: center;
 }
@@ -71,7 +71,7 @@ body{
     color:black;
     font-size: 20px;
     padding: 10px;
-    background-color:#ffb701;
+    background-color:#e7a602;
     border-radius: 0 8px 8px 0;
 }
 
@@ -97,7 +97,7 @@ body{
 .header .head-address-bar{
     min-width: 960px;
     padding: 15px 20px;
-    background-color: #ffb701;
+    background-color: #eca900;
     display: flex;
     position: relative;
     font-family: Helvetica, sans-serif;
