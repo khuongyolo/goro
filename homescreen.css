@@ -42,21 +42,9 @@ body{
     width: 50%;
 }
 
-.search-bar .search-bar-category{
-    position: absolute;
-    top:0;
-    left: 0;
-    padding: 11.5px 0;
-    border: none;
-    background-color: rgb(233, 233, 233);
-    border-radius: 8px 0 0 8px;
-    text-align: center;
-}
-
 
 .search-bar input{
-    padding: 12px 0;
-    padding-left: 100px;
+    padding: 12px 20px;
     width: 100%;
     border: none;
     border-radius: 8px;
@@ -67,11 +55,10 @@ body{
 .search-bar-icon{
     position: absolute;
     top: 0px;
-    right:0px;
+    right:10px;
     color:black;
     font-size: 20px;
     padding: 10px;
-    background-color:#e7a602;
     border-radius: 0 8px 8px 0;
 }
 
