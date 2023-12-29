@@ -69,6 +69,7 @@ body{
 	font-weight: 600;
 	text-align: center;
 	-webkit-user-select: none;
+	cursor: default;
 }
 
 .signin-label{
