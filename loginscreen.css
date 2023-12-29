@@ -68,13 +68,13 @@ body{
 	margin-bottom: 30px;
 	font-weight: 600;
 	text-align: center;
-	user-select: none;
 }
 
 .signin-label{
 	display: block;
 	margin-bottom: 5px;
 	margin-left: 10px;
+	user-select: none;
 }
 
 .signin-input{
