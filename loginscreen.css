@@ -12,7 +12,7 @@ body{
 	flex-direction: column;
 	justify-content: space-between;
 	background-color: rgb(14, 18, 37);
-	overflow-y: hidden;
+	overflow-y: scroll;
 	font-family: 'Montserrat', sans-serif;
 	min-width: 50%;
 }
