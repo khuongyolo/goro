@@ -957,9 +957,10 @@ body{
 
 .term-signup-mail-accept a{
 	text-decoration: none;
+	color: #512da8;
 }
 
-.term-accept a:active{
+.term-signup-mail-accept a:active{
 	color: black ;
 }
 
