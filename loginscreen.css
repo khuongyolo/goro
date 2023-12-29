@@ -46,6 +46,8 @@ body{
 	margin-left: 30px;
 	color: rgba(211, 211, 211, 0.815);
 	font-size: 13px;
+	user-select: none;
+	-webkit-user-select: none;
 }
 
 #left-img{
@@ -63,9 +65,6 @@ body{
 	padding: 50px 50px;
 }
 
-.signin-label{
-	font-size: 14px;
-}
 
 .signin-heading{
 	margin-bottom: 30px;
@@ -76,6 +75,7 @@ body{
 }
 
 .signin-label{
+	font-size: 14px;
 	display: block;
 	margin-bottom: 5px;
 	margin-left: 10px;
@@ -127,6 +127,8 @@ body{
 
 ::placeholder{
 	opacity: 50%;
+	user-select: none;
+	-webkit-user-select: none;
 }
 
 .signin-btn{
@@ -141,6 +143,9 @@ body{
 	color: white;
 	font-size: 16px;
 	cursor: pointer;
+	user-select: none;
+	-webkit-user-select: none;
+	
 }
 
 .signin-btn:hover{
@@ -159,6 +164,8 @@ body{
 	padding: 2px 10px;
 	background-color:#F1F2F5;
 	z-index: 2;
+	user-select: none;
+	-webkit-user-select: none;
 }
 
 .signin-link-or::after{
@@ -179,6 +186,8 @@ body{
 .social-icon a span{
 	color:black;
 	font-family: 'Montserrat', sans-serif;
+	user-select: none;
+	-webkit-user-select: none;
 }
 
 .social-icon a .signin-social-icon{
@@ -208,6 +217,8 @@ body{
 	margin-top: 30px;
 	text-align: center;
 	font-size: 14px;
+	user-select: none;
+	-webkit-user-select: none;
 }
 
 
@@ -221,6 +232,8 @@ body{
 	font-size: 14px;
 	margin-top: 10px;
 	text-align: center;
+	user-select: none;
+	-webkit-user-select: none;
 }
 
 .forgot-password a{
@@ -243,6 +256,8 @@ body{
 	justify-content: center;
 	align-items: center;
 	padding: 0px 30px;
+	user-select: none;
+	-webkit-user-select: none;
 }
 
 
@@ -680,6 +695,8 @@ body{
 	margin-bottom: 30px;
 	font-weight: 600;
 	text-align: center;
+	user-select: none;
+	-webkit-user-select: none;
 }
 .signup-container{
 	min-width: 450px;
@@ -715,6 +732,8 @@ body{
 .signup-container form .link-container span{
 	color:black;
 	margin-left: 10px;
+	user-select: none;
+	-webkit-user-select: none;
 }
 
 
@@ -765,6 +784,8 @@ body{
 
 .signup-container form .have-account{
 	margin-top: 30px;
+	user-select: none;
+	-webkit-user-select: none;
 }
 
 .signup-container form .signup-login-btn{
@@ -780,6 +801,8 @@ body{
 	color: white;
 	font-size: 16px;
 	cursor: pointer;
+	user-select: none;
+	-webkit-user-select: none;
 }
 
 .signup-container form .signup-login-btn:hover{
@@ -910,6 +933,8 @@ body{
 	margin-bottom: 30px;
 	font-weight: 600;
 	text-align: center;
+	user-select: none;
+	-webkit-user-select: none;
 }
 
 .signup-mail-input{
@@ -922,6 +947,8 @@ body{
 	/* box-shadow: 2px 2px 4px rgb(0,0,0,.4); */
 	margin-bottom: 20px;
 	font-size: 14px;
+	user-select: none;
+	-webkit-user-select: none;
 }
 
 .signup-mail-label{
@@ -929,6 +956,8 @@ body{
 	font-size: 14px;
 	margin-bottom: 5px;
 	margin-left: 10px;
+	user-select: none;
+	-webkit-user-select: none;
 }
 
 .signup-mail-btn{
@@ -943,6 +972,8 @@ body{
 	color: white;
 	font-size: 16px;
 	cursor: pointer;
+	user-select: none;
+	-webkit-user-select: none;
 }
 
 .signup-mail-btn:hover{
@@ -960,6 +991,8 @@ body{
 	font-size: 14px;
 	display: inline-block;
 	margin-left: 3px;
+	user-select: none;
+	-webkit-user-select: none;
 }
 
 .term-signup-mail-accept a{
@@ -1058,6 +1091,8 @@ body{
 	margin-bottom: 30px;
 	font-weight: 600;
 	text-align: center;
+	user-select: none;
+	-webkit-user-select: none;
 }
 
 .forgot-password-user-input{
@@ -1070,6 +1105,8 @@ body{
 	/* box-shadow: 2px 2px 4px rgb(0,0,0,.4); */
 	margin-bottom: 20px;
 	font-size: 14px;
+	user-select: none;
+	-webkit-user-select: none;
 }
 
 .forgot-password-label{
@@ -1077,6 +1114,8 @@ body{
 	font-size: 14px;
 	margin-bottom: 5px;
 	margin-left: 10px;
+	user-select: none;
+	-webkit-user-select: none;
 }
 
 .forgot-password-btn{
@@ -1091,6 +1130,8 @@ body{
 	color: white;
 	font-size: 16px;
 	cursor: pointer;
+	user-select: none;
+	-webkit-user-select: none;
 }
 
 .signup-mail-btn:hover{
@@ -1108,6 +1149,8 @@ body{
 	font-size: 14px;
 	display: inline-block;
 	margin-left: 3px;
+	user-select: none;
+	-webkit-user-select: none;
 }
 
 .term-forgot-password-accept a{

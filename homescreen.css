@@ -20,7 +20,7 @@ body{
 
 .header .nav-bar{
     display: flex;
-    background-color:#131b2e;
+    background-color:#131c30;
     align-items: center;
     padding: 40px 0px;
     width: 100%;
@@ -42,8 +42,21 @@ body{
     width: 50%;
 }
 
+.search-bar .search-bar-category{
+    position: absolute;
+    top:0;
+    left: 0;
+    padding: 11.5px 0;
+    border: none;
+    background-color: rgb(214, 213, 213);
+    border-radius: 8px 0 0 8px;
+    text-align: center;
+}
+
+
 .search-bar input{
-    padding: 12px 20px;
+    padding: 12px 0;
+    padding-left: 100px;
     width: 100%;
     border: none;
     border-radius: 8px;
@@ -53,11 +66,15 @@ body{
 
 .search-bar-icon{
     position: absolute;
-    top: 10px;
-    right: 15px;
+    top: 0px;
+    right:0px;
     color:black;
     font-size: 20px;
+    padding: 10px;
+    background-color:#ffb701;
+    border-radius: 0 8px 8px 0;
 }
+
 
 .header-icon-btn{
     position: absolute;
@@ -79,12 +96,13 @@ body{
 
 .header .head-address-bar{
     min-width: 960px;
-    padding: 20px 20px;
+    padding: 15px 20px;
     background-color: #ffb701;
     display: flex;
     position: relative;
     font-family: Helvetica, sans-serif;
     align-items: center;
+    box-shadow: 2px 2px 7px rgb(0,0,0,.5);
 }
 
 .header .head-address-bar .fa-location-dot{
@@ -98,7 +116,7 @@ body{
     color: black;
     position: absolute;
     right: 40px;
-    top: 20px;
+    top: 15px;
     font-size: 20px;
 }
 
