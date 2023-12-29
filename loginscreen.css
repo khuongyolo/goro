@@ -36,6 +36,9 @@ body{
 	width: 160px;
 	margin-bottom: 5px;
 	margin-left: 30px;
+	user-select: none;
+	-webkit-user-select: none;
+	cursor: pointer;
 }
 
 .logo-text{
