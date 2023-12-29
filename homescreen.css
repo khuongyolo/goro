@@ -14,7 +14,7 @@ body{
 
 .header{
     display: flex;
-    background-color:bisque;
+    background-color:#131b2e;
     align-items: center;
     gap: 50px;
     padding: 40px 0;
@@ -38,8 +38,19 @@ body{
 }
 
 .search-bar input{
-    padding: 10px 20px;
+    padding: 12px 20px;
     width: 100%;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+.search-bar-icon{
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    color:black;
+    font-size: 20px;
 }
 
 .header-icon-btn{
@@ -52,5 +63,10 @@ body{
 
 .header-icon-btn i{
     font-size: 22px;
-    color: black;
+    color: #ffb701;
+}
+
+.header-icon-btn i:hover{
+    font-size: 22px;
+    color: #ca9100;
 }
