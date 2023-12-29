@@ -6,18 +6,23 @@
 }
 
 body{
-    padding: 0 50px;
+    /* padding: 0 50px; */
     background-color: rgb(236, 236, 215);
     min-width: 700px;
     overflow: scroll;
+}
+
+/* PHAN HEADER --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+.header{
+    width: 100%;
+    padding: 0
 }
 
 .header .nav-bar{
     display: flex;
     background-color:#131b2e;
     align-items: center;
-    gap: 50px;
-    padding: 40px 0;
+    padding: 40px 0px;
     width: 100%;
     position: relative;
     min-width: 960px;
@@ -45,6 +50,7 @@ body{
     font-size: 14px;
 }
 
+
 .search-bar-icon{
     position: absolute;
     top: 10px;
@@ -70,3 +76,31 @@ body{
     font-size: 22px;
     color: #ca9100;
 }
+
+.header .head-address-bar{
+    min-width: 960px;
+    padding: 20px 20px;
+    background-color: #ffb701;
+    display: flex;
+    position: relative;
+    font-family: Helvetica, sans-serif;
+    align-items: center;
+}
+
+.header .head-address-bar .fa-location-dot{
+    color: black;
+    margin-right: 10px;
+    margin-left: 20px;
+    font-size: 23px;
+}
+
+.header .head-address-bar .change-address-btn{
+    color: black;
+    position: absolute;
+    right: 40px;
+    top: 20px;
+    font-size: 20px;
+}
+
+
+
