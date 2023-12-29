@@ -11,6 +11,9 @@ body{
     min-width: 700px;
     height: 100svh;
 }
+body::-webkit-scrollbar {
+    display: none;
+}
 
 /* PHAN HEADER --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
 .header{
@@ -73,6 +76,12 @@ body{
     gap: 50px;
 }
 
+.header-icon-btn li{
+    list-style: none;
+    cursor: pointer;
+}
+
+
 .header-icon-btn i{
     font-size: 22px;
     color: #ffb701;
@@ -83,13 +92,115 @@ body{
     color: #ca9100;
 }
 
+@keyframes MoveInRight{
+    0%{
+        transform: translateX(300px);
+    }
+
+    50%{
+        transform: translateX(-2px);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+
+
+@keyframes MoveOutRight{
+    0%{
+        transform: translateX(0);
+    }
+    
+    100%{
+        transform: translateX(300px);
+    }
+}
+
+.header-icon-btn .user-menu-container{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 230px;
+    top: 40px;
+    right:-20px;
+    z-index: 3;
+    background-color:white;
+    border: 1px solid rgba(173, 173, 173, 0.747);
+    border-radius: 10px;
+    animation: MoveInRight 0.8s;
+    display: none;
+}
+
+
+
+.header-icon-btn .user-menu-container .user-heading-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-icon-btn .user-menu-container .user-heading-container a .fa-xmark{
+    color: black;
+    margin-right: 20px;
+    font-size: 25px;
+}
+
+.header-icon-btn .user-menu-container .user-heading-container a .fa-xmark:hover{
+    color: rgb(124, 124, 124);
+}
+
+
+
+
+.header-icon-btn .user-menu-container .user-menu-heading{
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-family: Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    margin-left: 20px;
+}
+
+
+.header-icon-btn .user-menu-container .user-option{
+    padding: 15px 20px;
+    border-bottom: 1px solid rgb(216, 216, 216);
+    margin-bottom: 5px;
+    font-family: Helvetica, sans-serif;
+    font-size: 15px;
+}
+
+.header-icon-btn .user-menu-container .user-option a{
+    color: black;
+}
+
+.header-icon-btn .user-menu-container .user-option:last-child{
+    margin-bottom: 0;
+    margin-top: 50px;
+    border-bottom: none;
+}
+
+
+.header-icon-btn .user-menu-container li{
+    list-style: none;
+}
+
+.header-icon-btn .user-menu-container li a{
+    text-decoration: none;
+}
+
+
+
+
+
+
 .header .head-address-bar{
     min-width: 960px;
     padding: 15px 20px;
     background-color: #eca900;
     display: flex;
     position: relative;
-    font-family: Helvetica, sans-serif;
     align-items: center;
     box-shadow: 2px 2px 7px rgb(0,0,0,.5);
 }
