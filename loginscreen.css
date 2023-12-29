@@ -75,6 +75,7 @@ body{
 	margin-bottom: 5px;
 	margin-left: 10px;
 	user-select: none;
+	-webkit-user-select: none;
 }
 
 .signin-input{
