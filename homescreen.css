@@ -139,7 +139,7 @@ body{
     }
     
     100%{
-        transform: translateX(700px);
+        transform: translateX(600px);
     }
 }
 
@@ -154,7 +154,7 @@ body{
     background-color:white;
     border: 1px solid rgba(173, 173, 173, 0.747);
     border-radius: 10px;
-    animation: MoveInScale 0.4s;
+    animation: MoveInRight 0.4s;
     display: none;
 }
 
