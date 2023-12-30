@@ -1,5 +1,4 @@
-// Trạng thái ban đầu: ẩn thanh cuộn
-document.querySelector('body').style.overflow = 'hidden';
+
 
 function DisplayUserOption() {
     var userMenu = document.getElementById("user-menu-container");
