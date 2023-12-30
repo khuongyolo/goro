@@ -158,7 +158,6 @@ body{
     border-radius: 10px;
     animation: MoveInTop 0.4s;
     display: none;
-    overflow: scroll;
 }
 
 .header-icon-btn .user-menu-container li .user-option-icon{
