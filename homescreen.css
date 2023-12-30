@@ -9,7 +9,7 @@
 body{
     /* padding: 0 50px; */
     background-color: rgb(236, 236, 215);
-    min-width: 700px;
+    min-width: 900px;
     height: 100svh;
     min-height: 700px;
 }
@@ -26,9 +26,8 @@ body{
     background-color:#131c30;
     align-items: center;
     padding: 40px 0px;
-    width: 100%;
     position: relative;
-    min-width: 960px;
+    width: 100%;
 }
 
 
@@ -270,7 +269,7 @@ body{
 
 
 .header .head-address-bar{
-    min-width: 960px;
+    width: 100%;
     padding: 15px 20px;
     background-color: #ffb701;
     display: flex;
