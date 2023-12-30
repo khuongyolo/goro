@@ -18,5 +18,22 @@ function HideUserOption() {
         document.querySelector('body').style.overflow = '';
     }, { once: true });
 
-    userMenu.style.animation = "MoveOutTop 0.3s";
+    userMenu.style.animation = "MoveOutScale 0.3s";
 }
+
+
+function DisplayLanguageOption() {
+    var languageMenu = document.getElementById("language");
+    var arrowIcon = document.getElementById("arrow-icon");
+
+    var languageMenuDisplay = window.getComputedStyle(languageMenu).getPropertyValue("display");
+
+    if (languageMenuDisplay === "block") {
+        languageMenu.style.display = "none";
+        arrowIcon.innerHTML = "&#9660;"; // Mũi tên xuống khi ẩn menu
+    } else {
+        languageMenu.style.display = "block";
+        arrowIcon.innerHTML = "&#9650;"; // Mũi tên lên khi hiển thị menu
+    }
+}
+

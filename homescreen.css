@@ -96,7 +96,8 @@ body{
 
 
 
-@keyframes MoveInTop{
+
+@keyframes MoveInScale{
     0%{
         transform: scale(60%);
         opacity: 20%;
@@ -107,7 +108,7 @@ body{
     }
 }
 
-@keyframes MoveOutTop{
+@keyframes MoveOutScale{
     0%{
         transform: scale(1);
     }
@@ -156,14 +157,33 @@ body{
     background-color:white;
     border: 1px solid rgba(173, 173, 173, 0.747);
     border-radius: 10px;
-    animation: MoveInTop 0.4s;
-    display: none;
+    animation: MoveInScale 0.4s;
+    display: block;
 }
+
 
 .header-icon-btn .user-menu-container li .user-option-icon{
     color: #131c30;
     font-size: 17px;
     margin-right: 20px;
+}
+
+.header-icon-btn .user-menu-container .user-option .language{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    display: none;
+    margin-top: 20px;
+    animation: MoveInScale 0.2s;
+}
+
+#arrow-icon{
+    margin-left: 5px;
+    font-size: 13px;
+}
+
+.header-icon-btn .user-menu-container .user-option .language li{
+    padding: 10px 0;
 }
 
 .header-icon-btn .user-menu-container .log-out-btn  {
