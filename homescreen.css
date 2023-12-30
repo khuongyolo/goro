@@ -126,9 +126,7 @@ body{
         transform: translateX(300px);
     }
 
-    50%{
-        transform: translateX(-2px);
-    }
+
     100%{
         transform: translateX(0);
     }
@@ -141,7 +139,7 @@ body{
     }
     
     100%{
-        transform: translateX(300px);
+        transform: translateX(700px);
     }
 }
 
@@ -436,11 +434,11 @@ body{
         flex-direction: column;
         position: absolute;
         width: 100vw;
-        top: 45px;
+        top: 100px;
         right: -25px;
         z-index: 3;
         background-color:white;
-        border: 1px solid rgba(173, 173, 173, 0.747);
+        border:none;
         border-radius: 0px;
         animation: MoveInRight 0.4s;
         display: none;
