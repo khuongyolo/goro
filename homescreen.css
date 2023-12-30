@@ -90,7 +90,7 @@ body{
 
 .header-icon-btn i:hover{
     font-size: 22px;
-    color: #ca9100;
+    color: #996e00;
 }
 
 
@@ -149,7 +149,7 @@ body{
     display: flex;
     flex-direction: column;
     position: absolute;
-    width: 280px;
+    width: 320px;
     top: 45px;
     right:-30px;
     z-index: 3;
@@ -204,10 +204,19 @@ body{
 .header-icon-btn .user-menu-container .user-option{
     padding: 15px 20px;
     border-bottom: 1px solid rgb(216, 216, 216);
-    margin-bottom: 5px;
     font-family: Helvetica, sans-serif;
     font-size: 15px;
 }
+
+.header-icon-btn .user-menu-container .user-option:hover{
+    background-color: rgb(244, 244, 244);
+}
+
+.header-icon-btn .user-menu-container .user-option:hover:last-child{
+    border-radius: 0 0 10px 10px;
+}
+
+
 
 .header-icon-btn .user-menu-container .user-option a{
     color: black;
@@ -226,7 +235,7 @@ body{
 
 #arrow-icon{
     margin-left: 5px;
-    font-size: 10px;
+    font-size: 8px;
 }
 
 .header-icon-btn .user-menu-container .user-option .language li{
@@ -355,7 +364,7 @@ body{
 
 
 /* danh cho mobile */
-@media only screen and (max-width: 740px ){
+@media screen and (max-width: 740px ){
     body{
         background-color: rgb(236, 236, 215);
         min-width: 320px;
@@ -367,7 +376,7 @@ body{
         width: 100px;
         position: absolute;
         left: 25px;
-        top: 20px;
+        top: 15px;
         order: 1;
     }
 
@@ -383,7 +392,7 @@ body{
     }
 
     .search-bar input{
-        padding: 10px 20px;
+        padding: 12px 20px;
         width: 100%;
         border: none;
         border-radius: 8px 0 0 8px;
@@ -393,7 +402,7 @@ body{
     .search-bar-icon{
         color:black;
         font-size: 20px;
-        padding: 8px;
+        padding: 10px;
         border-radius: 0 8px 8px 0;
         background-color:#ffb701;
         border: none;
@@ -421,17 +430,18 @@ body{
         order: 2;
     }
 
+
     .header-icon-btn .user-menu-container{
         display: flex;
         flex-direction: column;
         position: absolute;
-        width: 300px;
+        width: 100vw;
         top: 45px;
-        right: -15px;
+        right: -25px;
         z-index: 3;
         background-color:white;
         border: 1px solid rgba(173, 173, 173, 0.747);
-        border-radius: 10px;
+        border-radius: 0px;
         animation: MoveInRight 0.4s;
         display: none;
     }
