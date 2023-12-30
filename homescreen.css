@@ -177,6 +177,13 @@ body{
     margin-left: 20px;
 }
 
+.header-icon-btn .user-menu-container .user-menu-heading .fa-user{
+    margin-right: 10px;
+    color: #131c30;
+}
+
+
+
 
 .header-icon-btn .user-menu-container .user-heading-container a .fa-xmark{
     color: black;
