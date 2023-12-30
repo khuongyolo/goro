@@ -63,7 +63,7 @@ body{
     font-size: 20px;
     padding: 11px;
     border-radius: 0 8px 8px 0;
-    background-color:#eca900;
+    background-color:#ffb701;
     border: none;
 }
 
@@ -246,7 +246,7 @@ body{
 .header .head-address-bar{
     min-width: 960px;
     padding: 15px 20px;
-    background-color: #eca900;
+    background-color: #ffb701;
     display: flex;
     position: relative;
     align-items: center;
