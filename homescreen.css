@@ -158,43 +158,8 @@ body{
     border: 1px solid rgba(173, 173, 173, 0.747);
     border-radius: 10px;
     animation: MoveInScale 0.4s;
-    display: block;
-}
-
-
-.header-icon-btn .user-menu-container li .user-option-icon{
-    color: #131c30;
-    font-size: 17px;
-    margin-right: 20px;
-}
-
-.header-icon-btn .user-menu-container .user-option .language{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
     display: none;
-    margin-top: 20px;
-    animation: MoveInScale 0.2s;
 }
-
-#arrow-icon{
-    margin-left: 5px;
-    font-size: 13px;
-}
-
-.header-icon-btn .user-menu-container .user-option .language li{
-    padding: 10px 0;
-}
-
-.header-icon-btn .user-menu-container .log-out-btn  {
-    text-align: center;
-    user-select: none;
-	-webkit-user-select: none;
-}
-
-
-
-
 
 .header-icon-btn .user-menu-container .user-heading-container{
     display: flex;
@@ -202,6 +167,16 @@ body{
     align-items: center;
     justify-content: space-between;
 }
+
+.header-icon-btn .user-menu-container .user-menu-heading{
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-family: Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    margin-left: 20px;
+}
+
 
 .header-icon-btn .user-menu-container .user-heading-container a .fa-xmark{
     color: black;
@@ -218,14 +193,6 @@ body{
 
 
 
-.header-icon-btn .user-menu-container .user-menu-heading{
-    margin-bottom: 20px;
-    margin-top: 20px;
-    font-family: Helvetica, sans-serif;
-    font-size: 20px;
-    font-weight: 300;
-    margin-left: 20px;
-}
 
 
 .header-icon-btn .user-menu-container .user-option{
@@ -242,11 +209,44 @@ body{
 	-webkit-user-select: none;
 }
 
+.header-icon-btn .user-menu-container .user-option .language{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    display: none;
+    margin-top: 20px;
+    animation: MoveInScale 0.5s;
+}
+
+#arrow-icon{
+    margin-left: 5px;
+    font-size: 10px;
+}
+
+.header-icon-btn .user-menu-container .user-option .language li{
+    padding: 10px 0;
+}
+
 .header-icon-btn .user-menu-container .user-option:last-child{
     margin-bottom: 0;
     margin-top: 50px;
     border-bottom: none;
 }
+
+
+.header-icon-btn .user-menu-container .log-out-btn  {
+    text-align: center;
+    user-select: none;
+	-webkit-user-select: none;
+}
+
+.header-icon-btn .user-menu-container li .fa-right-from-bracket{
+    color: #131c30;
+    font-size: 17px;
+    margin-right: 10px;
+}
+
+
 
 
 .header-icon-btn .user-menu-container li{
