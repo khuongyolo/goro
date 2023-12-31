@@ -154,7 +154,7 @@ body{
     background-color:white;
     border: 1px solid rgba(173, 173, 173, 0.747);
     border-radius: 10px;
-    animation: MoveInRight 0.4s;
+    animation: MoveInScale 0.4s;
     display: none;
 }
 
@@ -441,6 +441,7 @@ body{
         border:none;
         border-radius: 0px;
         animation: MoveInRight 0.4s;
+        box-shadow: 2px 2px 7px rgb(0,0,0,.5);
         display: none;
     }
 
