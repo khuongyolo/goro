@@ -17,7 +17,7 @@ function HideUserOption() {
         document.querySelector('body').style.overflow = ''; // Hiển thị lại thanh cuộn
     }, { once: true });
 
-    userMenu.style.animation = "MoveOutScale 0.5s"; // Áp dụng animation để đóng menu
+    userMenu.style.animation = "MoveOutScale 0.3s"; // Áp dụng animation để đóng menu
 
     var screenWidth = window.innerWidth;
 
