@@ -286,6 +286,8 @@ body{
     font-family: Helvetica, sans-serif;
 }
 
+
+
 .header .head-address-bar .fa-location-dot{
     color: black;
     margin-right: 10px;
@@ -296,8 +298,9 @@ body{
 .header .head-address-bar .change-address-btn{
     color: black;
     position: absolute;
-    right: 40px;
     top: 15px;
+    right:35px;
+    margin-left: 10px ;
     font-size: 20px;
 }
 
