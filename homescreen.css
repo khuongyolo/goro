@@ -8,10 +8,10 @@
 
 body{
     /* padding: 0 50px; */
-    background-color: rgb(236, 236, 215);
     min-width: 900px;
     height: 100svh;
     min-height: 700px;
+    background-color: rgb(250, 240, 215);
 }
 
 
@@ -475,3 +475,5 @@ body{
         font-size: 20px;
     }
 }
+
+
