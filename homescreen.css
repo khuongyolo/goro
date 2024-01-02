@@ -397,13 +397,13 @@ body{
         width: 100%;
         border: none;
         border-radius: 8px 0 0 8px;
-        font-size: 14px;
+        font-size: 15px;
     }
 
     .search-bar-icon{
         color:black;
         font-size: 19px;
-        padding: 10.5px;
+        padding: 12px;
         border-radius: 0 8px 8px 0;
         background-color:#ffb701;
         border: none;
