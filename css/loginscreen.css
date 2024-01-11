@@ -74,6 +74,19 @@ body{
 	cursor: default;
 }
 
+.signin-container form .error-caution{
+	padding: 10px 15px;
+	background-color: #ea44356f;
+	margin: 12px;
+}
+
+
+
+.signin-container form .error-caution p{
+	font-size: 12px;
+}
+
+
 .signin-label{
 	font-size: 14px;
 	display: block;
