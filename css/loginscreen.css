@@ -75,15 +75,20 @@ body{
 }
 
 .signin-container form .error-caution{
-	padding: 10px 15px;
-	background-color: #ea44356f;
+	padding: 14px 20px;
+	background-color: #ea443543;
 	margin: 12px;
+	border-radius: 5px;
+	display: block;
 }
 
 
 
 .signin-container form .error-caution p{
 	font-size: 12px;
+	color: rgba(255, 0, 0, 0.582);
+	font-weight: 500;
+	font-family: Arial, Helvetica, sans-serif;
 }
 
 
