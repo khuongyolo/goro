@@ -340,6 +340,11 @@ body{
 		font-size: 25px;
 	}
 
+	.signin-container{
+		margin-top: 20px;
+	}
+
+
 	.signin-container form{
 		min-width: 330px;
 		padding: 25px 30px;
@@ -493,6 +498,10 @@ body{
 
 	.logo-text{
 		display: none;
+	}
+
+	.signin-container{
+		margin-top: 20px;
 	}
 	
 	.signin-heading{
@@ -687,6 +696,10 @@ body{
 		padding: 25px 50px;
 	}
 
+	.signin-container{
+		margin-top: 30px;
+	}
+
 	.footer {
 		width: 100%;
 		height: 9vh;
@@ -832,6 +845,7 @@ body{
 		background-color: #F1F2F5;
 		border-radius: 15px;
 		padding: 40px 40px;
+		margin: 20px 0;
 	}
 
 	.signup-container form .link-container{
@@ -935,7 +949,7 @@ body{
 	background-color: #F1F2F5;
 	border-radius: 15px;
 	padding: 50px 50px;
-	margin: 50px 0;
+	margin: 20px 0;
 }
 
 
