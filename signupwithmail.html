@@ -4,21 +4,42 @@
 <meta charset = "UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <title id="tab-title"> GORO | Đăng kí</title>
-<link rel="stylesheet" href="../css/loginscreen.css">
-<link rel="stylesheet" href="../fontawesome-free-6.4.2-web/css/all.min.css">
-<link rel="icon" type="small icon" href="../images/Title logo final.png">
+<link rel="stylesheet" href="css/loginscreen.css">
+<link rel="stylesheet" href="fontawesome-free-6.4.2-web/css/all.min.css">
+<link rel="icon" type="small icon" href="images/Title logo final.png">
 </head>
 <body>
 	<div class="upper-container">
 		<div class="logo-and-pic">
-			<a href="#" id="corner-img-link"><img src="../images/Logopng.png" alt="cornerlogo" id="corner-logo" width="120"></a>
+			<a href="#" id="corner-img-link"><img src="images/Logopng.png" alt="cornerlogo" id="corner-logo" width="120"></a>
 			<p class="logo-text" id="logo-text">Bấm vào logo để xem thêm về chúng tôi</p>
-			<img src="../images/email 2.png" alt="demo-pic" id="left-img" width="120">
+			<img src="images/email 2.png" alt="demo-pic" id="left-img" width="120">
 		</div>
 		   
 		<div class="signup-mail-container">
 			<form> 
                 <h1 class="signup-mail-heading" id="signup-mail-heading">Đăng kí bằng Email</h1>
+				<style>
+					.signup-mail-container form .succeed-noti{
+						padding: 14px 20px;
+						background-color: #35ea5673;
+						margin: 15px 0;
+						border-radius: 7px;
+						display: block;
+						width: 100%;
+						text-align: center;
+					}
+
+					.signup-mail-container form .succeed-noti p{
+						font-size: 14px;
+						color: rgba(3, 64, 21, 0.385);
+						font-weight: 600;
+						font-family: Helvetica, sans-serif;
+					}
+				</style>
+				<div class="succeed-noti" id="succeed-noti">
+					<p>Đăng kí thành công</p>
+				</div>
 				<label for="account" class="signup-mail-label" id="signup-mail-label">Địa chỉ mail</label>
 				<input type="text" id="user-mail" name="user-mail" class="signup-mail-input account-mail-input" placeholder="goro123@gmail.com">
 				<label for="password" class="signup-mail-label" id="password-mail-label">Mật Khẩu</label>
@@ -48,6 +69,6 @@
 		<div class="footer-long-line"></div>
 		<p>&copy GORO Cooporate. | Designed by GORO Team | All rights reserved</p>
 	</div>
-	<script src="../js/signupmail.js"></script>
+	<script src="js/signupmail.js"></script>
 </body>
 </html>
