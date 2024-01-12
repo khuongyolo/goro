@@ -1198,6 +1198,7 @@ body{
 		background-color: #F1F2F5;
 		border-radius: 15px;
 		padding: 50px 50px;
+		margin: 30px 0;
 	}
 }
 
@@ -1215,6 +1216,7 @@ body{
 		background-color: #F1F2F5;
 		border-radius: 15px;
 		padding: 25px 30px;
+		margin-top:20px;
 	}
 
 	.forgot-password-heading{
