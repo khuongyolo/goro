@@ -17,7 +17,8 @@ body{
 /* PHAN HEADER --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
 .header{
     width: 100%;
-    padding: 0
+    padding: 0;
+    z-index: 89;
 }
 
 .header .nav-bar{
@@ -302,6 +303,35 @@ body{
     margin-left: 10px ;
     font-size: 20px;
 }
+
+
+/* PHAN ADVERTISEMENT ---------------------------------------------------------------*/
+
+.content .ads-container{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    margin-top: 10px;
+    gap: 10px;
+    padding: 10px;
+}
+
+.content .ads-container #big-ads{
+    width: 100%;
+    border-radius: 20px;
+
+}
+
+.content .ads-container #small-ads{
+    width: 100%;
+    border-radius: 20px;
+
+}
+
+
+
 
 
 
