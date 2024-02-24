@@ -1208,7 +1208,7 @@ body{
 	justify-content: center;
 	gap: 40px;
 	z-index: 30;
-	position: absolute;
+	margin: 0 auto;
 }
 #confirm-number-text{
 	font-size: 14px;
