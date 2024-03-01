@@ -322,7 +322,7 @@ body{
 	}
 
 	#corner-logo{
-		width: 150px;
+		width: 160px;
 		margin-bottom: 0;
 		margin-left: 30px;
 	}
@@ -685,8 +685,9 @@ body{
 	}
 
 	#corner-logo{
-		width: 170px;
-		margin-top: 50px;
+		width: 160px;
+		margin-bottom: 5px;
+		margin-left: 30px;
 	}
 
 	.logo-text{
@@ -901,8 +902,7 @@ body{
 /* danh cho tablet va PC */
 @media only screen and (min-width: 740px) and (max-width: 1024px){
 	#corner-logo{
-		width: 150px;
-		margin-bottom: 30px;
+		margin-bottom: 5px;
 		margin-left: 30px;
 	}
 
@@ -1041,8 +1041,7 @@ body{
 /* danh cho tablet va PC */
 @media only screen and (min-width: 740px) and (max-width: 1024px){
 	#corner-logo{
-		width: 150px;
-		margin-bottom: 30px;
+		margin-bottom: 5px;
 		margin-left: 30px;
 	}
 
@@ -1169,10 +1168,6 @@ body{
 	-webkit-user-select: none;
 }
 
-.signup-mail-btn:hover{
-	background-color: #6235cb;
-}
-
 .term-accept-error{
 	color: red;
 	font-size: 12px;
@@ -1196,37 +1191,10 @@ body{
 	color: black ;
 }
 
-.reset-number-input{
-	width: 550px;
-	height: 300px;
-	border-radius: 20px;
-	border: 1px solid red;
-	background-color: white;	
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	gap: 40px;
-	z-index: 30;
-	margin: 0 auto;
-}
-#confirm-number-text{
-	font-size: 14px;
-}
-
-#confirm-number{
-	width: 300px;
-	height:50px;
-	border-radius: 8px;
-	padding:0 10px;
-	font-size: 15px;
-}
-
 /* danh cho tablet va PC */
 @media only screen and (min-width: 740px) and (max-width: 1024px){
 	#corner-logo{
-		width: 150px;
-		margin-bottom: 30px;
+		margin-bottom: 5px;
 		margin-left: 30px;
 	}
 
@@ -1300,5 +1268,113 @@ body{
 	
 	.term-forgot-password-accept a:active{
 		color: black ;
+	}
+}
+
+/* CONFIRM-NUMBER---------------------------------------------------------------------------- */
+.confirm-number-upper-container{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-items: center;
+	gap: 2%;
+	margin: auto;
+}
+
+.confirm-number-container{
+	/* min-width: 450px; */
+	background-color: #F1F2F5;
+	border-radius: 15px;
+	padding: 60px 70px;
+	margin-top: 50px;
+}
+
+.confirm-number-text{
+	width: 100%;
+	margin-bottom: 40px;
+	font-size: 14px;
+	text-align: center;
+	user-select: none;
+	-webkit-user-select: none;
+}
+
+.confirm-number-input{
+	display: block;
+	width: 70%;
+	padding: 15px 15px;
+	border-radius: 10px;
+	border: 1px solid rgb(204, 203, 203);
+	background-color: #f5f5f5;
+	margin: 0 auto;
+	/* box-shadow: 2px 2px 4px rgb(0,0,0,.4); */
+	font-size: 14px;
+	user-select: none;
+	-webkit-user-select: none;
+}
+
+.confirm-number-btn{
+	display: block;
+	margin:0 auto;
+	margin-top: 40px;
+	width: 50%;
+	padding: 17px 20px;
+	text-align: center;
+	border-radius: 10px;
+	border: none;
+	background-color: #512da8;
+	color: white;
+	font-size: 16px;
+	cursor: pointer;
+	user-select: none;
+	-webkit-user-select: none;
+}
+
+.confirm-number-btn:hover{
+	background-color: #6c40d4;
+}
+
+#re-send-text{
+	text-align: center;
+	margin-top: 40px;
+	font-size: 14px;
+}
+
+#re-send-option a{
+	text-decoration: none;
+	color: #3700ff;
+}
+/* danh cho tablet va PC */
+@media only screen and (min-width: 740px) and (max-width: 1024px){
+	.confirm-number-container{
+		background-color: #F1F2F5;
+		border-radius: 15px;
+		padding: 50px 50px;
+		margin-top: 50px;
+	}
+
+	.confirm-number-text{
+		width: 100%;
+		margin-bottom: 40px;
+		font-size: 12px;
+		text-align: center;
+		user-select: none;
+		-webkit-user-select: none;
+	}
+
+	.confirm-number-btn{
+		display: block;
+		margin:0 auto;
+		margin-top: 40px;
+		width: 50%;
+		padding: 15px 15px;
+		text-align: center;
+		border-radius: 10px;
+		border: none;
+		background-color: #512da8;
+		color: white;
+		font-size: 12px;
+		cursor: pointer;
+		user-select: none;
+		-webkit-user-select: none;
 	}
 }
