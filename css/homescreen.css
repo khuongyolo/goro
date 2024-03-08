@@ -325,7 +325,7 @@ body{
 
 .slider-wrapper{
     position: relative;
-    max-width: 59rem;
+    width: 60vw;
 }
 
 .slider::-webkit-scrollbar{
@@ -378,7 +378,7 @@ body{
 
 
 #stable-image{
-    width: 33.5rem;
+    width: 35vw;
     box-shadow: 3px 3px 6px rgb(0,0,0,.2);
     border-radius: 1rem;
 }
@@ -599,6 +599,7 @@ body{
         background-color: black;
         opacity: 40%;
         transition: opacity ease 250ms;
+        
     }
     
     .slider-nav a:hover{
