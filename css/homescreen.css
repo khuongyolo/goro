@@ -502,7 +502,6 @@ body{
         padding: 60px 0px;
         position: relative;
         width: 100%;
-        /* flex-wrap: wrap; */
     }
 
     .header-icon-btn{
@@ -577,7 +576,7 @@ body{
     }
 
     .slider img{
-        flex: 1 0 100%;
+        flex: 0 1 100%;
         scroll-snap-align: start;
         object-fit: cover;
     }
