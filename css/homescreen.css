@@ -576,7 +576,8 @@ body{
     }
 
     .slider img{
-        flex: 0 1 100%;
+        width: 100vw;
+        flex:1 0 100%;
         scroll-snap-align: start;
         object-fit: cover;
     }
