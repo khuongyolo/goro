@@ -352,7 +352,7 @@ body{
     display: flex;
     height: 1rem;
     align-items: center;
-    column-gap: 1rem;
+    column-gap: 1.1rem;
     position: absolute;
     bottom: 0.3rem;
     left: 50%;
@@ -593,8 +593,8 @@ body{
     }
 
     .slider-nav a{
-        width: 0.4rem;
-        height: 0.4rem;
+        width: 0.5rem;
+        height: 0.5rem;
         border-radius: 50%;
         background-color: black;
         opacity: 40%;
@@ -603,8 +603,8 @@ body{
     
     .slider-nav a:hover{
         opacity: 0.7;
-        width: 0.5rem;
-        height: 0.5rem;
+        width: 0.6rem;
+        height: 0.6rem;
         transition: 0.18s ease-in-out;
     }
 
