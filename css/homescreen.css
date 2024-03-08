@@ -344,6 +344,7 @@ body{
 
 .slider img{
     flex: 1 0 100%;
+    width: 100%;
     scroll-snap-align: start;
     object-fit: cover;
 }
@@ -378,7 +379,7 @@ body{
 
 
 #stable-image{
-    width: 35vw;
+    width: 32vw;
     box-shadow: 3px 3px 6px rgb(0,0,0,.2);
     border-radius: 1rem;
 }
@@ -577,7 +578,7 @@ body{
 
     .slider img{
         width: 100vw;
-        flex:1 0 100%;
+        flex: 1 0 100%;
         scroll-snap-align: start;
         object-fit: cover;
     }
