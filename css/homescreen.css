@@ -325,7 +325,7 @@ body{
 
 .slider-wrapper{
     position: relative;
-    width: 60vw;
+    min-width: 60vw;
 }
 
 .slider::-webkit-scrollbar{
