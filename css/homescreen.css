@@ -344,7 +344,7 @@ body{
 
 .slider img{
     flex: 1 0 100%;
-    width: 100vw;
+    width: 60vw;
     scroll-snap-align: start;
     object-fit: cover;
 }
