@@ -345,7 +345,7 @@ body{
 .slider img{
     flex: 1 0 100%;
     scroll-snap-align: start;
-    object-fit: none;
+    object-fit: cover;
 }
 
 .slider-nav{
@@ -576,7 +576,7 @@ body{
     }
 
     .slider img{
-        flex: 1 1 100%;
+        flex: 0 1 100%;
         scroll-snap-align: start;
         object-fit: cover;
     }
