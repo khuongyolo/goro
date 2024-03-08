@@ -447,11 +447,61 @@ body{
         user-select: none;
         -webkit-user-select: none;
 }
+
+    /* PHAN ADVERTISEMENT CHO TABLET */
+    .ads-container{
+        padding: 20px; 
+        gap: 0px;
+    }
+
+    .slider-wrapper{
+        position: relative;
+        min-width: 95vw;
+    }
+
+    #stable-image{
+      display: none;
+    }
+
+    .slider img{
+        width: 100vw;
+        flex: 1 0 100%;
+        scroll-snap-align: start;
+        object-fit: cover;
+    }
+
+    .slider{
+        display: flex;
+        aspect-ratio: 16/9;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        scroll-behavior: smooth;
+        box-shadow: 3px 3px 6px rgb(0,0,0,.3);
+        border-radius: 8px;
+    }
+
+    .slider-nav a{
+        width: 0.5rem;
+        height: 0.5rem;
+        border-radius: 50%;
+        background-color: black;
+        opacity: 40%;
+        transition: opacity ease 250ms;
+        
+    }
+    
+    .slider-nav a:hover{
+        opacity: 0.7;
+        width: 0.6rem;
+        height: 0.6rem;
+        transition: 0.18s ease-in-out;
+    }
+
 }
 
 
 /* danh cho mobile */
-@media screen and (max-width: 740px ){
+@media  screen and (max-width: 740px ){
     body{
         background-color: rgb(250, 240, 215);
         min-width: 320px;
