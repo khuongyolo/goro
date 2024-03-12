@@ -58,27 +58,36 @@
     <!-- MAIN BODY start -->
     <div class="content">
         <!-- ADVERTISEMENT PART -->
-        <section class="ads-container">
-            <div class="slider-wrapper">
-                <div class="slider">
-                    <img src="images/goro-bread.JPG" id="slide-1" alt="goro bread boy">
-                    <img src="images/Ads-in-E-Commerce.jpeg" id="slide-2" alt="blue girl and boy">
-                    <img src="images/What-is-eCommerce-advertising.jpeg" id="slide-3" alt="orange man">
-                    <img src="images/e-commerce-.jpg" id="slide-4" alt="yellow picture">
-
+        <div class="slider">
+            <!-- image list -->
+            <div class="list">
+                <div class="item">
+                    <img src="images/goro-bread.JPG">
                 </div>
-                <div class="slider-nav">
-                    <a href="#slide-1"></a>
-                    <a href="#slide-2"></a>
-                    <a href="#slide-3"></a>
-                    <a href="#slide-4"></a>
-
+                <div class="item">
+                    <img src="images/Ads-in-E-Commerce.jpeg">
+                </div>
+                <div class="item">
+                    <img src="images/e-commerce-.jpg">
+                </div>
+                <div class="item">
+                    <img src="images/What-is-eCommerce-advertising.jpeg">
                 </div>
             </div>
-            <div class="stable-ads">
-                <img src="images/weather-sun-cloudy.jpg" id="stable-image" alt="today's weather image">
+
+            <!-- btn next and prev -->
+            <div class="buttons">
+                <button id="prev"><</button>
+                <button id="next">></button>
             </div>
-        </section>
+            <!-- dots page number ( 5 item -> tuong ung voi 5 dots) -->
+            <ul class="dots">
+                <li class="active"></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
         
     
     </div>
