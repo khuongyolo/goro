@@ -23,7 +23,7 @@ body{
 
 .header .nav-bar{
     display: flex;
-    background-color:#131c30;
+    background-color:#131C30;
     align-items: center;
     padding: 40px 0px;
     /* position: relative; */
