@@ -308,15 +308,169 @@ body{
 
 /* PHAN CONTENT----------- */
 .content{
-    padding: 1rem 8rem;
+    padding: 20px 25px;
 }
 
+
+
+/* Phan Content - advertisement */
 .slider{
-    width:1800px;
-    max-width: 100vw;
-    height: 700px;
+    width: 90vw;
+    height: 400px;
     margin: 0 auto;
     position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 4px 5px 8px rgb(0,0,0,.3);
+}
+
+.list{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: max-content;
+    transition: 0.9s ease-in-out;
+}
+
+.list img{
+    width: 100vw;
+    height: 100%;
+    object-fit: cover;
+}
+
+.buttons{
+    position: absolute;
+    top:45%;
+    left: 2%;
+    width: 95%;
+    display: flex;
+    justify-content: space-between;  
+}
+
+.buttons button{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgba(82, 76, 76, 0.399);
+    color: #fff;
+    border:none;
+    font-weight: bold;
+    font-family: monospace;
+    cursor: pointer;  
+}
+
+.buttons button:hover{
+    background-color: rgba(82, 76, 76, 0.9);
+    transition: 0.7s;
+}
+
+.buttons button:active{
+    background-color: rgba(82, 81, 81, 0.7);
+    transition: 0.1s;
+}
+
+
+
+.dots{
+    position: absolute;
+    bottom:5px;
+    color: black;
+    left:0;
+    width:100%;
+    margin:0;
+    padding:0;
+    display: flex;
+    justify-content: center;
+}
+
+.dots li{
+    list-style: none;
+    width:10px;
+    height: 10px;
+    background-color: #000000;
+    opacity: 0.3;
+    margin:20px;
+    border-radius: 20px;
+    transition: 0.6s;
+    cursor: pointer;
+}
+
+.dots li.active{
+    width: 40px;
+}
+
+/*  ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo RESPONSIVE ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo */
+
+/* danh cho tablet va PC */
+@media only screen and (min-width: 740px) and (max-width: 1024px){
+    body{
+        background-color: rgb(250, 240, 215);
+        min-width: 740px;
+        height: 100svh;
+        min-height: 700px;
+    }
+
+/* PHAN HEADER VA TOP NAVIGATION BAR */
+
+    .corner-logo{
+        width: 100px;
+        position: absolute;
+        left: 40px;
+        top: 25px;
+    }
+    
+    .search-bar{
+        position: absolute;
+        left: 21%;
+        width: 50%;
+        display: flex;
+        align-items: center;
+        gap:0;
+    }
+
+    .search-bar input{
+        padding: 10px 20px;
+        width: 100%;
+        border: none;
+        border-radius: 8px;
+        font-size: 14px;
+        position: relative;
+    }
+
+    .search-bar-icon{
+        color:black;
+        font-size: 20px;
+        padding: 9px;
+        border: none;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    
+    
+    .header-icon-btn{
+        position: absolute;
+        right: 40px;
+        display: flex;
+        flex-direction: row;
+        gap: 40px;
+        user-select: none;
+        -webkit-user-select: none;
+}
+    /* PHAN CONTENT CONTAINER */
+.content{
+    padding: 12px 0px;
+}
+
+/* PHAN ADVERTISEMENT */
+.slider{
+    width: 92vw;
+    height: 30vh;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
 }
 
 .list{
@@ -330,9 +484,8 @@ body{
 }
 
 .list img{
-    width: 1800px;
-    max-width: 100vw;
-    height: 100%;
+    width: 92vw;
+    height: 30vh;
     object-fit: cover;
 }
 
@@ -389,82 +542,13 @@ body{
     margin:20px;
     border-radius: 20px;
     transition: 0.6s;
+    cursor: pointer;
 }
 
 .dots li.active{
     width: 40px;
 }
-
-
-
-
-
-
-
-
-
-
-
-/*  ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo RESPONSIVE ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo */
-
-/* danh cho tablet va PC */
-@media only screen and (min-width: 740px) and (max-width: 1024px){
-    body{
-        background-color: rgb(250, 240, 215);
-        min-width: 740px;
-        height: 100svh;
-        min-height: 700px;
-    }
-
-    .corner-logo{
-        width: 100px;
-        position: absolute;
-        left: 40px;
-        top: 25px;
-    }
-    
-    .search-bar{
-        position: absolute;
-        left: 21%;
-        width: 50%;
-        display: flex;
-        align-items: center;
-        gap:0;
-    }
-
-    .search-bar input{
-        padding: 10px 20px;
-        width: 100%;
-        border: none;
-        border-radius: 8px;
-        font-size: 14px;
-        position: relative;
-    }
-
-    .search-bar-icon{
-        color:black;
-        font-size: 20px;
-        padding: 9px;
-        border: none;
-        position: absolute;
-        top: 0;
-        right: 0;
-    }
-    
-    
-    .header-icon-btn{
-        position: absolute;
-        right: 40px;
-        display: flex;
-        flex-direction: row;
-        gap: 40px;
-        user-select: none;
-        -webkit-user-select: none;
 }
-}
-
-    /* PHAN ADVERTISEMENT CHO TABLET */
-    
 
 
 
