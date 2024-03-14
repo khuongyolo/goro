@@ -317,11 +317,11 @@ body{
 
 /* Phan Content - advertisement */
 .slider{
-    width: 85vw;
-    height:15svw;
+    width: 95svw;
+    height:35svw;
     margin: auto;
     position: relative;
-    overflow-x: hidden;
+    overflow: hidden;
     /* scroll-snap-type: x mandatory;
     scroll-behavior: smooth; */
     border-radius: 10px;
@@ -344,9 +344,9 @@ body{
 .list img{
     /* flex: 1 0 100%;
     aspect-ratio: 16/9; */
-    width: 85vw;
-    height: 15svw;
-    /* object-fit: cover; */
+    width: 95svw;
+    height: 35svw;
+    object-fit:fill;
 }
 
 .buttons{
@@ -469,78 +469,54 @@ body{
         user-select: none;
         -webkit-user-select: none;
 }
-    /* PHAN CONTENT CONTAINER */
+
+
+/* PHAN CONTENT CONTAINER - TABLET */
+
 .content{
-    padding: 12px 0px;
+    width: 100vw;
+    height: 100vh;
+    padding: 20px 5px;
 }
 
-/* PHAN ADVERTISEMENT */
+/* PHAN CONTENT - ADVERTISEMENT - TABLET */
 .slider{
-    width: 90vw;
-    height: 30vh;
-    min-height: 200px;
-    margin: 0 auto;
+    width: 95svw;
+    height:35svw;
+    margin: auto;
     position: relative;
-    overflow: hidden;
-    border-radius: 15px;
+    overflow-x: hidden;
+    /* scroll-snap-type: x mandatory;
+    scroll-behavior: smooth; */
+    border-radius: 10px;
+    box-shadow: 4px 5px 8px rgb(0,0,0,.3);
 }
 
 .list{
     position: absolute;
     top: 0;
     left: 0;
-    height: 100%;
     display: flex;
     width: max-content;
-    transition: 0.6s;
+    transition: 0.9s ease-in-out;
 }
 
 .list img{
-    width: 100vw;
-    height: 100%;
-    object-fit: cover;
+    /* flex: 1 0 100%;
+    aspect-ratio: 16/9; */
+    width: 95svw;
+    height: 35svw;
+    object-fit: fill;
 }
-
-.buttons{
-    position: absolute;
-    top:42%;
-    left:5%;
-    width: 90%;
-    display: flex;
-    justify-content: space-between;    
-}
-
-.buttons button{
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background-color: rgba(82, 76, 76, 0.399);
-    color: #fff;
-    border:none;
-    font-weight: bold;
-    font-family: monospace;
-}
-
-.buttons button:hover{
-    background-color: rgba(82, 76, 76, 0.9);
-    transition: 0.7s;
-}
-
-.buttons button:active{
-    background-color: rgba(82, 81, 81, 0.7);
-    transition: 0.1s;
-}
-
-
 
 .dots{
     position: absolute;
-    bottom:5px;
+    bottom: 3px;
     color: black;
-    left:0;
-    width:100%;
-    margin:0;
-    padding:0;
+    left: 0;
+    width: 100%;
+    margin: 0;
+    padding: 0;
     display: flex;
     justify-content: center;
 }
@@ -551,14 +527,14 @@ body{
     height: 10px;
     background-color: #000000;
     opacity: 0.3;
-    margin:20px;
+    margin: 10px 20px;
     border-radius: 20px;
     transition: 0.6s;
     cursor: pointer;
 }
 
 .dots li.active{
-    width: 40px;
+    width: 35px;
 }
 }
 
@@ -677,7 +653,89 @@ body{
         font-size: 20px;
     }
 
-    /* PHAN ADVERTISEMENT CHO MOBILE */
+ /* PHAN CONTENT CONTAINER - TABLET */
+
+.content{
+    width: 100svw;
+    height: 100svh;
+    padding: 10px 5px;
+}
+
+/* PHAN CONTENT - ADVERTISEMENT - TABLET */
+.slider{
+    width: 95svw;
+    height: 35svw;
+    margin: auto;
+    position: relative;
+    overflow-x: hidden;
+    /* scroll-snap-type: x mandatory;
+    scroll-behavior: smooth; */
+    border-radius: 10px;
+    box-shadow: 4px 5px 8px rgb(0,0,0,.3);
+}
+
+.list{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: max-content;
+    transition: 0.9s ease-in-out;
+}
+
+.list img{
+    /* flex: 1 0 100%;
+    aspect-ratio: 16/9; */
+    width: 95svw;
+    height: 40svw;
+    object-fit: fill;
+}
+
+.buttons{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 3%;
+    width: 95%;
+    display: flex;
+    justify-content: space-between;  
+}
+
+.buttons button{
+    width: 30px;
+    height: 30px;
+    background-color: rgba(119, 117, 117, 0.3);
+    color: #ffffff;
+    font-weight:100;
+}
+
+.dots{
+    position: absolute;
+    bottom: -3px;
+    color: black;
+    left: 0;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.dots li{
+    list-style: none;
+    width:8px;
+    height: 8px;
+    background-color: #000000;
+    opacity: 0.3;
+    margin: 10px 10px;
+    border-radius: 20px;
+    transition: 0.6s;
+    cursor: pointer;
+}
+
+.dots li.active{
+    width: 20px;
+}
     
 
 }
