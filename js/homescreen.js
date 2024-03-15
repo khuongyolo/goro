@@ -102,10 +102,12 @@ dots.forEach((li, key) => {
 // luot chuot chuyen quang cao 
 let isDragging = false;
 let startX, endX;
+let initialLeft;
 
 list.addEventListener('mousedown', (e) => {
     isDragging = true;
     startX = e.pageX - list.offsetLeft;
+    initialLeft = list.offsetLeft;
 });
 
 list.addEventListener('mousemove', (e) => {
@@ -114,7 +116,7 @@ list.addEventListener('mousemove', (e) => {
 
     endX = e.pageX - list.offsetLeft;
     const move = endX - startX;
-    list.style.left = `${-items[active].offsetLeft + move}px`;
+    list.style.left = `${initialLeft + move}px`;
 });
 
 list.addEventListener('mouseup', () => {
