@@ -98,3 +98,33 @@ dots.forEach((li, key) => {
         reloadSlider();
     });
 });
+
+// luot chuot chuyen quang cao 
+let isDragging = false;
+let startX, endX;
+
+list.addEventListener('mousedown', (e) => {
+    isDragging = true;
+    startX = e.pageX - list.offsetLeft;
+});
+
+list.addEventListener('mousemove', (e) => {
+    if (!isDragging) return;
+    e.preventDefault();
+
+    endX = e.pageX - list.offsetLeft;
+    const move = endX - startX;
+    list.style.left = `${-items[active].offsetLeft + move}px`;
+});
+
+list.addEventListener('mouseup', () => {
+    isDragging = false;
+    const move = endX - startX;
+    if (move < -50) {
+        next.click();
+    } else if (move > 50) {
+        prev.click();
+    } else {
+        reloadSlider();
+    }
+});
