@@ -478,8 +478,8 @@ body{
 
 /* PHAN CONTENT - ADVERTISEMENT - TABLET */
 .slider{
-    width: 70vw;
-    height:25vw;
+    width: 95vw;
+    height:35vw;
     margin: auto;
     position: relative;
     overflow-x: hidden;
@@ -501,8 +501,8 @@ body{
 .list img{
     /* flex: 1 0 100%;
     aspect-ratio: 16/9; */
-    width: 70vw;
-    height: 25vw;
+    width: 95vw;
+    height: 35vw;
     object-fit: fill;
 }
 

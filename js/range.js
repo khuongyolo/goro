@@ -12,7 +12,7 @@ drawEmoji();
 function drawEmoji() {
     const face = new PIXI.Graphics();
     face.beginFill(0xffb701);
-    face.drawCircle(0, 0, 120);
+    face.drawCircle(0, 0, 150);
     face.endFill();
     emojiContainer.addChild(face);
 
@@ -54,7 +54,7 @@ range.addEventListener('input', (e) => {
     mouth.clear();
     mouth.lineStyle(4, 0x000000);
     mouth.moveTo(-30, 30);
-    mouth.quadraticCurveTo(0, -4 + value * 0.85, 30, 30);
+    mouth.quadraticCurveTo(0, -5 + value * 0.85, 30, 30);
     mouth.endFill();
 });
 }
