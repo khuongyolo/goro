@@ -99,34 +99,76 @@ dots.forEach((li, key) => {
     });
 });
 
-// luot chuot chuyen quang cao 
-let isDragging = false;
-let startX, endX;
-let initialLeft;
+// Hàm xử lý sự kiện click kéo chuột
+function handleMouseDrag() {
+    let isDragging = false;
+    let startX, endX;
+    let initialLeft;
 
-list.addEventListener('mousedown', (e) => {
-    isDragging = true;
-    startX = e.pageX - list.offsetLeft;
-    initialLeft = list.offsetLeft;
-});
+    list.addEventListener('mousedown', (e) => {
+        isDragging = true;
+        startX = e.pageX - list.offsetLeft;
+        initialLeft = list.offsetLeft;
+    });
 
-list.addEventListener('mousemove', (e) => {
-    if (!isDragging) return;
-    e.preventDefault();
+    list.addEventListener('mousemove', (e) => {
+        if (!isDragging) return;
+        e.preventDefault();
 
-    endX = e.pageX - list.offsetLeft;
-    const move = endX - startX;
-    list.style.left = `${initialLeft + move}px`;
-});
+        endX = e.pageX - list.offsetLeft;
+        const move = endX - startX;
+        list.style.left = `${initialLeft + move}px`;
+    });
 
-list.addEventListener('mouseup', () => {
-    isDragging = false;
-    const move = endX - startX;
-    if (move < -50) {
-        next.click();
-    } else if (move > 50) {
-        prev.click();
-    } else {
-        reloadSlider();
-    }
-});
+    list.addEventListener('mouseup', () => {
+        isDragging = false;
+        const move = endX - startX;
+        if (move < -50) {
+            next.click();
+        } else if (move > 50) {
+            prev.click();
+        } else {
+            reloadSlider();
+        }
+    });
+}
+
+// Hàm xử lý sự kiện vuốt trên điện thoại
+function handleTouchDrag() {
+    let isDragging = false;
+    let startX, endX;
+    let initialLeft;
+
+    list.addEventListener('touchstart', (e) => {
+        isDragging = true;
+        startX = e.touches[0].pageX - list.offsetLeft;
+        initialLeft = list.offsetLeft;
+    });
+
+    list.addEventListener('touchmove', (e) => {
+        if (!isDragging) return;
+        e.preventDefault();
+
+        endX = e.touches[0].pageX - list.offsetLeft;
+        const move = endX - startX;
+        list.style.left = `${initialLeft + move}px`;
+    });
+
+    list.addEventListener('touchend', () => {
+        isDragging = false;
+        const move = endX - startX;
+        if (move < -50) {
+            next.click();
+        } else if (move > 50) {
+            prev.click();
+        } else {
+            reloadSlider();
+        }
+    });
+}
+
+// Sử dụng hàm handleMouseDrag() cho sự kiện click kéo chuột
+handleMouseDrag();
+
+// Sử dụng hàm handleTouchDrag() cho sự kiện vuốt trên điện thoại
+handleTouchDrag();
