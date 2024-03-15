@@ -309,15 +309,15 @@ body{
 .content{
     width: 100vw;
     height: 100svh;
-    padding: 25px 10px;
+    padding: 25px 0px;
 }
 
 
 
 /* Phan Content - advertisement */
 .slider{
-    width: 95vw;
-    height:35vw;
+    width: 70vw;
+    height: 25vw;
     margin: auto;
     position: relative;
     overflow: hidden;
@@ -343,8 +343,8 @@ body{
 .list img{
     /* flex: 1 0 100%;
     aspect-ratio: 16/9; */
-    width: 95vw;
-    height: 35vw;
+    width: 70vw;
+    height: 25vw;
     object-fit:fill;
 }
 
@@ -352,8 +352,8 @@ body{
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    left: 2%;
-    width: 95%;
+    left: 1%;
+    width: 98%;
     display: flex;
     justify-content: space-between;  
 }
@@ -362,11 +362,9 @@ body{
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    background-color: rgba(82, 76, 76, 0.399);
+    background-color: rgba(163, 157, 157, 0.34);
     color: #fff;
     border:none;
-    font-weight: bold;
-    font-family: monospace;
     cursor: pointer;  
 }
 
@@ -480,8 +478,8 @@ body{
 
 /* PHAN CONTENT - ADVERTISEMENT - TABLET */
 .slider{
-    width: 95vw;
-    height:35vw;
+    width: 70vw;
+    height:25vw;
     margin: auto;
     position: relative;
     overflow-x: hidden;
@@ -503,8 +501,8 @@ body{
 .list img{
     /* flex: 1 0 100%;
     aspect-ratio: 16/9; */
-    width: 95vw;
-    height: 35vw;
+    width: 70vw;
+    height: 25vw;
     object-fit: fill;
 }
 
@@ -652,7 +650,7 @@ body{
         font-size: 20px;
     }
 
- /* PHAN CONTENT CONTAINER - TABLET */
+ /* PHAN CONTENT CONTAINER - PHONNE */
 
 .content{
     width: 100vw;
@@ -660,10 +658,10 @@ body{
     padding: 10px 5px;
 }
 
-/* PHAN CONTENT - ADVERTISEMENT - TABLET */
+/* PHAN CONTENT - ADVERTISEMENT - PHONE*/
 .slider{
     width: 95vw;
-    height: 35vw;
+    height: 40vw;
     margin: auto;
     position: relative;
     overflow-x: hidden;
