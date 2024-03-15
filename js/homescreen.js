@@ -135,3 +135,8 @@ function handleTouchDrag() {
 
 // Sử dụng hàm handleTouchDrag() cho sự kiện vuốt trên điện thoại
 handleTouchDrag();
+
+
+
+
+
