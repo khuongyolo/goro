@@ -1,4 +1,4 @@
-const app = new PIXI.Application({ width: 150, height: 150, backgroundColor: 0x131C30});
+const app = new PIXI.Application({ width: 130, height: 130, backgroundColor: 0x131C30 });
 
 document.body.appendChild(app.view);
 
@@ -12,26 +12,26 @@ drawEmoji();
 function drawEmoji() {
     const face = new PIXI.Graphics();
     face.beginFill(0xffb701);
-    face.drawCircle(0, 0, 150);
+    face.drawCircle(0, 0, 88);
     face.endFill();
     emojiContainer.addChild(face);
 
     const leftEye = new PIXI.Graphics();
     leftEye.beginFill(0x000000);
-    leftEye.drawCircle(-35, -25, 10);
+    leftEye.drawCircle(-25, -15, 12);
     leftEye.endFill();
     emojiContainer.addChild(leftEye);
 
     const rightEye = new PIXI.Graphics();
     rightEye.beginFill(0x000000);
-    rightEye.drawCircle(35, -25, 10);
+    rightEye.drawCircle(25, -15, 12);
     rightEye.endFill();
     emojiContainer.addChild(rightEye);
 
     const mouth = new PIXI.Graphics();
     mouth.lineStyle(4, 0x000000);
     mouth.moveTo(-30, 30);
-    mouth.quadraticCurveTo(0, 40, 30, 30);
+    mouth.quadraticCurveTo(0, 50, 30, 30);
     mouth.endFill();
     emojiContainer.addChild(mouth);
 
@@ -61,4 +61,4 @@ range.addEventListener('input', (e) => {
 
 const scale = (num, in_min, in_max, out_min, out_max) => {
     return (num - in_min) * (out_max - out_min) / (in_max - in_min) + out_min;
-};
+}
