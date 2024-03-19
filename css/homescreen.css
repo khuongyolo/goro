@@ -11,13 +11,16 @@ body{
     height: 100svh;
     min-height: 700px;
     background-color: rgb(250, 240, 215);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 
 
 /* PHAN HEADER --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
 .header{
-    width: 100vw;
+    width: 100svw;
     padding: 0px;
     z-index: 89;
 }
@@ -27,7 +30,7 @@ body{
     background-color:#131C30;
     align-items: center;
     justify-content: space-between;
-    padding: 20px 30px;
+    padding: 20px 40px;
     width: 100svw;
 }
 
@@ -68,8 +71,6 @@ body{
 
 
 .header-icon-btn{
-    position: absolute;
-    right: 20px;
     display: flex;
     flex-direction: row;
     gap: 40px;
@@ -148,8 +149,8 @@ body{
     flex-direction: column;
     position: absolute;
     width: 320px;
-    top: 45px;
-    right:-30px;
+    top: 60px;
+    right: 20px;
     z-index: 3;
     background-color:white;
     border: 1px solid rgba(173, 173, 173, 0.747);
@@ -333,7 +334,7 @@ body{
     left: 0;
     display: flex;
     width: max-content;
-    transition: 0.9s ease-in-out;
+    transition: 0.8s ease-out;
 }
 
 .list img{
@@ -483,7 +484,7 @@ body{
     left: 0;
     display: flex;
     width: max-content;
-    transition: 0.9s ease-in-out;
+    transition: 0.8s ease-in-out;
 }
 
 .list img{
@@ -649,7 +650,7 @@ body{
     left: 0;
     display: flex;
     width: max-content;
-    transition: 0.9s ease-in-out;
+    transition: 0.8s ease-in-out;
 }
 
 .list img{
