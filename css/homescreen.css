@@ -14,6 +14,7 @@ body{
 }
 
 
+
 /* PHAN HEADER --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
 .header{
     width: 100vw;
@@ -25,17 +26,14 @@ body{
     display: flex;
     background-color:#131C30;
     align-items: center;
-    padding: 40px 0px;
-    /* position: relative; */
-    width: 100%;
+    justify-content: space-between;
+    padding: 20px 30px;
+    width: 100svw;
 }
 
 
 .corner-logo{
     width: 110px;
-    position: absolute;
-    left: 30px;
-    top: 20px;
 }
 
 .search-bar{
@@ -71,10 +69,10 @@ body{
 
 .header-icon-btn{
     position: absolute;
-    right: 40px;
+    right: 20px;
     display: flex;
     flex-direction: row;
-    gap: 50px;
+    gap: 40px;
     user-select: none;
 	-webkit-user-select: none;
 }
@@ -274,36 +272,34 @@ body{
 
 
 
-
+/* Phan address bar */
 
 
 .header .head-address-bar{
     width: 100vw;
+    min-height: 50px;
     padding: 15px 30px;
     background-color: #ffb701;
     display: flex;
     position: relative;
     align-items: center;
+    justify-content: space-between;
     box-shadow: 2px 2px 7px rgb(0,0,0,.5);
     font-family: Helvetica, sans-serif;
 }
 
+.header .head-address-bar .left-address{
+    display: flex;
+    align-items: center;
+}
 
 
-.header .head-address-bar .fa-location-dot{
+.header .head-address-bar .fa-solid{
     color: black;
-    margin-right: 10px;
+    padding: 0 10px;
     font-size: 23px;
 }
 
-.header .head-address-bar .change-address-btn{
-    color: black;
-    position: absolute;
-    top: 15px;
-    right:50px;
-    margin-left: 10px ;
-    font-size: 20px;
-}
 
 /* PHAN CONTENT----------- */
 .content{
@@ -413,24 +409,21 @@ body{
 /* danh cho tablet va PC */
 @media only screen and (min-width: 740px) and (max-width: 1024px){
     body{
-        background-color: rgb(250, 240, 215);
-        min-width: 740px;
+        width: 100vw;
         height: 100svh;
         min-height: 700px;
+        background-color: rgb(250, 240, 215);
     }
 
 /* PHAN HEADER VA TOP NAVIGATION BAR */
 
     .corner-logo{
-        width: 100px;
-        position: absolute;
-        left: 40px;
-        top: 25px;
+        width: 110px;
     }
     
     .search-bar{
         position: absolute;
-        left: 21%;
+        left: 22%;
         width: 50%;
         display: flex;
         align-items: center;
@@ -438,12 +431,7 @@ body{
     }
 
     .search-bar input{
-        padding: 10px 20px;
-        width: 100%;
-        border: none;
-        border-radius: 8px;
-        font-size: 14px;
-        position: relative;
+        padding: 12px 20px;
     }
 
     .search-bar-icon{
@@ -624,31 +612,17 @@ body{
     }
 
     .header .head-address-bar{
-        width: 100%;
         padding: 15px 20px;
-        background-color: #ffb701;
-        display: flex;
-        position: relative;
-        align-items: center;
         box-shadow: 2px 2px 4px rgb(0,0,0,.5);
-        font-family: Helvetica, sans-serif;
         font-size: 14px;
     }
     
-    .header .head-address-bar .fa-location-dot{
+    .header .head-address-bar .fa-solid{
         color: black;
-        margin-right: 10px;
-        margin-left: 5px;
         font-size: 20px;
     }
     
-    .header .head-address-bar .change-address-btn{
-        color: black;
-        position: absolute;
-        right: 20px;
-        top: 20px;
-        font-size: 20px;
-    }
+    
 
  /* PHAN CONTENT CONTAINER - PHONNE */
 
@@ -665,8 +639,6 @@ body{
     margin: auto;
     position: relative;
     overflow-x: hidden;
-    /* scroll-snap-type: x mandatory;
-    scroll-behavior: smooth; */
     border-radius: 10px;
     box-shadow: 4px 5px 8px rgb(0,0,0,.3);
 }
