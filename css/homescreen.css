@@ -481,6 +481,9 @@ body{
     display: none;
 }
 
+.category-slider ul li{
+    user-select: none;
+}
 
 .category-slider ul li a{
     color: black;
