@@ -468,7 +468,7 @@ body{
 .category-slider ul{
     display: flex;
     gap: 16px;
-    padding: 20px 24px;
+    padding: 15px 20px;
     margin: 0;
     list-style: none;
     overflow-x: scroll;
@@ -734,7 +734,7 @@ body{
 .category-slider ul{
     display: flex;
     gap: 16px;
-    padding: 15px 18px;
+    padding: 13px 18px;
 }
 
 .category-slider ul li a{
