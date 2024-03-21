@@ -63,7 +63,6 @@ body{
     color:black;
     font-size: 19px;
     padding: 11px;
-    /* border: none; */
     position: absolute;
     top:0;
     right:0;
@@ -273,7 +272,7 @@ body{
 
 
 
-/* Phan address bar */
+/* ADDRESS BAR - PC */
 
 
 .header .head-address-bar{
@@ -302,7 +301,7 @@ body{
 }
 
 
-/* PHAN CONTENT----------- */
+/* CONTENT - PC */
 .content{
     width: 100vw;
     height: 100svh;
@@ -311,15 +310,14 @@ body{
 
 
 
-/* Phan Content - advertisement */
+/* CONTENT - ADVERTISEMENT - PC */
 .slider{
-    width: 70vw;
+    width: 75vw;
     height: 25vw;
     margin: auto;
     position: relative;
     overflow: hidden;
-    /* scroll-snap-type: x mandatory;
-    scroll-behavior: smooth; */
+    scroll-behavior: smooth;
     border-radius: 10px;
     box-shadow: 4px 5px 8px rgb(0,0,0,.3);
 }
@@ -338,9 +336,9 @@ body{
 }
 
 .list img{
-    /* flex: 1 0 100%;
-    aspect-ratio: 16/9; */
-    width: 70vw;
+    flex: 1 0 100%;
+    aspect-ratio: 16/9;
+    width: 75vw;
     height: 25vw;
     object-fit:fill;
 }
@@ -405,7 +403,202 @@ body{
     width: 40px;
 }
 
-/*  ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo RESPONSIVE ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo */
+/* CONTENT - CATEGORY - PC */
+
+.category-txt-line{
+    text-align: center;
+    font-family: "helvetica","sans-serif";
+    margin: 30px;
+    user-select: none;
+}
+
+#category-txt{
+    font-size: 30px;
+}
+
+.category-txt-line{
+    text-align: center;
+	width: 95vw;
+	position: relative;
+}
+
+.category-txt-line span{
+    position: relative;
+	padding: 2px 20px;
+	background-color:rgb(250, 240, 215);
+	z-index: 2;
+	user-select: none;
+	-webkit-user-select: none;
+}
+
+.category-txt-line::after{
+    content: "";
+	width: 40svw;
+	height: 2px;
+	background-color: #979797;
+	position: absolute;
+	top:50%;
+	left: 50%;
+    transform: translateX(-50%);
+}
+
+
+.category-slider{
+    font-family: "helvetica","sans-serif";
+    background: #131C30;
+    box-shadow: 2px 2px 7px rgb(0,0,0,.5);
+    border-radius: 20px;
+    max-width: 70svw;
+    margin: 20px auto;
+    margin-top: 0;
+    overflow: hidden;
+    position: relative;
+}
+
+.category-slider svg{
+    width: 50px;
+    height: 50px;
+    padding: 3px;
+    cursor: pointer;
+    color: white;
+    border-radius: 50%;
+    z-index: 30;
+}
+
+.category-slider ul{
+    display: flex;
+    gap: 16px;
+    padding: 20px 24px;
+    margin: 0;
+    list-style: none;
+    overflow-x: scroll;
+    -ms-overflow-style:none;
+    scrollbar-width: none;
+    scroll-behavior: smooth;
+}
+
+.category-slider ul::-webkit-scrollbar{
+    display: none;
+}
+
+
+.category-slider ul li a{
+    color: black;
+    text-decoration: none;
+    background: #ffffff;
+    padding: 28px 40px;
+    display: inline-block;
+    border-radius: 15px;
+    user-select: none;
+    white-space: nowrap;
+}
+
+/* .category-slider ul li a:hover{
+    transform: translateY(-4px);
+    transition: 0.1s ease-in-out;
+    background-color: #e6e6e6;
+}
+
+.category-slider ul li a:active{
+    transform: translateY(0px);
+    transition: 0.06s ease-in-out;
+} */
+
+
+
+.category-slider ul li a i{
+    margin-right: 15px;
+    font-size: 25px;
+}
+
+.category-slider ul li a.category-active{
+    background-color:#ffb701;
+    color: black;
+}
+
+.category-slider .right-arrow,
+.category-slider .left-arrow{
+    position: absolute;
+    height: 100%;
+    width: 70px;
+    top: 0;
+    display: none;
+    align-items: center;
+    padding: 0 0px;
+}
+
+.category-slider .right-arrow.category-active,
+.category-slider .left-arrow.category-active{
+    display: flex;
+}
+
+.category-slider .right-arrow{
+    right:0;
+    justify-content: flex-end;
+    background:linear-gradient(to left, #131C30 30%, transparent );
+    z-index: 30;
+}
+
+.category-slider .left-arrow{
+    background:linear-gradient(to right, #131C30 30%, transparent );
+    z-index: 30;
+}
+
+.category-slider ul li a .fa-warehouse{
+    color: rgb(98, 113, 179);
+}
+.category-slider ul li a .fa-bacon{
+    color: rgb(204, 40, 67);
+}
+.category-slider ul li a .fa-bowl-food{
+    color: rgb(0, 158, 13);
+}
+.category-slider ul li a .fa-burger{
+    color: rgb(255, 166, 0);
+}
+.category-slider ul li a .fa-cookie-bite{
+    color: rgb(204, 40, 67);
+}
+.category-slider ul li a .fa-wine-glass{
+    color: rgb(6, 176, 255);
+}
+.category-slider ul li a .fa-carrot{
+    color: rgb(255, 103, 1);
+}
+.category-slider ul li a .fa-lemon{
+    color: rgb(255, 217, 0);
+}
+.category-slider ul li a .fa-stroopwafel{
+    color: rgb(59, 214, 21);
+}
+.category-slider ul li a .fa-egg{
+    color: rgb(255, 199, 77);
+}
+.category-slider ul li a .fa-snowflake{
+    color: rgb(0, 102, 255);
+}
+.category-slider ul li a .fa-pepper-hot{
+    color: rgb(255, 0, 0);
+}
+.category-slider ul li a .fa-star{
+    color: rgb(255, 0, 200);
+}
+
+/* .category-slider svg:hover{
+    background: rgba(121, 121, 121, 0.37);
+} */
+
+
+
+
+
+
+
+/*  RESPONSIVE RESPONSIVE RESPONSIVE RESPONSIVE RESPONSIVE RESPONSIVE RESPONSIVE RESPONSIVE RESPONSIVE RESPONSIVE RESPONSIVE RESPONSIVE  RESPONSIVE RESPONSIVE RESPONSIVE RESPONSIVE */
+
+
+
+
 
 /* danh cho tablet va PC */
 @media only screen and (min-width: 740px) and (max-width: 1024px){
@@ -416,7 +609,7 @@ body{
         background-color: rgb(250, 240, 215);
     }
 
-/* PHAN HEADER VA TOP NAVIGATION BAR */
+/* HEADER VA TOP NAVIGATION BAR - TABLET */
 
     .corner-logo{
         width: 110px;
@@ -457,7 +650,7 @@ body{
 }
 
 
-/* PHAN CONTENT CONTAINER - TABLET */
+/* CONTENT CONTAINER - TABLET */
 
 .content{
     width: 100vw;
@@ -465,15 +658,13 @@ body{
     padding: 20px 5px;
 }
 
-/* PHAN CONTENT - ADVERTISEMENT - TABLET */
+/* CONTENT - ADVERTISEMENT - TABLET */
 .slider{
     width: 95vw;
     height:35vw;
     margin: auto;
     position: relative;
     overflow-x: hidden;
-    /* scroll-snap-type: x mandatory;
-    scroll-behavior: smooth; */
     border-radius: 10px;
     box-shadow: 4px 5px 8px rgb(0,0,0,.3);
 }
@@ -488,8 +679,6 @@ body{
 }
 
 .list img{
-    /* flex: 1 0 100%;
-    aspect-ratio: 16/9; */
     width: 95vw;
     height: 35vw;
     object-fit: fill;
@@ -522,7 +711,62 @@ body{
 .dots li.active{
     width: 35px;
 }
+
+/* CONTENT - CATEGORY */
+
+#category-txt{
+    font-size: 25px;
 }
+
+.category-slider{
+    font-family: "helvetica","sans-serif";
+    background: #131C30;
+    box-shadow: 2px 2px 7px rgb(0,0,0,.5);
+    border-radius: 15px;
+    max-width: 90svw;
+    margin: 20px auto;
+    margin-top: 0;
+    overflow: hidden;
+    position: relative;
+}
+
+
+.category-slider ul{
+    display: flex;
+    gap: 16px;
+    padding: 18px 22px;
+}
+
+.category-slider ul li a{
+    color: black;
+    text-decoration: none;
+    background: #ffffff;
+    padding: 20px 32px;
+    display: inline-block;
+    border-radius: 15px;
+    user-select: none;
+    white-space: nowrap;
+}
+
+
+
+.category-slider ul li a i{
+    margin-right: 13px;
+    font-size: 25px;
+}
+
+.category-slider ul li a.category-active{
+    background-color:#ffb701;
+    color: black;
+}
+
+}
+
+
+
+
+
+
 
 
 
@@ -625,7 +869,7 @@ body{
     
     
 
- /* PHAN CONTENT CONTAINER - PHONNE */
+ /*CONTENT CONTAINER - PHONE */
 
 .content{
     width: 100vw;
@@ -633,7 +877,7 @@ body{
     padding: 10px 5px;
 }
 
-/* PHAN CONTENT - ADVERTISEMENT - PHONE*/
+/*CONTENT - ADVERTISEMENT - PHONE*/
 .slider{
     width: 95vw;
     height: 40vw;
@@ -654,8 +898,6 @@ body{
 }
 
 .list img{
-    /* flex: 1 0 100%;
-    aspect-ratio: 16/9; */
     width: 95vw;
     height: 40vw;
     object-fit: fill;
@@ -706,7 +948,64 @@ body{
 .dots li.active{
     width: 20px;
 }
-    
+
+/* CONTENT - CATEGORY - PHONE */
+.category-txt-line{
+    display: none;
+}
+
+.category-slider{
+    font-family: "helvetica","sans-serif";
+    background: #131C30;
+    box-shadow: 1px 1px 3px rgb(0,0,0,.5);
+    border-radius: 10px;
+    max-width: 95svw;
+    margin: 20px auto;
+    margin-top: 15px;
+    overflow: hidden;
+    position: relative;
+}
+
+
+.category-slider ul{
+    display: flex;
+    gap: 9px;
+    padding: 10px 12px;
+}
+
+.category-slider ul li a{
+    color: black;
+    text-decoration: none;
+    background: #ffffff;
+    padding: 10px 20px;
+    display: inline-block;
+    border-radius: 8px;
+    user-select: none;
+    white-space: nowrap;
+    font-size: 15px;
+}
+
+
+
+.category-slider ul li a i{
+    margin-right: 5px;
+    font-size: 15px;
+}
+
+.category-slider ul li a.category-active{
+    background-color:#ffb701;
+    color: black;
+}
+
+.category-slider svg{
+    width: 30px;
+    height: 50px;
+    padding: 5px;
+    cursor: pointer;
+    color: white;
+    border-radius: 50%;
+    z-index: 30;
+}
 
 }
 

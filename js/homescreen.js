@@ -99,6 +99,62 @@ dots.forEach((li, key) => {
     });
 });
 
+// Hàm xử lý thanh cuộn category
+
+const tabs = document.querySelectorAll(".category-slider ul li a");
+const rightArrow = document.querySelector(".category-slider .right-arrow svg")
+const leftArrow = document.querySelector(".category-slider .left-arrow svg")
+const tabsList = document.querySelector(".category-slider ul")
+const leftArrowContainer = document.querySelector(".category-slider .left-arrow");
+const rightArrowContainer = document.querySelector(".category-slider .right-arrow");
+
+
+const removeAllActiveClasses = () => {
+    tabs.forEach(tab => {
+        tab.classList.remove("category-active");
+    })
+}
+
+tabs.forEach(tab => {
+    tab.addEventListener("click",() => {
+        removeAllActiveClasses();
+        tab.classList.add("category-active");
+    })
+});
+
+const manageIcons = () => {
+    if (tabsList.scrollLeft >=20){
+        leftArrowContainer.classList.add("category-active");
+    } else{
+        leftArrowContainer.classList.remove("category-active");
+    }
+
+    let maxScrollValue = tabsList.scrollWidth - tabsList.clientWidth -20;
+    console.log("scroll width: ", tabsList.scrollWidth);
+    console.log("client width: ", tabsList.clientWidth);
+
+    if(tabsList.scrollLeft >= maxScrollValue) {
+        rightArrowContainer.classList.remove("category-active");
+    }else{
+        rightArrowContainer.classList.add("category-active")
+    }
+}
+
+rightArrow.addEventListener("click",() => {
+    tabsList.scrollLeft += 400;
+    manageIcons()
+})
+
+leftArrow.addEventListener("click",() => {
+    tabsList.scrollLeft -= 400;
+    manageIcons()
+})
+
+tabsList.addEventListener("scroll", manageIcons);
+
+
+
+
 // Hàm xử lý sự kiện vuốt trên điện thoại
 function handleTouchDrag() {
     let isDragging = false;
