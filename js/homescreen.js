@@ -141,12 +141,12 @@ const manageIcons = () => {
 }
 
 rightArrow.addEventListener("click",() => {
-    tabsList.scrollLeft += 400;
+    tabsList.scrollLeft += 300;
     manageIcons()
 })
 
 leftArrow.addEventListener("click",() => {
-    tabsList.scrollLeft -= 400;
+    tabsList.scrollLeft -= 300;
     manageIcons()
 })
 
