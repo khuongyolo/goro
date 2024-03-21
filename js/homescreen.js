@@ -102,9 +102,9 @@ dots.forEach((li, key) => {
 // Hàm xử lý thanh cuộn category
 
 const tabs = document.querySelectorAll(".category-slider ul li a");
-const rightArrow = document.querySelector(".category-slider .right-arrow svg")
-const leftArrow = document.querySelector(".category-slider .left-arrow svg")
-const tabsList = document.querySelector(".category-slider ul")
+const rightArrow = document.querySelector(".category-slider .right-arrow svg");
+const leftArrow = document.querySelector(".category-slider .left-arrow svg");
+const tabsList = document.querySelector(".category-slider ul");
 const leftArrowContainer = document.querySelector(".category-slider .left-arrow");
 const rightArrowContainer = document.querySelector(".category-slider .right-arrow");
 
