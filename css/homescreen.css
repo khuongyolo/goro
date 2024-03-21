@@ -493,13 +493,13 @@ body{
     white-space: nowrap;
 }
 
-/* .category-slider ul li a:hover{
-    transform: translateY(-4px);
-    transition: 0.1s ease-in-out;
-    background-color: #e6e6e6;
+.category-slider ul li a:hover{
+    /* transform: translateY(-4px); */
+    /* transition: 0.1s ease-in-out; */
+    background-color: #e0e0e0;
 }
 
-.category-slider ul li a:active{
+/* .category-slider ul li a:active{
     transform: translateY(0px);
     transition: 0.06s ease-in-out;
 } */
@@ -551,16 +551,16 @@ body{
     color: rgb(204, 40, 67);
 }
 .category-slider ul li a .fa-bowl-food{
-    color: rgb(0, 158, 13);
+    color: rgb(216, 126, 8);
 }
 .category-slider ul li a .fa-burger{
-    color: rgb(255, 166, 0);
+    color: rgb(204, 135, 6);
 }
 .category-slider ul li a .fa-cookie-bite{
     color: rgb(204, 40, 67);
 }
 .category-slider ul li a .fa-wine-glass{
-    color: rgb(6, 176, 255);
+    color: rgb(12, 140, 199);
 }
 .category-slider ul li a .fa-carrot{
     color: rgb(255, 103, 1);
