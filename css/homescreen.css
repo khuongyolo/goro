@@ -488,7 +488,7 @@ body{
     background: #ffffff;
     padding: 28px 40px;
     display: inline-block;
-    border-radius: 15px;
+    border-radius: 13px;
     user-select: none;
     white-space: nowrap;
 }
@@ -712,7 +712,7 @@ body{
     width: 35px;
 }
 
-/* CONTENT - CATEGORY */
+/* CONTENT - CATEGORY - TABLET */
 
 #category-txt{
     font-size: 25px;
@@ -734,7 +734,7 @@ body{
 .category-slider ul{
     display: flex;
     gap: 16px;
-    padding: 18px 22px;
+    padding: 15px 18px;
 }
 
 .category-slider ul li a{
@@ -743,7 +743,7 @@ body{
     background: #ffffff;
     padding: 20px 32px;
     display: inline-block;
-    border-radius: 15px;
+    border-radius: 10px;
     user-select: none;
     white-space: nowrap;
 }
@@ -758,6 +758,12 @@ body{
 .category-slider ul li a.category-active{
     background-color:#ffb701;
     color: black;
+}
+
+.category-slider svg{
+    width: 30px;
+    height: 50px;
+    padding: 5px; 
 }
 
 }
@@ -979,7 +985,7 @@ body{
     background: #ffffff;
     padding: 10px 20px;
     display: inline-block;
-    border-radius: 8px;
+    border-radius: 6px;
     user-select: none;
     white-space: nowrap;
     font-size: 15px;
@@ -1000,11 +1006,7 @@ body{
 .category-slider svg{
     width: 30px;
     height: 50px;
-    padding: 5px;
-    cursor: pointer;
-    color: white;
-    border-radius: 50%;
-    z-index: 30;
+    padding: 5px; 
 }
 
 }
