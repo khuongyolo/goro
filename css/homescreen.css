@@ -418,7 +418,7 @@ body{
 
 .category-txt-line{
     text-align: center;
-	width: 95vw;
+	width: 100vw;
 	position: relative;
 }
 
@@ -719,8 +719,9 @@ body{
 
 /* CONTENT - CATEGORY - TABLET */
 
-#category-txt{
+.category-txt-line{
     font-size: 20px;
+    margin-bottom: 20px;
 }
 
 .category-slider{
@@ -980,7 +981,7 @@ body{
 
 .category-slider ul{
     display: flex;
-    gap: 9px;
+    gap: 10px;
     padding: 10px 12px;
 }
 
@@ -988,9 +989,9 @@ body{
     color: black;
     text-decoration: none;
     background: #ffffff;
-    padding: 10px 20px;
+    padding: 17px 27px;
     display: inline-block;
-    border-radius: 6px;
+    border-radius: 9px;
     user-select: none;
     white-space: nowrap;
     font-size: 15px;
