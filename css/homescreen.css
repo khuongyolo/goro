@@ -408,7 +408,7 @@ body{
 .category-txt-line{
     text-align: center;
     font-family: "helvetica","sans-serif";
-    margin: 30px;
+    margin-top: 35px ;
     user-select: none;
 }
 
@@ -445,12 +445,12 @@ body{
 
 .category-slider{
     font-family: "helvetica","sans-serif";
-    background: #131C30;
-    box-shadow: 2px 2px 7px rgb(0,0,0,.5);
+    /* background: #131C30; */
+    /* box-shadow: 2px 2px 7px rgb(0,0,0,.5); */
     border-radius: 20px;
-    max-width: 70svw;
+    max-width: 75svw;
     margin: 20px auto;
-    margin-top: 0;
+    margin-top: 20px;
     overflow: hidden;
     position: relative;
 }
@@ -460,7 +460,7 @@ body{
     height: 50px;
     padding: 3px;
     cursor: pointer;
-    color: white;
+    color: black;
     border-radius: 50%;
     z-index: 30;
 }
@@ -488,18 +488,20 @@ body{
 .category-slider ul li a{
     color: black;
     text-decoration: none;
-    background: #ffffff;
+    background: #fff6e8;
     padding: 28px 40px;
     display: inline-block;
     border-radius: 13px;
     user-select: none;
     white-space: nowrap;
+    box-shadow: 2px 2px 4px rgb(0,0,0,.3);
+
 }
 
 .category-slider ul li a:hover{
     /* transform: translateY(-4px); */
     /* transition: 0.1s ease-in-out; */
-    background-color: #e0e0e0;
+    background-color: #ffead7;
 }
 
 /* .category-slider ul li a:active{
@@ -538,12 +540,12 @@ body{
 .category-slider .right-arrow{
     right:0;
     justify-content: flex-end;
-    background:linear-gradient(to left, #131C30 30%, transparent );
+    background:linear-gradient(to left, rgb(250, 240, 215) 5%, transparent );
     z-index: 30;
 }
 
 .category-slider .left-arrow{
-    background:linear-gradient(to right, #131C30 30%, transparent );
+    background:linear-gradient(to right, rgb(250, 240, 215) 52%, transparent );
     z-index: 30;
 }
 
@@ -723,8 +725,8 @@ body{
 
 .category-slider{
     font-family: "helvetica","sans-serif";
-    background: #131C30;
-    box-shadow: 2px 2px 7px rgb(0,0,0,.5);
+    /* background: #131C30;
+    box-shadow: 2px 2px 7px rgb(0,0,0,.5); */
     border-radius: 15px;
     max-width: 90svw;
     margin: 20px auto;
@@ -965,8 +967,8 @@ body{
 
 .category-slider{
     font-family: "helvetica","sans-serif";
-    background: #131C30;
-    box-shadow: 1px 1px 3px rgb(0,0,0,.5);
+    /* background: #131C30;
+    box-shadow: 1px 1px 3px rgb(0,0,0,.5); */
     border-radius: 10px;
     max-width: 95svw;
     margin: 20px auto;
