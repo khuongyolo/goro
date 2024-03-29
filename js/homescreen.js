@@ -153,6 +153,56 @@ leftArrow.addEventListener("click",() => {
 tabsList.addEventListener("scroll", manageIcons);
 
 
+// Hàm xử lý thanh cuộn store
+
+const tabs2 = document.querySelectorAll(".store-slider ul li a");
+const rightArrow2 = document.querySelector(".store-right-arrow svg");
+const leftArrow2 = document.querySelector(".store-left-arrow svg");
+const tabsList2 = document.querySelector(".store-slider ul");
+const leftArrowContainer2 = document.querySelector(".store-left-arrow");
+const rightArrowContainer2 = document.querySelector(".store-right-arrow");
+
+
+const removeAllActiveClasses2 = () => {
+    tabs2.forEach(tab => {
+        tab.classList.remove("store-active");
+    })
+}
+
+tabs2.forEach(tab => {
+    tab.addEventListener("click",() => {
+        removeAllActiveClasses();
+        tab.classList.add("store-active");
+    })
+});
+
+const manageIcons2 = () => {
+    if (tabsList2.scrollLeft >=20){
+        leftArrowContainer2.classList.add("store-active");
+    } else{
+        leftArrowContainer2.classList.remove("store-active");
+    }
+
+    let maxScrollValue = tabsList2.scrollWidth - tabsList2.clientWidth -20;
+    console.log("scroll width: ", tabsList2.scrollWidth);
+    console.log("client width: ", tabsList2.clientWidth);
+
+}
+
+rightArrow2.addEventListener("click",() => {
+    tabsList2.scrollLeft += 600;
+    manageIcons()
+})
+
+leftArrow2.addEventListener("click",() => {
+    tabsList2.scrollLeft -= 600;
+    manageIcons()
+})
+
+tabsList2.addEventListener("scroll", manageIcons);
+
+
+
 
 
 // Hàm xử lý sự kiện vuốt trên điện thoại

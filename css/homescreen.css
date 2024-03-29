@@ -14,16 +14,22 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    /* overflow-x: hidden; */
+    margin: 0;
+    padding: 0;
 }
 
 
 
 /* PHAN HEADER --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
 .header{
-    position: static;
-    width: 100svw;
+    width: 100vw;
     padding: 0px;
     z-index: 89;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .header .nav-bar{
@@ -32,7 +38,7 @@ body{
     align-items: center;
     justify-content: space-between;
     padding: 20px 40px;
-    width: 100svw;
+    width: 100%;
 }
 
 
@@ -277,7 +283,7 @@ body{
 
 
 .header .head-address-bar{
-    width: 100vw;
+    width: 100%;
     min-height: 50px;
     padding: 15px 30px;
     background-color: #ffb701;
@@ -596,7 +602,7 @@ body{
 .store-txt-line{
     text-align: center;
     font-family: "helvetica","sans-serif";
-    margin-top: 55px ;
+    margin-top: 40px ;
     user-select: none;
 }
 
@@ -628,6 +634,172 @@ body{
 	top:50%;
 	left: 50%;
     transform: translateX(-50%);
+}
+
+.store-container{
+    max-width: 80vw;
+    margin: 0 auto;
+    position: relative;
+    margin-top: 30px;
+}
+
+
+.store-slider{
+    font-family: "helvetica","sans-serif";
+    /* box-shadow: 2px 2px 7px rgb(0,0,0,.5); */
+    border-radius: 20px;
+    max-width: 75svw;
+    margin: 20px auto;
+    margin-top: 20px;
+    overflow: hidden;
+    position: relative;
+}
+
+.store-slider .store-view-all{
+    text-decoration: none;
+    color: #000000;
+    position: absolute;
+    top: 15px;
+    right: 35px;
+}
+
+.store-slider a i{
+    margin-left: 5px;
+    color: #000000;
+}
+
+
+.store-left-arrow svg,
+.store-right-arrow svg{
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    color: black;
+    z-index: 30;
+}
+
+.store-slider ul{
+    display: flex;
+    gap: 30px;
+    padding: 15px 20px;
+    margin: 0;
+    /* border: 1px solid black; */
+    list-style: none;
+    overflow-x: scroll;
+    -ms-overflow-style:none;
+    scrollbar-width: none;
+    scroll-behavior: smooth;
+}
+
+.store-slider ul::-webkit-scrollbar{
+    display: none;
+}
+
+
+
+.store-slider ul li{
+    text-decoration: none;
+    min-width: 550px;
+    border: 1px solid #9b9b9b49;
+    background: #fffbf8;
+    padding: 35px 50px;
+    border-radius: 15px;
+    box-shadow: 3px 3px 5px rgb(0,0,0,.3);
+    cursor:pointer
+}
+
+.store-slider ul li .store-content-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.store-slider ul li .store-content-container a{
+    margin-bottom: 40px;
+    font-weight: 600;
+    font-size: 40px;
+}
+
+
+.store-slider ul li .store-content{
+    display: flex;
+    gap: 45px;
+}
+
+
+
+.store-slider ul li .store-info-left img{
+    width: 100px;
+}
+
+.store-slider ul li .store-info-right{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    user-select: none;
+}
+
+.store-slider ul li .store-info-right i{
+    margin-right: 5px;
+    font-size: 18px;
+}
+
+.store-slider ul li .store-info-right .fa-cash-register{
+    color: rgb(2, 113, 177);
+}
+.store-slider ul li .store-info-right .fa-location-dot{
+    color: red;
+}
+.store-slider ul li .store-info-right .fa-phone{
+    color: rgb(1, 196, 27);
+}
+
+.store-slider ul li .store-info-right .fa-star{
+    color: #ffa600;
+}
+
+
+
+.store-slider ul li a{
+    user-select: none;
+    text-decoration: none;
+    color: #000000;
+}
+
+.store-slider ul li:hover{
+    /* transform: translateY(-4px); */
+    /* transition: 0.1s ease-in-out; */
+    background-color: #fcf5ef;
+}
+
+/* .store-slider ul li a:active{
+    transform: translateY(0px);
+    transition: 0.06s ease-in-out;
+} */
+
+
+.store-left-arrow,
+.store-right-arrow{
+    position: absolute;
+    width: 80px;
+    height: 100%;
+    top: 0;
+    align-items: center;
+    display: flex;
+}
+
+.store-right-arrow{
+    background:linear-gradient(to left, rgb(250, 240, 215) 90%, transparent) ;
+    right:-20px;
+    justify-content: flex-end;
+    z-index: 30;
+}
+
+.store-left-arrow{
+    background:linear-gradient(to right, rgb(250, 240, 215) 90%, transparent) ;
+    left: -20px;
+    z-index: 30;
 }
 
 
