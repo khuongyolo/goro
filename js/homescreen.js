@@ -1,8 +1,12 @@
-
 // START Phan user button drop down menu
 function DisplayUserOption() {
     var userMenu = document.getElementById("user-menu-container");
+    var languageMenu = document.getElementById("language");
+    var arrowIcon = document.getElementById("arrow-icon");
+
     userMenu.style.display = "block";
+    languageMenu.style.display = "none";
+    arrowIcon.innerHTML = "&#9660;"
 }
 
 
@@ -123,34 +127,35 @@ tabs.forEach(tab => {
 });
 
 const manageIcons = () => {
-    if (tabsList.scrollLeft >=20){
+    if (tabsList.scrollLeft >= 20){
         leftArrowContainer.classList.add("category-active");
     } else{
         leftArrowContainer.classList.remove("category-active");
     }
 
-    let maxScrollValue = tabsList.scrollWidth - tabsList.clientWidth -20;
-    console.log("scroll width: ", tabsList.scrollWidth);
-    console.log("client width: ", tabsList.clientWidth);
+    let maxScrollValue = tabsList.scrollWidth - tabsList.clientWidth - 20;
 
     if(tabsList.scrollLeft >= maxScrollValue) {
         rightArrowContainer.classList.remove("category-active");
-    }else{
+    } else {
         rightArrowContainer.classList.add("category-active")
     }
 }
 
+const shiftValue = window.innerWidth < 1360 ? 760 : 1060;
+
 rightArrow.addEventListener("click",() => {
-    tabsList.scrollLeft += 300;
-    manageIcons()
-})
+    tabsList.scrollLeft += shiftValue;
+    manageIcons();
+});
 
 leftArrow.addEventListener("click",() => {
-    tabsList.scrollLeft -= 300;
-    manageIcons()
-})
+    tabsList.scrollLeft -= shiftValue;
+    manageIcons();
+});
 
 tabsList.addEventListener("scroll", manageIcons);
+
 
 
 // Hàm xử lý thanh cuộn store
