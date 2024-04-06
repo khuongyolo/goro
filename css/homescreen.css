@@ -324,13 +324,13 @@ body{
 /* CONTENT - ADVERTISEMENT - PC */
 .slider{
     width: 75vw;
-    height: 25vw;
+    height: 30vw;
     margin: auto;
     position: relative;
     overflow: hidden;
     scroll-behavior: smooth;
     border-radius: 10px;
-    /* box-shadow: 4px 5px 8px rgb(0,0,0,.3); */
+    box-shadow: 4px 4px 8px rgb(0,0,0,.5);
 }
 
 .slider::-webkit-scrollbar{
@@ -350,7 +350,7 @@ body{
     flex: 1 0 100%;
     aspect-ratio: 16/9;
     width: 75vw;
-    object-fit:fill;
+    object-fit: fill;
 }
 
 .buttons{
@@ -420,7 +420,7 @@ body{
     font-family: "Oswald", sans-serif;
     font-weight: 700;
     color: #1f4e48;
-    margin-top: 120px ;
+    margin-top: 70px ;
     user-select: none;
 }
 
