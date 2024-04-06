@@ -142,8 +142,8 @@ const manageIcons = () => {
     }
 }
 
-const shiftValue = window.innerWidth < 1025 ? 760 : 1060;
-
+const shiftValue = window.innerWidth < 1025 ? 760 : 650; 
+// < 1025px, 760: ipad, 650: PC 
 rightArrow.addEventListener("click",() => {
     tabsList.scrollLeft += shiftValue;
     manageIcons();
