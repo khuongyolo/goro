@@ -286,7 +286,7 @@ body{
     position: relative;
     align-items: center;
     justify-content: space-between;
-    box-shadow: 2px 2px 7px rgb(0,0,0,.5);
+    /* box-shadow: 2px 2px 7px rgb(0,0,0,.5); */
     font-family: "Roboto", sans-serif;
 }
 
@@ -334,7 +334,7 @@ body{
     width: 100%;
     height: 100%;
     border-radius: 10px;
-    box-shadow: 2px 2px 7px rgb(0,0,0,.5);
+    /* box-shadow: 2px 2px 7px rgb(0,0,0,.5); */
     user-select: none;
 	-webkit-user-select: none;
 }
@@ -396,6 +396,10 @@ body{
     background-color: rgb(105, 105, 105) !important;
 }
 
+.advertisement-slide-container .swiper-pagination{
+    bottom: 2px !important;
+}
+
 
 
 
@@ -445,7 +449,7 @@ body{
     margin: 0 auto;
 }
 
-.category-swiper-container {
+.category-swiper-container{
     margin: 0 auto;
     margin-top: 25px;
     width: 90%;
@@ -455,11 +459,16 @@ body{
 
 }
 
-.category-big-div .swiper-slide {
+.category-big-div .swiper-slide{
+    height: 100%;
+    width: 100%;
     display: flex;
+    flex-direction: column;
     align-items: center;
     text-align: center;
-    border-radius: 25px;
+    background-color: #da9d05;
+    border-radius: 10px;
+    
 
 /* Center slide text vertically */
     display: -webkit-box;
@@ -474,7 +483,28 @@ body{
     -ms-flex-align: center;
     -webkit-align-items: center;
     align-items: center;
+    cursor: pointer;
 }
+
+.category-big-div .swiper-slide img{
+    width: 120px;
+    user-select: none;
+	-webkit-user-select: none;
+}
+
+.category-big-div .swiper-slide:hover{
+    transform: translateY(-5px);
+    box-shadow: 3px 3px 6px rgb(0,0,0,.3);
+    transition: 0.3s ease;
+}
+
+.category-big-div .swiper-slide:active{
+    transform: translateY(0px);
+    box-shadow: none;
+    transition: 0.08s ease;
+}
+
+
 
 .category-swiper-container .swiper-slide a{
     width: 100%;
@@ -482,84 +512,66 @@ body{
     text-decoration: none;
 }
 
-.category-swiper-container .swiper-slide .category-info-sep{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-    border-radius: 15px;
-    padding: 0 10px;
-    height: 100%;
-    box-shadow: 2px 2px 4px rgb(0,0,0,.3);
-    user-select: none;
-	-webkit-user-select: none;
-}
 
-.category-swiper-container .swiper-slide .category-info-sep-color1{
+
+.category-swiper-container .category-info-sep-color1{
     background-color: #347189;
 }
 
-.category-swiper-container .swiper-slide .category-info-sep-color2{
+.category-swiper-container .category-info-sep-color2{
     background-color: #eb7768;
 }
 
-.category-swiper-container .swiper-slide .category-info-sep-color3{
+.category-swiper-container .category-info-sep-color3{
     background-color: #f5c667;
 }
 
-.category-swiper-container .swiper-slide .category-info-sep-color4{
+.category-swiper-container .category-info-sep-color4{
     background-color: #8dcbd0;
 }
 
-.category-swiper-container .swiper-slide .category-info-sep-color5{
+.category-swiper-container .category-info-sep-color5{
     background-color: #347189;
 }
 
-.category-swiper-container .swiper-slide .category-info-sep-color6{
+.category-swiper-container .category-info-sep-color6{
     background-color: #eb7768;
 }
 
-.category-swiper-container .swiper-slide .category-info-sep-color7{
+.category-swiper-container .category-info-sep-color7{
     background-color: #f5c667;
 }
 
-.category-swiper-container .swiper-slide .category-info-sep-color8{
+.category-swiper-container .category-info-sep-color8{
     background-color: #8dcbd0;
 }
 
-.category-swiper-container .swiper-slide .category-info-sep-color9{
+.category-swiper-container .category-info-sep-color9{
     background-color: #347189;
 }
 
-.category-swiper-container .swiper-slide .category-info-sep-color10{
+.category-swiper-container .category-info-sep-color10{
     background-color: #eb7768;
 }
 
-.category-swiper-container .swiper-slide .category-info-sep-color11{
+.category-swiper-container .category-info-sep-color11{
     background-color: #f5c667;
 }
 
-.category-swiper-container .swiper-slide .category-info-sep-color12{
+.category-swiper-container .category-info-sep-color12{
     background-color: #8dcbd0;
 }
 
-.category-swiper-container .swiper-slide .category-info-sep-color13{
+.category-swiper-container .category-info-sep-color13{
     background-color: #347189;
 }
 
-.category-swiper-container .swiper-slide .category-info-sep-color14{
+.category-swiper-container .category-info-sep-color14{
     background-color: #eb7768;
 }
 
 
-.category-swiper-container .swiper-slide .category-info-sep img{
-    width: 120px;
-    user-select: none;
-	-webkit-user-select: none;
-}
-
-.category-swiper-container .swiper-slide .category-info-sep .span-big-text{
+.category-swiper-container .swiper-slide .span-big-text{
     font-family: "Oswald", sans-serif;
     color: white;
     margin-top:10px;
@@ -567,7 +579,7 @@ body{
     font-weight: 500;
 }
 
-.category-swiper-container .swiper-slide .category-info-sep .span-small-text{
+.category-swiper-container .swiper-slide .span-small-text{
     font-family: "Oswald", sans-serif;
     margin-top:10px;
     color: white;
@@ -615,7 +627,7 @@ body{
 
 .category-big-div .swiper-pagination{
     position: absolute;
-    bottom: -10px !important;
+    bottom: -15px !important;
     z-index: 30;
 }
 
@@ -779,16 +791,16 @@ body{
 /* RESPONESIVE RIENG CHO MAN HINH MAY TINH */
 /* body content-category */
 @media only screen and (min-width: 1435px) and (max-width: 1920px){
-    .category-swiper-container .swiper-slide .category-info-sep img{
+    .category-swiper-container .swiper-slide img{
         width: 110px;
     }
-    .category-swiper-container .swiper-slide .category-info-sep .span-big-text{
+    .category-swiper-container .swiper-slide .span-big-text{
         margin-top:10px;
         font-size: 22px;
         font-weight: 500;
     }
     
-    .category-swiper-container .swiper-slide .category-info-sep .span-small-text{
+    .category-swiper-container .swiper-slide .span-small-text{
         font-family: "Oswald", sans-serif;
         margin-top:10px;
         font-size: 13px;
@@ -828,17 +840,17 @@ body{
 
 }
 
-.category-swiper-container .swiper-slide .category-info-sep img{
+.category-swiper-container .swiper-slide img{
     width: 100px;
 }
 
-.category-swiper-container .swiper-slide .category-info-sep .span-big-text{
+.category-swiper-container .swiper-slide .span-big-text{
     margin-top:10px;
     font-size: 22px;
     font-weight: 500;
 }
 
-.category-swiper-container .swiper-slide .category-info-sep .span-small-text{
+.category-swiper-container .swiper-slide .span-small-text{
     font-family: "Oswald", sans-serif;
     margin-top:10px;
     font-size: 13px;
@@ -952,17 +964,17 @@ body{
 
 }
 
-.category-swiper-container .swiper-slide .category-info-sep img{
+.category-swiper-container .swiper-slide img{
     width: 50px;
 }
 
-.category-swiper-container .swiper-slide .category-info-sep .span-big-text{
+.category-swiper-container .swiper-slide .span-big-text{
     margin-top:10px;
     font-size: 17px;
     font-weight: 500;
 }
 
-.category-swiper-container .swiper-slide .category-info-sep .span-small-text{
+.category-swiper-container .swiper-slide .span-small-text{
     font-family: "Oswald", sans-serif;
     margin-top:10px;
     font-size: 11px;
@@ -1049,7 +1061,7 @@ body{
 
     .header .head-address-bar{
         padding: 15px 20px;
-        box-shadow: 2px 2px 4px rgb(0,0,0,.5);
+        box-shadow: none;
         font-size: 14px;
     }
 
@@ -1081,6 +1093,12 @@ body{
     margin-top: 0px;
 }
 
+.myAdsSwiper{
+    /* box-shadow: 1px 1px 3px rgb(0,0,0,.3); */
+    box-shadow: none;
+}
+
+
 .Ads-navBtn .fa-arrow-right{
     display: none;
 }
@@ -1102,7 +1120,7 @@ body{
 
 .category-swiper-container {
     margin: 0 auto;
-    margin-top: 25px;
+    margin-top: 0px;
     width: 100%;
     height: 110px;
     overflow: hidden ;
@@ -1116,24 +1134,28 @@ body{
     display: none;
 }
 
-.category-swiper-container .swiper-slide .category-info-sep{
+.category-swiper-container .swiper-slide{
     border-radius: 10px;
     box-shadow: none;
 }
 
 
-.category-swiper-container .swiper-slide .category-info-sep img{
+.category-swiper-container .swiper-slide img{
     width: 45px;
 }
 
-.category-swiper-container .swiper-slide .category-info-sep .span-big-text{
+.category-swiper-container .swiper-slide .span-big-text{
     margin-top:0px;
     font-size: 14px;
     font-weight: 300;
 }
 
-.category-swiper-container .swiper-slide .category-info-sep .span-small-text{
+.category-swiper-container .swiper-slide .span-small-text{
     display: none;
+}
+
+.category-big-div .swiper-pagination{
+    bottom: -20px !important;
 }
 
 }
