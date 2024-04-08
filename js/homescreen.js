@@ -94,8 +94,8 @@ function reloadSlider (){
     dots[active].classList.add('active');
     clearInterval(refreshSlider);
     refreshSlider = setInterval(()=> {next.click()},5000)
-}
-
+} 
+  
 dots.forEach((li, key) => {
     li.addEventListener('click', function() {
         active = key;

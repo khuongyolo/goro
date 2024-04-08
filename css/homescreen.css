@@ -11,6 +11,9 @@ body{
     height: 100svh;
     min-height: 700px;
     background-color: #ece1d2;
+    /* background-image: url('../images/iQeBup.jpg'); */
+    background-size: cover;
+    background-position: center;
 }
 
 
@@ -350,6 +353,7 @@ body{
     flex: 1 0 100%;
     aspect-ratio: 16/9;
     width: 75vw;
+    height: 30vw;
     object-fit: fill;
 }
 
@@ -422,16 +426,12 @@ body{
     color: #1f4e48;
     margin-top: 70px ;
     user-select: none;
+    width: 100%;
+	position: relative;
 }
 
 #category-txt{
     font-size: 35px;
-}
-
-.category-txt-line{
-    text-align: center;
-	width: 100%;
-	position: relative;
 }
 
 .category-txt-line span{
@@ -453,134 +453,127 @@ body{
 	left: 50%;
     transform: translateX(-50%);
 }
+               
 
-
-.category-slider{
-    font-family: "helvetica","sans-serif";
-    margin: 20px auto;
-    margin-top: 20px;
-    overflow: hidden;
+.category-big-div{
     position: relative;
-    width: 63.8%;
+    width: 70vw ;
+    margin: 0 auto;
 }
 
-.category-slider svg{
-    width: 50px;
-    height: 50px;
-    padding: 3px;
-    cursor: pointer;
-    color: black;
-    border-radius: 50%;
-    z-index: 30;
-    border: 3px solid #1f4e48;
-    background-color: #ece1d2c2;
-}
-
-.category-slider svg:hover{
-    background-color: #fff6e9;
-    transition: 0.2s ease-in;
-}
-
-
-.category-slider ul{
-    padding: 10px 10px;
-    display: flex;
-    margin: 0;
-    gap: 15px;
-    list-style: none;
-    overflow-x: scroll;
-    -ms-overflow-style:none;
-    scrollbar-width: none;
-    scroll-behavior: smooth;
-}
-
-.category-slider ul::-webkit-scrollbar{
-    display: none;
-}
-
-.category-slider ul li{
-    user-select: none;
-}
-
-.category-slider ul li a{
-    
-    color: black;
-    text-decoration: none;
-    border: 1px solid #9b9b9b49;
-    padding: 40px 30px;
-    display: inline-block;
-    border-radius: 15px;
-    user-select: none;
-    white-space: nowrap;
-    /* box-shadow: 3px 3px 5px rgb(0,0,0,.3); */
-    text-align: center;
-    white-space: normal;
-    width: 12vw;
-    min-width: 230px;
+.category-swiper-container {
+    margin: 0 auto;
+    margin-top: 25px;
+    width: 90%;
     height: 290px;
+    overflow: hidden ;
+    padding: 10px;
+
 }
 
+.swiper-slide {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    border-radius: 25px;
 
-.category-slider ul li .category-background-1{
-    background-color: #1f4e48;
-}
-.category-slider ul li .category-background-2{
-    background-color: #fdb530;
-}
-.category-slider ul li .category-background-3{
-    background-color: #e48c66;
-}
-.category-slider ul li .category-background-4{
-    background-color: #1f4e48;
-}
-.category-slider ul li .category-background-5{
-    background-color: #fdb530;
-}
-.category-slider ul li .category-background-6{
-    background-color: #e48c66;
-}
-.category-slider ul li .category-background-7{
-    background-color: #1f4e48;
-}
-.category-slider ul li .category-background-8{
-    background-color: #fdb530;
-}
-.category-slider ul li .category-background-9{
-    background-color: #e48c66;
-}
-.category-slider ul li .category-background-10{
-    background-color: #1f4e48;
-}
-.category-slider ul li .category-background-11{
-    background-color: #fdb530;
-}
-.category-slider ul li .category-background-12{
-    background-color: #e48c66;
-}
-.category-slider ul li .category-background-13{
-    background-color: #1f4e48;
-}
-.category-slider ul li .category-background-14{
-    background-color: #ffb701;
+/* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
 }
 
+.category-swiper-container .swiper-slide a{
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+}
 
-
-.category-slider ul li a .category-info-sep{
+.category-swiper-container .swiper-slide .category-info-sep{
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    border-radius: 15px;
+    padding: 0 10px;
+    height: 100%;
+    box-shadow: 2px 2px 4px rgb(0,0,0,.3);
     user-select: none;
-    -webkit-user-select: none;
+	-webkit-user-select: none;
 }
 
-.category-slider ul li a .category-info-sep .category-span-img img{
+.category-swiper-container .swiper-slide .category-info-sep-color1{
+    background-color: #1f4e48;
+}
+
+.category-swiper-container .swiper-slide .category-info-sep-color2{
+    background-color: #d77247;
+}
+
+.category-swiper-container .swiper-slide .category-info-sep-color3{
+    background-color: #f6cd57;
+}
+
+.category-swiper-container .swiper-slide .category-info-sep-color4{
+    background-color: #5a2f23;
+}
+
+.category-swiper-container .swiper-slide .category-info-sep-color5{
+    background-color: #1f4e48;
+}
+
+.category-swiper-container .swiper-slide .category-info-sep-color6{
+    background-color: #d77247;
+}
+
+.category-swiper-container .swiper-slide .category-info-sep-color7{
+    background-color: #f6cd57;
+}
+
+.category-swiper-container .swiper-slide .category-info-sep-color8{
+    background-color: #5a2f23;
+}
+
+.category-swiper-container .swiper-slide .category-info-sep-color9{
+    background-color: #1f4e48;
+}
+
+.category-swiper-container .swiper-slide .category-info-sep-color10{
+    background-color: #d77247;
+}
+
+.category-swiper-container .swiper-slide .category-info-sep-color11{
+    background-color: #f6cd57;
+}
+
+.category-swiper-container .swiper-slide .category-info-sep-color12{
+    background-color: #5a2f23;
+}
+
+.category-swiper-container .swiper-slide .category-info-sep-color13{
+    background-color: #1f4e48;
+}
+
+.category-swiper-container .swiper-slide .category-info-sep-color14{
+    background-color: #d77247;
+}
+
+
+.category-swiper-container .swiper-slide .category-info-sep img{
     width: 120px;
-    user-select: none;
-    -webkit-user-select: none;
-
 }
 
-.category-slider ul li a .category-info-sep .span-big-text{
+.category-swiper-container .swiper-slide .category-info-sep .span-big-text{
     font-family: "Oswald", sans-serif;
     color: white;
     margin-top:10px;
@@ -588,207 +581,89 @@ body{
     font-weight: 500;
 }
 
-.category-slider ul li a .category-info-sep .span-small-text{
+.category-swiper-container .swiper-slide .category-info-sep .span-small-text{
     font-family: "Oswald", sans-serif;
     margin-top:10px;
     color: white;
+    font-size: 16px;
 }
 
 
 
-
-
-.category-slider ul li a.category-active{
-    border: 7px solid rgba(49, 210, 231, 0.952);
-    transition: .1s ease-in;
+.swiper-button-prev:after,
+.swiper-button-next:after {
+  display: none;
 }
 
-.category-slider .right-arrow,
-.category-slider .left-arrow{
-    position: absolute;
-    width: 70px;
-    top:50%;
-    transform: translateY(-50%);
-    display: none;
-    align-items: center;
-    padding: 0 0px;
-}
-
-.category-slider .right-arrow.category-active,
-.category-slider .left-arrow.category-active{
-    display: flex;
-}
-
-.category-slider .right-arrow{
-    right:0;
-    justify-content: flex-end;
-    z-index: 30;
-}
-
-.category-slider .left-arrow{
-    z-index: 30;
-}
-/* CONTAINER - STORE - PC */                
-
-.store-txt-line{
-    text-align: center;
-    font-family: "Oswald", sans-serif;
-    color: #1f4e48;
-    font-weight: 700;
-    margin-top: 120px ;
-    user-select: none;
-}
-
-#store-txt{
-    font-size: 35px;
-}
-
-.store-txt-line{
-    text-align: center;
-	width: 100%;
-	position: relative;
-}
-
-.store-txt-line span{
-    position: relative;
-	padding: 2px 20px;
-	background-color:#ece1d2;
-	z-index: 2;
-	user-select: none;
-	-webkit-user-select: none;
-}
-
-.store-txt-line::after{
-    content: "";
-	width: 40%;
-	height: 2px;
-	background-color: #979797;
-	position: absolute;
-	top:50%;
-	left: 50%;
-    transform: translateX(-50%);
-}
-
-.store-left-arrow svg,
-.store-right-arrow svg{
-    width: 60px;
+.category-navBtn .fa-arrow-right{
+    color: #FFF;
     padding: 15px;
-    cursor: pointer;
-    color: black;
-    z-index: 30;
-    border: 1px solid rgba(133, 133, 133, 0.377);
     border-radius: 50%;
-}
-
-.store-left-arrow,
-.store-right-arrow{
+    background-color: #9e9e9e91;
     position: absolute;
-    width: 80px;
-    height: 100%;
-    top: 0;
-    align-items: center;
-    display: flex;
+    right: -15px;
+    transition: .2s ease;
 }
 
-.store-right-arrow{
-    background:linear-gradient(to left, rgb(250, 240, 215) 90%, transparent) ;
-    right:-20px;
-    justify-content: flex-end;
+.category-navBtn .fa-arrow-right:hover{
+    background-color: #888888cc;
+}
+
+
+.category-navBtn .fa-arrow-left{
+    color: #FFF;
+    padding: 15px;
+    border-radius: 50%;
+    background-color: #9e9e9e91;
+    position: absolute;
+    left: -15px;
+    transition: .2s ease;
+}
+
+.category-navBtn .fa-arrow-left:hover{
+    background-color: #888888cc;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #FFF !important;
+}
+
+.swiper-pagination{
+    position: absolute;
+    bottom: -20px !important;
     z-index: 30;
-    display: none;
 }
-
-.store-left-arrow{
-    background:linear-gradient(to right, rgb(250, 240, 215) 90%, transparent) ;
-    left: -20px;
-    z-index: 30;
-    display: none;
-}
-
-
-
-
-
-
-
-
 
 /*  RESPONSIVE RESPONSIVE RESPONSIVE RESPONSIVE RESPONSIVE RESPONSIVE RESPONSIVE RESPONSIVE RESPONSIVE RESPONSIVE RESPONSIVE RESPONSIVE  RESPONSIVE RESPONSIVE RESPONSIVE RESPONSIVE */
 
 
-
-
-
-/* danh cho tablet va PC */
-@media only screen and (min-width: 740px) and (max-width: 1024px){
-    body{
-        overflow-x: hidden;
-    }
-/* HEADER VA TOP NAVIGATION BAR - TABLET */
-
-    .corner-logo{
+/* RESPONESIVE RIENG CHO MAN HINH MAY TINH */
+/* body content-category */
+@media only screen and (min-width: 1435px) and (max-width: 1920px){
+    .category-swiper-container .swiper-slide .category-info-sep img{
         width: 110px;
     }
-    
-    .search-bar{
-        position: absolute;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 40%;
-        display: flex;
-        align-items: center;
-        gap:0;
-    }
-
-    .search-bar input{
-        padding: 12px 20px;
-    }
-
-    .search-bar-icon{
-        color:black;
-        font-size: 20px;
-        padding: 9px;
-        border: none;
-        position: absolute;
-        top: 1px;
-        right: 0;
+    .category-swiper-container .swiper-slide .category-info-sep .span-big-text{
+        margin-top:10px;
+        font-size: 22px;
+        font-weight: 500;
     }
     
-    
-    .header-icon-btn{
-        position: absolute;
-        right: 40px;
-        display: flex;
-        flex-direction: row;
-        gap: 40px;
-        user-select: none;
-        -webkit-user-select: none;
-}
-
-    .header-icon-btn li .user-menu-container{
-        top: 37px;
-        right: -25px;
+    .category-swiper-container .swiper-slide .category-info-sep .span-small-text{
+        font-family: "Oswald", sans-serif;
+        margin-top:10px;
+        font-size: 13px;
     }
-
-
-    .header-icon-btn .user-menu-container {
-        top: 33px;
-        right: -20px;
 }
 
 
-/* CONTENT CONTAINER - TABLET */
+/* RESPONESIVE RIENG CHO iPad Pro tro len */
+@media only screen and (min-width: 1024px) and (max-width: 1435px){
 
-.content{
-    width: 100%;
-    height: 100svh;
-    padding: 20px 0;
-}
-
-/* CONTENT - ADVERTISEMENT - TABLET */
+/* CONTENT - ADVERTISEMENT - iPadPro Tro Len */
 .slider{
     width: 95vw;
-    height:30svh;
+    height:35vw;
     margin: auto;
     position: relative;
     overflow-x: hidden;
@@ -807,6 +682,7 @@ body{
 
 .list img{
     width: 95vw;
+    height: 35vw;
     object-fit: fill;
 }
 
@@ -838,7 +714,174 @@ body{
     width: 35px;
 }
 
-/* CONTENT - CATEGORY - TABLET */
+/* CONTENT - CATEGORY - iPadPro Tro Len */
+
+#category-txt{
+    font-size: 30px;
+}
+
+.category-big-div{
+    position: relative;
+    width: 90vw ;
+    margin: 0 auto;
+}
+
+.category-swiper-container {
+    margin: 0 auto;
+    margin-top: 25px;
+    width: 90%;
+    height: 260px;
+    overflow: hidden ;
+    padding: 10px;
+
+}
+
+.category-swiper-container .swiper-slide .category-info-sep img{
+    width: 100px;
+}
+
+.category-swiper-container .swiper-slide .category-info-sep .span-big-text{
+    margin-top:10px;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.category-swiper-container .swiper-slide .category-info-sep .span-small-text{
+    font-family: "Oswald", sans-serif;
+    margin-top:10px;
+    font-size: 13px;
+}
+
+}
+
+
+
+/*  RESPONSIVE RESPONSIVE RESPONSIVE RESPONSIVE RESPONSIVE RESPONSIVE RESPONSIVE RESPONSIVE RESPONSIVE RESPONSIVE RESPONSIVE RESPONSIVE  RESPONSIVE RESPONSIVE RESPONSIVE RESPONSIVE */
+
+
+/* danh cho iPad Pro Tro Xuong*/
+@media only screen and (min-width: 740px) and (max-width: 1023px){
+    body{
+        overflow-x: hidden;
+    }
+/* HEADER VA TOP NAVIGATION BAR - iPad Pro Tro Xuong */
+
+.corner-logo{
+    width: 110px;
+}
+
+.search-bar{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 40%;
+    display: flex;
+    align-items: center;
+    gap:0;
+}
+
+.search-bar input{
+    padding: 12px 20px;
+}
+
+.search-bar-icon{
+    color:black;
+    font-size: 20px;
+    padding: 9px;
+    border: none;
+    position: absolute;
+    top: 1px;
+    right: 0;
+}
+
+
+.header-icon-btn{
+    position: absolute;
+    right: 40px;
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+.header-icon-btn li .user-menu-container{
+    top: 37px;
+    right: -25px;
+}
+
+
+.header-icon-btn .user-menu-container {
+    top: 33px;
+    right: -20px;
+}
+
+
+/* CONTENT CONTAINER - iPad Pro Tro Xuong */
+
+.content{
+    width: 100%;
+    height: 100svh;
+    padding: 20px 0;
+}
+
+/* CONTENT - ADVERTISEMENT - iPadPro Tro Xuong */
+
+.slider{
+    width: 95vw;
+    height:35vw;
+    margin: auto;
+    position: relative;
+    overflow-x: hidden;
+    border-radius: 10px;
+    box-shadow: 4px 5px 8px rgb(0,0,0,.3);
+}
+
+.list{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: max-content;
+    transition: 0.8s ease-in-out;
+}
+
+.list img{
+    width: 95vw;
+    height: 35vw;
+    object-fit: fill;
+}
+
+.dots{
+    position: absolute;
+    bottom: 3px;
+    color: black;
+    left: 0;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.dots li{
+    list-style: none;
+    width:10px;
+    height: 10px;
+    background-color: #000000;
+    opacity: 0.3;
+    margin: 10px 20px;
+    border-radius: 20px;
+    transition: 0.6s;
+    cursor: pointer;
+}
+
+.dots li.active{
+    width: 35px;
+}
+
+
+/* CONTENT - CATEGORY - iPadPro Tro Xuong */
 
 .category-txt-line{
     margin-top: 40px;
@@ -849,76 +892,42 @@ body{
     margin-bottom: 20px;
 }
 
-.category-slider{
-    /* border: 1px solid black; */
-    width: 90vw;
-    margin: 10px auto;
-    margin-top: 20px;
-    overflow: hidden;
+.category-big-div{
     position: relative;
+    width: 95vw ;
+    margin: 0 auto;
 }
 
-.category-slider svg{
-    width: 40px;
-    height: 40px;
-    padding: 3px;
-    cursor: pointer;
-    color: black;
-    border-radius: 50%;
-    z-index: 30;
-    border: 2px solid #1f4e48;
-    background-color: #ece1d2;
+.category-swiper-container {
+    margin: 0 auto;
+    margin-top: 25px;
+    width: 90%;
+    height: 210px;
+    overflow: hidden ;
+    padding: 10px;
+
 }
 
-.category-slider ul{
-    display: flex;
-    /* border: 1px solid black; */
-    gap: 10px;
-    padding: 10px 10px;
-    margin: 0;
+.category-swiper-container .swiper-slide .category-info-sep img{
+    width: 50px;
 }
 
-.category-slider ul li a .category-info-sep .category-span-img img{
-    width: 60px;
-}
-
-.category-slider ul li a .category-info-sep .span-big-text{
+.category-swiper-container .swiper-slide .category-info-sep .span-big-text{
     margin-top:10px;
-    font-size: 18px;
+    font-size: 17px;
     font-weight: 500;
 }
 
-.category-slider ul li a .category-info-sep .span-small-text{
+.category-swiper-container .swiper-slide .category-info-sep .span-small-text{
+    font-family: "Oswald", sans-serif;
     margin-top:10px;
-    font-size: 14px;
-}
-
-.category-slider ul::-webkit-scrollbar{
-    display: none;
-}
-
-.category-slider ul li{
-    user-select: none;
-}
-
-.category-slider ul li a{
-    padding: 20px 10px;
-    border-radius: 15px;
-    user-select: none;
-    /* box-shadow: 3px 3px 5px rgb(0,0,0,.3); */
-    text-align: center;
-    white-space: normal;
-    min-width: 173px;
-    height: 190px;
+    font-size: 11px;
 }
 
 }
-
-
 /* danh cho mobile */
 @media  screen and (max-width: 740px ){
     body{
-        background-color: rgb(250, 240, 215);
         min-width: 320px;
         height: 100svh;
         min-height: 700px;
@@ -1022,8 +1031,8 @@ body{
 
 /*CONTENT - ADVERTISEMENT - PHONE*/
 .slider{
-    width: 95%;
-    height: 40%;
+    width: 95vw;
+    height: 45vw;
     margin: auto;
     position: relative;
     overflow-x: hidden;
@@ -1041,8 +1050,8 @@ body{
 }
 
 .list img{
-    width: 95%;
-    height: 40%;
+    width: 95vw;
+    height: 45vw;
     object-fit: fill;
 }
 
@@ -1097,64 +1106,46 @@ body{
     display: none;
 }
 
-.category-slider{
-    font-family: "helvetica","sans-serif";
-    /* background: #131C30;
-    box-shadow: 1px 1px 3px rgb(0,0,0,.5); */
-    border-radius: 10px;
-    max-width: 95%;
-    margin: 20px auto;
-    margin-top: 10px;
-    overflow: hidden;
+.category-big-div{
     position: relative;
+    width: 100% ;
+    margin: 0 auto;
 }
 
-
-.category-slider ul{
-    display: flex;
-    gap: 10px;
-    padding: 10px 12px;
+.category-swiper-container {
+    margin: 0 auto;
+    margin-top: 25px;
+    width: 100%;
+    height: 95px;
+    overflow: hidden ;
+    padding: 5px;
 }
 
-.category-slider ul li a{
-    color: black;
-    text-decoration: none;
-    background: #ffffff;
-    padding: 17px 27px;
-    display: inline-block;
-    border-radius: 100px;
-    user-select: none;
-    white-space: nowrap;
-    font-size: 15px;
+.category-navBtn .fa-arrow-right{
+  display: none;
 }
-
-
-
-.category-slider ul li a i{
-    margin-right: 8px;
-    font-size: 15px;
-}
-
-.category-slider ul li a.category-active{
-    background-color:#ffb701;
-    color: black;
-}
-
-.category-slider svg{
-    width: 30px;
-    height: 50px;
-    padding: 5px; 
-}
-
-.category-slider .right-arrow,
-.category-slider .left-arrow{
-    position: absolute;
-    height: 100%;
-    width: 30px;
-    top: 0;
+.category-navBtn .fa-arrow-left{
     display: none;
-    align-items: center;
-    padding: 0 0px;}
+}
+
+.category-swiper-container .swiper-slide .category-info-sep{
+    border-radius: 10px;
+}
+
+
+.category-swiper-container .swiper-slide .category-info-sep img{
+    width: 30px;
+}
+
+.category-swiper-container .swiper-slide .category-info-sep .span-big-text{
+    margin-top:0px;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.category-swiper-container .swiper-slide .category-info-sep .span-small-text{
+    display: none;
+}
 
 }
 
