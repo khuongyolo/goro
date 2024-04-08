@@ -210,7 +210,7 @@ tabsList2.addEventListener("scroll", manageIcons);
 
 
 
-// Hàm xử lý sự kiện vuốt trên điện thoại
+// Hàm xử lý sự kiện vuốt trên điện thoại (KHONG SU DUNG NUA)
 function handleTouchDrag() {
     let isDragging = false;
     let startX, endX;
