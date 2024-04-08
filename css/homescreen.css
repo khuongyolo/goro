@@ -492,7 +492,7 @@ body{
 	-webkit-user-select: none;
 }
 
-.category-big-div .swiper-slide:hover{
+/* .category-big-div .swiper-slide:hover{
     transform: translateY(-5px);
     box-shadow: 3px 3px 6px rgb(0,0,0,.3);
     transition: 0.3s ease;
@@ -502,7 +502,7 @@ body{
     transform: translateY(0px);
     box-shadow: none;
     transition: 0.08s ease;
-}
+} */
 
 
 
