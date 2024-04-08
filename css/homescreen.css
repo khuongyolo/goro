@@ -1015,6 +1015,11 @@ body{
         box-shadow: 2px 2px 4px rgb(0,0,0,.5);
         font-size: 14px;
     }
+
+    .header .head-address-bar .left-address p {
+        font-size: 14px;
+    }
+
     
     .header .head-address-bar .fa-solid{
         color: black;
@@ -1036,6 +1041,7 @@ body{
     width: 95vw;
     height: 45vw;
     margin: auto;
+    margin-top: 3px;
     position: relative;
     overflow-x: hidden;
     border-radius: 10px;
