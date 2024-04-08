@@ -513,59 +513,59 @@ body{
 }
 
 .category-swiper-container .swiper-slide .category-info-sep-color1{
-    background-color: #1f4e48;
+    background-color: #347189;
 }
 
 .category-swiper-container .swiper-slide .category-info-sep-color2{
-    background-color: #d77247;
+    background-color: #eb7768;
 }
 
 .category-swiper-container .swiper-slide .category-info-sep-color3{
-    background-color: #f6cd57;
+    background-color: #f5c667;
 }
 
 .category-swiper-container .swiper-slide .category-info-sep-color4{
-    background-color: #5a2f23;
+    background-color: #8dcbd0;
 }
 
 .category-swiper-container .swiper-slide .category-info-sep-color5{
-    background-color: #1f4e48;
+    background-color: #347189;
 }
 
 .category-swiper-container .swiper-slide .category-info-sep-color6{
-    background-color: #d77247;
+    background-color: #eb7768;
 }
 
 .category-swiper-container .swiper-slide .category-info-sep-color7{
-    background-color: #f6cd57;
+    background-color: #f5c667;
 }
 
 .category-swiper-container .swiper-slide .category-info-sep-color8{
-    background-color: #5a2f23;
+    background-color: #8dcbd0;
 }
 
 .category-swiper-container .swiper-slide .category-info-sep-color9{
-    background-color: #1f4e48;
+    background-color: #347189;
 }
 
 .category-swiper-container .swiper-slide .category-info-sep-color10{
-    background-color: #d77247;
+    background-color: #eb7768;
 }
 
 .category-swiper-container .swiper-slide .category-info-sep-color11{
-    background-color: #f6cd57;
+    background-color: #f5c667;
 }
 
 .category-swiper-container .swiper-slide .category-info-sep-color12{
-    background-color: #5a2f23;
+    background-color: #8dcbd0;
 }
 
 .category-swiper-container .swiper-slide .category-info-sep-color13{
-    background-color: #1f4e48;
+    background-color: #347189;
 }
 
 .category-swiper-container .swiper-slide .category-info-sep-color14{
-    background-color: #d77247;
+    background-color: #eb7768;
 }
 
 
@@ -1010,6 +1010,7 @@ body{
         display: none;
     }
 
+
     .header .head-address-bar{
         padding: 15px 20px;
         box-shadow: 2px 2px 4px rgb(0,0,0,.5);
@@ -1124,7 +1125,7 @@ body{
     margin: 0 auto;
     margin-top: 25px;
     width: 100%;
-    height: 95px;
+    height: 110px;
     overflow: hidden ;
     padding: 10px;
 }
@@ -1138,11 +1139,12 @@ body{
 
 .category-swiper-container .swiper-slide .category-info-sep{
     border-radius: 10px;
+    box-shadow: none;
 }
 
 
 .category-swiper-container .swiper-slide .category-info-sep img{
-    width: 30px;
+    width: 45px;
 }
 
 .category-swiper-container .swiper-slide .category-info-sep .span-big-text{
