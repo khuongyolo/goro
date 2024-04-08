@@ -23,7 +23,7 @@
                 <a href="homescreen.html"><img src="images/Logo_main.png" class="corner-logo"></a>
             </div>
             <div class="search-bar">
-                <input type="text" placeholder="Nhập sản phẩm bạn muốn tìm kiếm"><a href="#"><i class="fa-solid fa-magnifying-glass search-bar-icon"></i></a>
+                <input type="text" placeholder="Search on GORO"><a href="#"><i class="fa-solid fa-magnifying-glass search-bar-icon"></i></a>
             </div>
             <div class="header-icon-btn">
                 <a href="#"><i class="fa-solid fa-house"></i></a>
@@ -31,16 +31,16 @@
                 <li id="user-btn"><a href="#" onclick="DisplayUserOption()"><i class="fa-solid fa-user" id="fa-user"></i></a>
                     <ul class="user-menu-container" id="user-menu-container">
                         <li class="user-heading-container">
-                            <h2 class="user-menu-heading"><i class="fa-regular fa-user"></i>Tài khoản</h2>
+                            <h2 class="user-menu-heading"><i class="fa-regular fa-user"></i>Account</h2>
                             <a href="#"  onclick="HideUserOption()"><i class="fa-solid fa-xmark"></i></a>
                         </li>
-                        <li class="user-option"><a href="smile.html">Thông tin tài khoản</a></li>
-                        <li class="user-option"><a href="#">Địa chỉ</a></li>
+                        <li class="user-option"><a href="smile.html">Account Information</a></li>
+                        <li class="user-option"><a href="#">Address</a></li>
                         <li class="user-option"><a href="#">Tracking</a></li>
-                        <li class="user-option"><a href="#">Lịch sử mua hàng</a></li>
-                        <li class="user-option"><a href="#">Phương pháp thanh toán</a></li>
+                        <li class="user-option"><a href="#">History</a></li>
+                        <li class="user-option"><a href="#">Payment</a></li>
                         <li class="user-option language-option-container"  onclick="DisplayLanguageOption ()">
-                            <a href="#">Ngôn ngữ</a>
+                            <a href="#">Language</a>
                             <span id="arrow-icon">&#9660</span>
                             <ul class="language" id="language">
                                 <li class="language-option"><a href="#">Tiếng Việt</a></li>
@@ -48,8 +48,8 @@
                                 <li class="language-option"><a href="#">日本語</a></li>
                             </ul>
                         </li>
-                        <li class="user-option"><a href="#">Hỗ trợ</a></li>
-                        <li class="user-option log-out-btn"><a href="loginscreen.html"><i class="fa-solid fa-right-from-bracket user-option-icon"></i>Đăng xuất</a></li>
+                        <li class="user-option"><a href="#">Help</a></li>
+                        <li class="user-option log-out-btn"><a href="loginscreen.html"><i class="fa-solid fa-right-from-bracket user-option-icon"></i>Log Out</a></li>
                     </ul>
                 </li>
             </div>
@@ -60,10 +60,10 @@
         <div class="head-address-bar">
             <div class="left-address">
                 <i class="fa-solid fa-location-dot"></i>
-                <p>Địa chỉ giao hàng hiện tại của bạn:<span> Saitama, koshigaya, Akanecho, 2-2-2 708</span></p>
+                <p>Delivery address:<span> Saitama, koshigaya, Akanecho, 2-2-2 708</span></p>
             </div>
             <div class="right-address">
-                <i class="fa-solid fa-sliders change-address-btn"><a href="#"></a></i>
+                <a href="#"><i class="fa-solid fa-sliders change-address-btn"></i></a>
             </div>
         </div>
     </div>
@@ -94,18 +94,17 @@
         <!-- END ADVERTISEMENT PART -->
 
         <!-- START CATEGORY PART -->
-        
         <div class="category-txt-line"><span id="category-txt">CATEGORIES</span></div>
         
         <div class="category-big-div">
             <div class="swiper-container mySwiper category-swiper-container">
                 <div class="swiper-wrapper category-swiper-wrapper">
                 <div class="swiper-slide">
-                    <a href="#" class="category-active category-background-1">
+                    <a href="#" class="category-background-1">
                         <div class="category-info-sep category-info-sep-color1">
                             <span class="category-span-img"><img src="images/diet.png"></span>
-                            <span class="span-big-text">Tất cả</span>
-                            <span class="span-small-text">Bao gồm nhiêu loại thực phẩm</span>
+                            <span class="span-big-text">All</span>
+                            <span class="span-small-text">Included all types of food</span>
                         </div>
                     </a>
                 </div>
@@ -113,8 +112,8 @@
                     <a href="#" class="category-background-2">
                         <div class="category-info-sep category-info-sep-color2">
                             <span class="category-span-img"><img src="images/ramen.png"></span>
-                            <span class="span-big-text">Mì gói</span>
-                            <span class="span-small-text">Bao gồm các loại mì</span>
+                            <span class="span-big-text">Noodles</span>
+                            <span class="span-small-text">Included Noodles</span>
                         </div>
                     </a>   
                 </div>
@@ -122,8 +121,8 @@
                     <a href="#" class="category-background-3">
                         <div class="category-info-sep category-info-sep-color3">
                             <span class="category-span-img"><img src="images/beef.png"></span>
-                            <span class="span-big-text">Thịt</span>
-                            <span class="span-small-text">Bao gồm các loại thịt</span>
+                            <span class="span-big-text">Meats</span>
+                            <span class="span-small-text">Fresh Meats</span>
                         </div>
                     </a>  
                 </div>
@@ -131,8 +130,8 @@
                     <a href="#" class="category-background-4">
                         <div class="category-info-sep category-info-sep-color4">
                             <span class="category-span-img"><img src="images/bakery.png"></span>
-                            <span class="span-big-text">Bánh mì</span>
-                            <span class="span-small-text">Bao gồm các loại bánh</span>
+                            <span class="span-big-text">Bread</span>
+                            <span class="span-small-text">All types of breads</span>
                         </div>
                     </a> 
                 </div>
@@ -140,8 +139,8 @@
                     <a href="#" class="category-background-5">
                         <div class="category-info-sep category-info-sep-color5">
                             <span class="category-span-img"><img src="images/cake.png"></span>
-                            <span class="span-big-text">Bánh ngọt</span>
-                            <span class="span-small-text">Bao gồm các loại bánh ngọt</span>
+                            <span class="span-big-text">Cake</span>
+                            <span class="span-small-text">Sweet Cakes</span>
                         </div>
                     </a> 
                 </div>
@@ -149,8 +148,8 @@
                     <a href="#" class="category-background-6">
                         <div class="category-info-sep category-info-sep-color6">
                             <span class="category-span-img"><img src="images/soft-drink.png"></span>
-                            <span class="span-big-text">Nước</span>
-                            <span class="span-small-text">Bao gồm các loại nước</span>
+                            <span class="span-big-text">Beverage</span>
+                            <span class="span-small-text">Included all types of beverages</span>
                         </div>
                     </a> 
                 </div>
@@ -158,8 +157,8 @@
                     <a href="#" class="category-background-7">
                         <div class="category-info-sep category-info-sep-color7">
                             <span class="category-span-img"><img src="images/vegetable.png"></span>
-                            <span class="span-big-text">Rau củ</span>
-                            <span class="span-small-text">Bao gồm các loại rau củ</span>
+                            <span class="span-big-text">Vegetables</span>
+                            <span class="span-small-text">Exclusive vegetables</span>
                         </div>
                     </a> 
                 </div>
@@ -167,8 +166,8 @@
                     <a href="#" class="category-background-8">
                         <div class="category-info-sep category-info-sep-color8">
                             <span class="category-span-img"><img src="images/fruit.png"></span>
-                            <span class="span-big-text">Trái cây</span>
-                            <span class="span-small-text">Bao gồm các loại hoa quả</span>
+                            <span class="span-big-text">Fruits</span>
+                            <span class="span-small-text">Exclusive fruits</span>
                         </div>
                     </a> 
                 </div>
@@ -176,8 +175,8 @@
                     <a href="#" class="category-background-9">
                         <div class="category-info-sep category-info-sep-color9">
                             <span class="category-span-img"><img src="images/snack.png"></span>
-                            <span class="span-big-text">Đồ ăn vặt</span>
-                            <span class="span-small-text">Bao gồm các snack</span>
+                            <span class="span-big-text">Snack</span>
+                            <span class="span-small-text">All types of snack</span>
                         </div>
                     </a> 
                 </div>
@@ -185,8 +184,8 @@
                     <a href="#" class="category-background-10">
                         <div class="category-info-sep category-info-sep-color10">
                             <span class="category-span-img"><img src="images/fresh.png"></span>
-                            <span class="span-big-text">Đồ tươi</span>
-                            <span class="span-small-text">Bao gồm các loại đồ tươi</span>
+                            <span class="span-big-text">Fresh Stuff</span>
+                            <span class="span-small-text">Fresh food all the times</span>
                         </div>
                     </a> 
                 </div>
@@ -194,8 +193,8 @@
                     <a href="#" class="category-background-11">
                         <div class="category-info-sep category-info-sep-color11">
                             <span class="category-span-img"><img src="images/frozen-food.png"></span>
-                            <span class="span-big-text">Đồ đông lạnh</span>
-                            <span class="span-small-text">Bao gồm các loại đồ đông lạnh</span>
+                            <span class="span-big-text">Frozen</span>
+                            <span class="span-small-text">Frozen meats, fruits,..</span>
                         </div>
                     </a> 
                 </div>
@@ -203,8 +202,8 @@
                     <a href="#" class="category-background-12">
                         <div class="category-info-sep category-info-sep-color12">
                             <span class="category-span-img"><img src="images/spices.png"></span>
-                            <span class="span-big-text">Gia vị</span>
-                            <span class="span-small-text">Bao gồm các loại gia vị</span>
+                            <span class="span-big-text">Spices</span>
+                            <span class="span-small-text">Exclusive spices</span>
                         </div>
                     </a> 
                 </div>
@@ -212,17 +211,17 @@
                     <a href="loginscreen.html" class="category-background-13">
                         <div class="category-info-sep category-info-sep-color13">
                             <span class="category-span-img"><img src="images/star.png"></span>
-                            <span class="span-big-text">Đặc biệt</span>
-                            <span class="span-small-text">Đặc biệt lắm à nghe :D</span>
+                            <span class="span-big-text">Speacial</span>
+                            <span class="span-small-text">Remember to check here :D</span>
                         </div>
                     </a> 
                 </div>
                 <div class="swiper-slide">
                     <a href="#" class="category-background-12">
                         <div class="category-info-sep category-info-sep-color14">
-                            <span class="category-span-img"><img src="images/positive-vote.png"></span>
-                            <span class="span-big-text">Dịp Lễ</span>
-                            <span class="span-small-text">Bao gồm các loại thực phẩm trong dịp lễ</span>
+                            <span class="category-span-img"><img src="images/lantern.png"></span>
+                            <span class="span-big-text">SP Occasion</span>
+                            <span class="span-small-text">Food for SPO</span>
                         </div>
                     </a> 
                 </div>
@@ -235,20 +234,207 @@
                 <div class="swiper-pagination"></div>
             </div>
         </div>
-        
-    
         <!-- END CATEGORY PART -->
 
         <!-- START STORE CONTAINER PART -->
         
+        <div class="store-txt-line"><span id="store-txt">SHOPS</span></div>
+        
+        <div class="store-big-div">
+            <div class="swiper-container mySwiper store-swiper-container">
+                <div class="swiper-wrapper store-swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="store-info-sep">
+                            <div class="store-name-img">
+                                <a href="#" class="store-img"><img src="images/store img/shops.png"></a>
+                                <a href="#" class="store-name"><span>GORO</span></a>
+                            </div>
+                            <div class="store-info">
+                                <p>Địa chỉ: <span>xxx-xxx-xxx 1-13-20</span></p>
+                                <p>Số điện thoại: <span>070-6664-9784 </span></p>
+                                <p>Thanh toán: <i class="fa-brands fa-paypal"></i> <i class="fa-brands fa-cc-apple-pay"></i> <i class="fa-solid fa-truck"></i></p>
+                                <p>Đánh giá: <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="store-info-sep">
+                            <div class="store-name-img">
+                                <a href="#" class="store-img"><img src="images/store img/store (1).png"></a>
+                                <a href="#" class="store-name"><span>Store</span></a>
+                            </div>
+                            <div class="store-info">
+                                <p>Địa chỉ: <span>xxx-xxx-xxx 1-13-20</span></p>
+                                <p>Số điện thoại: <span>070-6664-9784 </span></p>
+                                <p>Thanh toán: <i class="fa-brands fa-paypal"></i> <i class="fa-brands fa-cc-apple-pay"></i> <i class="fa-solid fa-truck"></i></p>
+                                <p>Đánh giá: <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="store-info-sep">
+                            <div class="store-name-img">
+                                <a href="#" class="store-img"><img src="images/store img/store (2).png"></a>
+                                <a href="#" class="store-name"><span>Store</span></a>
+                            </div>
+                            <div class="store-info">
+                                <p>Địa chỉ: <span>xxx-xxx-xxx 1-13-20</span></p>
+                                <p>Số điện thoại: <span>070-6664-9784 </span></p>
+                                <p>Thanh toán: <i class="fa-brands fa-paypal"></i> <i class="fa-brands fa-cc-apple-pay"></i> <i class="fa-solid fa-truck"></i></p>
+                                <p>Đánh giá: <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="store-info-sep">
+                            <div class="store-name-img">
+                                <a href="#" class="store-img"><img src="images/store img/store.png"></a>
+                                <a href="#" class="store-name"><span>Store</span></a>
+                            </div>
+                            <div class="store-info">
+                                <p>Địa chỉ: <span>xxx-xxx-xxx 1-13-20</span></p>
+                                <p>Số điện thoại: <span>070-6664-9784 </span></p>
+                                <p>Thanh toán: <i class="fa-brands fa-paypal"></i> <i class="fa-brands fa-cc-apple-pay"></i> <i class="fa-solid fa-truck"></i></p>
+                                <p>Đánh giá: <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="store-info-sep">
+                            <div class="store-name-img">
+                                <a href="#" class="store-img"><img src="images/store img/shops.png"></a>
+                                <a href="#" class="store-name"><span>Store</span></a>
+                            </div>
+                            <div class="store-info">
+                                <p>Địa chỉ: <span>xxx-xxx-xxx 1-13-20</span></p>
+                                <p>Số điện thoại: <span>070-6664-9784 </span></p>
+                                <p>Thanh toán: <i class="fa-brands fa-paypal"></i> <i class="fa-brands fa-cc-apple-pay"></i> <i class="fa-solid fa-truck"></i></p>
+                                <p>Đánh giá: <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="store-info-sep">
+                            <div class="store-name-img">
+                                <a href="#" class="store-img"><img src="images/store img/shops.png"></a>
+                                <a href="#" class="store-name"><span>Store</span></a>
+                            </div>
+                            <div class="store-info">
+                                <p>Địa chỉ: <span>xxx-xxx-xxx 1-13-20</span></p>
+                                <p>Số điện thoại: <span>070-6664-9784 </span></p>
+                                <p>Thanh toán: <i class="fa-brands fa-paypal"></i> <i class="fa-brands fa-cc-apple-pay"></i> <i class="fa-solid fa-truck"></i></p>
+                                <p>Đánh giá: <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="store-info-sep">
+                            <div class="store-name-img">
+                                <a href="#" class="store-img"><img src="images/store img/store (2).png"></a>
+                                <a href="#" class="store-name"><span>Store</span></a>
+                            </div>
+                            <div class="store-info">
+                                <p>Địa chỉ: <span>xxx-xxx-xxx 1-13-20</span></p>
+                                <p>Số điện thoại: <span>070-6664-9784 </span></p>
+                                <p>Thanh toán: <i class="fa-brands fa-paypal"></i> <i class="fa-brands fa-cc-apple-pay"></i> <i class="fa-solid fa-truck"></i></p>
+                                <p>Đánh giá: <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="store-info-sep">
+                            <div class="store-name-img">
+                                <a href="#" class="store-img"><img src="images/store img/store (1).png"></a>
+                                <a href="#" class="store-name"><span>Store</span></a>
+                            </div>
+                            <div class="store-info">
+                                <p>Địa chỉ: <span>xxx-xxx-xxx 1-13-20</span></p>
+                                <p>Số điện thoại: <span>070-6664-9784 </span></p>
+                                <p>Thanh toán: <i class="fa-brands fa-paypal"></i> <i class="fa-brands fa-cc-apple-pay"></i> <i class="fa-solid fa-truck"></i></p>
+                                <p>Đánh giá: <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                   
+               
+                
 
 
-    <div class="footer"></div>
+                </div>
+                <div class="swiper-button-next store-navBtn"><i class="fa-solid fa-arrow-right"></i></div>
+                <div class="swiper-button-prev store-navBtn"><i class="fa-solid fa-arrow-left"></i></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+
     
+    
+    
+    
+    
+    
+        <!-- <footer id="footer">
+            <div class="footer-backtotop-btn">
+                <a href="homescreen.html">Go back to top</a>
+            </div>
+            <div class="footer-mid-part">
+                <span class="footer-txt-big">GORO</span>
+                <span class="footer-txt-small">Hello, we'r GORO team. Please wait until we finish this Project</span>
+            </div>
+            <div class="footer-bot-part">
+                <a href="#"><img src="images/Logo_main.png" width ="120" alt=""></a>
+                <select name="language" id="footer-language-optn">
+                    <option value="Vietnamese">Tiếng Việt</option>
+                    <option value="English">English</option>
+                    <option value="Japnese">Japanese</option>
+                </select>
+                <select name="language" id="footer-currency-optn">
+                    <option value="VND">VND</option>
+                    <option value="USD">USD</option>
+                    <option value="JPY">JPY</option>
+                </select>
+                <select name="language" id="footer-country-optn">
+                    <option value="Vietnam">Việt Nam</option>
+                    <option value="America">United States Of America</option>
+                    <option value="Japn">Japan</option>
+                </select>
+            </div>
+        </footer> -->
+    
+
+
+
+
+
+
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="js/homescreen.js"></script>
+    <!-- ads scroll part -->
     <script>
-        var swiper = new Swiper(".mySwiper", {
+        var swiper = new Swiper(".myAdsSwiper", {
+            spaceBetween: 20,
+            centeredSlides: true,
+            loop: true,
+            autoplay: {
+            delay: 5000,
+            disableOnInteraction: false,
+            },
+            pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+            },
+            navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
+    
+    
+    <!-- category scroll part -->
+    <script>
+        var swiper = new Swiper(".category-swiper-container", {
           slidesPerView: 5,
           spaceBetween: 20,
           slidesPerGroup: 2,
@@ -288,25 +474,52 @@
             },
           },
         });
-      </script>
-      <script>
-        var swiper = new Swiper(".myAdsSwiper", {
-          spaceBetween: 20,
-          centeredSlides: true,
-          loop: true,
-          autoplay: {
-            delay: 6000,
-            disableOnInteraction: false,
-          },
+    </script>
+
+    <!-- store scroll parts -->
+
+    <script>
+        var swiper = new Swiper(".store-swiper-container", {
+          slidesPerView: 4,
+          spaceBetween: 15,
+          slidesPerGroup: 2,
+          centerSlide:'true',
+          fade: 'true',
+          gragCursor:'true',
           pagination: {
             el: ".swiper-pagination",
             clickable: true,
+            dynamicBullets: true,
           },
           navigation: {
             nextEl: ".swiper-button-next",
             prevEl: ".swiper-button-prev",
           },
+
+          breakpoints:{
+            0: {
+                slidesPerView: 1,
+                spaceBetween: 10,
+            },
+            450: {
+                slidesPerView: 1,
+                spaceBetween: 10,
+            },
+            740: {
+                slidesPerView: 2,
+                spaceBetween: 15,
+            },
+            1400: {
+                slidesPerView: 3,
+            },
+            1740: {
+                slidesPerView: 4,
+                spaceBetween: 15,
+            },
+          },
         });
-      </script>
+    </script>
+
+    
 </body>
 </html>
