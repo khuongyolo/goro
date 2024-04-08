@@ -571,6 +571,8 @@ body{
 
 .category-swiper-container .swiper-slide .category-info-sep img{
     width: 120px;
+    user-select: none;
+	-webkit-user-select: none;
 }
 
 .category-swiper-container .swiper-slide .category-info-sep .span-big-text{
