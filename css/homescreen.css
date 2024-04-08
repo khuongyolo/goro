@@ -325,97 +325,84 @@ body{
 
 
 /* CONTENT - ADVERTISEMENT - PC */
-.slider{
+.advertisement-slide-container{
     width: 75vw;
     height: 30vw;
-    margin: auto;
+    margin: 0 auto;
     position: relative;
-    overflow: hidden;
-    scroll-behavior: smooth;
-    border-radius: 10px;
-    box-shadow: 4px 4px 8px rgb(0,0,0,.5);
+    user-select: none;
+	-webkit-user-select: none;
+}
+.myAdsSwiper{
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    box-shadow: 2px 2px 7px rgb(0,0,0,.5);
+    user-select: none;
+	-webkit-user-select: none;
 }
 
-.slider::-webkit-scrollbar{
-    display: none;
-}
-
-.list{
-    position: absolute;
-    top: 0;
-    left: 0;
-    display: flex;
-    width: max-content;
-    transition: 0.8s ease-out;
-}
-
-.list img{
-    flex: 1 0 100%;
-    aspect-ratio: 16/9;
-    width: 75vw;
-    height: 30vw;
-    object-fit: fill;
-}
-
-.buttons{
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    left: 1%;
-    width: 98%;
-    display: flex;
-    justify-content: space-between;  
-}
-
-.buttons button{
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background-color: rgba(163, 157, 157, 0.34);
-    color: #fff;
-    border:none;
-    cursor: pointer;  
-}
-
-.buttons button:hover{
-    background-color: rgba(82, 76, 76, 0.9);
-    transition: 0.7s;
-}
-
-.buttons button:active{
-    background-color: rgba(82, 81, 81, 0.7);
-    transition: 0.1s;
-}
-
-
-
-.dots{
-    position: absolute;
-    bottom:5px;
-    color: black;
-    left:0;
-    width:100%;
-    margin:0;
-    padding:0;
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
     display: flex;
     justify-content: center;
+    align-items: center;
+    user-select: none;
+	-webkit-user-select: none;
 }
 
-.dots li{
-    list-style: none;
-    width:10px;
-    height: 10px;
-    background-color: #000000;
-    opacity: 0.3;
-    margin:20px;
-    border-radius: 20px;
-    transition: 0.6s;
-    cursor: pointer;
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+    user-select: none;
+	-webkit-user-select: none;
 }
 
-.dots li.active{
-    width: 40px;
+.advertisement-slide-container  .swiper-button-prev:after,
+.swiper-button-next:after {
+  display: none;
 }
+
+.Ads-navBtn .fa-arrow-right{
+    color: #FFF;
+    padding: 15px;
+    border-radius: 50%;
+    background-color: #9e9e9e91;
+    position: absolute;
+    right: 10px;
+    transition: .2s ease;
+}
+
+.Ads-navBtn .fa-arrow-left{
+    color: #FFF;
+    padding: 15px;
+    border-radius: 50%;
+    background-color: #9e9e9e91;
+    position: absolute;
+    left: 10px;
+    transition: .2s ease;
+}
+
+.Ads-navBtn .fa-arrow-left:hover{
+    background-color: #888888cc;
+}
+.Ads-navBtn .fa-arrow-right:hover{
+    background-color: #888888cc;
+}
+
+.advertisement-slide-container .swiper-pagination-bullet-active{
+    background-color: rgb(105, 105, 105) !important;
+}
+
+
+
+
+
 
 /* CONTENT - CATEGORY - PC */
 
@@ -592,7 +579,7 @@ body{
 
 
 
-.swiper-button-prev:after,
+.category-big-div  .swiper-button-prev:after,
 .swiper-button-next:after {
   display: none;
 }
@@ -611,7 +598,6 @@ body{
     background-color: #888888cc;
 }
 
-
 .category-navBtn .fa-arrow-left{
     color: #FFF;
     padding: 15px;
@@ -626,15 +612,21 @@ body{
     background-color: #888888cc;
 }
 
-.swiper-pagination-bullet-active {
+.category-big-div .swiper-pagination-bullet-active {
     background-color: #FFF !important;
 }
 
-.swiper-pagination{
+.category-big-div .swiper-pagination{
     position: absolute;
     bottom: -20px !important;
     z-index: 30;
 }
+
+
+/* CONTENT - SHOPS - PC */
+
+
+
 
 /*  RESPONSIVE RESPONSIVE RESPONSIVE RESPONSIVE RESPONSIVE RESPONSIVE RESPONSIVE RESPONSIVE RESPONSIVE RESPONSIVE RESPONSIVE RESPONSIVE  RESPONSIVE RESPONSIVE RESPONSIVE RESPONSIVE */
 
@@ -663,57 +655,10 @@ body{
 @media only screen and (min-width: 1024px) and (max-width: 1435px){
 
 /* CONTENT - ADVERTISEMENT - iPadPro Tro Len */
-.slider{
-    width: 95vw;
-    height:45vw;
-    margin: auto;
-    position: relative;
-    overflow-x: hidden;
-    border-radius: 10px;
-    box-shadow: 4px 5px 8px rgb(0,0,0,.3);
-}
 
-.list{
-    position: absolute;
-    top: 0;
-    left: 0;
-    display: flex;
-    width: max-content;
-    transition: 0.8s ease-in-out;
-}
-
-.list img{
+.advertisement-slide-container{
     width: 95vw;
     height: 45vw;
-    object-fit: fill;
-}
-
-.dots{
-    position: absolute;
-    bottom: 3px;
-    color: black;
-    left: 0;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-}
-
-.dots li{
-    list-style: none;
-    width:10px;
-    height: 10px;
-    background-color: #000000;
-    opacity: 0.3;
-    margin: 10px 20px;
-    border-radius: 20px;
-    transition: 0.6s;
-    cursor: pointer;
-}
-
-.dots li.active{
-    width: 35px;
 }
 
 /* CONTENT - CATEGORY - iPadPro Tro Len */
@@ -829,57 +774,9 @@ body{
 
 /* CONTENT - ADVERTISEMENT - iPadPro Tro Xuong */
 
-.slider{
-    width: 95vw;
-    height:45vw;
-    margin: auto;
-    position: relative;
-    overflow-x: hidden;
-    border-radius: 10px;
-    box-shadow: 4px 5px 8px rgb(0,0,0,.3);
-}
-
-.list{
-    position: absolute;
-    top: 0;
-    left: 0;
-    display: flex;
-    width: max-content;
-    transition: 0.8s ease-in-out;
-}
-
-.list img{
+.advertisement-slide-container{
     width: 95vw;
     height: 45vw;
-    object-fit: fill;
-}
-
-.dots{
-    position: absolute;
-    bottom: 3px;
-    color: black;
-    left: 0;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-}
-
-.dots li{
-    list-style: none;
-    width:10px;
-    height: 10px;
-    background-color: #000000;
-    opacity: 0.3;
-    margin: 10px 20px;
-    border-radius: 20px;
-    transition: 0.6s;
-    cursor: pointer;
-}
-
-.dots li.active{
-    width: 35px;
 }
 
 
@@ -1037,76 +934,19 @@ body{
 }
 
 /*CONTENT - ADVERTISEMENT - PHONE*/
-.slider{
+
+.advertisement-slide-container{
     width: 95vw;
     height: 45vw;
-    margin: auto;
-    margin-top: 3px;
-    position: relative;
-    overflow-x: hidden;
-    border-radius: 10px;
-    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
+    margin-top: 5px;
 }
 
-.list{
-    position: absolute;
-    top: 0;
-    left: 0;
-    display: flex;
-    width: max-content;
-    transition: 0.8s ease-in-out;
+.Ads-navBtn .fa-arrow-right{
+    display: none;
 }
 
-.list img{
-    width: 95vw;
-    height: 45vw;
-    object-fit: fill;
-}
-
-.buttons{
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    left: 3%;
-    width: 95%;
-    display: flex;
-    justify-content: space-between;  
-}
-
-.buttons button{
-    width: 30px;
-    height: 30px;
-    background-color: rgba(119, 117, 117, 0.3);
-    color: #ffffff;
-    font-weight:100;
-}
-
-.dots{
-    position: absolute;
-    bottom: -3px;
-    color: black;
-    left: 0;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-}
-
-.dots li{
-    list-style: none;
-    width:8px;
-    height: 8px;
-    background-color: #000000;
-    opacity: 0.3;
-    margin: 10px 10px;
-    border-radius: 20px;
-    transition: 0.6s;
-    cursor: pointer;
-}
-
-.dots li.active{
-    width: 20px;
+.Ads-navBtn .fa-arrow-left{
+   display: none;
 }
 
 /* CONTENT - CATEGORY - PHONE */

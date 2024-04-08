@@ -73,31 +73,23 @@
     <!-- MAIN BODY start -->
     <div class="content">
         <!-- ADVERTISEMENT PART -->
-        <div class="slider">
-            <!-- image list -->
-            <div class="list">
-                <div class="item">
-                    <img src="images/mobile-shopping-technology-managing-shopping-and-daily-necessities-with-e-commerce-flat-illustration-concept-can-use-for-landing-page-template-ui-web-homepage-poster-banner-flyer-free-vector.jpg">
+        <div class="advertisement-slide-container">
+            <div class="swiper myAdsSwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <a href="#"><img src="images/mobile-shopping-technology-managing-shopping-and-daily-necessities-with-e-commerce-flat-illustration-concept-can-use-for-landing-page-template-ui-web-homepage-poster-banner-flyer-free-vector.jpg" alt=""></a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#"><img src="images/goro-bread.JPG"></a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#"><img src="images/What-is-eCommerce-advertising.jpeg"></a>
+                  </div>
                 </div>
-                <div class="item">
-                    <img src="images/COLOURBOX59215480.jpg">
-                </div>
-                <div class="item">
-                    <img src="images/What-is-eCommerce-advertising.jpeg">
-                </div>               
+                <div class="swiper-button-next Ads-navBtn"><i class="fa-solid fa-arrow-right"></i></div>
+                <div class="swiper-button-prev Ads-navBtn"><i class="fa-solid fa-arrow-left"></i></div>
+                <div class="swiper-pagination ads-swiper-page"></div>
             </div>
-
-            <!-- btn next and prev -->
-            <div class="buttons">
-                <button id="prev"><i class="fa-solid fa-arrow-left"></i></button>
-                <button id="next"><i class="fa-solid fa-arrow-right"></i></button>
-            </div>
-            <!-- dots page number ( 5 item -> tuong ung voi 5 dots) -->
-            <ul class="dots">
-                <li class="active"></li>
-                <li></li>
-                <li></li>
-            </ul>
         </div>
         <!-- END ADVERTISEMENT PART -->
 
@@ -249,11 +241,6 @@
 
         <!-- START STORE CONTAINER PART -->
         
-        
-        
-    
-        
-      
 
 
     <div class="footer"></div>
@@ -299,6 +286,25 @@
                 slidesPerView: 5,
                 spaceBetween: 25,
             },
+          },
+        });
+      </script>
+      <script>
+        var swiper = new Swiper(".myAdsSwiper", {
+          spaceBetween: 20,
+          centeredSlides: true,
+          loop: true,
+          autoplay: {
+            delay: 6000,
+            disableOnInteraction: false,
+          },
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
           },
         });
       </script>
