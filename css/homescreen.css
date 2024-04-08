@@ -27,7 +27,7 @@ body{
 
 .header .nav-bar{
     display: flex;
-    background-color:#347189;
+    background-color:#131c30;
     align-items: center;
     padding: 20px 40px;
     width: 100%;
@@ -85,7 +85,7 @@ body{
 
 .header-icon-btn i{
     font-size: 22px;
-    color: #f5c667;
+    color: #ffb700;
 }
 
 .header-icon-btn i:hover{
@@ -284,7 +284,7 @@ body{
 .header .head-address-bar{
     width: 100%;
     padding: 15px 40px;
-    background-color: #f5c667;
+    background-color: #ffb700;
     display: flex;
     position: relative;
     align-items: center;

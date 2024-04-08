@@ -103,7 +103,7 @@ dots.forEach((li, key) => {
     });
 });
 
-// Hàm xử lý thanh cuộn category
+// Hàm xử lý thanh cuộn category (KHONG SU DUNG NUA)
 
 const tabs = document.querySelectorAll(".category-slider ul li a");
 const rightArrow = document.querySelector(".category-slider .right-arrow svg");
@@ -158,7 +158,7 @@ tabsList.addEventListener("scroll", manageIcons);
 
 
 
-// Hàm xử lý thanh cuộn store
+// Hàm xử lý thanh cuộn store (KHONG SU DUNG NUA)
 
 const tabs2 = document.querySelectorAll(".store-slider ul li a");
 const rightArrow2 = document.querySelector(".store-right-arrow svg");
