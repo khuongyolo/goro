@@ -400,6 +400,14 @@ body{
     bottom: 2px !important;
 }
 
+.advertisement-slide-container .swiper-pagination-bullet {
+    display: inline-block;
+    width: 7px;
+    height: 7px;
+    margin: 0 4px !important;
+    border-radius: 50%;
+}
+
 
 
 
@@ -621,15 +629,31 @@ body{
     background-color: #888888cc;
 }
 
-.category-big-div .swiper-pagination-bullet-active {
-    background-color: #FFF !important;
-}
 
 .category-big-div .swiper-pagination{
     position: absolute;
     bottom: -15px !important;
     z-index: 30;
 }
+
+.category-big-div .swiper-pagination-bullet {
+    display: inline-block;
+    width: 7px;
+    height: 7px;
+    margin: 0 6px !important;
+    border-radius: 50%;
+}
+
+
+.category-big-div .swiper-pagination-bullet-active {
+    background-color: #FFF !important;
+    padding: 0px 11px;
+    border-radius: 3px;
+}
+
+
+
+
 
 
 /* CONTENT - SHOPS - PC */
@@ -688,52 +712,15 @@ body{
     align-items: center;
 }
 
-.store-big-div .store-info-sep{
+.store-big-div .swiper-slide{
     width: 100%;
     height: 100%;
     display: flex;
     flex-direction: column;
     padding: 50px 10px;
-    background-color: #347189;
+    background-color: #254b8b;
     border-radius: 15px;
 }
-
-.store-big-div .store-info-sep .store-name-img{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 25px;
-}
-
-.store-big-div .store-info-sep .store-name-img a{
-    font-family: "Oswald";
-    text-decoration: none;
-    font-weight: 500;
-    color: #131c30;
-}
-
-.store-big-div .store-info-sep .store-name-img .store-name span{
-    font-size: 40px;
-    color: white;
-}
-
-
-.store-big-div .store-info-sep .store-name-img a img{
-    width: 60px;
-}
-
-.store-big-div .store-info-sep .store-info{
-    margin: 0 auto;
-    margin-top: 30px;
-    text-align: left;
-    font-family: "roboto","san-serif";
-    font-size: 16px;
-}
-.store-big-div .store-info-sep .store-info p{
-    margin-top: 5px;
-    color: white;
-}
-
 
 
 .store-big-div  .swiper-button-prev:after,
@@ -1099,6 +1086,15 @@ body{
 }
 
 
+.advertisement-slide-container .swiper-pagination-bullet {
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    margin: 0 4px !important;
+    border-radius: 50%;
+}
+
+
 .Ads-navBtn .fa-arrow-right{
     display: none;
 }
@@ -1128,7 +1124,7 @@ body{
 }
 
 .category-navBtn .fa-arrow-right{
-  display: none;
+    display: none;
 }
 .category-navBtn .fa-arrow-left{
     display: none;
@@ -1155,7 +1151,20 @@ body{
 }
 
 .category-big-div .swiper-pagination{
-    bottom: -20px !important;
+    bottom: -10px !important;
+}
+
+.category-big-div .swiper-pagination-bullet {
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    margin: 0 4px !important;
+    border-radius: 50%;
+}
+
+.category-big-div .swiper-pagination-bullet-active{
+    padding: 0px 8px;
+    border-radius: 2px;
 }
 
 }

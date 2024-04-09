@@ -17,297 +17,183 @@
 </head>
 <body id="mainbody"> 
     <!-- HEADER _ NAVIGATION BAR start -->
-    <div class="header">
-        <div class="nav-bar">
-            <div class="logo-img-container">
-                <a href="homescreen.html"><img src="images/Logo_main.png" class="corner-logo"></a>
-            </div>
-            <div class="search-bar">
-                <input type="text" placeholder="Search on GORO"><a href="#"><i class="fa-solid fa-magnifying-glass search-bar-icon"></i></a>
-            </div>
-            <div class="header-icon-btn">
-                <a href="#"><i class="fa-solid fa-house"></i></a>
-                <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
-                <li id="user-btn"><a href="#" onclick="DisplayUserOption()"><i class="fa-solid fa-user" id="fa-user"></i></a>
-                    <ul class="user-menu-container" id="user-menu-container">
-                        <li class="user-heading-container">
-                            <h2 class="user-menu-heading"><i class="fa-regular fa-user"></i>Account</h2>
-                            <a href="#"  onclick="HideUserOption()"><i class="fa-solid fa-xmark"></i></a>
-                        </li>
-                        <li class="user-option"><a href="smile.html">Account Information</a></li>
-                        <li class="user-option"><a href="#">Address</a></li>
-                        <li class="user-option"><a href="#">Tracking</a></li>
-                        <li class="user-option"><a href="#">History</a></li>
-                        <li class="user-option"><a href="#">Payment</a></li>
-                        <li class="user-option language-option-container"  onclick="DisplayLanguageOption ()">
-                            <a href="#">Language</a>
-                            <span id="arrow-icon">&#9660</span>
-                            <ul class="language" id="language">
-                                <li class="language-option"><a href="#">Tiếng Việt</a></li>
-                                <li class="language-option"><a href="#">English</a></li>
-                                <li class="language-option"><a href="#">日本語</a></li>
-                            </ul>
-                        </li>
-                        <li class="user-option"><a href="#">Help</a></li>
-                        <li class="user-option log-out-btn"><a href="loginscreen.html"><i class="fa-solid fa-right-from-bracket user-option-icon"></i>Log Out</a></li>
-                    </ul>
-                </li>
-            </div>
-        </div>
-
-
-
-        <div class="head-address-bar">
-            <div class="left-address">
-                <i class="fa-solid fa-location-dot"></i>
-                <p>Delivery address:<span> Saitama, koshigaya, Akanecho, 2-2-2 708</span></p>
-            </div>
-            <div class="right-address">
-                <a href="#"><i class="fa-solid fa-sliders change-address-btn"></i></a>
-            </div>
-        </div>
-    </div>
-    <!-- HEADER _ NAVIGATION BAR end -->
-
-
-    <!-- MAIN BODY start -->
-    <div class="content">
-        <!-- ADVERTISEMENT PART -->
-        <div class="advertisement-slide-container">
-            <div class="swiper myAdsSwiper">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide">
-                    <a href="#"><img src="images/mobile-shopping-technology-managing-shopping-and-daily-necessities-with-e-commerce-flat-illustration-concept-can-use-for-landing-page-template-ui-web-homepage-poster-banner-flyer-free-vector.jpg" alt=""></a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a href="#"><img src="images/goro-bread.JPG"></a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a href="#"><img src="images/What-is-eCommerce-advertising.jpeg"></a>
-                  </div>
+        <div class="header">
+            <div class="nav-bar">
+                <div class="logo-img-container">
+                    <a href="homescreen.html"><img src="images/Logo_main.png" class="corner-logo"></a>
                 </div>
-                <div class="swiper-button-next Ads-navBtn"><i class="fa-solid fa-arrow-right"></i></div>
-                <div class="swiper-button-prev Ads-navBtn"><i class="fa-solid fa-arrow-left"></i></div>
-                <div class="swiper-pagination ads-swiper-page"></div>
-            </div>
-        </div>
-        <!-- END ADVERTISEMENT PART -->
-
-        <!-- START CATEGORY PART -->
-        <div class="category-txt-line"><span id="category-txt">CATEGORIES</span></div>
-        
-        <div class="category-big-div">
-            <div class="swiper-container mySwiper category-swiper-container">
-                <div class="swiper-wrapper category-swiper-wrapper">
-                    <div class="swiper-slide category-info-sep-color1">
-                        <span class="category-span-img"><img src="images/diet.png"></span>
-                        <span class="span-big-text">All</span>
-                        <span class="span-small-text">Included all types of food</span>          
-                    </div>
-                    <div class="swiper-slide category-info-sep-color2">
-                        <span class="category-span-img"><img src="images/ramen.png"></span>
-                        <span class="span-big-text">Noodles</span>
-                        <span class="span-small-text">Included Noodles</span>
-                    </div>
-                    <div class="swiper-slide category-info-sep-color3">
-                        <span class="category-span-img"><img src="images/beef.png"></span>
-                        <span class="span-big-text">Meats</span>
-                        <span class="span-small-text">Fresh Meats</span> 
-                    </div>
-                    <div class="swiper-slide category-info-sep-color4">
-                        <span class="category-span-img"><img src="images/bakery.png"></span>
-                        <span class="span-big-text">Bread</span>
-                        <span class="span-small-text">All types of breads</span>
-                    </div>
-                    <div class="swiper-slide category-info-sep-color5">                   
-                        <span class="category-span-img"><img src="images/cake.png"></span>
-                        <span class="span-big-text">Cake</span>
-                        <span class="span-small-text">Sweet Cakes</span>
-                    </div>
-                    <div class="swiper-slide category-info-sep-color6">                   
-                        <span class="category-span-img"><img src="images/fruit.png"></span>
-                        <span class="span-big-text">Fruits</span>
-                        <span class="span-small-text">Exclusive fruits</span>                      
-                    </div>
-                    <div class="swiper-slide category-info-sep-color7">                   
-                        <span class="category-span-img"><img src="images/vegetable.png"></span>
-                        <span class="span-big-text">Vegetables</span>
-                        <span class="span-small-text">Exclusive vegetables</span>                        
-                    </div>
-                    <div class="swiper-slide category-info-sep-color8">
-                        <span class="category-span-img"><img src="images/soft-drink.png"></span>
-                        <span class="span-big-text">Beverage</span>
-                        <span class="span-small-text">Included all types of beverages</span>
-                    </div>
-                    <div class="swiper-slide category-info-sep-color9">
-                        <span class="category-span-img"><img src="images/snack.png"></span>
-                        <span class="span-big-text">Snack</span>
-                        <span class="span-small-text">All types of snack</span>
-                    </div>
-                    <div class="swiper-slide category-info-sep-color10">
-                        <span class="category-span-img"><img src="images/fresh.png"></span>
-                        <span class="span-big-text">Fresh Stuff</span>
-                        <span class="span-small-text">Fresh food all the times</span>
-                    </div>
-                    <div class="swiper-slide category-info-sep-color11">
-                        <span class="category-span-img"><img src="images/frozen-food.png"></span>
-                        <span class="span-big-text">Frozen</span>
-                        <span class="span-small-text">Frozen meats, fruits,..</span>
-                    </div>
-                    <div class="swiper-slide category-info-sep-color12">
-                        <span class="category-span-img"><img src="images/spices.png"></span>
-                        <span class="span-big-text">Spices</span>
-                        <span class="span-small-text">Exclusive spices</span>
-                    </div>
-                    <div class="swiper-slide category-info-sep-color13">
-                        <span class="category-span-img"><img src="images/star.png"></span>
-                        <span class="span-big-text">Speacial</span>
-                        <span class="span-small-text">Remember to check here :D</span>
-                    </div>
-                    <div class="swiper-slide category-info-sep-color14">
-                        <span class="category-span-img"><img src="images/lantern.png"></span>
-                        <span class="span-big-text">SP Occasion</span>
-                        <span class="span-small-text">Food for SPO</span>
-                    </div>
+                <div class="search-bar">
+                    <input type="text" placeholder="Search on GORO"><a href="#"><i class="fa-solid fa-magnifying-glass search-bar-icon"></i></a>
                 </div>
-                <div class="swiper-button-next category-navBtn"><i class="fa-solid fa-arrow-right"></i></div>
-                <div class="swiper-button-prev category-navBtn"><i class="fa-solid fa-arrow-left"></i></div>
-                <div class="swiper-pagination"></div>
-            </div>
-        </div>
-        <!-- END CATEGORY PART -->
-
-        <!-- START STORE CONTAINER PART -->
-        
-        <div class="store-txt-line"><span id="store-txt">SHOPS</span></div>
-        
-        <div class="store-big-div">
-            <div class="swiper-container mySwiper store-swiper-container">
-                <div class="swiper-wrapper store-swiper-wrapper">
-                    <div class="swiper-slide">
-                        <div class="store-info-sep">
-                            <div class="store-name-img">
-                                <a href="#" class="store-img"><img src="images/store img/shops.png"></a>
-                                <a href="#" class="store-name"><span>GORO</span></a>
-                            </div>
-                            <div class="store-info">
-                                <p>Địa chỉ: <span>xxx-xxx-xxx 1-13-20</span></p>
-                                <p>Số điện thoại: <span>070-6664-9784 </span></p>
-                                <p>Thanh toán: <i class="fa-brands fa-paypal"></i> <i class="fa-brands fa-cc-apple-pay"></i> <i class="fa-solid fa-truck"></i></p>
-                                <p>Đánh giá: <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="store-info-sep">
-                            <div class="store-name-img">
-                                <a href="#" class="store-img"><img src="images/store img/store (1).png"></a>
-                                <a href="#" class="store-name"><span>Store</span></a>
-                            </div>
-                            <div class="store-info">
-                                <p>Địa chỉ: <span>xxx-xxx-xxx 1-13-20</span></p>
-                                <p>Số điện thoại: <span>070-6664-9784 </span></p>
-                                <p>Thanh toán: <i class="fa-brands fa-paypal"></i> <i class="fa-brands fa-cc-apple-pay"></i> <i class="fa-solid fa-truck"></i></p>
-                                <p>Đánh giá: <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="store-info-sep">
-                            <div class="store-name-img">
-                                <a href="#" class="store-img"><img src="images/store img/store (2).png"></a>
-                                <a href="#" class="store-name"><span>Store</span></a>
-                            </div>
-                            <div class="store-info">
-                                <p>Địa chỉ: <span>xxx-xxx-xxx 1-13-20</span></p>
-                                <p>Số điện thoại: <span>070-6664-9784 </span></p>
-                                <p>Thanh toán: <i class="fa-brands fa-paypal"></i> <i class="fa-brands fa-cc-apple-pay"></i> <i class="fa-solid fa-truck"></i></p>
-                                <p>Đánh giá: <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="store-info-sep">
-                            <div class="store-name-img">
-                                <a href="#" class="store-img"><img src="images/store img/store.png"></a>
-                                <a href="#" class="store-name"><span>Store</span></a>
-                            </div>
-                            <div class="store-info">
-                                <p>Địa chỉ: <span>xxx-xxx-xxx 1-13-20</span></p>
-                                <p>Số điện thoại: <span>070-6664-9784 </span></p>
-                                <p>Thanh toán: <i class="fa-brands fa-paypal"></i> <i class="fa-brands fa-cc-apple-pay"></i> <i class="fa-solid fa-truck"></i></p>
-                                <p>Đánh giá: <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="store-info-sep">
-                            <div class="store-name-img">
-                                <a href="#" class="store-img"><img src="images/store img/shops.png"></a>
-                                <a href="#" class="store-name"><span>Store</span></a>
-                            </div>
-                            <div class="store-info">
-                                <p>Địa chỉ: <span>xxx-xxx-xxx 1-13-20</span></p>
-                                <p>Số điện thoại: <span>070-6664-9784 </span></p>
-                                <p>Thanh toán: <i class="fa-brands fa-paypal"></i> <i class="fa-brands fa-cc-apple-pay"></i> <i class="fa-solid fa-truck"></i></p>
-                                <p>Đánh giá: <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="store-info-sep">
-                            <div class="store-name-img">
-                                <a href="#" class="store-img"><img src="images/store img/shops.png"></a>
-                                <a href="#" class="store-name"><span>Store</span></a>
-                            </div>
-                            <div class="store-info">
-                                <p>Địa chỉ: <span>xxx-xxx-xxx 1-13-20</span></p>
-                                <p>Số điện thoại: <span>070-6664-9784 </span></p>
-                                <p>Thanh toán: <i class="fa-brands fa-paypal"></i> <i class="fa-brands fa-cc-apple-pay"></i> <i class="fa-solid fa-truck"></i></p>
-                                <p>Đánh giá: <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="store-info-sep">
-                            <div class="store-name-img">
-                                <a href="#" class="store-img"><img src="images/store img/store (2).png"></a>
-                                <a href="#" class="store-name"><span>Store</span></a>
-                            </div>
-                            <div class="store-info">
-                                <p>Địa chỉ: <span>xxx-xxx-xxx 1-13-20</span></p>
-                                <p>Số điện thoại: <span>070-6664-9784 </span></p>
-                                <p>Thanh toán: <i class="fa-brands fa-paypal"></i> <i class="fa-brands fa-cc-apple-pay"></i> <i class="fa-solid fa-truck"></i></p>
-                                <p>Đánh giá: <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="store-info-sep">
-                            <div class="store-name-img">
-                                <a href="#" class="store-img"><img src="images/store img/store (1).png"></a>
-                                <a href="#" class="store-name"><span>Store</span></a>
-                            </div>
-                            <div class="store-info">
-                                <p>Địa chỉ: <span>xxx-xxx-xxx 1-13-20</span></p>
-                                <p>Số điện thoại: <span>070-6664-9784 </span></p>
-                                <p>Thanh toán: <i class="fa-brands fa-paypal"></i> <i class="fa-brands fa-cc-apple-pay"></i> <i class="fa-solid fa-truck"></i></p>
-                                <p>Đánh giá: <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
-                            </div>
-                        </div>
-                    </div>
-                    
-                   
-               
-                
-
-
+                <div class="header-icon-btn">
+                    <a href="#"><i class="fa-solid fa-house"></i></a>
+                    <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                    <li id="user-btn"><a href="#" onclick="DisplayUserOption()"><i class="fa-solid fa-user" id="fa-user"></i></a>
+                        <ul class="user-menu-container" id="user-menu-container">
+                            <li class="user-heading-container">
+                                <h2 class="user-menu-heading"><i class="fa-regular fa-user"></i>Account</h2>
+                                <a href="#"  onclick="HideUserOption()"><i class="fa-solid fa-xmark"></i></a>
+                            </li>
+                            <li class="user-option"><a href="smile.html">Account Information</a></li>
+                            <li class="user-option"><a href="#">Address</a></li>
+                            <li class="user-option"><a href="#">Tracking</a></li>
+                            <li class="user-option"><a href="#">History</a></li>
+                            <li class="user-option"><a href="#">Payment</a></li>
+                            <li class="user-option language-option-container"  onclick="DisplayLanguageOption ()">
+                                <a href="#">Language</a>
+                                <span id="arrow-icon">&#9660</span>
+                                <ul class="language" id="language">
+                                    <li class="language-option"><a href="#">Tiếng Việt</a></li>
+                                    <li class="language-option"><a href="#">English</a></li>
+                                    <li class="language-option"><a href="#">日本語</a></li>
+                                </ul>
+                            </li>
+                            <li class="user-option"><a href="#">Help</a></li>
+                            <li class="user-option log-out-btn"><a href="loginscreen.html"><i class="fa-solid fa-right-from-bracket user-option-icon"></i>Log Out</a></li>
+                        </ul>
+                    </li>
                 </div>
-                <div class="swiper-button-next store-navBtn"><i class="fa-solid fa-arrow-right"></i></div>
-                <div class="swiper-button-prev store-navBtn"><i class="fa-solid fa-arrow-left"></i></div>
-                <div class="swiper-pagination"></div>
+            </div>
+
+
+
+            <div class="head-address-bar">
+                <div class="left-address">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <p>Delivery address:<span> Saitama, koshigaya, Akanecho, 2-2-2 708</span>
+                </div>
+                <div class="right-address">
+                    <a href="#"><i class="fa-solid fa-sliders change-address-btn"></i></a>
+                </div>
             </div>
         </div>
+        <!-- HEADER _ NAVIGATION BAR end -->
+
+
+        <!-- MAIN BODY start -->
+        <div class="content">
+            <!-- ADVERTISEMENT PART -->
+            <div class="advertisement-slide-container">
+                <div class="swiper myAdsSwiper">
+                    <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <a href="#"><img src="images/mobile-shopping-technology-managing-shopping-and-daily-necessities-with-e-commerce-flat-illustration-concept-can-use-for-landing-page-template-ui-web-homepage-poster-banner-flyer-free-vector.jpg" alt=""></a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#"><img src="images/goro-bread.JPG"></a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#"><img src="images/What-is-eCommerce-advertising.jpeg"></a>
+                    </div>
+                    </div>
+                    <div class="swiper-button-next Ads-navBtn"><i class="fa-solid fa-arrow-right"></i></div>
+                    <div class="swiper-button-prev Ads-navBtn"><i class="fa-solid fa-arrow-left"></i></div>
+                    <div class="swiper-pagination ads-swiper-page"></div>
+                </div>
+            </div>
+            <!-- END ADVERTISEMENT PART -->
+
+            <!-- START CATEGORY PART -->
+            <div class="category-txt-line"><span id="category-txt">CATEGORIES</span></div>
+            
+            <div class="category-big-div">
+                <div class="swiper-container mySwiper category-swiper-container">
+                    <div class="swiper-wrapper category-swiper-wrapper">
+                        <div class="swiper-slide category-info-sep-color1">
+                            <span class="category-span-img"><img src="images/diet.png"></span>
+                            <span class="span-big-text">All</span>
+                            <span class="span-small-text">Included all types of food</span>          
+                        </div>
+                        <div class="swiper-slide category-info-sep-color2">
+                            <span class="category-span-img"><img src="images/ramen.png"></span>
+                            <span class="span-big-text">Noodles</span>
+                            <span class="span-small-text">Included Noodles</span>
+                        </div>
+                        <div class="swiper-slide category-info-sep-color3">
+                            <span class="category-span-img"><img src="images/beef.png"></span>
+                            <span class="span-big-text">Meats</span>
+                            <span class="span-small-text">Fresh Meats</span> 
+                        </div>
+                        <div class="swiper-slide category-info-sep-color4">
+                            <span class="category-span-img"><img src="images/bakery.png"></span>
+                            <span class="span-big-text">Bread</span>
+                            <span class="span-small-text">All types of breads</span>
+                        </div>
+                        <div class="swiper-slide category-info-sep-color5">                   
+                            <span class="category-span-img"><img src="images/cake.png"></span>
+                            <span class="span-big-text">Cake</span>
+                            <span class="span-small-text">Sweet Cakes</span>
+                        </div>
+                        <div class="swiper-slide category-info-sep-color6">                   
+                            <span class="category-span-img"><img src="images/fruit.png"></span>
+                            <span class="span-big-text">Fruits</span>
+                            <span class="span-small-text">Exclusive fruits</span>                      
+                        </div>
+                        <div class="swiper-slide category-info-sep-color7">                   
+                            <span class="category-span-img"><img src="images/vegetable.png"></span>
+                            <span class="span-big-text">Vegetables</span>
+                            <span class="span-small-text">Exclusive vegetables</span>                        
+                        </div>
+                        <div class="swiper-slide category-info-sep-color8">
+                            <span class="category-span-img"><img src="images/soft-drink.png"></span>
+                            <span class="span-big-text">Beverage</span>
+                            <span class="span-small-text">Included all types of beverages</span>
+                        </div>
+                        <div class="swiper-slide category-info-sep-color9">
+                            <span class="category-span-img"><img src="images/snack.png"></span>
+                            <span class="span-big-text">Snack</span>
+                            <span class="span-small-text">All types of snack</span>
+                        </div>
+                        <div class="swiper-slide category-info-sep-color10">
+                            <span class="category-span-img"><img src="images/fresh.png"></span>
+                            <span class="span-big-text">Fresh Stuff</span>
+                            <span class="span-small-text">Fresh food all the times</span>
+                        </div>
+                        <div class="swiper-slide category-info-sep-color11">
+                            <span class="category-span-img"><img src="images/frozen-food.png"></span>
+                            <span class="span-big-text">Frozen</span>
+                            <span class="span-small-text">Frozen meats, fruits,..</span>
+                        </div>
+                        <div class="swiper-slide category-info-sep-color12">
+                            <span class="category-span-img"><img src="images/spices.png"></span>
+                            <span class="span-big-text">Spices</span>
+                            <span class="span-small-text">Exclusive spices</span>
+                        </div>
+                        <div class="swiper-slide category-info-sep-color13">
+                            <span class="category-span-img"><img src="images/star.png"></span>
+                            <span class="span-big-text">Speacial</span>
+                            <span class="span-small-text">Remember to check here :D</span>
+                        </div>
+                        <div class="swiper-slide category-info-sep-color14">
+                            <span class="category-span-img"><img src="images/lantern.png"></span>
+                            <span class="span-big-text">SP Occasion</span>
+                            <span class="span-small-text">Food for SPO</span>
+                        </div>
+                    </div>
+                    <div class="swiper-button-next category-navBtn"><i class="fa-solid fa-arrow-right"></i></div>
+                    <div class="swiper-button-prev category-navBtn"><i class="fa-solid fa-arrow-left"></i></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+            <!-- END CATEGORY PART -->
+
+            <!-- START STORE CONTAINER PART -->
+            
+            <div class="store-txt-line"><span id="store-txt">SHOPS</span></div>
+            
+            <div class="store-big-div">
+                <div class="swiper-container mySwiper store-swiper-container">
+                    <div class="swiper-wrapper store-swiper-wrapper">
+                        <div class="swiper-slide">
+                            
+                        </div>
+        
+                    </div>
+                    <div class="swiper-button-next store-navBtn"><i class="fa-solid fa-arrow-right"></i></div>
+                    <div class="swiper-button-prev store-navBtn"><i class="fa-solid fa-arrow-left"></i></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
 
     
     
