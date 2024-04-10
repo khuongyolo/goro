@@ -980,7 +980,7 @@ body{
     }
 
     .main-wth-widget .temperature img{
-        width: 150px;
+        width: 120px;
     }
 
     .main-wth-widget .temperature figcaption{
@@ -994,13 +994,13 @@ body{
 
     .main-wth-widget form figure .flag-logo{
         position: absolute;
-        top: 65px;
+        top: 45px;
         left:50%;
         transform: translateX(-50%);
     }
 
 
-    .main-wth-widget .result{
+    .main-wth-widget .result ul{
         display: none;
     }
 }
