@@ -10,6 +10,7 @@ html{
 }
 body{
     width: 100%;
+    min-height: 100vh;
     background-color: #ece1d2;
 }
 
@@ -322,10 +323,20 @@ body{
 
 
 /* CONTENT - ADVERTISEMENT - PC */
+
+.ads-widget-container{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+
 .advertisement-slide-container{
-    width: 75vw;
-    height: 30vw;
-    margin: 0 auto;
+    width: 60vw;
+    height: 25vw;
+    /* margin: 0 auto; */
     position: relative;
     user-select: none;
 	-webkit-user-select: none;
@@ -408,6 +419,108 @@ body{
     border-radius: 50%;
 }
 
+
+/* CONTENT - WIDGET - PC */
+
+.main-wth-widget{
+    font-family: "Oswald", sans-serif;
+    width: 20vw;
+    background: transparent;
+    border-radius: 15px;
+    padding: 0px;
+}
+
+.main-wth-widget form{
+    width: 18vw;
+    height: 25vw;
+    padding: 20px 20px;
+    background-color: #f7f7f7;
+    border: 1px solid #5553;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.main-wth-widget form input{
+    width: 100%;
+    border: 1px solid #5553;
+    padding: 10px 10px;
+    border-radius: 8px;
+}
+
+.main-wth-widget form figure{
+    margin-top: 10px;
+    position: relative;
+}
+
+.main-wth-widget form figure .flag-logo{
+    position: absolute;
+    top: 25px;
+    left:50%;
+    transform: translateX(-50%);
+}
+
+.main-wth-widget .result{
+    /* padding-top: 20px; */
+    text-align: center;
+}
+
+.main-wth-widget .result{
+    font-weight: bold;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.main-wth-widget .temperature img{
+    margin-top: 20px;
+    width: 130px;
+    filter: drop-shadow(0 10px 60px #000);
+}
+
+.main-wth-widget .temperature figcaption{
+    text-align: center;
+    font-size: 25px;
+}
+
+.main-wth-widget .description{
+    padding: 10px 0 30px;
+}
+
+.main-wth-widget ul{
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.main-wth-widget li{
+    background-color: #8dcbd0;
+    color: #fff;
+    border-radius: 10px;
+    padding: 20px 30px;
+    font-weight: bold;
+    font-size: small;
+}
+
+.main-wth-widget li i{
+    font-size: 15px;
+    display: block !important;
+    margin: 20px 0;
+}
+
+/* .main-wth-widget li:nth-child(2){
+    background-color: #b56291;
+}
+
+.main-wth-widget li:nth-child(3){
+    background-color: #48567b;
+} */
 
 
 
@@ -776,6 +889,138 @@ body{
 
 
 /* RESPONESIVE RIENG CHO MAN HINH MAY TINH */
+
+/* weather - pc */
+
+@media only screen and (max-width: 2170px){
+
+    .main-wth-widget .result{
+        font-weight: 500;
+        font-size: 20px;
+        gap: 0px;
+    }
+    
+    .main-wth-widget .temperature img{
+        width: 110px;
+    }
+    
+    .main-wth-widget .temperature figcaption{
+        text-align: center;
+        font-size: 25px;
+    }
+    
+    .main-wth-widget .description{
+        padding: 10px 0 30px;
+    }
+    
+    .main-wth-widget ul{
+        list-style: none;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+    }
+    
+    .main-wth-widget li{
+        color: #fff;
+        border-radius: 10px;
+        padding: 20px 30px;
+        font-weight: bold;
+        font-size: small;
+    }
+    
+    .main-wth-widget li i{
+        font-size: 15px;
+        display: block !important;
+        margin: 20px 0;
+    }
+}
+
+@media only screen and (max-width: 2055px){
+
+    .main-wth-widget .result{
+        font-weight: 300;
+        font-size: 20px;
+        gap: 0px;
+    }
+    
+    .main-wth-widget .temperature img{
+        width: 110px;
+    }
+    
+    .main-wth-widget .temperature figcaption{
+        text-align: center;
+        font-size: 25px;
+    }
+    
+    .main-wth-widget .description{
+        padding: 10px 0 30px;
+    }
+    
+    .main-wth-widget ul{
+        list-style: none;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+    }
+    
+    .main-wth-widget li{
+        padding: 10px 20px;
+        
+    }
+}
+
+@media only screen and (max-width: 1915px){
+
+    .main-wth-widget form{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: 10px;
+    }
+
+    .main-wth-widget .temperature img{
+        width: 150px;
+    }
+
+    .main-wth-widget .temperature figcaption{
+        font-size: 45px;
+    }
+
+    .main-wth-widget form .city-name{
+        font-size: 25px;
+        margin-top: 0px;
+    }
+
+    .main-wth-widget form figure .flag-logo{
+        position: absolute;
+        top: 65px;
+        left:50%;
+        transform: translateX(-50%);
+    }
+
+
+    .main-wth-widget .result{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 1510px){
+
+    .main-wth-widget{
+      display: none;
+    }
+    .advertisement-slide-container{
+        width: 75vw;
+        height: 35vw;
+    }
+}
+
+
+
+
+
+
 /* body content-category */
 @media only screen and (min-width: 1435px) and (max-width: 1920px){
     .category-swiper-container .swiper-slide img{
