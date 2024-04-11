@@ -389,7 +389,7 @@ body{
 
 
 .ads-swiper-button-next .fa-angle-right:hover{
-    color: #dbdbdbcc;
+    color: #e6e6e6cc;
 }
 
 .ads-swiper-button-prev{
@@ -431,7 +431,6 @@ body{
     border-radius: 50%;
 }
 
-
 /* CONTENT - WIDGET - PC */
 
 .main-wth-widget{
@@ -440,6 +439,8 @@ body{
     background: transparent;
     border-radius: 15px;
     padding: 0px;
+    user-select: none;
+	-webkit-user-select: none;
 }
 
 .main-wth-widget form{
@@ -758,6 +759,10 @@ body{
     transition: .2s ease;
 }
 
+.category-navBtn{
+    cursor: pointer;
+}
+
 .category-navBtn .fa-arrow-right:hover{
     background-color: #888888cc;
 }
@@ -771,7 +776,7 @@ body{
     top:50%;
     transform: translateY(-50%);
     left: -5px;
-    transition: .2s ease;
+    transition: .2s ease-out;
 }
 
 .category-navBtn .fa-arrow-left:hover{
@@ -789,8 +794,9 @@ body{
     display: inline-block;
     width: 7px;
     height: 7px;
-    margin: 0 6px !important;
+    margin: 0 8px !important;
     border-radius: 50%;
+    transition: 0.2s ease;
 }
 
 
@@ -806,6 +812,11 @@ body{
 
 
 /* CONTENT - SHOPS - PC */
+.store-big-div{
+    position: relative;
+    width: 70vw ;
+    margin: 0 auto;
+}
 
 .store-txt-line{
     text-align: left;
@@ -821,99 +832,149 @@ body{
 #store-txt{
     font-size: 35px;
 }
-               
 
-.store-big-div{
-    position: relative;
-    width: 70vw ;
-    margin: 0 auto;
-}
-
-.store-swiper-container {
+.store-big-div .swiper-container{
     margin: 0 auto;
     margin-top: 25px;
     width: 90%;
-    height: 350px;
+    height: 100%;
     overflow: hidden ;
-    /* background-color: red; */
     padding: 10px;
-    border-radius: 15px;
 }
 
-.swiper-slide {
-    display: flex;
-    align-items: center;
+.store-swiper-slide {
     text-align: center;
-    border-radius: 25px;
+    font-size: 18px;
+    background: #fff;
 
 /* Center slide text vertically */
     display: -webkit-box;
     display: -ms-flexbox;
     display: -webkit-flex;
-    display: flex;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     -webkit-justify-content: center;
-    justify-content: center;
     -webkit-box-align: center;
     -ms-flex-align: center;
     -webkit-align-items: center;
-    align-items: center;
 }
 
-.store-big-div .swiper-slide{
-    width: 100%;
-    height: 100%;
+.store-swiper-slide {
     display: flex;
     flex-direction: column;
-    padding: 50px 10px;
-    background-color: #254b8b;
+    padding: 20px;
+    background-color: #347189;
     border-radius: 15px;
+}
+
+.store-swiper-slide .store-info-upper{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.store-swiper-slide .store-info-upper .store-name{
+    text-align: left;
+    text-decoration: none;
+    font-size: 35px;
+    font-family: "oswald","san-seriff";
+    font-weight: 500;
+    color: #fff;
+}
+
+.store-swiper-slide .store-info-upper img{
+    width: 100%;
+    height: 200px;
+}
+
+.store-swiper-slide .store-info-lower{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: left;
+    color: #fff;
+    font-family: "roboto","san-seriff";
+    font-size: 15px;
+}
+
+.store-swiper-slide .store-info-lower .store-payment i{
+    margin: 0 5px;
+    color: #fff;
+}
+
+.store-swiper-slide .store-info-lower .rate-and-like{
+    display: flex;
+    justify-content: space-between;
+}
+
+.store-swiper-slide .store-info-lower .rate-and-like i{
+    color: #fff;
 }
 
 
 .store-big-div  .swiper-button-prev:after,
 .swiper-button-next:after {
-  display: none;
+    display: none;
 }
 
-.store-navBtn .fa-arrow-right{
+
+.store-big-div .swiper-button-next .fa-arrow-right{
     color: #FFF;
     padding: 15px;
     border-radius: 50%;
     background-color: #9e9e9e91;
     position: absolute;
+    top:50%;
+    transform: translateY(-50%);
     right: -15px;
-    transition: .2s ease;
+    transition: .2s ease-out;
 }
 
-.store-navBtn .fa-arrow-right:hover{
+.store-big-div .swiper-button-next .fa-arrow-right:hover{
     background-color: #888888cc;
 }
 
-.store-navBtn .fa-arrow-left{
+.store-big-div .swiper-button-prev .fa-arrow-left{
     color: #FFF;
     padding: 15px;
     border-radius: 50%;
     background-color: #9e9e9e91;
     position: absolute;
+    top:50%;
+    transform: translateY(-50%);
     left: -15px;
-    transition: .2s ease;
+    transition: .2s ease-out;
 }
 
-.store-navBtn .fa-arrow-left:hover{
+.store-big-div .swiper-button-prev .fa-arrow-left:hover{
     background-color: #888888cc;
 }
 
-.store-big-div .swiper-pagination-bullet-active {
-    background-color: #FFF !important;
-}
 
 .store-big-div .swiper-pagination{
     position: absolute;
-    bottom: -10px !important;
+    bottom: -15px !important;
     z-index: 30;
 }
+
+.store-big-div .swiper-pagination-bullet {
+    display: inline-block;
+    width: 7px;
+    height: 7px;
+    margin: 0 7px !important;
+    border-radius: 50%;
+    transition: 0.2s ease;
+}
+
+
+.store-big-div .swiper-pagination-bullet-active {
+    background-color: #FFF !important;
+    padding: 0px 11px;
+    border-radius: 3px;
+}
+
+
 
 
 
@@ -1073,6 +1134,33 @@ body{
         margin-top:10px;
         font-size: 13px;
     }
+
+    /* STORE */
+
+    .store-swiper-slide {
+        padding: 25px;
+    }
+    
+    .store-swiper-slide .store-info-upper{
+        gap:15px;
+    }
+    
+    .store-swiper-slide .store-info-upper img{
+        width: 100%;
+        height: 200px;
+    }
+    
+    .store-swiper-slide .store-info-lower{
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        text-align: left;
+        color: #fff;
+        font-family: "roboto","san-seriff";
+        font-size: 15px;
+    }
+    
 }
 
 
@@ -1123,6 +1211,23 @@ body{
     margin-top:10px;
     font-size: 13px;
 }
+
+/* CONTENT - STORE - iPadPro Tro Len */
+
+
+.store-big-div{
+    width: 90vw ;
+    margin: 0 auto;
+}
+
+.store-txt-line{
+    width: 80%;
+}
+
+#store-txt{
+    font-size: 30px;
+}
+
 
 }
 
@@ -1247,6 +1352,43 @@ body{
     margin-top:10px;
     font-size: 11px;
 }
+
+/* CONTENT - STORE - iPadPro Tro Xuong */
+
+.store-big-div{
+    position: relative;
+    width: 95vw ;
+    margin: 0 auto;
+}
+
+.store-txt-line{
+    width: 80%;
+}
+
+#store-txt{
+    font-size: 30px;
+}
+
+.store-swiper-slide .store-info-upper a{
+    font-size: 30px;
+}
+
+.store-swiper-slide .store-info-upper img{
+    width: 100%;
+    height: 200px;
+}
+
+.store-swiper-slide .store-info-lower{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: left;
+    color: #fff;
+    font-family: "roboto","san-seriff";
+    font-size: 15px;
+}
+
 
 }
 /* danh cho mobile */
@@ -1431,6 +1573,117 @@ body{
 }
 
 .category-big-div .swiper-pagination-bullet-active{
+    padding: 0px 8px;
+    border-radius: 2px;
+}
+
+/* CONTENT - STORE - PHONE */
+
+
+.store-big-div{
+    position: relative;
+    width: 100% ;
+    margin: 0 auto
+}
+
+.store-txt-line{
+    font-weight: 300;
+    margin-top: 25px ;
+    user-select: none;
+    width: 93%;
+}
+
+#store-txt{
+    font-size: 20px;
+}
+
+.store-big-div .swiper-container{
+    margin: 0 auto;
+    margin-top: 0px;
+    width: 100%;
+    overflow: hidden ;
+    padding: 10px;
+}
+
+.store-swiper-slide {
+    display: flex;
+    flex-direction: column;
+    padding:13px;
+    background-color: #347189;
+    border-radius: 15px;
+}
+
+.store-swiper-slide .store-info-upper{
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    gap: 5px;
+}
+
+.store-swiper-slide .store-info-upper .store-name{
+    font-size: 20px;
+}
+
+.store-swiper-slide .store-info-upper img{
+    width: 100%;
+    height: 200px;
+}
+
+.store-swiper-slide .store-info-lower{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    text-align: left;
+    color: #fff;
+    font-family: "roboto","san-seriff";
+    font-size: 12px;
+}
+
+.store-navBtn .fa-arrow-right{
+    display: none;
+}
+.store-navBtn .fa-arrow-left{
+    display: none;
+}
+
+
+
+
+
+
+
+.store-swiper-slide .store-info-lower .store-payment i{
+    margin: 0 5px;
+    color: #fff;
+}
+
+.store-swiper-slide .store-info-lower .rate-and-like{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 7px;
+}
+
+.store-swiper-slide .store-info-lower .rate-and-like i{
+    color: #fff;
+}
+
+.store-big-div .swiper-pagination{
+    position: absolute;
+    bottom: -15px !important;
+    z-index: 30;
+}
+
+.store-big-div .swiper-pagination-bullet {
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    margin: 0 4px !important;
+    border-radius: 50%;
+}
+
+
+.store-big-div .swiper-pagination-bullet-active {
     padding: 0px 8px;
     border-radius: 2px;
 }
