@@ -447,7 +447,7 @@ body{
     width: 18vw;
     height: 25vw;
     padding: 20px 20px;
-    background-color: #f5c667;
+    background-color: #1f4e48;
     /* background: linear-gradient(to right, #f5c667, #ffab3e); */
     display: flex;
     flex-direction: column;
@@ -533,7 +533,7 @@ body{
 }
 
 .main-wth-widget li{
-    background-color: #eb7768;
+    background-color: #d77247;
     color: #fff;
     border-radius: 10px;
     padding: 20px 30px;
@@ -863,7 +863,7 @@ body{
     display: flex;
     flex-direction: column;
     padding: 20px;
-    background-color: #347189;
+    background-color: #1f4e48;
     border-radius: 15px;
 }
 
@@ -908,8 +908,12 @@ body{
     justify-content: space-between;
 }
 
-.store-swiper-slide .store-info-lower .rate-and-like i{
-    color: #fff;
+.store-swiper-slide .store-info-lower .rate-and-like .fa-star{
+    color: #f6cd57;
+}
+
+.store-swiper-slide .store-info-lower .rate-and-like .fa-heart{
+    color: #d77247;
 }
 
 
@@ -1609,7 +1613,6 @@ body{
     display: flex;
     flex-direction: column;
     padding:13px;
-    background-color: #347189;
     border-radius: 15px;
 }
 
