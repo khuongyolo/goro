@@ -31,16 +31,16 @@
                     <li id="user-btn"><a href="#" onclick="DisplayUserOption()"><i class="fa-solid fa-user" id="fa-user"></i></a>
                         <ul class="user-menu-container" id="user-menu-container">
                             <li class="user-heading-container">
-                                <h2 class="user-menu-heading"><i class="fa-regular fa-user"></i>Account</h2>
+                                <h2 class="user-menu-heading"><i class="fa-regular fa-user"></i>Tài khoản</h2>
                                 <a href="#"  onclick="HideUserOption()"><i class="fa-solid fa-xmark"></i></a>
                             </li>
-                            <li class="user-option"><a href="smile.html">Account Information</a></li>
-                            <li class="user-option"><a href="#">Address</a></li>
-                            <li class="user-option"><a href="#">Tracking</a></li>
-                            <li class="user-option"><a href="#">History</a></li>
-                            <li class="user-option"><a href="#">Payment</a></li>
+                            <li class="user-option"><a href="smile.html">Thông tin tài khoản</a></li>
+                            <li class="user-option"><a href="#">Địa chỉ</a></li>
+                            <li class="user-option"><a href="#">Theo dõi đơn hàng</a></li>
+                            <li class="user-option"><a href="#">Lịch sử mua sắm</a></li>
+                            <li class="user-option"><a href="#">Phương thức thanh toán</a></li>
                             <li class="user-option language-option-container"  onclick="DisplayLanguageOption ()">
-                                <a href="#">Language</a>
+                                <a href="#">Ngôn ngữ</a>
                                 <span id="arrow-icon">&#9660</span>
                                 <ul class="language" id="language">
                                     <li class="language-option"><a href="#">Tiếng Việt</a></li>
@@ -48,8 +48,8 @@
                                     <li class="language-option"><a href="#">日本語</a></li>
                                 </ul>
                             </li>
-                            <li class="user-option"><a href="#">Help</a></li>
-                            <li class="user-option log-out-btn"><a href="loginscreen.html"><i class="fa-solid fa-right-from-bracket user-option-icon"></i>Log Out</a></li>
+                            <li class="user-option"><a href="#">Hỗ trợ</a></li>
+                            <li class="user-option log-out-btn"><a href="loginscreen.html"><i class="fa-solid fa-right-from-bracket user-option-icon"></i>Đăng xuất</a></li>
                         </ul>
                     </li>
                 </div>
@@ -78,23 +78,25 @@
                     <div class="swiper myAdsSwiper">
                         <div class="swiper-wrapper">
                         <div class="swiper-slide">
-                            <a href="#"><img src="images/mobile-shopping-technology-managing-shopping-and-daily-necessities-with-e-commerce-flat-illustration-concept-can-use-for-landing-page-template-ui-web-homepage-poster-banner-flyer-free-vector.jpg" alt=""></a>
+                            <a href="#"><img src="images/food-poster(1).jpg" alt=""></a>
                         </div>
                         <div class="swiper-slide">
-                            <a href="#"><img src="images/goro-bread.JPG"></a>
+                            <a href="#"><img src="images/food-poster(2).jpg"></a>
                         </div>
                         <div class="swiper-slide">
-                            <a href="#"><img src="images/What-is-eCommerce-advertising.jpeg"></a>
+                            <a href="#"><img src="images/food-poster(3).jpg"></a>
                         </div>
                         </div>
-                        <div class="swiper-button-next Ads-navBtn"><i class="fa-solid fa-arrow-right"></i></div>
-                        <div class="swiper-button-prev Ads-navBtn"><i class="fa-solid fa-arrow-left"></i></div>
+                        <div class="ads-swiper-button-next ads-navBtn"><i class="fa-solid fa-angle-right"></i></i></div>
+                        <div class="ads-swiper-button-prev ads-navBtn"><i class="fa-solid fa-angle-left"></i></div>
                         <div class="swiper-pagination ads-swiper-page"></div>
                     </div>
                 </div>
                 <div class="main-wth-widget">
                     <form action="">
-                        <input type="text" autocomplete="off" id="valueSearch">
+                        <div class="weather-search-container">
+                            <input type="text" autocomplete="off" id="valueSearch"><i class="fa-solid fa-magnifying-glass"></i>
+                        </div>
                             <figure class="name" id="city">
                                 <figcaption class="city-name">London</figcaption>
                                 <img src="https://flagsapi.com/GB/shiny/32.png" class="flag-logo" alt="">
@@ -104,6 +106,7 @@
                                 <figcaption>
                                     <span>31</span>
                                     <sup>o</sup>
+                                    <span>C</span>
                                 </figcaption>
                             </figure>
                         <section class="result"> 
@@ -113,17 +116,17 @@
     
                             <ul>
                                 <li>
-                                    <span>Clouds</span>
+                                    <span>Mây</span>
                                     <i class="fa-solid fa-cloud"></i>
                                     <span id="clouds">98</span>%
                                 </li>
                                 <li>
-                                    <span>Humidity</span>
+                                    <span>Độ ẩm</span>
                                     <i class="fa-solid fa-droplet"></i>
                                     <span id="humidity">55</span>%
                                 </li>
                                 <li>
-                                    <span>Pressure</span>
+                                    <span>Gió</span>
                                     <i class="fa-solid fa-gauge"></i>
                                     <span id="pressure">1001</span>hPa
                                 </li>
@@ -135,84 +138,84 @@
             <!-- END ADVERTISEMENT PART -->
 
             <!-- START CATEGORY PART -->
-            <div class="category-txt-line"><span id="category-txt">CATEGORIES</span></div>
+            <div class="category-txt-line"><span id="category-txt">LOẠI THỰC PHẨM</span></div>
             
             <div class="category-big-div">
                 <div class="swiper-container mySwiper category-swiper-container">
                     <div class="swiper-wrapper category-swiper-wrapper">
                         <div class="swiper-slide category-info-sep-color1">
                             <span class="category-span-img"><img src="images/diet.png"></span>
-                            <span class="span-big-text">All</span>
-                            <span class="span-small-text">Included all types of food</span>          
+                            <span class="span-big-text">Tất cả</span>
+                            <span class="span-small-text">Bao gồm nhiều loại thực phẩm</span>          
                         </div>
                         <div class="swiper-slide category-info-sep-color2">
                             <span class="category-span-img"><img src="images/ramen.png"></span>
-                            <span class="span-big-text">Noodles</span>
-                            <span class="span-small-text">Included Noodles</span>
+                            <span class="span-big-text">Mì</span>
+                            <span class="span-small-text">Bao gồm nhiều loại mì</span>
                         </div>
                         <div class="swiper-slide category-info-sep-color3">
                             <span class="category-span-img"><img src="images/beef.png"></span>
-                            <span class="span-big-text">Meats</span>
-                            <span class="span-small-text">Fresh Meats</span> 
+                            <span class="span-big-text">Thịt</span>
+                            <span class="span-small-text">Bao gồm nhiều loại thịt</span> 
                         </div>
                         <div class="swiper-slide category-info-sep-color4">
                             <span class="category-span-img"><img src="images/bakery.png"></span>
-                            <span class="span-big-text">Bread</span>
-                            <span class="span-small-text">All types of breads</span>
+                            <span class="span-big-text">Bánh mì</span>
+                            <span class="span-small-text">Các loại bánh mặn</span>
                         </div>
                         <div class="swiper-slide category-info-sep-color5">                   
                             <span class="category-span-img"><img src="images/cake.png"></span>
-                            <span class="span-big-text">Cake</span>
-                            <span class="span-small-text">Sweet Cakes</span>
+                            <span class="span-big-text">Bánh ngọt</span>
+                            <span class="span-small-text">Bao gồm các loại bánh ngọt</span>
                         </div>
                         <div class="swiper-slide category-info-sep-color6">                   
                             <span class="category-span-img"><img src="images/fruit.png"></span>
-                            <span class="span-big-text">Fruits</span>
-                            <span class="span-small-text">Exclusive fruits</span>                      
+                            <span class="span-big-text">Trái cây</span>
+                            <span class="span-small-text">Các loại trái cây</span>                      
                         </div>
                         <div class="swiper-slide category-info-sep-color7">                   
                             <span class="category-span-img"><img src="images/vegetable.png"></span>
-                            <span class="span-big-text">Vegetables</span>
-                            <span class="span-small-text">Exclusive vegetables</span>                        
+                            <span class="span-big-text">Rau củ</span>
+                            <span class="span-small-text">Các loại rau củ quả</span>                        
                         </div>
                         <div class="swiper-slide category-info-sep-color8">
                             <span class="category-span-img"><img src="images/soft-drink.png"></span>
-                            <span class="span-big-text">Beverage</span>
-                            <span class="span-small-text">Included all types of beverages</span>
+                            <span class="span-big-text">Đồ uống</span>
+                            <span class="span-small-text">Bao gồm các loại thực phẩm uống</span>
                         </div>
                         <div class="swiper-slide category-info-sep-color9">
                             <span class="category-span-img"><img src="images/snack.png"></span>
-                            <span class="span-big-text">Snack</span>
-                            <span class="span-small-text">All types of snack</span>
+                            <span class="span-big-text">Ăn vặt</span>
+                            <span class="span-small-text">bao gồm các loại đồ ăn vặt</span>
                         </div>
                         <div class="swiper-slide category-info-sep-color10">
                             <span class="category-span-img"><img src="images/fresh.png"></span>
-                            <span class="span-big-text">Fresh Stuff</span>
-                            <span class="span-small-text">Fresh food all the times</span>
+                            <span class="span-big-text">Đồ tươi</span>
+                            <span class="span-small-text">Bao gồm các loại thực phẩm tươi</span>
                         </div>
                         <div class="swiper-slide category-info-sep-color11">
                             <span class="category-span-img"><img src="images/frozen-food.png"></span>
-                            <span class="span-big-text">Frozen</span>
-                            <span class="span-small-text">Frozen meats, fruits,..</span>
+                            <span class="span-big-text">Đồ đông lạnh</span>
+                            <span class="span-small-text">Các thực phẩm đông lạnh</span>
                         </div>
                         <div class="swiper-slide category-info-sep-color12">
                             <span class="category-span-img"><img src="images/spices.png"></span>
-                            <span class="span-big-text">Spices</span>
-                            <span class="span-small-text">Exclusive spices</span>
+                            <span class="span-big-text">Gia vị</span>
+                            <span class="span-small-text">Bao gồm các loại gia vị</span>
                         </div>
                         <div class="swiper-slide category-info-sep-color13">
                             <span class="category-span-img"><img src="images/star.png"></span>
-                            <span class="span-big-text">Speacial</span>
-                            <span class="span-small-text">Remember to check here :D</span>
+                            <span class="span-big-text">Đặc biệt</span>
+                            <span class="span-small-text">Thực phẩm đặc biệt</span>
                         </div>
                         <div class="swiper-slide category-info-sep-color14">
                             <span class="category-span-img"><img src="images/lantern.png"></span>
-                            <span class="span-big-text">SP Occasion</span>
-                            <span class="span-small-text">Food for SPO</span>
+                            <span class="span-big-text">Thực phẩm theo mùa lễ</span>
+                            <span class="span-small-text">Thực phẩm trong các dịp lễ</span>
                         </div>
                     </div>
-                    <div class="swiper-button-next category-navBtn"><i class="fa-solid fa-arrow-right"></i></div>
-                    <div class="swiper-button-prev category-navBtn"><i class="fa-solid fa-arrow-left"></i></div>
+                    <div class="category-swiper-button-next category-navBtn"><i class="fa-solid fa-arrow-right"></i></div>
+                    <div class="category-swiper-button-prev category-navBtn"><i class="fa-solid fa-arrow-left"></i></div>
                     <div class="swiper-pagination"></div>
                 </div>
             </div>
@@ -220,7 +223,7 @@
 
             <!-- START STORE CONTAINER PART -->
             
-            <div class="store-txt-line"><span id="store-txt">SHOPS</span></div>
+            <div class="store-txt-line"><span id="store-txt">CỬA HÀNG</span></div>
             
             <div class="store-big-div">
                 <div class="swiper-container mySwiper store-swiper-container">
@@ -293,8 +296,8 @@
             clickable: true,
             },
             navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
+            nextEl: ".ads-swiper-button-next",
+            prevEl: ".ads-swiper-button-prev",
             },
         });
     </script>
@@ -316,8 +319,8 @@
             dynamicBullets: false,
           },
           navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
+            nextEl: ".category-swiper-button-next",
+            prevEl: ".category-swiper-button-prev",
           },
 
           breakpoints:{

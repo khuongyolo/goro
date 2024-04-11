@@ -294,7 +294,7 @@ const searchWeather = () => {
         })
 }
 const initApp = () => {
-    valueSearch.value = 'Saitama';
+    valueSearch.value = 'Koshigaya';
     searchWeather();
 }
 
