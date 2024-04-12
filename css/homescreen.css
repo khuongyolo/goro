@@ -890,7 +890,7 @@ body{
 }
 
 .store-swiper-slide .store-info-lower{
-    margin-top: 30px;
+    margin-top: 10px;
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -1154,7 +1154,7 @@ body{
     }
     
     .store-swiper-slide .store-info-lower{
-        margin-top: 30px;
+        margin-top: 10px;
         display: flex;
         flex-direction: column;
         gap: 10px;
@@ -1382,7 +1382,7 @@ body{
 }
 
 .store-swiper-slide .store-info-lower{
-    margin-top: 30px;
+    margin-top: 10px;
     display: flex;
     flex-direction: column;
     gap: 10px;
