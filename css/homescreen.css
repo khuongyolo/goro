@@ -515,6 +515,14 @@ body{
     gap: 10px;
 }
 
+.main-wth-widget .temperature{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
 .main-wth-widget .temperature img{
     margin-top: 20px;
     width: 130px;
@@ -522,7 +530,6 @@ body{
 }
 
 .main-wth-widget .temperature figcaption{
-    text-align: center;
     font-size: 25px;
 }
 
@@ -620,7 +627,6 @@ body{
     height: 290px;
     overflow: hidden ;
     padding: 10px;
-
 }
 
 .category-big-div .swiper-slide{
@@ -703,11 +709,11 @@ body{
 }
 
 .category-swiper-container .category-info-sep-color7{
-    background-color: #f5c667;
+    background-color: #8dcbd0;
 }
 
 .category-swiper-container .category-info-sep-color8{
-    background-color: #8dcbd0;
+    background-color: #f5c667;
 }
 
 .category-swiper-container .category-info-sep-color9{
@@ -2083,9 +2089,22 @@ body{
 
 /* FOOTER------------------------------------------------ */
 
+.footer .footer-backtotop-btn a{
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.footer-mid-part .footer-txt-big{
+    font-size: 18px;
+}
+
 .footer-mid-part .footer-txt-small{
     font-size: 12px;
     opacity: 50%;
+}
+
+.footer-bot-part a img{
+    width: 80px;
 }
 
 .footer-bot-part select{
