@@ -1145,7 +1145,7 @@ body{
 
 .footer-backtotop-btn a{
     text-decoration: none;
-    font-size: 22px;
+    font-size: 20px;
     font-family: "oswald","san-seriff";
     color: #fff;
 }
@@ -1161,13 +1161,14 @@ body{
 .footer-mid-part .footer-txt-big{
     display: block;
     font-family: "oswald","san-seriff";
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 700;
     color: #347189;
 }
 
 .footer-mid-part .footer-txt-small{
-    opacity: 50%;
+    font-size: 13px;
+    opacity: 30%;
 }
 
 .footer-bot-part{
@@ -1183,7 +1184,7 @@ body{
 
 .footer-bot-part select{
     margin: 0 5px;
-    padding: 10px 20px;
+    padding: 8px 16px;
     border-radius: 5px;
 }
 
