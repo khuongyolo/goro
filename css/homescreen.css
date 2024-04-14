@@ -75,7 +75,7 @@ body{
 	-webkit-user-select: none;
 }
 
-.header-icon-btn li{
+.header-icon-btn .fa-solid{
     list-style: none;
     cursor: pointer;
 }
@@ -141,7 +141,20 @@ body{
     }
 }
 
+/* CART-BTN */  
 
+
+
+
+
+
+
+
+
+
+
+
+/* USER_BTN */
 .header-icon-btn #user-btn{
     position: relative;
 }
@@ -208,6 +221,7 @@ body{
     border-bottom: 1px solid rgb(216, 216, 216);
     font-family: "Roboto", sans-serif;
     font-size: 15px;
+    cursor: pointer;
 }
 
 .header-icon-btn .user-menu-container .user-option:hover{
@@ -787,7 +801,6 @@ body{
 }
 
 .category-big-div .swiper-pagination-bullet {
-    display: inline-block;
     width: 7px;
     height: 7px;
     margin: 0 8px !important;
@@ -976,6 +989,193 @@ body{
     padding: 0px 11px;
     border-radius: 3px;
 }
+
+
+
+/* PRODUCT */
+.best-sale-product{
+    width: 100%;
+    margin: 90px 0;
+}
+
+.best-sale-product .best-sale-product-txt{
+    text-align: left;
+    font-family: "Oswald", sans-serif;
+    font-weight: 700;
+    color: #131c30;
+    margin: 0 auto;
+    margin-top: 70px ;
+    user-select: none;
+    width: 64%;
+    font-size: 35px;
+}
+
+.product-view-all{
+    width: 82%;
+    text-align: right;
+    margin: 15px 0;
+}
+
+.product-view-all a{
+    text-decoration: none;
+    color: #1f4e48;
+    font-family: "roboto", "san-seriff";
+    font-size: 18px;
+}
+
+.product-view-all .fa-play{
+    font-size: 12px;
+    margin-left: 5px;
+}
+
+
+
+
+
+.all-product-container{
+    width: 65%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    grid-template-rows: repeat(2, auto);
+    gap: 20px;
+}
+
+.product-container{
+    background-color: #ffffff;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.product-container a{
+    text-decoration: none;
+    color: #131c30;
+}
+
+
+.product-container a img{
+    width: 100%;
+    height: 200px;
+    border-radius: 10px 10px 0 0;
+}
+
+.product-container .product-info{
+    font-family: "roboto", "san-seriff";
+    padding: 15px;
+}
+
+.product-container .product-info .product-info-upper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.product-container .product-info .product-info-upper-left .product-name{
+    font-size: 15px;
+}
+
+.product-container .product-info .product-info-upper-left .product-store-name{
+    display: block;
+    font-family: "oswald","san-seriff";
+    font-size: 20px;
+}
+
+
+.product-container .product-info .product-info-upper-right{
+    background-color: #479cbd41;
+    padding: 7px 20px;
+    border-radius: 7px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.product-container .product-info .product-info-upper-right:hover{
+    background-color: #479cbd7c;
+    transition: 0.2s ease;
+}
+
+
+
+.product-container .product-info-lower{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.product-container .product-info-lower .add-cart-btn-container .add-to-cart-btn{
+    border: 1px solid black;
+    padding: 8px 10px;
+    border-radius: 7px;
+    font-size: 12px;
+    color:#131c30;
+}
+
+.product-container .product-info-lower .add-cart-btn-container .add-to-cart-btn:hover{
+    background-color: #d77247;
+    color: #fff;
+    border: 1px solid white;
+    transition: 0.2s ease;
+}
+
+
+
+
+/* FOOTER------------------------------------------------ */
+.footer{
+    width: 100%;
+    background-color: #131c30;
+    padding-bottom: 20px;
+}
+
+.footer-backtotop-btn{
+    width: 100%;
+    border-top: 1px solid #131c302d;
+    background-color: #ffb700;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-backtotop-btn a{
+    text-decoration: none;
+    font-size: 22px;
+    font-family: "oswald","san-seriff";
+    color: black;
+}
+
+.footer-mid-part{
+    width: 100%;
+    text-align: center;
+    color: #FFF;
+    font-family: "Roboto","san-seriff";
+    padding: 20px 0;
+}
+
+.footer-mid-part .footer-txt-big{
+    display: block;
+    font-family: "oswald","san-seriff";
+    font-size: 25px;
+    font-weight: 700;
+    color: #ffb700;
+}
+
+.footer-bot-part{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-bot-part a{
+    margin-right: 30px;
+}
+
+.footer-bot-part select{
+    margin: 0 5px;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+
 
 
 
