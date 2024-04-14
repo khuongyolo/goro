@@ -1020,11 +1020,11 @@ body{
     text-decoration: none;
     color: #1f4e48;
     font-family: "roboto", "san-seriff";
-    font-size: 18px;
+    font-size: 15px;
 }
 
 .product-view-all .fa-play{
-    font-size: 12px;
+    font-size: 10px;
     margin-left: 5px;
 }
 
@@ -1038,7 +1038,7 @@ body{
     display: grid;
     grid-template-columns: repeat(5, auto);
     grid-template-rows: repeat(2, auto);
-    gap: 20px;
+    gap: 17px;
 }
 
 .product-container{
@@ -1055,7 +1055,7 @@ body{
 
 .product-container a img{
     width: 100%;
-    height: 200px;
+    height: 8vw;
     border-radius: 10px 10px 0 0;
 }
 
@@ -1077,7 +1077,8 @@ body{
 .product-container .product-info .product-info-upper-left .product-store-name{
     display: block;
     font-family: "oswald","san-seriff";
-    font-size: 20px;
+    font-size: 18px;
+    font-weight: 500;
 }
 
 
@@ -1103,9 +1104,10 @@ body{
 }
 
 .product-container .product-info-lower .add-cart-btn-container .add-to-cart-btn{
-    border: 1px solid black;
+    /* border: 1px solid black; */
+    background-color: rgb(240, 240, 240);
     padding: 8px 10px;
-    border-radius: 7px;
+    border-radius: 9px;
     font-size: 12px;
     color:#131c30;
 }
@@ -1114,7 +1116,7 @@ body{
     background-color: #d77247;
     color: #fff;
     border: 1px solid white;
-    transition: 0.2s ease;
+    transition: 0.3s ease;
 }
 
 
@@ -1130,7 +1132,7 @@ body{
 .footer-backtotop-btn{
     width: 100%;
     border-top: 1px solid #131c302d;
-    background-color: #ffb700;
+    background-color: #347189;
     padding: 20px 0;
     text-align: center;
 }
@@ -1139,7 +1141,7 @@ body{
     text-decoration: none;
     font-size: 22px;
     font-family: "oswald","san-seriff";
-    color: black;
+    color: #fff;
 }
 
 .footer-mid-part{
@@ -1155,7 +1157,7 @@ body{
     font-family: "oswald","san-seriff";
     font-size: 25px;
     font-weight: 700;
-    color: #ffb700;
+    color: #347189;
 }
 
 .footer-bot-part{
@@ -1317,12 +1319,57 @@ body{
 }
 
 
+/* DANH RIENG CHO PHAN PRODUCTS */
+@media only screen and (max-width: 1955px){
+
+    .all-product-container{
+        width: 63%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(5, auto);
+        grid-template-rows: repeat(2, auto);
+        gap: 10px;
+    }
+
+    .product-container .product-info .product-info-upper{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .product-container .product-info .product-info-upper-left .product-name{
+        font-size: 14px;
+    }
+    
+    .product-container .product-info .product-info-upper-left .product-store-name{
+        font-size: 16px;
+    }
+    
+    
+    .product-container .product-info .product-info-upper-right{
+        margin-top: 7px;
+        font-size: 12px;
+    }
+   
+    
+    .product-container .product-info-lower{
+        margin-top: 10px;
+    }
+    
+    .product-container .product-info-lower .add-cart-btn-container .add-to-cart-btn{
+        border-radius: 50%;
+        font-size: 12px;
+    }
+
+    .product-container .product-info-lower .add-cart-btn-container .add-to-cart-btn span{
+        display: none;
+    }
+}
 
 
-
-
-/* body content-category */
 @media only screen and (min-width: 1435px) and (max-width: 1920px){
+/* CATEGORY */
+
     .category-swiper-container .swiper-slide img{
         width: 110px;
     }
@@ -1358,8 +1405,9 @@ body{
         color: #fff;
         font-family: "roboto","san-seriff";
         font-size: 15px;
-    }
-    
+    }    
+
+
 }
 
 
@@ -1427,6 +1475,36 @@ body{
     font-size: 30px;
 }
 
+/* CONTENT - BEST SELLER - iPadPro Tro Len */
+
+.best-sale-product{
+    margin: 70px 0;
+}
+
+.best-sale-product .best-sale-product-txt{
+    margin-top: 70px ;
+    width: 80%;
+}
+
+.product-view-all{
+    width: 90%;
+    text-align: right;
+}
+
+
+.all-product-container{
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-template-rows: repeat(3, auto);
+    gap: 10px;
+}
+
+
+.product-container a img{
+    height: 13vw;
+}
 
 }
 
@@ -1587,6 +1665,39 @@ body{
     font-family: "roboto","san-seriff";
     font-size: 15px;
 }
+
+
+/*CONTENT - BEST SELLER - iPadPro Tro Xuong */
+
+.best-sale-product{
+    margin: 70px 0;
+}
+
+.best-sale-product .best-sale-product-txt{
+    margin-top: 70px ;
+    width: 80%;
+}
+
+.product-view-all{
+    width: 92%;
+    text-align: right;
+}
+
+
+.all-product-container{
+    width: 85%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-template-rows: repeat(3, auto);
+    gap: 10px;
+}
+
+
+.product-container a img{
+    height: 15vw;
+}
+
 
 
 }
@@ -1841,11 +1952,6 @@ body{
 }
 
 
-
-
-
-
-
 .store-swiper-slide .store-info-lower .store-payment i{
     margin: 0 5px;
     color: #fff;
@@ -1880,5 +1986,96 @@ body{
     padding: 0px 8px;
     border-radius: 2px;
 }
+
+/* BEST SELLER PRODUCT */
+
+.best-sale-product{
+    margin: 40px 0;
 }
 
+.best-sale-product .best-sale-product-txt{
+    margin-top: 40px ;
+    width: 95%;
+    font-weight: 300;
+    font-size: 20px;
+}
+
+.product-view-all{
+    width: 98%;
+    text-align: right;
+    font-size: 12px;
+}
+
+
+.all-product-container{
+    width: 97%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(3, auto);
+    gap: 9px;
+}
+
+.product-container .product-info{
+    font-family: "roboto", "san-seriff";
+    padding: 15px;
+}
+
+.product-container .product-info .product-info-upper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.product-container .product-info .product-info-upper-left{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.product-container .product-info .product-info-upper-left .product-name{
+    font-size: 13px;
+}
+
+.product-container .product-info .product-info-upper-left .product-store-name{
+    font-size: 14px;
+}
+
+.product-info-upper-right{
+    display: none;
+}
+
+
+.product-container a img{
+    height: 35vw;
+}
+
+.product-container .product-info-lower{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.product-container .product-info-lower .add-cart-btn-container .add-to-cart-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(240, 240, 240);
+    padding: 5px 10px;
+    border-radius: 9px;
+    font-size: 10px;
+    color:#131c30;
+}
+
+.product-container .product-info-lower .add-cart-btn-container .add-to-cart-btn span{
+    display: block;
+    margin-left: 5px;
+}
+
+
+}
