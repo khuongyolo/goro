@@ -515,6 +515,9 @@ body.showCart .cartTab{
     position: relative;
     user-select: none;
 	-webkit-user-select: none;
+    border: 1px solid rgba(128, 128, 128, 0.384);
+    border-radius: 15px;
+
 }
 .myAdsSwiper{
     width: 100%;
@@ -799,7 +802,7 @@ body.showCart .cartTab{
 .category-txt-line{
     text-align: center;
     font-family: "Sofia","Oswald", sans-serif;
-    font-weight: 300;
+    font-weight: 1000;
     color: rgb(252, 191, 78);
     margin-top: 70px ;
     user-select: none;
@@ -808,7 +811,7 @@ body.showCart .cartTab{
 }
 
 #category-txt{
-    font-size: 45px;
+    font-size: 65px;
 }
 
 /* .category-txt-line span{
@@ -1057,7 +1060,7 @@ body.showCart .cartTab{
 .store-txt-line{
     text-align: left;
     font-family: "Sofia","Oswald", sans-serif;
-    font-weight: 300;
+    font-weight: 1000;
     color: rgb(252, 191, 78);
     margin: 0 auto;
     margin-top: 70px ;
@@ -1066,7 +1069,7 @@ body.showCart .cartTab{
 }
 
 #store-txt{
-    font-size: 35px;
+    font-size: 55px;
 }
 
 .store-big-div .swiper-container{
@@ -1230,13 +1233,13 @@ body.showCart .cartTab{
 .best-sale-product .best-sale-product-txt{
     text-align: left;
     font-family: "Sofia","Oswald", sans-serif;
-    font-weight: 300;
+    font-weight: 1000;
     color: rgb(252, 191, 78);
     margin: 0 auto;
     margin-top: 70px ;
     user-select: none;
     width: 64%;
-    font-size: 35px;
+    font-size: 55px;
 }
 
 .product-view-all{
