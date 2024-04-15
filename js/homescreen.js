@@ -300,6 +300,20 @@ const initApp = () => {
 
 initApp();
 
+// PHAN CART
+
+let iconCart = document.querySelector('.icon-cart');
+let body = document.querySelector('body');
+let HideCart = document.querySelector('.close-cart-icon');
+
+iconCart.addEventListener('click', () => {
+    body.classList.toggle('showCart')
+})
+
+HideCart.addEventListener('click', () => {
+    body.classList.toggle('showCart')
+})
+
 
 
 
