@@ -11,7 +11,7 @@ html{
 body{
     width: 100%;
     height: 100vh;
-    background-color: #ece1d2;
+    background-color: black;
 }
 
 body::-webkit-scrollbar{
@@ -28,7 +28,7 @@ body::-webkit-scrollbar{
 
 .header .nav-bar{
     display: flex;
-    background-color:#131c30;
+    background-color:transparent;
     align-items: center;
     padding: 20px 40px;
     width: 100%;
@@ -41,7 +41,7 @@ body::-webkit-scrollbar{
 
 .search-bar{
     position: absolute;
-    width: 55%;
+    width: 40%;
     left: 50%;
     transform: translateX(-50%);
     display: flex;
@@ -53,7 +53,8 @@ body::-webkit-scrollbar{
 .search-bar input{
     padding: 12px 15px;
     width: 100%;
-    border: none;
+    background-color: transparent;
+    border: 1px solid #c9c9c9;
     border-radius: 8px;
     font-size: 14px;
     position: relative;
@@ -61,11 +62,11 @@ body::-webkit-scrollbar{
 
 
 .search-bar-icon{
-    color:black;
+    color:#c9c9c9;
     font-size: 19px;
     padding: 11px;
     position: absolute;
-    top:0;
+    top:1px;
     right:0;
 }
 
@@ -80,7 +81,7 @@ body::-webkit-scrollbar{
 
 .header-icon-btn .fa-solid{
     font-size: 21px;
-    color: #ffb700;
+    color: #c9c9c9;
     cursor: pointer;
 }
 
@@ -453,7 +454,7 @@ body.showCart .cartTab{
 .header .head-address-bar{
     width: 100%;
     padding: 15px 40px;
-    background-color: #ffb700;
+    background-color: transparent;
     display: flex;
     position: relative;
     align-items: center;
@@ -468,12 +469,13 @@ body.showCart .cartTab{
 
 .header .head-address-bar .left-address p{
     font-size: 16px;
+    color: #c9c9c9;
 }
 
 
 
 .header .head-address-bar .fa-solid{
-    color: black;
+    color: #c9c9c9;
     font-size: 25px;
 }
 
@@ -488,7 +490,10 @@ body.showCart .cartTab{
     width: 100%;
     height: 100svh;
     padding-top: 25px;
-    background-color: #ece1d2;
+    background:linear-gradient( rgb(0, 0, 0), rgba(0, 0, 0, 0.774), rgba(0, 0, 0, 0.986)), url(../images/food-background.png);
+      background-size:cover;
+    background-position: center;
+    position: relative;
 }
 
 
@@ -520,7 +525,7 @@ body.showCart .cartTab{
     position: relative;
 }
 
-.swiper-slide {
+.ads-swiper-slide{
     text-align: center;
     font-size: 18px;
     background: #fff;
@@ -529,9 +534,61 @@ body.showCart .cartTab{
     align-items: center;
     user-select: none;
 	-webkit-user-select: none;
+    position: relative;
 }
 
-.swiper-slide img {
+@keyframes MoveInBottom {
+    0%{
+        transform: translateY(800px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
+
+.ads-swiper-slide .advertisement-content{
+    position: absolute;
+    bottom: 30px;
+    left: 50px;
+    display:flex;
+    flex-direction: column;
+    align-items: left;
+    animation: MoveInBottom 1.3s;
+}
+
+.ads-swiper-slide .advertisement-content p{
+    font-family: "oswald";
+    font-size: 55px;
+    width: 450px;
+    text-align: left;
+    font-weight: 300;
+    color: #fff
+}
+
+.ads-swiper-slide .advertisement-content a{
+    width: 200px;
+    margin-top: 30px;
+    text-decoration: none;
+    padding: 15px 30px;
+    background-color: rgb(252, 191, 78);
+    font-family: "oswald";
+    color: black;
+    font-size: 25px;
+    border-radius: 6px;
+}
+
+.ads-swiper-slide .advertisement-content a:hover{
+    background-color: rgb(253, 168, 11);
+    transform: scale(120%);
+    transition: 0.4s ease;
+}
+
+
+
+
+
+.ads-swiper-slide img {
     display: block;
     width: 100%;
     height: 100%;
@@ -616,7 +673,8 @@ body.showCart .cartTab{
     width: 18vw;
     height: 25vw;
     padding: 20px 20px;
-    background-color: #1f4e48;
+    background-color: transparent;
+    border: 1px solid rgba(209, 209, 209, 0.336);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -632,9 +690,11 @@ body.showCart .cartTab{
 
 .main-wth-widget form input{
     width: 100%;
-    border: 1px solid #5553;
+    background-color: transparent;
+    border: 1px solid rgba(231, 231, 231, 0.2);
     padding: 13px 10px;
     border-radius: 5px;
+    color: #cccccc;
 }
 
 .main-wth-widget form .fa-magnifying-glass{
@@ -643,7 +703,7 @@ body.showCart .cartTab{
     transform: translateY(-50%);
     right: 10px;
     opacity: 40%;
-    color: #000;
+    color: #cccccc;
 }
 
 .main-wth-widget form figure{
@@ -708,7 +768,7 @@ body.showCart .cartTab{
 }
 
 .main-wth-widget li{
-    background-color: #d77247;
+    background-color: transparent;
     color: #fff;
     border-radius: 10px;
     padding: 20px 30px;
@@ -738,9 +798,9 @@ body.showCart .cartTab{
 
 .category-txt-line{
     text-align: center;
-    font-family: "Oswald", sans-serif;
-    font-weight: 700;
-    color: #131c30;
+    font-family: "Sofia","Oswald", sans-serif;
+    font-weight: 300;
+    color: rgb(252, 191, 78);
     margin-top: 70px ;
     user-select: none;
     width: 100%;
@@ -748,29 +808,29 @@ body.showCart .cartTab{
 }
 
 #category-txt{
-    font-size: 35px;
+    font-size: 45px;
 }
 
-.category-txt-line span{
+/* .category-txt-line span{
     position: relative;
 	padding: 2px 20px;
-	background-color:#ece1d2;
+	background-color:black;
 	z-index: 2;
 	user-select: none;
 	-webkit-user-select: none;
-}
+} */
 
-.category-txt-line::after{
+/* .category-txt-line::after{
     content: "";
 	width: 60%;
-	height: 2px;
-	background-color: #979797;
+	height: 1px;
+	background-color: #9797976c;
 	position: absolute;
 	top:50%;
 	left: 50%;
     transform: translateX(-50%);
 }
-               
+                */
 
 .category-big-div{
     position: relative;
@@ -794,7 +854,6 @@ body.showCart .cartTab{
     flex-direction: column;
     align-items: center;
     text-align: center;
-    background-color: #da9d05;
     border-radius: 10px;
     
 
@@ -840,9 +899,12 @@ body.showCart .cartTab{
     text-decoration: none;
 }
 
+.category-swiper-container .category-sep-info{
+    background-color: transparent;
+    /* border: 1px solid #cccccc3d; */
+}
 
-
-.category-swiper-container .category-info-sep-color1{
+/* .category-swiper-container .category-info-sep-color1{
     background-color: #347189;
 }
 
@@ -896,12 +958,12 @@ body.showCart .cartTab{
 
 .category-swiper-container .category-info-sep-color14{
     background-color: #eb7768;
-}
+} */
 
 
 .category-swiper-container .swiper-slide .span-big-text{
     font-family: "Oswald", sans-serif;
-    color: white;
+    color: #cccccc;
     margin-top:10px;
     font-size: 24px;
     font-weight: 500;
@@ -910,7 +972,7 @@ body.showCart .cartTab{
 .category-swiper-container .swiper-slide .span-small-text{
     font-family: "Oswald", sans-serif;
     margin-top:10px;
-    color: white;
+    color: #cccccc;
     font-size: 16px;
 }
 
@@ -970,11 +1032,12 @@ body.showCart .cartTab{
     margin: 0 8px !important;
     border-radius: 50%;
     transition: 0.2s ease;
+    background-color: #d6d6d6;
 }
 
 
 .category-big-div .swiper-pagination-bullet-active {
-    background-color: #FFF !important;
+    background-color: rgb(252, 191, 78) !important;
     padding: 0px 11px;
     border-radius: 3px;
 }
@@ -993,9 +1056,9 @@ body.showCart .cartTab{
 
 .store-txt-line{
     text-align: left;
-    font-family: "Oswald", sans-serif;
-    font-weight: 700;
-    color: #131c30;
+    font-family: "Sofia","Oswald", sans-serif;
+    font-weight: 300;
+    color: rgb(252, 191, 78);
     margin: 0 auto;
     margin-top: 70px ;
     user-select: none;
@@ -1036,7 +1099,7 @@ body.showCart .cartTab{
     display: flex;
     flex-direction: column;
     padding: 0px;
-    background-color: #1f4e48;
+    background-color: #292525;
     border-radius: 15px;
 }
 
@@ -1060,6 +1123,7 @@ body.showCart .cartTab{
     border-radius: 10px 10px 0 0;
     width: 100%;
     height: 200px;
+    object-fit: cover;
 }
 
 .store-swiper-slide .store-info-lower{
@@ -1145,11 +1209,12 @@ body.showCart .cartTab{
     margin: 0 7px !important;
     border-radius: 50%;
     transition: 0.2s ease;
+    background-color: #d6d6d6;
 }
 
 
 .store-big-div .swiper-pagination-bullet-active {
-    background-color: #FFF !important;
+    background-color: rgb(252, 191, 78) !important;
     padding: 0px 11px;
     border-radius: 3px;
 }
@@ -1164,9 +1229,9 @@ body.showCart .cartTab{
 
 .best-sale-product .best-sale-product-txt{
     text-align: left;
-    font-family: "Oswald", sans-serif;
-    font-weight: 700;
-    color: #131c30;
+    font-family: "Sofia","Oswald", sans-serif;
+    font-weight: 300;
+    color: rgb(252, 191, 78);
     margin: 0 auto;
     margin-top: 70px ;
     user-select: none;
@@ -1206,14 +1271,14 @@ body.showCart .cartTab{
 }
 
 .product-container{
-    background-color: #ffffff;
+    background-color: #333333;
     width: 100%;
     border-radius: 10px;
 }
 
 .product-container a{
     text-decoration: none;
-    color: #131c30;
+    color: #fff;
 }
 
 
@@ -1247,7 +1312,7 @@ body.showCart .cartTab{
 
 
 .product-container .product-info .product-info-upper-right{
-    background-color: #479cbd41;
+    background-color: #ff9b05;
     padding: 7px 20px;
     border-radius: 7px;
     font-size: 14px;
@@ -1255,7 +1320,7 @@ body.showCart .cartTab{
 }
 
 .product-container .product-info .product-info-upper-right:hover{
-    background-color: #479cbd7c;
+    background-color: #ff6905;
     transition: 0.2s ease;
 }
 
@@ -1265,6 +1330,10 @@ body.showCart .cartTab{
     margin-top: 30px;
     display: flex;
     justify-content: space-between;
+}
+
+.product-container .product-info-lower .product-price{
+   color: #fff;
 }
 
 .product-container .product-info-lower .add-cart-btn-container .add-to-cart-btn{
@@ -1289,16 +1358,15 @@ body.showCart .cartTab{
 /* FOOTER------------------------------------------------ */
 .footer{
     width: 100%;
-    background-color: #131c30;
+    background-color: rgb(32, 30, 30);
     padding-bottom: 20px;
 }
 
 .footer-backtotop-btn{
     width: 100%;
-    border-top: 1px solid #131c302d;
-    background-color: #347189;
     padding: 20px 0;
     text-align: center;
+    background-color: #a8a8a898;
 }
 
 .footer-backtotop-btn a{
@@ -1321,12 +1389,13 @@ body.showCart .cartTab{
     font-family: "oswald","san-seriff";
     font-size: 20px;
     font-weight: 700;
-    color: #347189;
+    color: white;
 }
 
 .footer-mid-part .footer-txt-small{
     font-size: 13px;
-    opacity: 30%;
+    opacity: 60%;
+    color: white;
 }
 
 .footer-bot-part{
@@ -1897,7 +1966,6 @@ body.showCart .cartTab{
     .search-bar input{
         padding: 12px 20px;
         width: 100%;
-        border: none;
         border-radius: 8px;
         font-size: 15px;
         position: relative;
