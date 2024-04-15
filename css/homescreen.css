@@ -1122,7 +1122,7 @@ body{
 .product-container .product-info-lower .add-cart-btn-container .add-to-cart-btn:hover{
     background-color: #d77247;
     color: #fff;
-    border: 1px solid white;
+    /* border: 1px solid white; */
     transition: 0.3s ease;
 }
 
