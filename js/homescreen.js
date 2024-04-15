@@ -293,18 +293,22 @@ const searchWeather = () => {
 
         })
 }
-const initApp = () => {
+const initApp1 = () => {
     valueSearch.value = 'Koshigaya';
     searchWeather();
 }
 
-initApp();
+initApp1();
 
 // PHAN CART
 
 let iconCart = document.querySelector('.icon-cart');
 let body = document.querySelector('body');
 let HideCart = document.querySelector('.close-cart-icon');
+let CloseCart = document.querySelector('.close');
+let listProductHTML = document.querySelector('.product-container');
+
+let listProducts = [];
 
 iconCart.addEventListener('click', () => {
     body.classList.toggle('showCart')
@@ -314,7 +318,58 @@ HideCart.addEventListener('click', () => {
     body.classList.toggle('showCart')
 })
 
+CloseCart.addEventListener('click', () => {
+    body.classList.toggle('showCart')
+})
 
+const addDataToHTML = () => {
+    listProductHTML.innerHTML = ''; // Chú ý là 'innerHTML', không phải 'innetHTML'
+    if (listProducts.length > 0) {
+        listProducts.forEach(product => {
+            let newProduct = document.createElement('div');
+            newProduct.classList.add('product-container');
+            newProduct.innerHTML = `
+                <a href="#"><img src="${product.image}" alt=""></a>
+                <div class="product-info">
+                    <div class="product-info-upper">
+                        <div class="product-info-upper-left">
+                            <a href="#" class="product-name">${product.name}</a>
+                            <a href="#" class="product-store-name"> GORO Store</a>
+                        </div>
+                        <div class="product-info-upper-right">
+                            <a href="#" class="product-category-type">Thịt</a>
+                        </div>
+                    </div>
+                    <div class="product-info-lower">
+                        <div class="product-price price">${product.price}</div>
+                        <div class="add-cart-btn-container">
+                            <a href="#" class="add-to-cart-btn">
+                                <i class="fa-solid fa-plus addCart"></i><span> Thêm vào giỏ hàng</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>`;
+            listProductHTML.appendChild(newProduct);
+        });
+    }
+};
 
+listProductHTML.addEventListener('click', (event) => {
+    let positionClick = event.target;
+    // Kiểm tra xem phần tử được nhấp vào có class 'addCart' không
+    if(positionClick.classList.contains('addCart')){
+        alert('1');
+    }
+});
 
+const initApp2 = () =>{
+    // get Data from json
+    fetch('products.json')
+    then(response => response.json())
+    then(data => {
+        listProducts = data;
+        addDataToHTML();
+    })
+}
+initApp2();
 

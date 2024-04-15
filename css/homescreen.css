@@ -14,6 +14,9 @@ body{
     background-color: #ece1d2;
 }
 
+body::-webkit-scrollbar{
+    width: 0;
+}
 
 
 /* PHAN HEADER --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
@@ -75,14 +78,15 @@ body{
 	-webkit-user-select: none;
 }
 
-.header-icon-btn .header-btn-icon-right{
+.header-icon-btn .fa-solid{
+    font-size: 21px;
     color: #ffb700;
-    width: 34px;
     cursor: pointer;
 }
 
-.header-icon-btn .header-btn-icon-right:hover{
-    font-size: 22px;
+.header-icon-btn .fa-cart-shopping:hover,
+.header-icon-btn .fa-user:hover,
+.header-icon-btn .fa-house:hover{
     color: #c99103;
 }
 
@@ -100,31 +104,34 @@ body{
     align-items: center;
     color: #fff;
     border-radius: 50%;
-    width: 20px;
-    height: 20px;
+    width: 15px;
+    height: 15px;
     background-color: red;
     position: absolute;
-    top:-15%;
+    top:-50%;
     right:-10px;
+    font-family: "roboto";
 }
 
 .header-icon-btn .cartTab{
     width: 450px;
     background-color: #ffffff;
+    border-left: 1px solid #b6b6b694;
     color: #fff;
     position: fixed;
-    top:0;
-    right:0;
-    bottom: 0;
-    inset: 0 -450px 0 auto;
+    top:10px;
+    right:10px;
+    bottom: 10px;
+    inset: 10px -450px 10px auto;
     display: grid;
     grid-template-rows: 70px 1fr 70px;
     z-index: 99;
     transition: .5s;
+    border-radius: 15px;
 }
 
 body.showCart .cartTab{
-    inset: 0 0 0 auto;
+    inset: 10px 10px 10px auto;
 }
 
 
@@ -149,7 +156,12 @@ body.showCart .cartTab{
     font-size: 25px;
     user-select: none;
     cursor: pointer;
- }
+}
+
+.header-icon-btn .cartTab .cartTab-upper .close-cartTab-btn i:hover{
+    color: rgba(121, 121, 121, 0.863);
+}
+
 
 .header-icon-btn .cartTab .btn{
     display: grid;
@@ -157,7 +169,6 @@ body.showCart .cartTab{
 }
 
 .cartTab .btn button{
-    background-color: #ffb700;
     border: none;
     font-family: "oswald","san-seriff";
     font-weight: 500;
@@ -165,7 +176,19 @@ body.showCart .cartTab{
 }
 
 .cartTab .btn .close{
-    background-color: #eee;
+    background-color: #ececec;
+    border-radius: 0 0 0 15px;
+}
+.cartTab .btn .close:hover{
+    background-color: #dadada;
+}
+
+.cartTab .btn .checkOut{
+    background-color: #ffb700;
+    border-radius: 0 0 15px 0;
+}
+.cartTab .btn .checkOut:hover{
+    background-color: #d49800;
 }
 
 .listCart{
@@ -184,30 +207,44 @@ body.showCart .cartTab{
 
 .cartTab .listCart .item{
     display: grid;
-    grid-template-columns: 70px 150px 50px 1fr;
+    grid-template-columns: 70px 190px 40px 1fr;
     gap: 10px;
     text-align: center;
     align-items: center;
     padding: 10px 0;
+    cursor:pointer;
 }
 
 .listCart .name{
+    font-family: "roboto";
     color: black;
 }
 
 .listCart .totalPrice{
+    font-family: "roboto";
     color: black;
 }
 
 
 .listCart .quantity span{
+    font-family: "roboto";
     display: inline-block;
-    padding: 5px;
+    padding: 3px 7px;
     background-color: rgba(122, 122, 122, 0.384);
     color: #555;
     border-radius: 5px;
     cursor: pointer;
 }
+
+.listCart .quantity span i{
+    font-size: 12px;
+    color: black;
+}
+.listCart .quantity span:hover{
+    background-color: rgba(122, 122, 122, 0.658);
+}
+
+
 
 .listCart .quantity span:nth-child(2){
     background-color: transparent;
@@ -1550,7 +1587,7 @@ body.showCart .cartTab{
 
 .search-bar{
     position: absolute;
-    width: 35%;
+    width: 45%;
     left: 50%;
     transform: translateX(-50%);
     display: flex;
@@ -1558,13 +1595,6 @@ body.showCart .cartTab{
     gap:0;
 }
  
-.header-icon-btn{
-    display: flex;
-    flex-direction: row;
-    gap: 30px;
-    user-select: none;
-	-webkit-user-select: none;
-}
 /* CONTENT - ADVERTISEMENT - iPadPro Tro Len */
 
 .advertisement-slide-container{
@@ -1699,16 +1729,6 @@ body.showCart .cartTab{
     right: 0;
 }
 
-
-.header-icon-btn{
-    position: absolute;
-    right: 40px;
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
-    user-select: none;
-    -webkit-user-select: none;
-}
 
 .header-icon-btn li .user-menu-container{
     top: 37px;
@@ -1906,7 +1926,7 @@ body.showCart .cartTab{
         top: 20px;
         display: flex;
         flex-direction: row;
-        gap: 30px;
+        gap: 25px;
         user-select: none;
         -webkit-user-select: none;
         order: 2;
@@ -1915,6 +1935,7 @@ body.showCart .cartTab{
 
     .header-icon-btn .user-menu-container{
         width: 100%;
+        height: 100svh;
         background-color: #ffffff;
         color: #fff;
         position: fixed;
@@ -1926,6 +1947,18 @@ body.showCart .cartTab{
         border-radius: 0px;
         animation: MoveInRight 0.4s;
     }
+
+    .header-icon-btn .user-menu-container #arrow-icon{
+        color: black;
+    }
+
+    .header-icon-btn .user-menu-container .log-out-btn{
+        position: absolute;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
 
 
     .header .head-address-bar{
