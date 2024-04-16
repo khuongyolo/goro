@@ -132,7 +132,7 @@ body::-webkit-scrollbar{
 }
 
 body.showCart .cartTab{
-    inset: 10px 10px 10px auto;
+    inset: 5px 5px 5px auto;
 }
 
 
@@ -490,7 +490,7 @@ body.showCart .cartTab{
     width: 100%;
     height: 100svh;
     padding-top: 25px;
-    background:linear-gradient( rgb(0, 0, 0), rgba(0, 0, 0, 0.774), rgba(0, 0, 0, 0.986)), url(../images/food-background.png);
+    background:linear-gradient( rgb(0, 0, 0), rgba(0, 0, 0, 0.68), rgba(0, 0, 0, 0.986)), url(../images/food-background.png);
       background-size:cover;
     background-position: center;
     position: relative;
@@ -553,7 +553,7 @@ body.showCart .cartTab{
 .ads-swiper-slide .advertisement-content{
     position: absolute;
     bottom: 30px;
-    left: 50px;
+    left: 70px;
     display:flex;
     flex-direction: column;
     align-items: left;
@@ -811,7 +811,7 @@ body.showCart .cartTab{
 }
 
 #category-txt{
-    font-size: 65px;
+    font-size: 55px;
 }
 
 /* .category-txt-line span{
@@ -1149,6 +1149,10 @@ body.showCart .cartTab{
 .store-swiper-slide .store-info-lower .rate-and-like{
     display: flex;
     justify-content: space-between;
+}
+
+.store-swiper-slide .store-info-lower .rate-and-like .like-store{
+    cursor: pointer;
 }
 
 .store-swiper-slide .store-info-lower .rate-and-like .fa-star{
@@ -1825,7 +1829,7 @@ body.showCart .cartTab{
 /* CONTENT - ADVERTISEMENT - iPadPro Tro Xuong */
 
 .advertisement-slide-container{
-    width: 95vw;
+    width: 90vw;
     height: 45vw;
 }
 
@@ -1975,7 +1979,6 @@ body.showCart .cartTab{
     }
 
     .search-bar-icon{
-        color:black;
         font-size: 19px;
         padding: 12px;
         position: absolute;
@@ -2044,7 +2047,6 @@ body.showCart .cartTab{
 
     
     .header .head-address-bar .fa-solid{
-        color: black;
         font-size: 20px;
     }
     
