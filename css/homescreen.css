@@ -92,7 +92,184 @@ body::-webkit-scrollbar{
 }
 
 
-/* ICON CART BTN */
+@keyframes MoveInScale{
+    0%{
+        transform: scale(60%);
+        opacity: 20%;
+    }
+
+    100%{
+        transform: scale(1);
+    }
+}
+
+@keyframes MoveOutScale{
+    0%{
+        transform: scale(1);
+    }
+
+    100%{
+        transform: scale(50%);
+        opacity: 40%;
+    }
+}
+
+
+
+
+@keyframes MoveInRight{
+    0%{
+        transform: translateX(300px);
+    }
+
+
+    100%{
+        transform: translateX(0);
+    }
+}
+
+
+@keyframes MoveOutRight{
+    0%{
+        transform: translateX(0);
+    }
+    
+    100%{
+        transform: translateX(600px);
+    }
+}
+
+
+/* HEADER - ICON USER BTN */
+.header-icon-btn #user-btn{
+    position: relative;
+}
+
+
+.header-icon-btn .user-menu-container{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 320px;
+    top: 37px;
+    right: -20px;
+    z-index: 3;
+    background-color:white;
+    border: 1px solid rgba(173, 173, 173, 0.747);
+    border-radius: 10px;
+    animation: MoveInScale 0.4s;
+    display: none;
+}
+
+.header-icon-btn .user-menu-container .user-heading-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-icon-btn .user-menu-container .user-menu-heading{
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    margin-left: 20px;
+    color: #131c30;
+}
+
+.header-icon-btn .user-menu-container .user-menu-heading .fa-user{
+    margin-right: 10px;
+    color: #131c30;
+}
+
+
+
+
+.header-icon-btn .user-menu-container .user-heading-container a .fa-xmark{
+    color: black;
+    padding:20px;
+    font-size: 25px;
+    user-select: none;
+	-webkit-user-select: none;
+}
+
+.header-icon-btn .user-menu-container .user-heading-container a .fa-xmark:hover{
+    color: rgb(124, 124, 124);
+}
+
+
+.header-icon-btn .user-menu-container .user-option{
+    padding: 15px 20px;
+    border-bottom: 1px solid rgb(216, 216, 216);
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.header-icon-btn .user-menu-container .user-option:hover{
+    background-color: rgb(244, 244, 244);
+}
+
+.header-icon-btn .user-menu-container .user-option:hover:last-child{
+    border-radius: 0 0 10px 10px;
+}
+
+
+
+.header-icon-btn .user-menu-container .user-option a{
+    color: black;
+    user-select: none;
+	-webkit-user-select: none;
+}
+
+.header-icon-btn .user-menu-container .user-option .language{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    display: none;
+    margin-top: 20px;
+    animation: MoveInScale 0.5s;
+}
+
+#arrow-icon{
+    margin-left: 5px;
+    font-size: 8px;
+}
+
+.header-icon-btn .user-menu-container .user-option .language li{
+    padding: 10px 0;
+}
+
+.header-icon-btn .user-menu-container .user-option:last-child{
+    margin-bottom: 0;
+    margin-top: 50px;
+    border-bottom: none;
+}
+
+
+.header-icon-btn .user-menu-container .log-out-btn  {
+    text-align: center;
+    user-select: none;
+	-webkit-user-select: none;
+}
+
+.header-icon-btn .user-menu-container li .fa-right-from-bracket{
+    color: #131c30;
+    font-size: 17px;
+    margin-right: 10px;
+}
+
+.header-icon-btn .user-menu-container li{
+    list-style: none;
+}
+
+.header-icon-btn .user-menu-container li a{
+    text-decoration: none;
+}
+
+
+/* HEADER - ICON CART BTN */
 
 .icon-cart-container .icon-cart{
     position: relative;
@@ -259,195 +436,6 @@ body.showCart .cartTab{
 
 
 
-
-
-
-
-@keyframes MoveInScale{
-    0%{
-        transform: scale(60%);
-        opacity: 20%;
-    }
-
-    100%{
-        transform: scale(1);
-    }
-}
-
-@keyframes MoveOutScale{
-    0%{
-        transform: scale(1);
-    }
-
-    100%{
-        transform: scale(50%);
-        opacity: 40%;
-    }
-}
-
-
-
-
-@keyframes MoveInRight{
-    0%{
-        transform: translateX(300px);
-    }
-
-
-    100%{
-        transform: translateX(0);
-    }
-}
-
-
-@keyframes MoveOutRight{
-    0%{
-        transform: translateX(0);
-    }
-    
-    100%{
-        transform: translateX(600px);
-    }
-}
-
-
-/* USER_BTN */
-.header-icon-btn #user-btn{
-    position: relative;
-}
-
-
-.header-icon-btn .user-menu-container{
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    width: 320px;
-    top: 37px;
-    right: -20px;
-    z-index: 3;
-    background-color:white;
-    border: 1px solid rgba(173, 173, 173, 0.747);
-    border-radius: 10px;
-    animation: MoveInScale 0.4s;
-    display: none;
-}
-
-.header-icon-btn .user-menu-container .user-heading-container{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.header-icon-btn .user-menu-container .user-menu-heading{
-    margin-bottom: 20px;
-    margin-top: 20px;
-    font-family: "Roboto", sans-serif;
-    font-size: 20px;
-    font-weight: 300;
-    margin-left: 20px;
-    color: #131c30;
-}
-
-.header-icon-btn .user-menu-container .user-menu-heading .fa-user{
-    margin-right: 10px;
-    color: #131c30;
-}
-
-
-
-
-.header-icon-btn .user-menu-container .user-heading-container a .fa-xmark{
-    color: black;
-    padding:20px;
-    font-size: 25px;
-    user-select: none;
-	-webkit-user-select: none;
-}
-
-.header-icon-btn .user-menu-container .user-heading-container a .fa-xmark:hover{
-    color: rgb(124, 124, 124);
-}
-
-
-
-
-
-
-.header-icon-btn .user-menu-container .user-option{
-    padding: 15px 20px;
-    border-bottom: 1px solid rgb(216, 216, 216);
-    font-family: "Roboto", sans-serif;
-    font-size: 15px;
-    cursor: pointer;
-}
-
-.header-icon-btn .user-menu-container .user-option:hover{
-    background-color: rgb(244, 244, 244);
-}
-
-.header-icon-btn .user-menu-container .user-option:hover:last-child{
-    border-radius: 0 0 10px 10px;
-}
-
-
-
-.header-icon-btn .user-menu-container .user-option a{
-    color: black;
-    user-select: none;
-	-webkit-user-select: none;
-}
-
-.header-icon-btn .user-menu-container .user-option .language{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    display: none;
-    margin-top: 20px;
-    animation: MoveInScale 0.5s;
-}
-
-#arrow-icon{
-    margin-left: 5px;
-    font-size: 8px;
-}
-
-.header-icon-btn .user-menu-container .user-option .language li{
-    padding: 10px 0;
-}
-
-.header-icon-btn .user-menu-container .user-option:last-child{
-    margin-bottom: 0;
-    margin-top: 50px;
-    border-bottom: none;
-}
-
-
-.header-icon-btn .user-menu-container .log-out-btn  {
-    text-align: center;
-    user-select: none;
-	-webkit-user-select: none;
-}
-
-.header-icon-btn .user-menu-container li .fa-right-from-bracket{
-    color: #131c30;
-    font-size: 17px;
-    margin-right: 10px;
-}
-
-
-
-
-.header-icon-btn .user-menu-container li{
-    list-style: none;
-}
-
-.header-icon-btn .user-menu-container li a{
-    text-decoration: none;
-}
-
-
-
 /* ADDRESS BAR - PC */
 
 
@@ -515,7 +503,7 @@ body.showCart .cartTab{
     position: relative;
     user-select: none;
 	-webkit-user-select: none;
-    border: 1px solid rgba(128, 128, 128, 0.384);
+    /* border: 1px solid rgba(128, 128, 128, 0.384); */
     border-radius: 15px;
 
 }
@@ -1833,6 +1821,22 @@ body.showCart .cartTab{
     height: 45vw;
 }
 
+.ads-swiper-slide .advertisement-content{
+    bottom: 20px;
+    left: 60px;
+    
+}
+
+.ads-swiper-slide .advertisement-content p{
+    font-size: 35px;
+    width: 350px;
+}
+
+.ads-swiper-slide .advertisement-content a{
+    width: 170px;
+    margin-top: 30px;
+}
+
 
 /* CONTENT - CATEGORY - iPadPro Tro Xuong */
 
@@ -2076,6 +2080,24 @@ body.showCart .cartTab{
 .ads-swiper-button-next,
 .ads-swiper-button-prev{
     display: none;
+}
+
+.ads-swiper-slide .advertisement-content{
+    bottom: 20px;
+    left: 20px;
+    
+}
+
+.ads-swiper-slide .advertisement-content p{
+    font-size: 25px;
+    width: 250px;
+}
+
+.ads-swiper-slide .advertisement-content a{
+    width: 130px;
+    margin-top: 10px;
+    font-size: 15px;
+    padding: 10px 0;
 }
 
 /* CONTENT - CATEGORY - PHONE */
