@@ -1242,7 +1242,7 @@ body.showCart .cartTab{
 
 .product-view-all a{
     text-decoration: none;
-    color: #1f4e48;
+    color: rgb(252, 191, 78);
     font-family: "roboto", "san-seriff";
     font-size: 15px;
 }
@@ -1784,7 +1784,6 @@ body.showCart .cartTab{
 }
 
 .search-bar-icon{
-    color:black;
     font-size: 20px;
     padding: 9px;
     border: none;
