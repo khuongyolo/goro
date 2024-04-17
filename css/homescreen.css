@@ -1791,12 +1791,12 @@ body.showCart .cartTab{
 }
 
 .search-bar-icon{
-    font-size: 20px;
+    font-size: 16px;
     padding: 9px;
     border: none;
     position: absolute;
-    top: 1px;
-    right: 0;
+    top: 4px;
+    right: 5px;
 }
 
 
@@ -1861,6 +1861,14 @@ body.showCart .cartTab{
     margin: 0 auto;
 }
 
+.category-big-div .category-swiper-button-next .fa-arrow-right{
+    padding: 10px;
+}
+
+.category-big-div .category-swiper-button-prev .fa-arrow-left{
+    padding: 10px;
+}
+
 .category-swiper-container {
     margin: 0 auto;
     margin-top: 25px;
@@ -1893,6 +1901,14 @@ body.showCart .cartTab{
     position: relative;
     width: 95vw ;
     margin: 0 auto;
+}
+
+.store-big-div .swiper-button-next .fa-arrow-right{
+    padding: 10px;
+}
+
+.store-big-div .swiper-button-prev .fa-arrow-left{
+    padding: 10px;
 }
 
 .store-txt-line{
