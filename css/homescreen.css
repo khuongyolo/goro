@@ -943,8 +943,8 @@ body.showCart .cartTab{
 
 .category-swiper-container .category-sep-info{
     background-color: transparent;
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
     border: 1px solid #cccccc3d;
 }
 
