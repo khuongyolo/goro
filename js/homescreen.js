@@ -1,11 +1,8 @@
 // START Phan user button drop down menu
 function DisplayUserOption() {
     var userMenu = document.getElementById("user-menu-container");
-    var languageMenu = document.getElementById("language");
     var arrowIcon = document.getElementById("arrow-icon");
-
     userMenu.style.display = "block";
-    languageMenu.style.display = "none";
     arrowIcon.innerHTML = "&#9660;"
 }
 
@@ -36,22 +33,119 @@ function HideUserOption() {
     }
 }
 
-function DisplayLanguageOption() {
-    var languageMenu = document.getElementById("language");
-    var arrowIcon = document.getElementById("arrow-icon");
 
-    var languageMenuDisplay = window.getComputedStyle(languageMenu).getPropertyValue("display");
+// An hien menu language trong navbar - start
+//? This code is for animating details
+//? of summary component and slightly modified
+//? https://css-tricks.com/how-to-animate-the-
+//? details-element-using-waapi/
 
-    if (languageMenuDisplay === "block") {
-        languageMenu.style.display = "none";
-        arrowIcon.innerHTML = "&#9660;"; // Mũi tên xuống khi ẩn menu
-    } else {
-        languageMenu.style.display = "block";
-        arrowIcon.innerHTML = "&#9650;"; // Mũi tên lên khi hiển thị menu
+class Accordion {
+    constructor(el) {
+      this.el = el;
+      this.summary = el.querySelector("summary");
+      this.content = el.querySelector(".language-content");
+      this.expandIcon = this.summary.querySelector(".expand-icon");
+      this.animation = null;
+      this.isClosing = false;
+      this.isExpanding = false;
+      this.summary.addEventListener("click", (e) => this.onClick(e));
     }
-}
 
-// END Phan user button drop down menu
+
+    onClick(e) {
+      e.preventDefault();
+      this.el.style.overflow = "hidden";
+  
+      if (this.isClosing || !this.el.open) {
+        this.open();
+      } else if (this.isExpanding || this.el.open) {
+        this.shrink();
+      }
+    }
+  
+    shrink() {
+      this.isClosing = true;
+  
+      const startHeight = `${this.el.offsetHeight}px`;
+      const endHeight = `${this.summary.offsetHeight}px`;
+  
+      if (this.animation) {
+        this.animation.cancel();
+      }
+  
+      this.animation = this.el.animate(
+        {
+          height: [startHeight, endHeight],
+        },
+        {
+          duration: 280,
+          easing: "ease-out",
+        }
+      );
+  
+      this.animation.onfinish = () => {
+        this.expandIcon.setAttribute("src", "assets/plus.svg");
+        return this.onAnimationFinish(false);
+      };
+      this.animation.oncancel = () => {
+        this.expandIcon.setAttribute("src", "assets/plus.svg");
+        return (this.isClosing = false);
+      };
+    }
+  
+    open() {
+      this.el.style.height = `${this.el.offsetHeight}px`;
+      this.el.open = true;
+      window.requestAnimationFrame(() => this.expand());
+    }
+  
+    expand() {
+      this.isExpanding = true;
+  
+      const startHeight = `${this.el.offsetHeight}px`;
+      const endHeight = `${
+        this.summary.offsetHeight + this.content.offsetHeight
+      }px`;
+  
+      if (this.animation) {
+        this.animation.cancel();
+      }
+  
+      this.animation = this.el.animate(
+        {
+          height: [startHeight, endHeight],
+        },
+        {
+          duration: 280,
+          easing: "ease-out",
+        }
+      );
+  
+      this.animation.onfinish = () => {
+        this.expandIcon.setAttribute("src", "assets/minus.svg");
+        return this.onAnimationFinish(true);
+      };
+      this.animation.oncancel = () => {
+        this.expandIcon.setAttribute("src", "assets/minus.svg");
+        return (this.isExpanding = false);
+      };
+    }
+  
+    onAnimationFinish(open) {
+      this.el.open = open;
+      this.animation = null;
+      this.isClosing = false;
+      this.isExpanding = false;
+      this.el.style.height = this.el.style.overflow = "";
+    }
+  }
+  
+  document.querySelectorAll("details").forEach((el) => {
+    new Accordion(el);
+  });
+
+// An hien menu language trong navbar - end
 
 
 
@@ -321,55 +415,3 @@ HideCart.addEventListener('click', () => {
 CloseCart.addEventListener('click', () => {
     body.classList.toggle('showCart')
 })
-
-const addDataToHTML = () => {
-    listProductHTML.innerHTML = ''; // Chú ý là 'innerHTML', không phải 'innetHTML'
-    if (listProducts.length > 0) {
-        listProducts.forEach(product => {
-            let newProduct = document.createElement('div');
-            newProduct.classList.add('product-container');
-            newProduct.innerHTML = `
-                <a href="#"><img src="${product.image}" alt=""></a>
-                <div class="product-info">
-                    <div class="product-info-upper">
-                        <div class="product-info-upper-left">
-                            <a href="#" class="product-name">${product.name}</a>
-                            <a href="#" class="product-store-name"> GORO Store</a>
-                        </div>
-                        <div class="product-info-upper-right">
-                            <a href="#" class="product-category-type">Thịt</a>
-                        </div>
-                    </div>
-                    <div class="product-info-lower">
-                        <div class="product-price price">${product.price}</div>
-                        <div class="add-cart-btn-container">
-                            <a href="#" class="add-to-cart-btn">
-                                <i class="fa-solid fa-plus addCart"></i><span> Thêm vào giỏ hàng</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>`;
-            listProductHTML.appendChild(newProduct);
-        });
-    }
-};
-
-listProductHTML.addEventListener('click', (event) => {
-    let positionClick = event.target;
-    // Kiểm tra xem phần tử được nhấp vào có class 'addCart' không
-    if(positionClick.classList.contains('addCart')){
-        alert('1');
-    }
-});
-
-const initApp2 = () =>{
-    // get Data from json
-    fetch('products.json')
-    then(response => response.json())
-    then(data => {
-        listProducts = data;
-        addDataToHTML();
-    })
-}
-initApp2();
-

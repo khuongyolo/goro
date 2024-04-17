@@ -10,6 +10,8 @@
 <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Sofia&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Whisper&display=swap" rel="stylesheet">
 <!-- swiperjs -->
 <link
   rel="stylesheet"
@@ -21,7 +23,7 @@
         <div class="header">
             <div class="nav-bar">
                 <div class="logo-img-container">
-                    <a href="homescreen.html"><img src="images/Logo_main.png" class="corner-logo"></a>
+                    <a href="homescreen.html"><img class="corner-logo" src="images/Logo_main.png"></a>
                 </div>
                 <div class="search-bar">
                     <input type="text" placeholder="Search on GORO"><a href="#"><i class="fa-solid fa-magnifying-glass search-bar-icon"></i></a>
@@ -74,30 +76,42 @@
 
 
                     <!-- nut user tren header -->
-                    <div id="user-btn"><a href="#" onclick="DisplayUserOption()">
+                    <div class="user-btn" onclick="DisplayUserOption()">
                         <i class="fa-solid fa-user"></i>
+                        <!-- phan menu container cua nut USER start-->
                         <ul class="user-menu-container" id="user-menu-container">
                             <li class="user-heading-container">
                                 <h2 class="user-menu-heading"><i class="fa-regular fa-user"></i>Tài khoản</h2>
-                                <a href="#" ><i class="fa-solid fa-xmark" onclick="HideUserOption()"></i></a>
+                                <div><i class="fa-solid fa-xmark" onclick="HideUserOption()"></i></div>
                             </li>
                             <li class="user-option"><a href="smile.html">Thông tin tài khoản</a></li>
-                            <li class="user-option"><a href="#">Địa chỉ</a></li>
-                            <li class="user-option"><a href="#">Theo dõi đơn hàng</a></li>
-                            <li class="user-option"><a href="#">Lịch sử mua sắm</a></li>
-                            <li class="user-option"><a href="#">Phương thức thanh toán</a></li>
-                            <li class="user-option language-option-container"  onclick="DisplayLanguageOption ()">
-                                <a href="#">Ngôn ngữ</a>
-                                <span id="arrow-icon">&#9660</span>
-                                <ul class="language" id="language">
-                                    <li class="language-option"><a href="#">Tiếng Việt</a></li>
-                                    <li class="language-option"><a href="#">English</a></li>
-                                    <li class="language-option"><a href="#">日本語</a></li>
-                                </ul>
+                            <li class="user-option"><div>Địa chỉ</div></li>
+                            <li class="user-option"><div>Theo dõi đơn hàng</div></li>
+                            <li class="user-option"><div>Lịch sử mua sắm</div></li>
+                            <li class="user-option"><div>Phương thức thanh toán</div></li>
+                            <li class="user-option language-option-container">
+                                <details>
+                                    <summary>
+                                      <span class="language-title">
+                                        Ngôn ngữ
+                                      </span>
+                                      <svg xmlns="http://www.w3.org/2000/svg" class="expand-icon" width="24" height="24" viewBox="0 0 24 24"
+                                        stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                        <path d="M9 6l6 6l-6 6"></path>
+                                      </svg>
+                                    </summary>
+                                    <div class="language-content">
+                                        <div class="language-option">Tiếng Việt</div>
+                                        <div class="language-option">English</div>
+                                        <div class="language-option">日本語</div>
+                                    </div>
+                                  </details>
                             </li>
-                            <li class="user-option"><a href="#">Hỗ trợ</a></li>
+                            <li class="user-option"><div>Hỗ trợ</div></li>
                             <li class="user-option log-out-btn"><a href="loginscreen.html"><i class="fa-solid fa-right-from-bracket user-option-icon"></i>Đăng xuất</a></li>
                         </ul>
+                        <!-- phan menu container cua nut USER end-->
                     </div>
                 </div>
             </div>
@@ -199,7 +213,7 @@
             <!-- END ADVERTISEMENT PART -->
 
             <!-- START CATEGORY PART -->
-            <div class="category-txt-line"><span id="category-txt">. CATEGORY .</span></div>
+            <div class="category-txt-line"><span id="category-txt">. Categories .</span></div>
             
             <div class="category-big-div">
                 <div class="swiper-container mySwiper category-swiper-container">
@@ -249,27 +263,27 @@
                             <span class="span-big-text">Snacks</span>
                             <span class="span-small-text">bao gồm các loại đồ ăn vặt</span>
                         </div>
-                        <div class="swiper-slide category-info-sep-color1 category-sep-info0">
+                        <div class="swiper-slide category-info-sep-color1 category-sep-info">
                             <span class="category-span-img"><img src="images/fresh.png"></span>
                             <span class="span-big-text">Fresh</span>
                             <span class="span-small-text">Bao gồm các loại thực phẩm tươi</span>
                         </div>
-                        <div class="swiper-slide category-info-sep-color1 category-sep-info1">
+                        <div class="swiper-slide category-info-sep-color1 category-sep-info">
                             <span class="category-span-img"><img src="images/freezer.png"></span>
                             <span class="span-big-text">Frozen</span>
                             <span class="span-small-text">Các thực phẩm đông lạnh</span>
                         </div>
-                        <div class="swiper-slide category-info-sep-color1 category-sep-info2">
+                        <div class="swiper-slide category-info-sep-color1 category-sep-info">
                             <span class="category-span-img"><img src="images/spicy-food.png"></span>
                             <span class="span-big-text">Spices</span>
                             <span class="span-small-text">Bao gồm các loại gia vị</span>
                         </div>
-                        <div class="swiper-slide category-info-sep-color1 category-sep-info3">
+                        <div class="swiper-slide category-info-sep-color1 category-sep-info">
                             <span class="category-span-img"><img src="images/dish.png"></span>
                             <span class="span-big-text">Special</span>
                             <span class="span-small-text">Thực phẩm đặc biệt</span>
                         </div>
-                        <div class="swiper-slide category-info-sep-color1 category-sep-info4">
+                        <div class="swiper-slide category-info-sep-color1 category-sep-info">
                             <span class="category-span-img"><img src="images/moon-cakee.png"></span>
                             <span class="span-big-text">Occasions</span>
                             <span class="span-small-text">Thực phẩm trong các dịp lễ</span>
@@ -284,7 +298,7 @@
 
             <!-- START STORE CONTAINER PART -->
             
-            <div class="store-txt-line"><span id="store-txt">STORES . .</span></div>
+            <div class="store-txt-line"><span id="store-txt">Stores . .</span></div>
             <div class="store-big-div">
                 <div class="swiper-container myStoreSwiper">
                     <div class="swiper-wrapper store-swiper-wrapper">
@@ -460,7 +474,7 @@
 
 
             <div class="best-sale-product">
-                <div class="best-sale-product-txt">BEST SELLER . . </div>
+                <div class="best-sale-product-txt">Best seller . . </div>
                 <div class="product-view-all"><a href="#">Xem tất cả <i class="fa-solid fa-play"></i></a></div>
                 <div class="all-product-container">
                     <div class="product-container">
@@ -699,7 +713,7 @@
 <!-- FOOTER ------------------------------------------------------------------------------------ -->
             <div class="footer">
                 <div class="footer-backtotop-btn">
-                    <a href="homescreen.html">Quay về đầu trang</a>
+                    <a href="#">Quay về đầu trang</a>
                 </div>
                 <div class="footer-mid-part">
                     <span class="footer-txt-big">Chào mừng đến với GORO</span>
@@ -784,7 +798,7 @@
                 spaceBetween: 10,
             },
             740: {
-                slidesPerView: 5,
+                slidesPerView: 4,
                 spaceBetween: 15,
             },
             1400: {
