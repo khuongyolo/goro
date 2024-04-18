@@ -1,9 +1,8 @@
 // START Phan user button drop down menu
 function DisplayUserOption() {
     var userMenu = document.getElementById("user-menu-container");
-    var arrowIcon = document.getElementById("arrow-icon");
     userMenu.style.display = "block";
-    arrowIcon.innerHTML = "&#9660;"
+
 }
 
 
