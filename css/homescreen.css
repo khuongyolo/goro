@@ -523,7 +523,7 @@ body.showCart .cartTab{
     height: 100svh;
     padding-top: 25px;
     background:linear-gradient( rgb(0, 0, 0, .98), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.98)), url(../images/food-background.png);
-      background-size:cover;
+    background-size:cover;
     background-position: center;
     position: relative;
 }
@@ -824,17 +824,6 @@ body.showCart .cartTab{
     margin: 20px 0;
 }
 
-/* .main-wth-widget li:nth-child(2){
-    background-color: #b56291;
-}
-
-.main-wth-widget li:nth-child(3){
-    background-color: #48567b;
-} */
-
-
-
-
 
 /* CONTENT - CATEGORY - PC */
 
@@ -872,7 +861,7 @@ body.showCart .cartTab{
 	left: 50%;
     transform: translateX(-50%);
 }
-                */
+ */
 
 .category-big-div{
     position: relative;
@@ -920,20 +909,6 @@ body.showCart .cartTab{
     user-select: none;
 	-webkit-user-select: none;
 }
-
-/* .category-big-div .swiper-slide:hover{
-    transform: translateY(-5px);
-    box-shadow: 3px 3px 6px rgb(0,0,0,.3);
-    transition: 0.3s ease;
-}
-
-.category-big-div .swiper-slide:active{
-    transform: translateY(0px);
-    box-shadow: none;
-    transition: 0.08s ease;
-} */
-
-
 
 .category-swiper-container .swiper-slide a{
     width: 100%;
@@ -1024,7 +999,7 @@ body.showCart .cartTab{
 
 .category-big-div  .category-swiper-button-prev:after,
 .category-swiper-button-next:after {
-  display: none;
+    display: none;
 }
 
 .category-swiper-button-next .fa-arrow-right{
@@ -1385,7 +1360,6 @@ body.showCart .cartTab{
 }
 
 .product-container .product-info-lower .add-cart-btn-container .add-to-cart-btn{
-    /* border: 1px solid black; */
     background-color: rgb(240, 240, 240);
     padding: 8px 10px;
     border-radius: 9px;
@@ -1396,7 +1370,6 @@ body.showCart .cartTab{
 .product-container .product-info-lower .add-cart-btn-container .add-to-cart-btn:hover{
     background-color: #d77247;
     color: #fff;
-    /* border: 1px solid white; */
     transition: 0.3s ease;
 }
 
@@ -1473,7 +1446,27 @@ body.showCart .cartTab{
 
 
 
-/*  RESPONSIVE RESPONSIVE RESPONSIVE RESPONSIVE RESPONSIVE RESPONSIVE RESPONSIVE RESPONSIVE RESPONSIVE RESPONSIVE RESPONSIVE RESPONSIVE  RESPONSIVE RESPONSIVE RESPONSIVE RESPONSIVE */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*  RESPONSIVE RESPONSIVE RESPONSIVE RESPONSIVE RESPONSIVE RESPONSIVE */
 
 
 /* RESPONESIVE RIENG CHO MAN HINH MAY TINH */
@@ -1657,7 +1650,7 @@ body.showCart .cartTab{
 /* CATEGORY */
 
     .category-swiper-container .swiper-slide img{
-        width: 110px;
+        width: 90px;
     }
     .category-swiper-container .swiper-slide .span-big-text{
         margin-top:10px;
@@ -1702,110 +1695,99 @@ body.showCart .cartTab{
 
 /* HEADER */
 
-.search-bar{
-    position: absolute;
-    width: 45%;
-    left: 50%;
-    transform: translateX(-50%);
-    display: flex;
-    align-items: center;
-    gap:0;
-}
+    .search-bar{
+        width: 45%;
+    }
  
 /* CONTENT - ADVERTISEMENT - iPadPro Tro Len */
 
-.advertisement-slide-container{
-    width: 95vw;
-    height: 40vw;
-}
+    .advertisement-slide-container{
+        width: 95vw;
+        height: 40vw;
+    }
 
 /* CONTENT - CATEGORY - iPadPro Tro Len */
 
-#category-txt{
-    font-size: 65px;
-}
+    #category-txt{
+        font-size: 65px;
+    }
 
-.category-big-div{
-    position: relative;
-    width: 90vw ;
-    margin: 0 auto;
-}
+    .category-big-div{
+        width: 90vw ;
+    }
 
-.category-swiper-container {
-    margin: 0 auto;
-    margin-top: 25px;
-    width: 90%;
-    height: 260px;
-    overflow: hidden ;
-    padding: 10px;
+    .category-swiper-container {
+        margin: 0 auto;
+        margin-top: 25px;
+        width: 90%;
+        padding: 10px;
+    }
 
-}
+    .category-swiper-container .swiper-slide img{
+        width: 80px;
+    }
 
-.category-swiper-container .swiper-slide img{
-    width: 100px;
-}
+    .category-swiper-container .swiper-slide .span-big-text{
+        margin-top:10px;
+        font-size: 20px;
+        font-weight: 500;
+    }
 
-.category-swiper-container .swiper-slide .span-big-text{
-    margin-top:10px;
-    font-size: 22px;
-    font-weight: 500;
-}
-
-.category-swiper-container .swiper-slide .span-small-text{
-    font-family: "Oswald", sans-serif;
-    margin-top:10px;
-    font-size: 13px;
-}
+    .category-swiper-container .swiper-slide .span-small-text{
+        font-family: "Oswald", sans-serif;
+        margin-top:10px;
+        font-size: 13px;
+    }
 
 /* CONTENT - STORE - iPadPro Tro Len */
 
 
-.store-big-div{
-    width: 90vw ;
-    margin: 0 auto;
-}
+    .store-big-div{
+        width: 90vw ;
+        margin: 0 auto;
+    }
 
-.store-txt-line{
-    width: 80%;
-}
+    .store-txt-line{
+        width: 80%;
+    }
 
-#store-txt{
-    font-size: 65px;
-}
+    #store-txt{
+        font-size: 65px;
+    }
 
-/* CONTENT - BEST SELLER - iPadPro Tro Len */
+    /* CONTENT - BEST SELLER - iPadPro Tro Len */
 
-.best-sale-product{
-    margin: 70px 0;
-}
+    .best-sale-product{
+        margin: 70px 0;
+    }
 
-.best-sale-product .best-sale-product-txt{
-    margin-top: 70px ;
-    width: 80%;
-    font-size: 65px;
-}
+    .best-sale-product .best-sale-product-txt{
+        margin-top: 40px ;
+        width: 80%;
+        font-size: 65px;
+    }
 
-.product-view-all{
-    width: 90%;
-    text-align: right;
-}
-
-
-.all-product-container{
-    width: 80%;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    gap: 10px;
-}
+    .product-view-all{
+        width: 90%;
+        text-align: right;
+    }
 
 
-.product-container a img{
-    height: 13vw;
-}
+    .all-product-container{
+        width: 80%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        gap: 10px;
+    }
 
-}
+
+    .product-container a img{
+        height: 13vw;
+    }
+
+    }
 
 
 
@@ -1819,214 +1801,212 @@ body.showCart .cartTab{
     }
 /* HEADER VA TOP NAVIGATION BAR - iPad Pro Tro Xuong */
 
-.corner-logo{
-    width: 110px;
-}
+    .corner-logo{
+        width: 110px;
+    }
 
-.search-bar{
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 40%;
-    display: flex;
-    align-items: center;
-    gap:0;
-}
+    .search-bar{
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 40%;
+        display: flex;
+        align-items: center;
+        gap:0;
+    }
 
-.search-bar input{
-    padding: 12px 20px;
-}
+    .search-bar input{
+        padding: 12px 20px;
+    }
 
-.search-bar-icon{
-    font-size: 16px;
-    padding: 9px;
-    border: none;
-    position: absolute;
-    top: 4px;
-    right: 5px;
-}
-
-
-.header-icon-btn li .user-menu-container{
-    top: 37px;
-    right: -25px;
-}
+    .search-bar-icon{
+        font-size: 16px;
+        padding: 9px;
+        border: none;
+        position: absolute;
+        top: 4px;
+        right: 5px;
+    }
 
 
-.header-icon-btn .user-menu-container {
-    top: 33px;
-    right: -20px;
-}
+    .header-icon-btn li .user-menu-container{
+        top: 37px;
+        right: -25px;
+    }
+
+
+    .header-icon-btn .user-menu-container {
+        top: 33px;
+        right: -20px;
+    }
 
 
 /* CONTENT CONTAINER - iPad Pro Tro Xuong */
 
-.content{
-    width: 100%;
-    height: 100svh;
-    padding: 20px 0;
-}
+    .content{
+        width: 100%;
+        height: 100svh;
+        padding: 10px 0;
+        margin: 0;
+    }
 
 /* CONTENT - ADVERTISEMENT - iPadPro Tro Xuong */
 
-.advertisement-slide-container{
-    width: 95vw;
-    height: 45vw;
-}
+    .advertisement-slide-container{
+        width: 95vw;
+        height: 45vw;
+    }
 
-.ads-swiper-slide .advertisement-content{
-    bottom: 20px;
-    left: 60px;
-    
-}
+    .ads-swiper-slide .advertisement-content{
+        bottom: 20px;
+        left: 60px;
+        
+    }
 
-.ads-swiper-slide .advertisement-content p{
-    font-size: 35px;
-    width: 350px;
-}
+    .ads-swiper-slide .advertisement-content p{
+        font-size: 35px;
+        width: 350px;
+    }
 
-.ads-swiper-slide .advertisement-content a{
-    width: 170px;
-    margin-top: 30px;
-}
+    .ads-swiper-slide .advertisement-content a{
+        width: 170px;
+        margin-top: 30px;
+    }
 
 
 /* CONTENT - CATEGORY - iPadPro Tro Xuong */
 
-.category-txt-line{
-    margin-top: 40px;
-}
+    .category-txt-line{
+        margin-top: 40px;
+    }
 
-#category-txt{
-    font-size: 45px;
-    margin-bottom: 20px;
-}
+    #category-txt{
+        font-size: 45px;
+        margin-bottom: 20px;
+    }
 
-.category-big-div{
-    position: relative;
-    width: 95vw ;
-    margin: 0 auto;
-}
+    .category-big-div{
+        position: relative;
+        width: 95vw ;
+        margin: 0 auto;
+    }
 
-.category-big-div .category-swiper-button-next .fa-arrow-right{
-    padding: 10px;
-}
+    .category-big-div .category-swiper-button-next .fa-arrow-right{
+        padding: 10px;
+    }
 
-.category-big-div .category-swiper-button-prev .fa-arrow-left{
-    padding: 10px;
-}
+    .category-big-div .category-swiper-button-prev .fa-arrow-left{
+        padding: 10px;
+    }
 
-.category-swiper-container {
-    margin: 0 auto;
-    margin-top: 25px;
-    width: 90%;
-    height: 210px;
-    overflow: hidden ;
-    padding: 10px;
+    .category-swiper-container {
+        margin: 0 auto;
+        margin-top: 25px;
+        width: 90%;
+        height: 210px;
+        overflow: hidden ;
+        padding: 10px;
 
-}
+    }
 
-.category-swiper-container .swiper-slide img{
-    width: 50px;
-}
+    .category-swiper-container .swiper-slide img{
+        width: 50px;
+    }
 
-.category-swiper-container .swiper-slide .span-big-text{
-    margin-top:10px;
-    font-size: 17px;
-    font-weight: 500;
-}
+    .category-swiper-container .swiper-slide .span-big-text{
+        margin-top:10px;
+        font-size: 17px;
+        font-weight: 500;
+    }
 
-.category-swiper-container .swiper-slide .span-small-text{
-    font-family: "Oswald", sans-serif;
-    margin-top:10px;
-    font-size: 11px;
-}
+    .category-swiper-container .swiper-slide .span-small-text{
+        font-family: "Oswald", sans-serif;
+        margin-top:10px;
+        font-size: 11px;
+    }
 
 /* CONTENT - STORE - iPadPro Tro Xuong */
 
-.store-big-div{
-    position: relative;
-    width: 95vw ;
-    margin: 0 auto;
-}
+    .store-big-div{
+        position: relative;
+        width: 95vw ;
+        margin: 0 auto;
+    }
 
-.store-big-div .swiper-button-next .fa-arrow-right{
-    padding: 10px;
-}
+    .store-big-div .swiper-button-next .fa-arrow-right{
+        padding: 10px;
+    }
 
-.store-big-div .swiper-button-prev .fa-arrow-left{
-    padding: 10px;
-}
+    .store-big-div .swiper-button-prev .fa-arrow-left{
+        padding: 10px;
+    }
 
-.store-txt-line{
-    width: 80%;
-}
+    .store-txt-line{
+        width: 80%;
+    }
 
-#store-txt{
-    font-size: 45px;
-}
+    #store-txt{
+        font-size: 45px;
+    }
 
-.store-swiper-slide .store-info-upper a{
-    font-size: 30px;
-}
+    .store-swiper-slide .store-info-upper a{
+        font-size: 30px;
+    }
 
-.store-swiper-slide .store-info-upper img{
-    width: 100%;
-    height: 200px;
-}
+    .store-swiper-slide .store-info-upper img{
+        width: 100%;
+        height: 200px;
+    }
 
-.store-swiper-slide .store-info-lower{
-    margin-top: 10px;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    text-align: left;
-    color: #fff;
-    font-family: "roboto","san-seriff";
-    font-size: 15px;
-}
+    .store-swiper-slide .store-info-lower{
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        text-align: left;
+        color: #fff;
+        font-family: "roboto","san-seriff";
+        font-size: 15px;
+    }
 
 
 /*CONTENT - BEST SELLER - iPadPro Tro Xuong */
 
-.best-sale-product{
-    margin: 70px 0;
-}
+    .best-sale-product{
+        margin: 70px 0;
+    }
 
-.best-sale-product .best-sale-product-txt{
-    margin-top: 70px ;
-    width: 80%;
-    font-size: 45px;
-}
+    .best-sale-product .best-sale-product-txt{
+        margin-top: 70px ;
+        width: 80%;
+        font-size: 45px;
+    }
 
-.product-view-all{
-    width: 92%;
-    text-align: right;
-}
-
-
-.all-product-container{
-    width: 85%;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    gap: 10px;
-}
+    .product-view-all{
+        width: 92%;
+        text-align: right;
+    }
 
 
-.product-container a img{
-    height: 15vw;
-}
+    .all-product-container{
+        width: 85%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        gap: 10px;
+    }
 
 
-
+    .product-container a img{
+        height: 15vw;
+    }
 }
 /* danh cho mobile */
 @media  screen and (max-width: 740px ){
 
     .header .corner-logo{
-        width: 100px;
+        width: 80px;
         position: absolute;
         left: 25px;
         top: 15px;
@@ -2038,32 +2018,28 @@ body.showCart .cartTab{
         left:50%;
         transform: translateX(-50%);
         width: 90%;
-        display: flex;
-        align-items: center;
         order:3;
-        bottom: 15px;
+        bottom: 10px;
     }
 
     .header .search-bar input{
-        padding: 12px 20px;
+        padding: 10px 10px;
         width: 100%;
         border-radius: 8px;
         font-size: 15px;
         position: relative;
     }
 
-    .search-bar-icon{
-        font-size: 19px;
-        padding: 12px;
+    .header .search-bar-icon{
+        font-size: 18px;
+        padding: 10px;
         position: absolute;
         top: 0;
-        right: 0;
+        right: 5px;
     }
 
     .header .nav-bar{
-        display: flex;
-        align-items:center;
-        padding: 60px 0px;
+        padding: 55px 0px;
         position: relative;
         width: 100%;
     }
@@ -2080,6 +2056,9 @@ body.showCart .cartTab{
         order: 2;
     }
 
+    .header .header-icon-btn .fa-solid{
+        font-size: 17px;
+    }
 
     .header .header-icon-btn .user-menu-container{
         width: 100%;
@@ -2094,10 +2073,6 @@ body.showCart .cartTab{
         animation: MoveInRight 0.4s;
     }
 
-    .header .header-icon-btn .user-menu-container #arrow-icon{
-        color: black;
-    }
-
     .header .header-icon-btn .user-menu-container .log-out-btn{
         position: absolute;
         bottom: 20px;
@@ -2110,16 +2085,15 @@ body.showCart .cartTab{
     .header .head-address-bar{
         padding: 15px 20px;
         box-shadow: none;
-        font-size: 14px;
     }
 
     .header .head-address-bar .left-address p {
-        font-size: 14px;
+        font-size: 12px;
     }
 
     
     .header .head-address-bar .fa-solid{
-        font-size: 20px;
+        font-size: 17px;
     }
     
     
