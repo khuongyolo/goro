@@ -75,8 +75,8 @@ body::-webkit-scrollbar{
 .header .header-icon-btn{
     display: flex;
     flex-direction: row;
-    gap: 40px;
     user-select: none;
+    gap: 40px;
 	-webkit-user-select: none;
 }
 
