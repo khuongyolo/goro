@@ -1954,6 +1954,10 @@ body.showCart .cartTab{
         font-size: 30px;
     }
 
+    .store-swiper-slide .store-info-upper .store-name{
+        font-size: 25px;
+    }
+
     .store-swiper-slide .store-info-upper img{
         width: 100%;
         height: 200px;
@@ -2252,7 +2256,6 @@ body.showCart .cartTab{
 .store-swiper-slide .store-info-upper{
     display: flex;
     flex-direction: column;
-    align-items: baseline;
     gap: 5px;
 }
 
@@ -2263,7 +2266,8 @@ body.showCart .cartTab{
 .store-swiper-slide .store-info-upper img{
     border-radius: 10px 10px 0 0;
     width: 100%;
-    height: 230px;
+    height: 180px;
+    object-fit: cover;
 }
 
 .store-swiper-slide .store-info-lower{

@@ -78,7 +78,7 @@ class Accordion {
           height: [startHeight, endHeight],
         },
         {
-          duration: 280,
+          duration: 250,
           easing: "ease-out",
         }
       );
@@ -116,7 +116,7 @@ class Accordion {
           height: [startHeight, endHeight],
         },
         {
-          duration: 280,
+          duration: 250,
           easing: "ease-out",
         }
       );
