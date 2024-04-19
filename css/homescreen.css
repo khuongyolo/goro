@@ -1949,29 +1949,41 @@ body.showCart .cartTab{
     #store-txt{
         font-size: 45px;
     }
-
-    .store-swiper-slide .store-info-upper a{
-        font-size: 30px;
+    .store-big-div .swiper-container{
+        margin: 0 auto;
+        margin-top: 0px;
+        width: 90%;
+        overflow: hidden ;
+        padding: 10px;
     }
-
-    .store-swiper-slide .store-info-upper .store-name{
-        font-size: 25px;
-    }
-
-    .store-swiper-slide .store-info-upper img{
-        width: 100%;
-        height: 200px;
-    }
-
-    .store-swiper-slide .store-info-lower{
-        margin-top: 10px;
+    
+    .store-swiper-slide .store-info-upper{
         display: flex;
         flex-direction: column;
-        gap: 10px;
+        gap: 5px;
+    }
+    
+    .store-swiper-slide .store-info-upper .store-name{
+        font-size: 20px;
+    }
+    
+    .store-swiper-slide .store-info-upper img{
+        border-radius: 10px 10px 0 0;
+        width: 100%;
+        height: 180px;
+        object-fit: cover;
+    }
+    
+    .store-swiper-slide .store-info-lower{
+        margin-top: 0px;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
         text-align: left;
         color: #fff;
         font-family: "roboto","san-seriff";
-        font-size: 15px;
+        font-size: 12px;
+        padding: 10px 20px;
     }
 
 
