@@ -401,8 +401,6 @@ let HideCart = document.querySelector('.close-cart-icon');
 let CloseCart = document.querySelector('.close');
 let listProductHTML = document.querySelector('.product-container');
 
-let listProducts = [];
-
 iconCart.addEventListener('click', () => {
     body.classList.toggle('showCart')
 })

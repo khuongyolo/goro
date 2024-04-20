@@ -907,7 +907,7 @@ body.showCart .cartTab{
 }
 
 .category-big-div .swiper-slide img{
-    width: 120px;
+    width: 90px;
     user-select: none;
 	-webkit-user-select: none;
 }
