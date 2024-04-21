@@ -1241,7 +1241,8 @@ body.showCart .cartTab{
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    gap: 17px;
+    column-gap: 10px;
+    row-gap: 35px;
 }
 
 .product-container{
@@ -1559,7 +1560,8 @@ body.showCart .cartTab{
         display: grid;
         grid-template-columns: repeat(5, 1fr);
         grid-template-rows: repeat(2, 1fr);
-        gap: 10px;
+        column-gap: 10px;
+        row-gap: 35px;
     }
 
     .product-container .product-info .product-info-upper{
@@ -1731,7 +1733,8 @@ body.showCart .cartTab{
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: repeat(2, 1fr);
-        gap: 10px;
+        column-gap: 10px;
+        row-gap: 30px;
     }
 
 
@@ -1962,7 +1965,8 @@ body.showCart .cartTab{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(3, 1fr);
-        gap: 10px;
+        column-gap: 10px;
+        row-gap: 25px;
     }
 
     .product-container a img{
