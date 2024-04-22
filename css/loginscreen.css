@@ -15,6 +15,10 @@ body{
 	background-color: #131C30;
 	font-family: 'Montserrat', sans-serif;
 	position: relative;
+	background: linear-gradient(rgb(0, 0, 0,.9),rgba(0, 0, 0, 0.4),rgb(0, 0, 0)), url('../images/food-background2.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
 }
 
 /* MAN HINH LOG IN --------------------- --------------------- --------------------- --------------------- --------------------- --------------------- --------------------- --------------------- --------------------- --------------------- --------------------- */
@@ -57,9 +61,13 @@ body{
 
 .signin-container form{
 	min-width: 450px;
-	background-color: #F1F2F5;
+	/* background-color: #F1F2F5; */
+	background-color: transparent;
+	backdrop-filter: blur(60px);
+	border: 1px solid rgba(184, 184, 184, 0.178);
 	border-radius: 15px;
 	padding: 50px 50px;
+	color: white;
 }
 
 
@@ -86,13 +94,14 @@ body{
 .signin-input{
  	display: block;
 	width: 100%;
-	padding: 17px 15px;
+	padding: 15px 15px;
 	border-radius: 10px;
 	border: 1px solid rgb(204, 203, 203);
 	background-color: #f5f5f5;
 	/* box-shadow: 2px 2px 4px rgb(0,0,0,.4); */
 	margin-bottom: 20px;
 	font-size: 14px;
+	outline: none;
 }
 
 
@@ -110,7 +119,7 @@ body{
 }
 
 .fa-eye-slash {
-	padding: 13px;
+	padding: 10px;
 	background-color: #f5f5f5;
 	border-radius: 8px;
 	color: rgb(99, 99, 99);
@@ -118,7 +127,7 @@ body{
 }
 
 .fa-eye{
-	padding: 13px;
+	padding: 10px;
 	background-color: #f5f5f5;
 	border-radius: 8px;
 	color: rgb(99, 99, 99);
@@ -134,12 +143,13 @@ body{
 .signin-btn{
 	display: block;
 	margin: 30px auto;
+	margin-top: 50px;
 	width: 100%;
 	padding: 17px 20px;
 	text-align: center;
 	border-radius: 10px;
-	border: none;
-	background-color: #512da8;
+	background-color: transparent;
+	border: 3px solid white;
 	color: white;
 	font-size: 16px;
 	cursor: pointer;
@@ -149,7 +159,9 @@ body{
 }
 
 .signin-btn:hover{
-	background-color: #6235cb;
+	background-color: #ffffff;
+	color: black;
+	transition: 0.3s all;
 }
 
 
@@ -162,13 +174,13 @@ body{
 .signin-link-or span{
  	position: relative;
 	padding: 2px 10px;
-	background-color:#F1F2F5;
+	backdrop-filter: blur(80px);
 	z-index: 2;
 	user-select: none;
 	-webkit-user-select: none;
 }
 
-.signin-link-or::after{
+/* .signin-link-or::after{
 	content: "";
 	width: 100%;
 	height: 1px;
@@ -176,7 +188,7 @@ body{
 	position: absolute;
 	top:50%;
 	left: 0;
-}
+} */
 
 .social-icon{
 	text-align: center;
@@ -223,7 +235,7 @@ body{
 
 
 .signup a{
-	color: #512da8;
+	color: rgb(158, 157, 157);
 	text-decoration: none;
 }
 
@@ -237,7 +249,7 @@ body{
 }
 
 .forgot-password a{
-	color: #512da8;
+	color: rgb(158, 157, 157);
 	text-decoration: none;
 }
 
@@ -388,7 +400,6 @@ body{
 	.signin-link-or span{
 		position: relative;
 	   padding: 2px 10px;
-	   background-color:#F1F2F5;
 	   z-index: 2;
 	   font-size: 12px;
    }
@@ -575,7 +586,6 @@ body{
 	.signin-link-or span{
 		position: relative;
 	   padding: 2px 10px;
-	   background-color:#F1F2F5;
 	   z-index: 2;
 	   font-size: 12px;
    }
@@ -718,7 +728,10 @@ body{
 }
 .signup-container{
 	min-width: 450px;
-	background-color: #F1F2F5;
+	background-color: transparent;
+	backdrop-filter: blur(60px);
+	border: 1px solid rgba(184, 184, 184, 0.178);
+	color: white;
 	border-radius: 15px;
 	padding: 50px 50px;
 	margin: 50px 0;
@@ -783,14 +796,14 @@ body{
 	position: relative;
 	width: 100%;
 	text-align: center;
-	margin-top: 20px;
+	margin-top: 40px;
 }
 
-.signup-container form #thin-line{
+/* .signup-container form #thin-line{
 	padding: 0 5px;
 	position: relative;
 	background-color:#F1F2F5 ;
-}
+} */
 
 .signup-container form .thin-line::after{
 	content:"";
@@ -803,7 +816,8 @@ body{
 }
 
 .signup-container form .have-account{
-	margin-top: 30px;
+	margin-top: 70px;
+	margin-bottom: 20px;
 	user-select: none;
 	-webkit-user-select: none;
 }
@@ -813,11 +827,12 @@ body{
 	margin: 0 auto;
 	margin-top: 10px;
 	width: 100%;
-	padding: 20px 20px;
+	padding: 16px 20px;
 	text-align: center;
 	border-radius: 10px;
 	border: none;
-	background-color: #512da8;
+	background-color: transparent;
+	border: 3px solid white;
 	color: white;
 	font-size: 16px;
 	cursor: pointer;
@@ -826,7 +841,9 @@ body{
 }
 
 .signup-container form .signup-login-btn:hover{
-	background-color: #6235cb;
+	background-color: white;
+	color: black;
+	transition: 0.3s all;
 }
 
 
@@ -838,7 +855,6 @@ body{
 	
 	.signup-container{
 		min-width: 340px;
-		background-color: #F1F2F5;
 		border-radius: 15px;
 		padding: 40px 40px;
 		margin: 20px 0;
@@ -846,8 +862,6 @@ body{
 
 	.signup-container form .link-container{
 		width: 100%;
-		border: 1px solid rgba(204, 204, 204, 0.986);
-		background-color: #f5f5f5;
 		padding:12px 12px;
 		margin:15px 0;
 		text-align: left;
@@ -863,7 +877,6 @@ body{
 	}
 
 	.signup-container form .have-account{
-		margin-top: 30px;
 		font-size: 14px;
 	}
 	
@@ -876,9 +889,6 @@ body{
 		padding: 15px 15px;
 		text-align: center;
 		border-radius: 10px;
-		border: none;
-		background-color: #512da8;
-		color: white;
 		font-size: 16px;
 		cursor: pointer;
 	}
@@ -893,14 +903,11 @@ body{
 
 	.signup-container{
 		min-width: 450px;
-		background-color: #F1F2F5;
 		border-radius: 15px;
 		padding: 50px 50px;
 	}
 	.signup-container form .link-container{
 		width: 100%;
-		border: 1px solid rgba(204, 204, 204, 0.986);
-		background-color: #f5f5f5;
 		padding:17px 15px;
 		margin:15px 0;
 		text-align: left;
@@ -915,7 +922,7 @@ body{
 	}
 
 	.signup-container form .have-account{
-		margin-top: 30px;
+		/* margin-top: 30px; */
 		font-size: 14px;
 	}
 	
@@ -928,9 +935,6 @@ body{
 		padding: 20px 20px;
 		text-align: center;
 		border-radius: 10px;
-		border: none;
-		background-color: #512da8;
-		color: white;
 		font-size: 16px;
 		cursor: pointer;
 	}
@@ -940,7 +944,10 @@ body{
 
 .signup-mail-container{
 	min-width: 450px;
-	background-color: #F1F2F5;
+	background-color: transparent;
+	backdrop-filter: blur(60px);
+	border: 1px solid rgba(184, 184, 184, 0.178);
+	color: white;
 	border-radius: 15px;
 	padding: 50px 50px;
 	margin: 20px 0;
@@ -987,7 +994,8 @@ body{
 	text-align: center;
 	border-radius: 10px;
 	border: none;
-	background-color: #512da8;
+	background-color: transparent;
+	border: 3px solid white;
 	color: white;
 	font-size: 16px;
 	cursor: pointer;
@@ -996,7 +1004,9 @@ body{
 }
 
 .signup-mail-btn:hover{
-	background-color: #6235cb;
+	background-color: #ffffff;
+	color: black;
+	transition: 0.3s all;
 }
 
 .term-accept-error{
@@ -1016,7 +1026,7 @@ body{
 
 .term-signup-mail-accept a{
 	text-decoration: none;
-	color: #512da8;
+	color: #a8a8a8;
 }
 
 .term-signup-mail-accept a:active{
@@ -1031,7 +1041,6 @@ body{
 
 	.signup-mail-container{
 		min-width: 450px;
-		background-color: #F1F2F5;
 		border-radius: 15px;
 		padding: 50px 50px;
 	}
@@ -1046,7 +1055,6 @@ body{
 	
 	.signup-mail-container{
 		min-width: 340px;
-		background-color: #F1F2F5;
 		border-radius: 15px;
 		padding: 25px 30px;
 	}
@@ -1076,9 +1084,6 @@ body{
 		padding: 15px 20px;
 		text-align: center;
 		border-radius: 10px;
-		border: none;
-		background-color: #512da8;
-		color: white;
 		font-size: 16px;
 		cursor: pointer;
 	}
@@ -1096,7 +1101,10 @@ body{
 
 .forgot-password-container{
 	min-width: 450px;
-	background-color: #F1F2F5;
+	background-color: transparent;
+	backdrop-filter: blur(60px);
+	border: 1px solid rgba(184, 184, 184, 0.178);
+	color: white;
 	border-radius: 15px;
 	padding: 50px 50px;
 	margin-top: 50px;
@@ -1142,7 +1150,8 @@ body{
 	text-align: center;
 	border-radius: 10px;
 	border: none;
-	background-color: #512da8;
+	background-color: transparent;
+	border: 3px solid white;
 	color: white;
 	font-size: 16px;
 	cursor: pointer;
@@ -1165,12 +1174,11 @@ body{
 	-webkit-user-select: none;
 }
 
+
+
 .term-forgot-password-accept a{
 	text-decoration: none;
-}
-
-.term-forgot-password-accept a:active{
-	color: black ;
+	color: #a0a0a0;
 }
 
 /* danh cho tablet va PC */
@@ -1181,7 +1189,6 @@ body{
 
 	.forgot-password-container{
 		min-width: 450px;
-		background-color: #F1F2F5;
 		border-radius: 15px;
 		padding: 50px 50px;
 		margin: 30px 0;
@@ -1198,7 +1205,6 @@ body{
 	
 	.forgot-password-container{
 		min-width: 340px;
-		background-color: #F1F2F5;
 		border-radius: 15px;
 		padding: 25px 30px;
 		margin-top:20px;
@@ -1229,9 +1235,6 @@ body{
 		padding: 15px 20px;
 		text-align: center;
 		border-radius: 10px;
-		border: none;
-		background-color: #512da8;
-		color: white;
 		font-size: 16px;
 		cursor: pointer;
 	}
