@@ -8,35 +8,33 @@
 body{
 	width: 100%;
 	height: 100vh;
+	min-height: 950px;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
 	background-color: #131C30;
-	overflow-y: scroll;
 	font-family: 'Montserrat', sans-serif;
-	min-width: 50%;
+	position: relative;
 }
 
 /* MAN HINH LOG IN --------------------- --------------------- --------------------- --------------------- --------------------- --------------------- --------------------- --------------------- --------------------- --------------------- --------------------- */
 
 .upper-container{
+	position: absolute;
+	top:40%;
+	transform: translateY(-40%);
+	width: 100%;
 	display: flex;
+	flex-direction: row;
 	align-items: center;
-	justify-items: center;
-	gap: 2%;
-	margin: auto;
-
+	justify-content: center;
+	gap: 5%;
 }
 
-.logo-and-pic{
-	display: block;
-	margin-right: 50px;
-}
 
 #corner-logo{
 	width: 160px;
 	margin-bottom: 5px;
-	margin-left: 30px;
 	user-select: none;
 	-webkit-user-select: none;
 	cursor: pointer;
@@ -44,7 +42,6 @@ body{
 
 .logo-text{
 	margin-bottom: 25px;
-	margin-left: 30px;
 	color: rgba(211, 211, 211, 0.815);
 	font-size: 13px;
 	user-select: none;
@@ -55,10 +52,6 @@ body{
 	display: block;
 	width: 400px;
 	margin-top: 60px;
-}
-
-.signin-container{
-	margin-top: 50px;
 }
 
 
@@ -255,9 +248,9 @@ body{
 
 
 .footer {
+	position: absolute;
+	bottom: 0;
 	width: 100%;
-	/* height: 12vh; */
-	margin-top: 50px;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -265,11 +258,11 @@ body{
 	padding: 20px 30px;
 	user-select: none;
 	-webkit-user-select: none;
+	margin-top: 50px;
 }
 
 
 .footer-option-container{
-	/* margin-bottom: 10px; */
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -324,7 +317,6 @@ body{
 	#corner-logo{
 		width: 160px;
 		margin-bottom: 0;
-		margin-left: 30px;
 	}
 
 	.logo-text{
@@ -338,9 +330,9 @@ body{
 		font-size: 25px;
 	}
 
-	.signin-container{
+	/* .signin-container{
 		margin-top: 20px;
-	}
+	} */
 
 	.signin-container form .error-caution p{
 		font-size: 12px;
@@ -458,8 +450,6 @@ body{
 		flex-direction: column;
 		align-items: center;
 		justify-content: center;
-		margin: 0;
-		margin-top: 50px;
 	}
 	
 	.footer {
@@ -496,8 +486,7 @@ body{
 	}
 
 	#corner-logo{
-		width: 90px;
-		margin-left: 30px;
+		width: 90px;;
 		margin-top: 20px;
 	}
 
@@ -685,9 +674,8 @@ body{
 	}
 
 	#corner-logo{
-		width: 160px;
-		margin-bottom: 5px;
-		margin-left: 30px;
+		width: 150px;
+		margin: 0;
 	}
 
 	.logo-text{
@@ -846,8 +834,6 @@ body{
 @media only screen and (max-width: 740px ){
 	#corner-logo{
 		width: 120px;
-		margin-bottom: 30px;
-		margin-left: 30px;
 	}
 	
 	.signup-container{
@@ -903,7 +889,6 @@ body{
 @media only screen and (min-width: 740px) and (max-width: 1024px){
 	#corner-logo{
 		margin-bottom: 5px;
-		margin-left: 30px;
 	}
 
 	.signup-container{
@@ -1042,7 +1027,6 @@ body{
 @media only screen and (min-width: 740px) and (max-width: 1024px){
 	#corner-logo{
 		margin-bottom: 5px;
-		margin-left: 30px;
 	}
 
 	.signup-mail-container{
@@ -1058,8 +1042,6 @@ body{
 @media only screen and (max-width: 740px ){
 	#corner-logo{
 		width: 120px;
-		margin-bottom: 30px;
-		margin-left: 30px;
 	}
 	
 	.signup-mail-container{
@@ -1194,8 +1176,7 @@ body{
 /* danh cho tablet va PC */
 @media only screen and (min-width: 740px) and (max-width: 1024px){
 	#corner-logo{
-		margin-bottom: 5px;
-		margin-left: 30px;
+		margin-bottom: 5px;;
 	}
 
 	.forgot-password-container{
@@ -1212,8 +1193,7 @@ body{
 @media only screen and (max-width: 740px ){
 	#corner-logo{
 		width: 120px;
-		margin-bottom: 30px;
-		margin-left: 30px;
+		margin-bottom: 30px;;
 	}
 	
 	.forgot-password-container{
