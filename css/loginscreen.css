@@ -64,6 +64,7 @@ body{
 	/* background-color: #F1F2F5; */
 	background-color: transparent;
 	backdrop-filter: blur(60px);
+	-webkit-backdrop-filter: blur(60px);
 	border: 1px solid rgba(184, 184, 184, 0.178);
 	border-radius: 15px;
 	padding: 50px 50px;
@@ -730,6 +731,7 @@ body{
 	min-width: 450px;
 	background-color: transparent;
 	backdrop-filter: blur(60px);
+	-webkit-backdrop-filter: blur(60px);
 	border: 1px solid rgba(184, 184, 184, 0.178);
 	color: white;
 	border-radius: 15px;
@@ -946,6 +948,7 @@ body{
 	min-width: 450px;
 	background-color: transparent;
 	backdrop-filter: blur(60px);
+	-webkit-backdrop-filter: blur(60px);
 	border: 1px solid rgba(184, 184, 184, 0.178);
 	color: white;
 	border-radius: 15px;
@@ -1103,6 +1106,7 @@ body{
 	min-width: 450px;
 	background-color: transparent;
 	backdrop-filter: blur(60px);
+	-webkit-backdrop-filter: blur(60px);
 	border: 1px solid rgba(184, 184, 184, 0.178);
 	color: white;
 	border-radius: 15px;
