@@ -1370,10 +1370,10 @@ body.showCart .cartTab{
 /* FOOTER------------------------------------------------ */
 .footer-background{
     width: 100%;
-    height: 40%;
-    background:linear-gradient( rgb(0, 0, 0, .99), rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.68)), url(../images/food-background8.jpg);
+    height: 50%;
+    background:linear-gradient( rgb(0, 0, 0, .99), rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.68)), url(../images/food-background6.jpg);
     background-size:cover;
-    background-position: top;
+    background-position: bottom;
     position: relative;
 }
 
