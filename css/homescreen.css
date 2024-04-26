@@ -47,7 +47,7 @@ body::-webkit-scrollbar{
     display: flex;
     align-items: center;
     gap:0;
-    z-index: 100;
+    z-index: 3;
 }
 
 
@@ -63,6 +63,8 @@ body::-webkit-scrollbar{
 }
 
 #suggestionList {
+    display: none;
+    width: 100%;
     background-color: #fff;
     position: absolute;
     top:50px;
@@ -70,9 +72,9 @@ body::-webkit-scrollbar{
     list-style-type: none;
     padding: 0;
     margin: 0;
-    height: 250px;
+    max-height: 250px;
     overflow-y: scroll;
-    border-radius: 10px;
+    border-radius: 15px;
 }
 
 #suggestionList::-webkit-scrollbar{
@@ -80,9 +82,10 @@ body::-webkit-scrollbar{
 }
   
 #suggestionList li {
-    padding: 10px;
+    width: 100%;
+    padding: 15px 20px;
     cursor: pointer;
-    border-bottom: 1px solid #ccc;
+    border: none;
 }
   
 #suggestionList li:hover {
@@ -427,7 +430,6 @@ body.showCart .cartTab{
 
 .cartTab .btn .close{
     background-color: #ececec;
-    border-radius: 0 0 0 15px;
 }
 .cartTab .btn .close:hover{
     background-color: #dadada;
@@ -435,7 +437,6 @@ body.showCart .cartTab{
 
 .cartTab .btn .checkOut{
     background-color: #ffb700;
-    border-radius: 0 0 15px 0;
 }
 .cartTab .btn .checkOut:hover{
     background-color: #d49800;
@@ -1017,7 +1018,7 @@ body.showCart .cartTab{
 .category-big-div .swiper-pagination{
     position: absolute;
     bottom: -15px !important;
-    z-index: 30;
+    z-index: 2;
 }
 
 .category-big-div .swiper-pagination-bullet {
@@ -1201,7 +1202,7 @@ body.showCart .cartTab{
 .store-big-div .swiper-pagination{
     position: absolute;
     bottom: -15px !important;
-    z-index: 30;
+    z-index: 2;
 }
 
 .store-big-div .swiper-pagination-bullet {

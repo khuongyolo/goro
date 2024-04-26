@@ -379,6 +379,11 @@ const suggestionList = document.getElementById('suggestionList');
 
 function showSuggestions() {
   const inputValue = searchInput.value.toLowerCase();
+  if (inputValue === '') {
+    suggestionList.style.display = 'none'; // Ẩn danh sách gợi ý khi không có input
+    return;
+  }
+  
   // Perform logic to filter suggestions based on your data
   const filteredSuggestions = yourData.filter(item => item.toLowerCase().startsWith(inputValue.toLowerCase()));
 
@@ -393,11 +398,23 @@ function renderSuggestions(suggestions) {
     li.textContent = suggestion;
     li.addEventListener('click', () => {
       searchInput.value = suggestion;
-      suggestionList.innerHTML = '';
+      suggestionList.style.display = 'none'; // Ẩn danh sách gợi ý khi chọn một mục từ danh sách
     });
     suggestionList.appendChild(li);
   });
+  suggestionList.style.display = 'block'; // Hiển thị danh sách gợi ý
 }
+
+suggestionList.addEventListener('wheel', function(event) {
+    const scrollTop = this.scrollTop;
+    const scrollHeight = this.scrollHeight;
+    const clientHeight = this.clientHeight;
+  
+    const delta = event.deltaY;
+    if ((delta < 0 && scrollTop === 0) || (delta > 0 && scrollTop + clientHeight === scrollHeight)) {
+        event.preventDefault();
+    }
+});
 
 // An hien menu language trong navbar - start
 //? This code is for animating details
