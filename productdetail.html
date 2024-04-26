@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+<meta charset = "UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<title id="tab-title"> GORO</title>
+<link rel="stylesheet" href="css/productdetail.css">
+<link rel="stylesheet" href="fontawesome-free-6.4.2-web/css/all.min.css">
+<link rel="icon" type="small icon" href="images/Title logo final.png">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Sofia&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Whisper&display=swap" rel="stylesheet">
+<!-- swiperjs -->
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+</head>
+<body id="mainbody"> 
+    <!-- HEADER _ ADDRESS BAR start -->
+        <div class="header">
+            <div class="nav-bar">
+                <div class="logo-img-container">
+                    <a href="homescreen.html"><img class="corner-logo" src="images/Logo_main.png"></a>
+                </div>
+                <div class="search-bar">
+                    <input type="text" placeholder="Search on GORO"><a href="#"><i class="fa-solid fa-magnifying-glass search-bar-icon"></i></a>
+                </div>
+                <!-- nut icon tren header -->
+                <div class="header-icon-btn showCart">
+
+                    <!-- nut home tren header -->
+                    <div>
+                        <i class="fa-solid fa-house"></i>
+                    </div>
+
+                    <!-- nut cart tren header -->
+                    <div class="icon-cart-container">
+                        <div class="icon-cart">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            <span>0</span>
+                        </div>
+                    </div>
+
+                    <!-- tab gio hang -->
+                    <div class="cartTab">
+                            <div class="cartTab-upper">
+                                <h1>GIỎ HÀNG</h1>
+                                <div class="close-cartTab-btn "><i class="fa-solid fa-xmark close-cart-icon"></i></div>
+                            </div>
+                        <div class="listCart">
+                            <div class="item">
+                                <div class="image">
+                                    <img src="images/food-product-img/desktop-wallpaper-hickory-smoked-ribs-bbq-ribs.jpg" alt="">
+                                </div>
+                                <div class="name">
+                                    NAME
+                                </div>
+                                <div class="totalPrice">
+                                    $200
+                                </div>
+                                <div class="quantity">
+                                    <span class="minus"><i class="fa-solid fa-minus"></i></span>
+                                    <span>1</span>
+                                    <span class="plus"><i class="fa-solid fa-plus"></i></span>
+                                </div>
+                            </div>  
+                        </div>
+                        <div class="btn">
+                            <button class="close">CLOSE</button>
+                            <button class="checkOut">CHECK OUT</button>
+                        </div>
+                    </div>
+
+                   <!-- nut user tren header -->
+                    <div class="user-btn" onclick="DisplayUserOption()">
+                        <i class="fa-solid fa-user"></i>
+                        <!-- phan menu container cua nut USER start-->
+                        <ul class="user-menu-container" id="user-menu-container">
+                            <li class="user-heading-container">
+                                <h2 class="user-menu-heading"><i class="fa-regular fa-user"></i>Tài khoản</h2>
+                                <div><i class="fa-solid fa-xmark" onclick="HideUserOption()"></i></div>
+                            </li>
+                            <li class="user-option"><a href="smile.html">Thông tin tài khoản</a></li>
+                            <li class="user-option"><div>Địa chỉ</div></li>
+                            <li class="user-option"><div>Theo dõi đơn hàng</div></li>
+                            <li class="user-option"><div>Lịch sử mua sắm</div></li>
+                            <li class="user-option"><div>Phương thức thanh toán</div></li>
+                            <li class="user-option language-option-container">
+                                <details>
+                                    <summary>
+                                      <span class="language-title">
+                                        Ngôn ngữ
+                                      </span>
+                                      <svg xmlns="http://www.w3.org/2000/svg" class="expand-icon" width="24" height="24" viewBox="0 0 24 24"
+                                        stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                        <path d="M9 6l6 6l-6 6"></path>
+                                      </svg>
+                                    </summary>
+                                    <div class="language-content">
+                                        <div class="language-option">Tiếng Việt</div>
+                                        <div class="language-option">English</div>
+                                        <div class="language-option">日本語</div>
+                                    </div>
+                                  </details>
+                            </li>
+                            <li class="user-option"><div>Hỗ trợ</div></li>
+                            <li class="user-option log-out-btn"><a href="loginscreen.html"><i class="fa-solid fa-right-from-bracket user-option-icon"></i>Đăng xuất</a></li>
+                        </ul>
+                        <!-- phan menu container cua nut USER end-->
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="head-address-bar">
+                <div class="left-address">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <p>Delivery address:<span> Saitama, koshigaya, Akanecho, 2-2-2</span>
+                </div>
+                <div class="right-address">
+                    <a href="#"><i class="fa-solid fa-sliders change-address-btn"></i></a>
+                </div>
+            </div>
+        </div>
+    <!-- HEADER _ ADDRESS BAR end -->
+
+
+    <div class="produc-content-container">
+        
+    </div>
+
+
+
+
+    <script src = "js/productdetail.js"></script>
+</body> 
+
+        <!-- HEADER _ NAVIGATION BAR end -->
