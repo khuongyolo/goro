@@ -47,6 +47,7 @@ body::-webkit-scrollbar{
     display: flex;
     align-items: center;
     gap:0;
+    z-index: 100;
 }
 
 
@@ -59,6 +60,33 @@ body::-webkit-scrollbar{
     font-size: 14px;
     position: relative;
     color: #fff;
+}
+
+#suggestionList {
+    background-color: #fff;
+    position: absolute;
+    top:50px;
+    left:0;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    height: 250px;
+    overflow-y: scroll;
+    border-radius: 10px;
+}
+
+#suggestionList::-webkit-scrollbar{
+    display: none;
+}
+  
+#suggestionList li {
+    padding: 10px;
+    cursor: pointer;
+    border-bottom: 1px solid #ccc;
+}
+  
+#suggestionList li:hover {
+    background-color: #f5f5f5;
 }
 
 
