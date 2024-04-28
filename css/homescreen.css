@@ -2116,7 +2116,7 @@ body.showCart .cartTab{
     }
 
     .header .header-icon-btn .user-menu-container{
-        width: 100%;
+        width: 75%;
         height: 100vh;
         position: fixed;
         top:0;
