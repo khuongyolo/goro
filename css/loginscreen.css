@@ -375,6 +375,10 @@ body{
 		font-size: 25px;
 	}
 
+	.upper-container{
+		top: 35%;
+	}
+
 	/* .signin-container{
 		margin-top: 20px;
 	} */

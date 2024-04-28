@@ -1076,7 +1076,7 @@ body.showCart .cartTab{
 .store-view-all{
     width: 82%;
     text-align: right;
-    margin: 15px 0;
+    /* margin: 0; */
 }
 
 .store-view-all a{
@@ -1784,6 +1784,11 @@ body.showCart .cartTab{
         font-size: 65px;
     }
 
+    .store-view-all{
+        width: 90%;
+        text-align: right;
+    }
+
     /* CONTENT - BEST SELLER - iPadPro Tro Len */
 
     .best-sale-product{
@@ -1977,6 +1982,11 @@ body.showCart .cartTab{
 
     #store-txt{
         font-size: 45px;
+    }
+
+    .store-view-all{
+        width: 92%;
+        text-align: right;
     }
     .store-big-div .swiper-container{
         margin: 0 auto;
@@ -2284,6 +2294,12 @@ body.showCart .cartTab{
 
     #store-txt{
         font-size: 45px;
+    }
+
+    .store-view-all{
+        width: 98%;
+        text-align: right;
+        font-size: 12px;
     }
 
     .store-big-div .swiper-container{
