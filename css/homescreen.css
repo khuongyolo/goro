@@ -75,7 +75,7 @@ body::-webkit-scrollbar{
     margin: 0;
     max-height: 250px;
     overflow-y: scroll;
-    border-radius: 15px;
+    border-radius: 10px;
 }
 
 #suggestionList::-webkit-scrollbar{
@@ -87,6 +87,7 @@ body::-webkit-scrollbar{
     padding: 15px 20px;
     cursor: pointer;
     border: none;
+    font-family: "roboto", "san-seriff";
 }
   
 #suggestionList li:hover {
@@ -871,9 +872,6 @@ body.showCart .cartTab{
     user-select: none;
     width: 100%;
 	position: relative;
-    text-decoration: underline;
-    text-decoration-thickness: 3px;
-    text-decoration-style:double;
 }
 
 #category-txt{
@@ -1074,6 +1072,25 @@ body.showCart .cartTab{
 #store-txt{
     font-size: 75px;
 }
+
+.store-view-all{
+    width: 82%;
+    text-align: right;
+    margin: 15px 0;
+}
+
+.store-view-all a{
+    text-decoration: none;
+    color: rgb(252, 191, 78);
+    font-family: "roboto", "san-seriff";
+    font-size: 15px;
+}
+
+.store-view-all .fa-play{
+    font-size: 10px;
+    margin-left: 5px;
+}
+
 
 .store-big-div .swiper-container{
     margin: 0 auto;
@@ -1668,6 +1685,10 @@ body.showCart .cartTab{
         font-size: 13px;
     }
 
+    .category-big-div .swiper-slide{
+        height: 80%;
+    }
+
 /* STORE */
 
     .store-swiper-slide .store-info-upper{
@@ -1741,6 +1762,10 @@ body.showCart .cartTab{
         font-family: "Oswald", sans-serif;
         margin-top:10px;
         font-size: 13px;
+    }
+
+    .category-big-div .swiper-slide{
+        height: 70%;
     }
 
 /* CONTENT - STORE - iPadPro Tro Len */
