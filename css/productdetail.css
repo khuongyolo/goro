@@ -10,7 +10,7 @@ html{
 body{
     width: 100%;
     height: 100vh;
-    background-color: black;
+    background-color: white;
 }
 
 body::-webkit-scrollbar{
@@ -512,4 +512,70 @@ body.showCart .cartTab{
 
 .header .head-address-bar .left-address .fa-location-dot{
     margin-right: 15px ;
+}
+
+
+/* PRODUCT DETAIL - PC */
+
+.product-content-container{
+    width: 100%;
+    padding-top: 25px;
+}
+
+.product-content-container .upper-content{
+    width: 65%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.upper-content .img-side{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid grey ;
+    border-radius: 10px;
+}
+
+.upper-content .img-side .store-name-rate{
+    width: 100%;
+    padding: 15px 0;
+    border-bottom: 2px solid grey ;
+    text-align: center;
+}
+
+.img-side .store-name-rate .store-name{
+    font-size: 40px;
+    font-family: "oswald";
+    font-weight: 500;
+}
+
+.img-side .store-name-rate .store-rate{
+    margin-top: 10px;
+    font-size: 20px;
+    font-family: "roboto";
+}
+
+
+.img-side .store-name-rate .store-rate i{
+    color: #ffb700;
+    margin: 0 3px;
+    font-size: 18px;
+}
+
+.img-side .product-img{
+    padding: 40px 40px;
+}
+
+.img-side .product-img img{
+    width: 500px;
+}
+
+.product-index-site{
+    display: flex;
+    flex-direction: column;
 }
